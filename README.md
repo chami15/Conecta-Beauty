@@ -1,6 +1,6 @@
 # Conecta Beauty - Aplicação Web
 
-Sistema completo de gestão e análise de dados para negócios de beleza, desenvolvido com Streamlit.
+Sistema completo de gestão e análise de dados para negócios de beleza, desenvolvido com Streamlit. 
 
 ## Funcionalidades
 
@@ -28,6 +28,7 @@ Sistema completo de gestão e análise de dados para negócios de beleza, desenv
 - Campos: Cliente, Data, Valor Total, Forma de Pagamento, Canal
 
 ###  Chat IA
+- Criado a partir de Inteligencia Generativa usando a LLM da OpenAI 
 - Assistente inteligente com 7 ferramentas de análise
 - Histórico de conversas
 - Múltiplas sessões isoladas
@@ -55,6 +56,7 @@ pip install streamlit pandas pymongo plotly requests agno python-dotenv
 ```env
 MONGO_URI=sua_connection_string_mongodb
 DB_NAME=ConectaBeauty
+OPENAI_API_KEY = sua_chave #Para acessar o ChatBot
 ```
 
 4. **Inicie o agente IA** (necessário para o Chat):
@@ -205,6 +207,7 @@ Perguntas exemplo:
 - Confirme que seu IP está autorizado no MongoDB Atlas
 
 ### Chat IA não responde
+- Verifique sua chave de API esta no .env
 - Certifique-se de que `agent.py` está rodando
 - Verifique se a porta 9999 está disponível
 - Confirme a URL do agente: `http://127.0.0.3:9999`
