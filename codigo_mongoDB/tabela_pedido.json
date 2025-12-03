@@ -1,0 +1,8002 @@
+[
+  {
+    "Id Pedido": 1,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-01-06",
+    "Valor Total": 311.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 2,
+    "Id Cliente": 2,
+    "Data Pedido": "2022-01-11",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 3,
+    "Id Cliente": 3,
+    "Data Pedido": "2022-01-12",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 4,
+    "Id Cliente": 4,
+    "Data Pedido": "2022-01-12",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 5,
+    "Id Cliente": 5,
+    "Data Pedido": "2022-01-13",
+    "Valor Total": 110.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 6,
+    "Id Cliente": 6,
+    "Data Pedido": "2022-01-14",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 7,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-01-17",
+    "Valor Total": 350.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 8,
+    "Id Cliente": 8,
+    "Data Pedido": "2021-01-19",
+    "Valor Total": 22.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 9,
+    "Id Cliente": 9,
+    "Data Pedido": "2022-01-20",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 10,
+    "Id Cliente": 10,
+    "Data Pedido": "2022-01-20",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 11,
+    "Id Cliente": 11,
+    "Data Pedido": "2022-01-20",
+    "Valor Total": 880.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 12,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-01-21",
+    "Valor Total": 1995.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 13,
+    "Id Cliente": 13,
+    "Data Pedido": "2022-01-22",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 14,
+    "Id Cliente": 14,
+    "Data Pedido": "2022-01-24",
+    "Valor Total": 4899.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 15,
+    "Id Cliente": 15,
+    "Data Pedido": "2022-01-24",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 16,
+    "Id Cliente": 16,
+    "Data Pedido": "2022-01-24",
+    "Valor Total": 1520.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 17,
+    "Id Cliente": 17,
+    "Data Pedido": "2022-01-26",
+    "Valor Total": 220.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 18,
+    "Id Cliente": 18,
+    "Data Pedido": "2022-01-27",
+    "Valor Total": 1771.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 19,
+    "Id Cliente": 19,
+    "Data Pedido": "2022-01-28",
+    "Valor Total": 516.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 20,
+    "Id Cliente": 20,
+    "Data Pedido": "2022-01-29",
+    "Valor Total": 3880.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 21,
+    "Id Cliente": 21,
+    "Data Pedido": "2022-01-31",
+    "Valor Total": 760.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 22,
+    "Id Cliente": 22,
+    "Data Pedido": "2022-01-31",
+    "Valor Total": 299.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 23,
+    "Id Cliente": 23,
+    "Data Pedido": "2022-02-02",
+    "Valor Total": 570.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 24,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-02-07",
+    "Valor Total": 1110.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 25,
+    "Id Cliente": 25,
+    "Data Pedido": "2022-02-09",
+    "Valor Total": 1170.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 26,
+    "Id Cliente": 26,
+    "Data Pedido": "2022-02-08",
+    "Valor Total": 1778.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 27,
+    "Id Cliente": 23,
+    "Data Pedido": "2025-02-08",
+    "Valor Total": 77.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 28,
+    "Id Cliente": 25,
+    "Data Pedido": "2022-02-10",
+    "Valor Total": 85.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 29,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-02-11",
+    "Valor Total": 520.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 30,
+    "Id Cliente": 26,
+    "Data Pedido": "2022-02-11",
+    "Valor Total": 501.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 31,
+    "Id Cliente": 27,
+    "Data Pedido": "2022-02-11",
+    "Valor Total": 193.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 32,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-02-12",
+    "Valor Total": 1729.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 33,
+    "Id Cliente": 28,
+    "Data Pedido": "2022-02-15",
+    "Valor Total": 338.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 34,
+    "Id Cliente": 29,
+    "Data Pedido": "2022-02-15",
+    "Valor Total": 39999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 35,
+    "Id Cliente": 30,
+    "Data Pedido": "2022-02-15",
+    "Valor Total": 197.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 36,
+    "Id Cliente": 31,
+    "Data Pedido": "2022-02-16",
+    "Valor Total": 3500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 37,
+    "Id Cliente": 32,
+    "Data Pedido": "2022-02-16",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 38,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-16",
+    "Valor Total": 160.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 39,
+    "Id Cliente": 33,
+    "Data Pedido": "2022-02-17",
+    "Valor Total": 2369.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 40,
+    "Id Cliente": 34,
+    "Data Pedido": "2022-02-17",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 41,
+    "Id Cliente": 35,
+    "Data Pedido": "2022-02-17",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 42,
+    "Id Cliente": 36,
+    "Data Pedido": "2022-02-17",
+    "Valor Total": 206.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 43,
+    "Id Cliente": 34,
+    "Data Pedido": "2022-02-19",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 44,
+    "Id Cliente": 37,
+    "Data Pedido": "2022-02-18",
+    "Valor Total": 2900.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 45,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-18",
+    "Valor Total": 149.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 46,
+    "Id Cliente": 38,
+    "Data Pedido": "2022-02-18",
+    "Valor Total": 525.0,
+    "Forma de Pagamento": "Catão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 47,
+    "Id Cliente": 39,
+    "Data Pedido": "2022-02-21",
+    "Valor Total": 1197.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 48,
+    "Id Cliente": 40,
+    "Data Pedido": "2022-02-22",
+    "Valor Total": 2100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 49,
+    "Id Cliente": 41,
+    "Data Pedido": "2022-02-22",
+    "Valor Total": 325.0,
+    "Forma de Pagamento": "Catão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 50,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-22",
+    "Valor Total": 169999.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 51,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-23",
+    "Valor Total": 9999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 52,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-23",
+    "Valor Total": 9999.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 53,
+    "Id Cliente": 42,
+    "Data Pedido": "2022-02-24",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 54,
+    "Id Cliente": 31,
+    "Data Pedido": "2022-02-24",
+    "Valor Total": 4170.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 55,
+    "Id Cliente": 31,
+    "Data Pedido": "2022-02-24",
+    "Valor Total": 49999.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 56,
+    "Id Cliente": 43,
+    "Data Pedido": "2022-02-25",
+    "Valor Total": 298.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 57,
+    "Id Cliente": 45,
+    "Data Pedido": "2022-02-25",
+    "Valor Total": 118.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 58,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-25",
+    "Valor Total": 1570.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 59,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-02-25",
+    "Valor Total": 192.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 60,
+    "Id Cliente": 46,
+    "Data Pedido": "2022-03-03",
+    "Valor Total": 1318.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 61,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-03",
+    "Valor Total": 294.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 62,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-04",
+    "Valor Total": 340.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 63,
+    "Id Cliente": 39,
+    "Data Pedido": "2022-03-07",
+    "Valor Total": 1098.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 64,
+    "Id Cliente": 42,
+    "Data Pedido": "2022-03-07",
+    "Valor Total": 599.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 65,
+    "Id Cliente": 47,
+    "Data Pedido": "2022-03-07",
+    "Valor Total": 41.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 66,
+    "Id Cliente": 1,
+    "Data Pedido": "2025-03-07",
+    "Valor Total": 244.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 67,
+    "Id Cliente": 48,
+    "Data Pedido": "2022-03-08",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 68,
+    "Id Cliente": 49,
+    "Data Pedido": "2022-03-08",
+    "Valor Total": 248.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 69,
+    "Id Cliente": 50,
+    "Data Pedido": "2022-03-08",
+    "Valor Total": 202.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 70,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-09",
+    "Valor Total": 7999.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 71,
+    "Id Cliente": 51,
+    "Data Pedido": "2022-03-09",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 72,
+    "Id Cliente": 52,
+    "Data Pedido": "2022-03-09",
+    "Valor Total": 1430.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 73,
+    "Id Cliente": 53,
+    "Data Pedido": "2022-03-09",
+    "Valor Total": 1295.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 74,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-10",
+    "Valor Total": 68.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 75,
+    "Id Cliente": 54,
+    "Data Pedido": "2022-03-10",
+    "Valor Total": 388.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 76,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-10",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 77,
+    "Id Cliente": 42,
+    "Data Pedido": "2022-03-10",
+    "Valor Total": 399.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 78,
+    "Id Cliente": 55,
+    "Data Pedido": "2022-03-11",
+    "Valor Total": 379.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 79,
+    "Id Cliente": 56,
+    "Data Pedido": "2022-03-11",
+    "Valor Total": 201.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 80,
+    "Id Cliente": 57,
+    "Data Pedido": "2022-03-11",
+    "Valor Total": 470.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 81,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-03-11",
+    "Valor Total": 1800.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 82,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-12",
+    "Valor Total": 37.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 83,
+    "Id Cliente": 58,
+    "Data Pedido": "2022-03-12",
+    "Valor Total": 1245.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 84,
+    "Id Cliente": 56,
+    "Data Pedido": "2022-03-12",
+    "Valor Total": 278.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 85,
+    "Id Cliente": 59,
+    "Data Pedido": "2022-03-15",
+    "Valor Total": 1899.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 86,
+    "Id Cliente": 60,
+    "Data Pedido": "2022-03-15",
+    "Valor Total": 1690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 87,
+    "Id Cliente": 61,
+    "Data Pedido": "2022-03-15",
+    "Valor Total": 200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Fisica\t"
+  },
+  {
+    "Id Pedido": 88,
+    "Id Cliente": 62,
+    "Data Pedido": "2022-03-15",
+    "Valor Total": 64999.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 89,
+    "Id Cliente": 63,
+    "Data Pedido": "2022-03-16",
+    "Valor Total": 1504.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 90,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-03-16",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 91,
+    "Id Cliente": 64,
+    "Data Pedido": "2022-03-17",
+    "Valor Total": 318.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 92,
+    "Id Cliente": 65,
+    "Data Pedido": "2022-03-17",
+    "Valor Total": 2100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 93,
+    "Id Cliente": 66,
+    "Data Pedido": "2022-03-17",
+    "Valor Total": 104.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 94,
+    "Id Cliente": 10,
+    "Data Pedido": "2022-03-18",
+    "Valor Total": 814.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 95,
+    "Id Cliente": 67,
+    "Data Pedido": "2022-02-21",
+    "Valor Total": 1550.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 96,
+    "Id Cliente": 68,
+    "Data Pedido": "2022-03-21",
+    "Valor Total": 780.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 97,
+    "Id Cliente": 39,
+    "Data Pedido": "2022-03-21",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 98,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-23",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 99,
+    "Id Cliente": 69,
+    "Data Pedido": "2022-03-23",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 100,
+    "Id Cliente": 70,
+    "Data Pedido": "2022-03-24",
+    "Valor Total": 990.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 101,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-24",
+    "Valor Total": 279.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 102,
+    "Id Cliente": 43,
+    "Data Pedido": "2022-03-28",
+    "Valor Total": 372.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 103,
+    "Id Cliente": 71,
+    "Data Pedido": "2022-03-25",
+    "Valor Total": 3800.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 104,
+    "Id Cliente": 72,
+    "Data Pedido": "2022-03-25",
+    "Valor Total": 190.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 105,
+    "Id Cliente": 26,
+    "Data Pedido": "2022-03-25",
+    "Valor Total": 1010.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 106,
+    "Id Cliente": 73,
+    "Data Pedido": "2022-03-29",
+    "Valor Total": 617.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 107,
+    "Id Cliente": 94,
+    "Data Pedido": "2022-02-28",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 108,
+    "Id Cliente": 75,
+    "Data Pedido": "2022-03-29",
+    "Valor Total": 1375.0,
+    "Forma de Pagamento": "´Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 109,
+    "Id Cliente": 76,
+    "Data Pedido": "2022-03-30",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 110,
+    "Id Cliente": 71,
+    "Data Pedido": "2022-03-30",
+    "Valor Total": 48.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 111,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-03-31",
+    "Valor Total": 240.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 112,
+    "Id Cliente": 77,
+    "Data Pedido": "2022-04-01",
+    "Valor Total": 1758.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 113,
+    "Id Cliente": 78,
+    "Data Pedido": "2022-04-04",
+    "Valor Total": 3850.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 114,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-04-04",
+    "Valor Total": 462.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 115,
+    "Id Cliente": 79,
+    "Data Pedido": "2022-04-05",
+    "Valor Total": 180.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 116,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-04-05",
+    "Valor Total": 335.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 117,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-04-06",
+    "Valor Total": 2890.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 118,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-04-07",
+    "Valor Total": 420.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 119,
+    "Id Cliente": 81,
+    "Data Pedido": "2022-04-08",
+    "Valor Total": 1390.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 120,
+    "Id Cliente": 82,
+    "Data Pedido": "2022-04-08",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 121,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-04-09",
+    "Valor Total": 758.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 122,
+    "Id Cliente": 83,
+    "Data Pedido": "2022-04-11",
+    "Valor Total": 1660.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 123,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-04-14",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 124,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-04-06",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 125,
+    "Id Cliente": 84,
+    "Data Pedido": "2022-04-14",
+    "Valor Total": 2997.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 126,
+    "Id Cliente": 85,
+    "Data Pedido": "2022-04-14",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 127,
+    "Id Cliente": 45,
+    "Data Pedido": "2022-04-16",
+    "Valor Total": 110.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 128,
+    "Id Cliente": 86,
+    "Data Pedido": "2022-04-18",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Fisica\t"
+  },
+  {
+    "Id Pedido": 129,
+    "Id Cliente": 87,
+    "Data Pedido": "2022-04-19",
+    "Valor Total": 2800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 130,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-04-20",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 131,
+    "Id Cliente": 30,
+    "Data Pedido": "2022-04-20",
+    "Valor Total": 1390.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 132,
+    "Id Cliente": 69,
+    "Data Pedido": "2022-04-27",
+    "Valor Total": 3239.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 133,
+    "Id Cliente": 89,
+    "Data Pedido": "2022-04-28",
+    "Valor Total": 540.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 134,
+    "Id Cliente": 90,
+    "Data Pedido": "2022-04-28",
+    "Valor Total": 249.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 135,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-04-28",
+    "Valor Total": 147.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 136,
+    "Id Cliente": 91,
+    "Data Pedido": "2022-04-29",
+    "Valor Total": 170.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 137,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-04-29",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 138,
+    "Id Cliente": 92,
+    "Data Pedido": "2022-04-29",
+    "Valor Total": 3668.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 139,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-04-30",
+    "Valor Total": 799.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 140,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-02",
+    "Valor Total": 244.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 141,
+    "Id Cliente": 93,
+    "Data Pedido": "2022-05-06",
+    "Valor Total": 355.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 142,
+    "Id Cliente": 94,
+    "Data Pedido": "2022-05-06",
+    "Valor Total": 1257.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 143,
+    "Id Cliente": 12,
+    "Data Pedido": "2025-05-06",
+    "Valor Total": 162.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 144,
+    "Id Cliente": 95,
+    "Data Pedido": "2022-05-03",
+    "Valor Total": 1949.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 145,
+    "Id Cliente": 96,
+    "Data Pedido": "2022-05-09",
+    "Valor Total": 899.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 146,
+    "Id Cliente": 97,
+    "Data Pedido": "2022-05-09",
+    "Valor Total": 5595.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 147,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-09",
+    "Valor Total": 164.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 148,
+    "Id Cliente": 98,
+    "Data Pedido": "2022-05-10",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 149,
+    "Id Cliente": 99,
+    "Data Pedido": "2023-05-10",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 150,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-10",
+    "Valor Total": 99.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 151,
+    "Id Cliente": 58,
+    "Data Pedido": "2022-05-10",
+    "Valor Total": 147.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 152,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-05-11",
+    "Valor Total": 341.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 153,
+    "Id Cliente": 100,
+    "Data Pedido": "2022-05-12",
+    "Valor Total": 900.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 154,
+    "Id Cliente": 101,
+    "Data Pedido": "2022-05-12",
+    "Valor Total": 223.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 155,
+    "Id Cliente": 102,
+    "Data Pedido": "2022-05-13",
+    "Valor Total": 3276.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 156,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-14",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 157,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-14",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 158,
+    "Id Cliente": 103,
+    "Data Pedido": "2022-05-17",
+    "Valor Total": 4620.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 159,
+    "Id Cliente": 104,
+    "Data Pedido": "2022-05-18",
+    "Valor Total": 978.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 160,
+    "Id Cliente": 105,
+    "Data Pedido": "2022-05-18",
+    "Valor Total": 280.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 161,
+    "Id Cliente": 29,
+    "Data Pedido": "2022-05-19",
+    "Valor Total": 566.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 162,
+    "Id Cliente": 106,
+    "Data Pedido": "2022-05-20",
+    "Valor Total": 1150.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 163,
+    "Id Cliente": 107,
+    "Data Pedido": "2022-05-20",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Cartão de Credito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 164,
+    "Id Cliente": 108,
+    "Data Pedido": "2022-05-20",
+    "Valor Total": 1669.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 165,
+    "Id Cliente": 109,
+    "Data Pedido": "2022-05-20",
+    "Valor Total": 3239.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 166,
+    "Id Cliente": 110,
+    "Data Pedido": "2022-05-24",
+    "Valor Total": 1070.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 167,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-25",
+    "Valor Total": 202.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 168,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-25",
+    "Valor Total": 1470.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 169,
+    "Id Cliente": 111,
+    "Data Pedido": "2022-05-25",
+    "Valor Total": 1238.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 170,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-25",
+    "Valor Total": 480.0,
+    "Forma de Pagamento": "Cartão de Crédotp",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 171,
+    "Id Cliente": 112,
+    "Data Pedido": "2022-05-26",
+    "Valor Total": 900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 172,
+    "Id Cliente": 113,
+    "Data Pedido": "2022-05-26",
+    "Valor Total": 3185.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 173,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-05-26",
+    "Valor Total": 8000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 174,
+    "Id Cliente": 114,
+    "Data Pedido": "2022-05-26",
+    "Valor Total": 338.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 175,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-05-28",
+    "Valor Total": 1040.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 176,
+    "Id Cliente": 115,
+    "Data Pedido": "2022-05-31",
+    "Valor Total": 950.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 177,
+    "Id Cliente": 116,
+    "Data Pedido": "2022-05-31",
+    "Valor Total": 1400.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 178,
+    "Id Cliente": 117,
+    "Data Pedido": "2022-06-01",
+    "Valor Total": 6979.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 179,
+    "Id Cliente": 118,
+    "Data Pedido": "2022-06-02",
+    "Valor Total": 2033.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 180,
+    "Id Cliente": 119,
+    "Data Pedido": "2022-06-02",
+    "Valor Total": 1950.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 181,
+    "Id Cliente": 40,
+    "Data Pedido": "2022-06-02",
+    "Valor Total": 1163.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 182,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-02",
+    "Valor Total": 144.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 183,
+    "Id Cliente": 121,
+    "Data Pedido": "2022-06-02",
+    "Valor Total": 1360.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 184,
+    "Id Cliente": 14,
+    "Data Pedido": "2022-06-06",
+    "Valor Total": 3400.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 185,
+    "Id Cliente": 121,
+    "Data Pedido": "2022-06-06",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 186,
+    "Id Cliente": 123,
+    "Data Pedido": "2022-06-06",
+    "Valor Total": 480.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 187,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-09",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 188,
+    "Id Cliente": 124,
+    "Data Pedido": "2022-06-09",
+    "Valor Total": 64999.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 189,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-09",
+    "Valor Total": 493.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 190,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-06-13",
+    "Valor Total": 280.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 191,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-13",
+    "Valor Total": 565.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 192,
+    "Id Cliente": 30,
+    "Data Pedido": "2022-06-13",
+    "Valor Total": 2280.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 193,
+    "Id Cliente": 126,
+    "Data Pedido": "2022-06-14",
+    "Valor Total": 6300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 194,
+    "Id Cliente": 118,
+    "Data Pedido": "2022-06-14",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 195,
+    "Id Cliente": 127,
+    "Data Pedido": "2022-06-15",
+    "Valor Total": 459.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 196,
+    "Id Cliente": 128,
+    "Data Pedido": "2022-06-15",
+    "Valor Total": 640.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 197,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-17",
+    "Valor Total": 743.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 198,
+    "Id Cliente": 129,
+    "Data Pedido": "2022-06-20",
+    "Valor Total": 470.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 199,
+    "Id Cliente": 130,
+    "Data Pedido": "2022-06-20",
+    "Valor Total": 250.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 200,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-21",
+    "Valor Total": 395.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Instagam"
+  },
+  {
+    "Id Pedido": 201,
+    "Id Cliente": 131,
+    "Data Pedido": "2022-06-22",
+    "Valor Total": 283.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 202,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-06-22",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 203,
+    "Id Cliente": 134,
+    "Data Pedido": "2022-06-23",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 204,
+    "Id Cliente": 31,
+    "Data Pedido": "2022-06-24",
+    "Valor Total": 1390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 205,
+    "Id Cliente": 135,
+    "Data Pedido": "2022-06-24",
+    "Valor Total": 912.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 206,
+    "Id Cliente": 136,
+    "Data Pedido": "2022-06-25",
+    "Valor Total": 26869.0,
+    "Forma de Pagamento": "Catão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 207,
+    "Id Cliente": 137,
+    "Data Pedido": "2022-06-27",
+    "Valor Total": 3600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 208,
+    "Id Cliente": 138,
+    "Data Pedido": "2022-06-28",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 209,
+    "Id Cliente": 139,
+    "Data Pedido": "2022-06-29",
+    "Valor Total": 7560.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 210,
+    "Id Cliente": 140,
+    "Data Pedido": "2022-06-29",
+    "Valor Total": 157.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 211,
+    "Id Cliente": 121,
+    "Data Pedido": "2022-07-01",
+    "Valor Total": 380.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 212,
+    "Id Cliente": 141,
+    "Data Pedido": "2022-07-29",
+    "Valor Total": 842.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 213,
+    "Id Cliente": 142,
+    "Data Pedido": "2022-07-02",
+    "Valor Total": 3300.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 214,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-02",
+    "Valor Total": 125.0,
+    "Forma de Pagamento": "Cartão de Cédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 215,
+    "Id Cliente": 143,
+    "Data Pedido": "2022-07-04",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 216,
+    "Id Cliente": 144,
+    "Data Pedido": "2022-07-04",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 217,
+    "Id Cliente": 145,
+    "Data Pedido": "2022-07-04",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 218,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-07-04",
+    "Valor Total": 685.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 219,
+    "Id Cliente": 146,
+    "Data Pedido": "2022-07-05",
+    "Valor Total": 4100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 220,
+    "Id Cliente": 147,
+    "Data Pedido": "2022-07-06",
+    "Valor Total": 4329.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 221,
+    "Id Cliente": 148,
+    "Data Pedido": "2022-07-07",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 222,
+    "Id Cliente": 149,
+    "Data Pedido": "2022-07-07",
+    "Valor Total": 2490.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 223,
+    "Id Cliente": 150,
+    "Data Pedido": "2022-07-07",
+    "Valor Total": 1550.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 224,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-07",
+    "Valor Total": 99.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 225,
+    "Id Cliente": 151,
+    "Data Pedido": "2022-07-08",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Link de Pagamento ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 226,
+    "Id Cliente": 152,
+    "Data Pedido": "2022-07-08",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 227,
+    "Id Cliente": 152,
+    "Data Pedido": "2022-07-08",
+    "Valor Total": 920.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 228,
+    "Id Cliente": 153,
+    "Data Pedido": "2022-07-11",
+    "Valor Total": 149999.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 229,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-11",
+    "Valor Total": 146.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 230,
+    "Id Cliente": 154,
+    "Data Pedido": "2022-07-12",
+    "Valor Total": 1258.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 231,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-07-12",
+    "Valor Total": 149.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 232,
+    "Id Cliente": 155,
+    "Data Pedido": "2022-07-13",
+    "Valor Total": 965.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 233,
+    "Id Cliente": 156,
+    "Data Pedido": "2022-07-13",
+    "Valor Total": 770.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 234,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-07-13",
+    "Valor Total": 1240.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Fisica"
+  },
+  {
+    "Id Pedido": 235,
+    "Id Cliente": 157,
+    "Data Pedido": "2022-07-14",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 236,
+    "Id Cliente": 158,
+    "Data Pedido": "2022-07-14",
+    "Valor Total": 219.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 237,
+    "Id Cliente": 97,
+    "Data Pedido": "2022-07-15",
+    "Valor Total": 250.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 238,
+    "Id Cliente": 159,
+    "Data Pedido": "2022-07-15",
+    "Valor Total": 2100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Fisica"
+  },
+  {
+    "Id Pedido": 239,
+    "Id Cliente": 142,
+    "Data Pedido": "2022-07-15",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 240,
+    "Id Cliente": 34,
+    "Data Pedido": "2022-07-16",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 241,
+    "Id Cliente": 161,
+    "Data Pedido": "2022-07-16",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 242,
+    "Id Cliente": 145,
+    "Data Pedido": "2022-07-16",
+    "Valor Total": 210.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 243,
+    "Id Cliente": 162,
+    "Data Pedido": "2022-07-18",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 244,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-18",
+    "Valor Total": 270.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 245,
+    "Id Cliente": 163,
+    "Data Pedido": "2022-07-19",
+    "Valor Total": 438.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 246,
+    "Id Cliente": 164,
+    "Data Pedido": "2022-07-20",
+    "Valor Total": 3669.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 247,
+    "Id Cliente": 165,
+    "Data Pedido": "2022-07-21",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 248,
+    "Id Cliente": 166,
+    "Data Pedido": "2022-07-21",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 249,
+    "Id Cliente": 167,
+    "Data Pedido": "2022-07-21",
+    "Valor Total": 960.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 250,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-07-22",
+    "Valor Total": 3070.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 251,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-22",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 252,
+    "Id Cliente": 168,
+    "Data Pedido": "2022-07-23",
+    "Valor Total": 2750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 253,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-23",
+    "Valor Total": 76.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 254,
+    "Id Cliente": 169,
+    "Data Pedido": "2022-07-25",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 255,
+    "Id Cliente": 170,
+    "Data Pedido": "2022-07-26",
+    "Valor Total": 749.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 256,
+    "Id Cliente": 171,
+    "Data Pedido": "2022-07-26",
+    "Valor Total": 1120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 257,
+    "Id Cliente": 172,
+    "Data Pedido": "2022-07-27",
+    "Valor Total": 2800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 258,
+    "Id Cliente": 98,
+    "Data Pedido": "2022-07-27",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 259,
+    "Id Cliente": 47,
+    "Data Pedido": "2022-07-27",
+    "Valor Total": 128.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 260,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-07-27",
+    "Valor Total": 90.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 261,
+    "Id Cliente": 174,
+    "Data Pedido": "2022-08-01",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 262,
+    "Id Cliente": 175,
+    "Data Pedido": "2022-08-01",
+    "Valor Total": 435.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 263,
+    "Id Cliente": 176,
+    "Data Pedido": "2022-08-02",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 264,
+    "Id Cliente": 177,
+    "Data Pedido": "2022-08-03",
+    "Valor Total": 1770.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Físca"
+  },
+  {
+    "Id Pedido": 265,
+    "Id Cliente": 178,
+    "Data Pedido": "2022-08-03",
+    "Valor Total": 256.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 266,
+    "Id Cliente": 179,
+    "Data Pedido": "2022-08-05",
+    "Valor Total": 1730.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 267,
+    "Id Cliente": 159,
+    "Data Pedido": "2022-08-05",
+    "Valor Total": 1280.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 268,
+    "Id Cliente": 110,
+    "Data Pedido": "2022-08-05",
+    "Valor Total": 835.0,
+    "Forma de Pagamento": "Dinheiro ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 269,
+    "Id Cliente": 181,
+    "Data Pedido": "2022-08-05",
+    "Valor Total": 698.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 270,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-08-05",
+    "Valor Total": 2120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 271,
+    "Id Cliente": 182,
+    "Data Pedido": "2022-08-08",
+    "Valor Total": 1370.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 272,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-08",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 273,
+    "Id Cliente": 184,
+    "Data Pedido": "2022-08-08",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 274,
+    "Id Cliente": 185,
+    "Data Pedido": "2022-08-08",
+    "Valor Total": 472.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 275,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-08-08",
+    "Valor Total": 393.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 276,
+    "Id Cliente": 186,
+    "Data Pedido": "2022-08-09",
+    "Valor Total": 1750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 277,
+    "Id Cliente": 187,
+    "Data Pedido": "2022-08-09",
+    "Valor Total": 2300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 278,
+    "Id Cliente": 188,
+    "Data Pedido": "2022-09-09",
+    "Valor Total": 5366.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 279,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-09",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 280,
+    "Id Cliente": 189,
+    "Data Pedido": "2022-08-09",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 281,
+    "Id Cliente": 92,
+    "Data Pedido": "2022-08-09",
+    "Valor Total": 410.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 282,
+    "Id Cliente": 190,
+    "Data Pedido": "2022-08-10",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 283,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-10",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 284,
+    "Id Cliente": 191,
+    "Data Pedido": "2022-08-10",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 285,
+    "Id Cliente": 192,
+    "Data Pedido": "2022-08-11",
+    "Valor Total": 765.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 286,
+    "Id Cliente": 9,
+    "Data Pedido": "2022-08-11",
+    "Valor Total": 154.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 287,
+    "Id Cliente": 194,
+    "Data Pedido": "2022-08-12",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "loja Física"
+  },
+  {
+    "Id Pedido": 288,
+    "Id Cliente": 195,
+    "Data Pedido": "2022-08-12",
+    "Valor Total": 635.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 289,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-13",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 290,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-13",
+    "Valor Total": 65.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 291,
+    "Id Cliente": 30,
+    "Data Pedido": "2022-08-13",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 292,
+    "Id Cliente": 196,
+    "Data Pedido": "2022-08-15",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 293,
+    "Id Cliente": 197,
+    "Data Pedido": "2022-08-15",
+    "Valor Total": 535.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 294,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-08-15",
+    "Valor Total": 272.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 295,
+    "Id Cliente": 198,
+    "Data Pedido": "2022-08-16",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 296,
+    "Id Cliente": 199,
+    "Data Pedido": "2022-08-16",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 297,
+    "Id Cliente": 200,
+    "Data Pedido": "2022-08-16",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 298,
+    "Id Cliente": 179,
+    "Data Pedido": "2022-08-16",
+    "Valor Total": 350.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 299,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-16",
+    "Valor Total": 220.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 300,
+    "Id Cliente": 139,
+    "Data Pedido": "2022-08-17",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 301,
+    "Id Cliente": 202,
+    "Data Pedido": "2022-08-18",
+    "Valor Total": 519.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 302,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-18",
+    "Valor Total": 3185.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 303,
+    "Id Cliente": 94,
+    "Data Pedido": "2022-08-19",
+    "Valor Total": 1244.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 304,
+    "Id Cliente": 149,
+    "Data Pedido": "2022-08-22",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 305,
+    "Id Cliente": 201,
+    "Data Pedido": "2022-08-22",
+    "Valor Total": 2246.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 306,
+    "Id Cliente": 202,
+    "Data Pedido": "2022-08-22",
+    "Valor Total": 1425.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 307,
+    "Id Cliente": 203,
+    "Data Pedido": "2022-08-22",
+    "Valor Total": 147.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 308,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-23",
+    "Valor Total": 2920.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 309,
+    "Id Cliente": 204,
+    "Data Pedido": "2022-08-23",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 310,
+    "Id Cliente": 10,
+    "Data Pedido": "2022-08-23",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 311,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-24",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 312,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-24",
+    "Valor Total": 40.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 313,
+    "Id Cliente": 150,
+    "Data Pedido": "2022-08-25",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 314,
+    "Id Cliente": 205,
+    "Data Pedido": "2022-08-25",
+    "Valor Total": 4750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 315,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-26",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 316,
+    "Id Cliente": 206,
+    "Data Pedido": "2022-08-26",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 317,
+    "Id Cliente": 207,
+    "Data Pedido": "2022-08-26",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 318,
+    "Id Cliente": 208,
+    "Data Pedido": "2022-08-29",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 319,
+    "Id Cliente": 142,
+    "Data Pedido": "2022-08-30",
+    "Valor Total": 2776.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 320,
+    "Id Cliente": 209,
+    "Data Pedido": "2022-08-31",
+    "Valor Total": 5900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 321,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-31",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 322,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-08-31",
+    "Valor Total": 142.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 323,
+    "Id Cliente": 210,
+    "Data Pedido": "2022-09-01",
+    "Valor Total": 1957.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 324,
+    "Id Cliente": 211,
+    "Data Pedido": "2022-09-01",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 325,
+    "Id Cliente": 212,
+    "Data Pedido": "2022-09-01",
+    "Valor Total": 430.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 326,
+    "Id Cliente": 213,
+    "Data Pedido": "2022-09-05",
+    "Valor Total": 7200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 327,
+    "Id Cliente": 214,
+    "Data Pedido": "2022-09-06",
+    "Valor Total": 2550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 328,
+    "Id Cliente": 215,
+    "Data Pedido": "2022-09-06",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 329,
+    "Id Cliente": 92,
+    "Data Pedido": "2022-09-06",
+    "Valor Total": 230.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 330,
+    "Id Cliente": 216,
+    "Data Pedido": "2022-09-08",
+    "Valor Total": 3200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 331,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-08",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 332,
+    "Id Cliente": 217,
+    "Data Pedido": "2022-09-13",
+    "Valor Total": 3040.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 333,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-09-09",
+    "Valor Total": 99.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 334,
+    "Id Cliente": 218,
+    "Data Pedido": "2022-09-09",
+    "Valor Total": 5990.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 335,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-10",
+    "Valor Total": 900.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 336,
+    "Id Cliente": 90,
+    "Data Pedido": "2022-09-12",
+    "Valor Total": 3960.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 337,
+    "Id Cliente": 220,
+    "Data Pedido": "2022-09-13",
+    "Valor Total": 1900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 338,
+    "Id Cliente": 221,
+    "Data Pedido": "2022-09-14",
+    "Valor Total": 9190.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 339,
+    "Id Cliente": 7,
+    "Data Pedido": "2022-09-16",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 340,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-17",
+    "Valor Total": 134.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 341,
+    "Id Cliente": 222,
+    "Data Pedido": "2022-09-17",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 342,
+    "Id Cliente": 223,
+    "Data Pedido": "2022-09-19",
+    "Valor Total": 4240.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 343,
+    "Id Cliente": 224,
+    "Data Pedido": "2022-09-19",
+    "Valor Total": 179999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 344,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-19",
+    "Valor Total": 110.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 345,
+    "Id Cliente": 225,
+    "Data Pedido": "2022-09-20",
+    "Valor Total": 1990.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 346,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-20",
+    "Valor Total": 176.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 347,
+    "Id Cliente": 226,
+    "Data Pedido": "2022-09-21",
+    "Valor Total": 1366.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 348,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-21",
+    "Valor Total": 269.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 349,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-22",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 350,
+    "Id Cliente": 227,
+    "Data Pedido": "2022-09-22",
+    "Valor Total": 249999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 351,
+    "Id Cliente": 228,
+    "Data Pedido": "2022-09-23",
+    "Valor Total": 5480.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 352,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-23",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 353,
+    "Id Cliente": 229,
+    "Data Pedido": "2022-09-23",
+    "Valor Total": 690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 354,
+    "Id Cliente": 230,
+    "Data Pedido": "2022-09-24",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 355,
+    "Id Cliente": 231,
+    "Data Pedido": "2022-09-24",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 356,
+    "Id Cliente": 232,
+    "Data Pedido": "2022-09-24",
+    "Valor Total": 1362.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 357,
+    "Id Cliente": 93,
+    "Data Pedido": "2022-09-26",
+    "Valor Total": 718.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 358,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-26",
+    "Valor Total": 107.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 359,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-09-26",
+    "Valor Total": 1480.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 360,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-26",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 361,
+    "Id Cliente": 234,
+    "Data Pedido": "2022-09-27",
+    "Valor Total": 69999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 362,
+    "Id Cliente": 235,
+    "Data Pedido": "2022-09-28",
+    "Valor Total": 330.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 363,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-29",
+    "Valor Total": 870.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 364,
+    "Id Cliente": 213,
+    "Data Pedido": "2022-09-29",
+    "Valor Total": 310.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 365,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-29",
+    "Valor Total": 99.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 366,
+    "Id Cliente": 255,
+    "Data Pedido": "2022-09-29",
+    "Valor Total": 950.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 367,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-30",
+    "Valor Total": 580.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 368,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-09-30",
+    "Valor Total": 830.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 369,
+    "Id Cliente": 236,
+    "Data Pedido": "2022-10-01",
+    "Valor Total": 3500.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 370,
+    "Id Cliente": 237,
+    "Data Pedido": "2022-10-03",
+    "Valor Total": 3760.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 371,
+    "Id Cliente": 238,
+    "Data Pedido": "2022-10-03",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 372,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-03",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 373,
+    "Id Cliente": 239,
+    "Data Pedido": "2022-10-04",
+    "Valor Total": 9314.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 374,
+    "Id Cliente": 240,
+    "Data Pedido": "2022-10-04",
+    "Valor Total": 1750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 375,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-10-04",
+    "Valor Total": 494.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 376,
+    "Id Cliente": 231,
+    "Data Pedido": "2022-10-06",
+    "Valor Total": 475.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 377,
+    "Id Cliente": 150,
+    "Data Pedido": "2022-10-07",
+    "Valor Total": 1550.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 378,
+    "Id Cliente": 241,
+    "Data Pedido": "2022-10-07",
+    "Valor Total": 394.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 379,
+    "Id Cliente": 242,
+    "Data Pedido": "2022-10-07",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 380,
+    "Id Cliente": 243,
+    "Data Pedido": "2022-10-08",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 381,
+    "Id Cliente": 244,
+    "Data Pedido": "2022-10-10",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 382,
+    "Id Cliente": 245,
+    "Data Pedido": "2022-10-10",
+    "Valor Total": 1400.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 383,
+    "Id Cliente": 246,
+    "Data Pedido": "2022-10-11",
+    "Valor Total": 5450.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 384,
+    "Id Cliente": 247,
+    "Data Pedido": "2022-10-11",
+    "Valor Total": 1520.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 385,
+    "Id Cliente": 248,
+    "Data Pedido": "2022-10-11",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 386,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-11",
+    "Valor Total": 429.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 387,
+    "Id Cliente": 83,
+    "Data Pedido": "2022-10-13",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 388,
+    "Id Cliente": 249,
+    "Data Pedido": "2022-10-13",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 389,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-10-13",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 390,
+    "Id Cliente": 250,
+    "Data Pedido": "2022-10-13",
+    "Valor Total": 82.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 391,
+    "Id Cliente": 251,
+    "Data Pedido": "2022-10-14",
+    "Valor Total": 177.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 392,
+    "Id Cliente": 252,
+    "Data Pedido": "2022-10-15",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 393,
+    "Id Cliente": 253,
+    "Data Pedido": "2022-10-17",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 394,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-17",
+    "Valor Total": 270.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 395,
+    "Id Cliente": 9,
+    "Data Pedido": "2022-10-17",
+    "Valor Total": 147.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 396,
+    "Id Cliente": 254,
+    "Data Pedido": "2022-10-18",
+    "Valor Total": 1273.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 397,
+    "Id Cliente": 255,
+    "Data Pedido": "2022-10-20",
+    "Valor Total": 5880.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 398,
+    "Id Cliente": 256,
+    "Data Pedido": "2022-10-21",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 399,
+    "Id Cliente": 257,
+    "Data Pedido": "2022-10-22",
+    "Valor Total": 930.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 400,
+    "Id Cliente": 92,
+    "Data Pedido": "2022-10-24",
+    "Valor Total": 9400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Fisica"
+  },
+  {
+    "Id Pedido": 401,
+    "Id Cliente": 258,
+    "Data Pedido": "2022-10-24",
+    "Valor Total": 690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 402,
+    "Id Cliente": 259,
+    "Data Pedido": "2022-10-24",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 403,
+    "Id Cliente": 260,
+    "Data Pedido": "2022-10-24",
+    "Valor Total": 1820.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 404,
+    "Id Cliente": 261,
+    "Data Pedido": "2022-10-24",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 405,
+    "Id Cliente": 262,
+    "Data Pedido": "2022-10-25",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 406,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-25",
+    "Valor Total": 590.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 407,
+    "Id Cliente": 263,
+    "Data Pedido": "2022-10-26",
+    "Valor Total": 12890.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 408,
+    "Id Cliente": 264,
+    "Data Pedido": "2022-10-26",
+    "Valor Total": 900.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 409,
+    "Id Cliente": 265,
+    "Data Pedido": "2022-10-26",
+    "Valor Total": 4256.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 410,
+    "Id Cliente": 266,
+    "Data Pedido": "2022-10-26",
+    "Valor Total": 840.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 411,
+    "Id Cliente": 267,
+    "Data Pedido": "2022-10-27",
+    "Valor Total": 6200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 412,
+    "Id Cliente": 93,
+    "Data Pedido": "2022-10-27",
+    "Valor Total": 599.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 413,
+    "Id Cliente": 268,
+    "Data Pedido": "2022-10-27",
+    "Valor Total": 162.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 414,
+    "Id Cliente": 269,
+    "Data Pedido": "2022-10-28",
+    "Valor Total": 114.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 415,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-29",
+    "Valor Total": 110.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 416,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-10-31",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 417,
+    "Id Cliente": 270,
+    "Data Pedido": "2022-11-01",
+    "Valor Total": 420.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 418,
+    "Id Cliente": 55,
+    "Data Pedido": "2022-11-03",
+    "Valor Total": 1690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 419,
+    "Id Cliente": 271,
+    "Data Pedido": "2022-11-03",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 420,
+    "Id Cliente": 272,
+    "Data Pedido": "2022-11-04",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 421,
+    "Id Cliente": 273,
+    "Data Pedido": "2022-11-04",
+    "Valor Total": 2998.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 422,
+    "Id Cliente": 274,
+    "Data Pedido": "2022-11-04",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 423,
+    "Id Cliente": 275,
+    "Data Pedido": "2022-11-04",
+    "Valor Total": 410.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 424,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-11-08",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 425,
+    "Id Cliente": 276,
+    "Data Pedido": "2022-11-09",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 426,
+    "Id Cliente": 263,
+    "Data Pedido": "2022-11-09",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 427,
+    "Id Cliente": 277,
+    "Data Pedido": "2022-11-11",
+    "Valor Total": 2790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 428,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-11-11",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 429,
+    "Id Cliente": 278,
+    "Data Pedido": "2022-11-11",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 430,
+    "Id Cliente": 231,
+    "Data Pedido": "2022-11-11",
+    "Valor Total": 269.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 431,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-11-12",
+    "Valor Total": 597.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 432,
+    "Id Cliente": 142,
+    "Data Pedido": "2022-11-14",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 433,
+    "Id Cliente": 279,
+    "Data Pedido": "2022-11-14",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 434,
+    "Id Cliente": 179,
+    "Data Pedido": "2022-11-16",
+    "Valor Total": 277.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 435,
+    "Id Cliente": 280,
+    "Data Pedido": "2022-11-17",
+    "Valor Total": 3580.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 436,
+    "Id Cliente": 26,
+    "Data Pedido": "2022-11-17",
+    "Valor Total": 270.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 437,
+    "Id Cliente": 281,
+    "Data Pedido": "2022-11-18",
+    "Valor Total": 960.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 438,
+    "Id Cliente": 142,
+    "Data Pedido": "2022-11-18",
+    "Valor Total": 1298.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 439,
+    "Id Cliente": 92,
+    "Data Pedido": "2022-11-18",
+    "Valor Total": 570.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 440,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-11-18",
+    "Valor Total": 52.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 441,
+    "Id Cliente": 282,
+    "Data Pedido": "2022-11-21",
+    "Valor Total": 4720.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 442,
+    "Id Cliente": 283,
+    "Data Pedido": "2022-11-21",
+    "Valor Total": 850.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 443,
+    "Id Cliente": 284,
+    "Data Pedido": "2022-11-21",
+    "Valor Total": 929.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 444,
+    "Id Cliente": 285,
+    "Data Pedido": "2022-11-21",
+    "Valor Total": 1139.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 445,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-11-21",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 446,
+    "Id Cliente": 167,
+    "Data Pedido": "2022-11-22",
+    "Valor Total": 365.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 447,
+    "Id Cliente": 286,
+    "Data Pedido": "2022-11-23",
+    "Valor Total": 160.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 448,
+    "Id Cliente": 287,
+    "Data Pedido": "2022-11-25",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 449,
+    "Id Cliente": 288,
+    "Data Pedido": "2022-11-25",
+    "Valor Total": 4800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 450,
+    "Id Cliente": 289,
+    "Data Pedido": "2022-11-26",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 451,
+    "Id Cliente": 290,
+    "Data Pedido": "2022-11-26",
+    "Valor Total": 1610.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 452,
+    "Id Cliente": 291,
+    "Data Pedido": "2022-11-28",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 453,
+    "Id Cliente": 292,
+    "Data Pedido": "2022-11-28",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 454,
+    "Id Cliente": 293,
+    "Data Pedido": "2022-11-29",
+    "Valor Total": 5750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 455,
+    "Id Cliente": 11,
+    "Data Pedido": "2022-11-29",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 456,
+    "Id Cliente": 294,
+    "Data Pedido": "2022-11-30",
+    "Valor Total": 3200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 457,
+    "Id Cliente": 295,
+    "Data Pedido": "2022-11-30",
+    "Valor Total": 148.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 458,
+    "Id Cliente": 206,
+    "Data Pedido": "2022-12-01",
+    "Valor Total": 214.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 459,
+    "Id Cliente": 296,
+    "Data Pedido": "2022-12-02",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 460,
+    "Id Cliente": 297,
+    "Data Pedido": "2022-12-02",
+    "Valor Total": 2090.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 461,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-12-05",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 462,
+    "Id Cliente": 298,
+    "Data Pedido": "2022-12-05",
+    "Valor Total": 105.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 463,
+    "Id Cliente": 299,
+    "Data Pedido": "2022-12-06",
+    "Valor Total": 2240.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 464,
+    "Id Cliente": 300,
+    "Data Pedido": "2022-12-07",
+    "Valor Total": 454.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 465,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-07",
+    "Valor Total": 143.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 466,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-07",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 467,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-12-07",
+    "Valor Total": 52.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 468,
+    "Id Cliente": 240,
+    "Data Pedido": "2022-12-09",
+    "Valor Total": 590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 469,
+    "Id Cliente": 301,
+    "Data Pedido": "2022-12-12",
+    "Valor Total": 3390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 470,
+    "Id Cliente": 302,
+    "Data Pedido": "2022-12-12",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 471,
+    "Id Cliente": 303,
+    "Data Pedido": "2022-12-13",
+    "Valor Total": 90.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 472,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-13",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 473,
+    "Id Cliente": 304,
+    "Data Pedido": "2022-12-14",
+    "Valor Total": 1490.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 474,
+    "Id Cliente": 1,
+    "Data Pedido": "2022-12-14",
+    "Valor Total": 442.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 475,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-17",
+    "Valor Total": 194.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 476,
+    "Id Cliente": 288,
+    "Data Pedido": "2022-12-19",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 477,
+    "Id Cliente": 305,
+    "Data Pedido": "2022-12-19",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 478,
+    "Id Cliente": 306,
+    "Data Pedido": "2022-12-20",
+    "Valor Total": 920.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 479,
+    "Id Cliente": 307,
+    "Data Pedido": "2022-12-20",
+    "Valor Total": 75.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 480,
+    "Id Cliente": 214,
+    "Data Pedido": "2022-12-20",
+    "Valor Total": 283.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 481,
+    "Id Cliente": 308,
+    "Data Pedido": "2022-12-20",
+    "Valor Total": 3000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 482,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-21",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 483,
+    "Id Cliente": 309,
+    "Data Pedido": "2022-12-22",
+    "Valor Total": 2100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 484,
+    "Id Cliente": 123,
+    "Data Pedido": "2023-12-23",
+    "Valor Total": 1640.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 485,
+    "Id Cliente": 159,
+    "Data Pedido": "2022-12-23",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 486,
+    "Id Cliente": 309,
+    "Data Pedido": "2022-12-26",
+    "Valor Total": 2800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 487,
+    "Id Cliente": 38,
+    "Data Pedido": "2022-12-26",
+    "Valor Total": 4400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 488,
+    "Id Cliente": 310,
+    "Data Pedido": "2022-12-26",
+    "Valor Total": 11500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 489,
+    "Id Cliente": 12,
+    "Data Pedido": "2022-12-26",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 490,
+    "Id Cliente": 159,
+    "Data Pedido": "2022-12-28",
+    "Valor Total": 950.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 491,
+    "Id Cliente": 311,
+    "Data Pedido": "2022-12-28",
+    "Valor Total": 520.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 492,
+    "Id Cliente": 24,
+    "Data Pedido": "2022-12-29",
+    "Valor Total": 540.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 493,
+    "Id Cliente": 93,
+    "Data Pedido": "2022-12-29",
+    "Valor Total": 233.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 494,
+    "Id Cliente": 312,
+    "Data Pedido": "2023-01-03",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 495,
+    "Id Cliente": 313,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 3020.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 496,
+    "Id Cliente": 314,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 1590.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 497,
+    "Id Cliente": 315,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 1624.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 498,
+    "Id Cliente": 149,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 2490.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 499,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 5500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 500,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-09",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 501,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-10",
+    "Valor Total": 270.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 502,
+    "Id Cliente": 316,
+    "Data Pedido": "2023-01-12",
+    "Valor Total": 1600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 503,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-12",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 504,
+    "Id Cliente": 317,
+    "Data Pedido": "2023-01-13",
+    "Valor Total": 808.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 505,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-13",
+    "Valor Total": 210.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 506,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-01-16",
+    "Valor Total": 699.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 507,
+    "Id Cliente": 318,
+    "Data Pedido": "2023-01-18",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 508,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-19",
+    "Valor Total": 40.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 509,
+    "Id Cliente": 319,
+    "Data Pedido": "2023-01-21",
+    "Valor Total": 1690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 510,
+    "Id Cliente": 320,
+    "Data Pedido": "2023-01-23",
+    "Valor Total": 1063.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 511,
+    "Id Cliente": 310,
+    "Data Pedido": "2023-01-23",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 512,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-24",
+    "Valor Total": 257.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 513,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-01-25",
+    "Valor Total": 9745.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 514,
+    "Id Cliente": 207,
+    "Data Pedido": "2023-01-26",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 515,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-26",
+    "Valor Total": 475.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 516,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-27",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 517,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-01-27",
+    "Valor Total": 205.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 518,
+    "Id Cliente": 150,
+    "Data Pedido": "2023-01-28",
+    "Valor Total": 2900.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 519,
+    "Id Cliente": 322,
+    "Data Pedido": "2023-01-29",
+    "Valor Total": 660.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 520,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-29",
+    "Valor Total": 97.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 521,
+    "Id Cliente": 323,
+    "Data Pedido": "2023-01-30",
+    "Valor Total": 540.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 522,
+    "Id Cliente": 324,
+    "Data Pedido": "2023-01-31",
+    "Valor Total": 310.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 523,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-01-31",
+    "Valor Total": 189.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 524,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-02-01",
+    "Valor Total": 2444.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 525,
+    "Id Cliente": 325,
+    "Data Pedido": "2023-02-02",
+    "Valor Total": 970.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 526,
+    "Id Cliente": 326,
+    "Data Pedido": "2023-02-02",
+    "Valor Total": 2084.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 527,
+    "Id Cliente": 327,
+    "Data Pedido": "2023-02-02",
+    "Valor Total": 1070.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 528,
+    "Id Cliente": 326,
+    "Data Pedido": "2023-02-03",
+    "Valor Total": 225.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 529,
+    "Id Cliente": 328,
+    "Data Pedido": "2023-02-03",
+    "Valor Total": 3530.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 530,
+    "Id Cliente": 329,
+    "Data Pedido": "2023-02-04",
+    "Valor Total": 1750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 531,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-02-07",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 532,
+    "Id Cliente": 330,
+    "Data Pedido": "2023-02-08",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 533,
+    "Id Cliente": 331,
+    "Data Pedido": "2023-02-09",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 534,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-02-10",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 535,
+    "Id Cliente": 332,
+    "Data Pedido": "2023-02-10",
+    "Valor Total": 1315.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 536,
+    "Id Cliente": 333,
+    "Data Pedido": "2023-02-10",
+    "Valor Total": 2998.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 537,
+    "Id Cliente": 334,
+    "Data Pedido": "2023-02-11",
+    "Valor Total": 200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 538,
+    "Id Cliente": 335,
+    "Data Pedido": "2023-02-15",
+    "Valor Total": 850.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 539,
+    "Id Cliente": 140,
+    "Data Pedido": "2023-02-15",
+    "Valor Total": 37.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 540,
+    "Id Cliente": 9,
+    "Data Pedido": "2023-02-15",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 541,
+    "Id Cliente": 123,
+    "Data Pedido": "2023-02-16",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 542,
+    "Id Cliente": 139,
+    "Data Pedido": "2023-02-16",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 543,
+    "Id Cliente": 336,
+    "Data Pedido": "2023-02-16",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 544,
+    "Id Cliente": 337,
+    "Data Pedido": "2023-02-16",
+    "Valor Total": 3100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 545,
+    "Id Cliente": 10,
+    "Data Pedido": "2023-02-17",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 546,
+    "Id Cliente": 338,
+    "Data Pedido": "2023-02-17",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 547,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-02-22",
+    "Valor Total": 508.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 548,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-02-22",
+    "Valor Total": 780.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 549,
+    "Id Cliente": 339,
+    "Data Pedido": "2023-02-23",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 550,
+    "Id Cliente": 340,
+    "Data Pedido": "2023-02-24",
+    "Valor Total": 2250.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 551,
+    "Id Cliente": 341,
+    "Data Pedido": "2023-02-24",
+    "Valor Total": 1900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 552,
+    "Id Cliente": 342,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 2140.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 553,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 554,
+    "Id Cliente": 343,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 710.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 555,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 5699.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 556,
+    "Id Cliente": 344,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 2769.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 557,
+    "Id Cliente": 345,
+    "Data Pedido": "2023-02-27",
+    "Valor Total": 1789.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 558,
+    "Id Cliente": 346,
+    "Data Pedido": "2023-02-28",
+    "Valor Total": 1840.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 559,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-02-28",
+    "Valor Total": 201.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 560,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-02-28",
+    "Valor Total": 79.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 561,
+    "Id Cliente": 148,
+    "Data Pedido": "2023-02-28",
+    "Valor Total": 258.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 562,
+    "Id Cliente": 123,
+    "Data Pedido": "NaT",
+    "Valor Total": 475.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 563,
+    "Id Cliente": 18,
+    "Data Pedido": "2023-03-01",
+    "Valor Total": 1297.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 564,
+    "Id Cliente": 310,
+    "Data Pedido": "2023-03-01",
+    "Valor Total": 464.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 565,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-01",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 566,
+    "Id Cliente": 347,
+    "Data Pedido": "2023-03-02",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 567,
+    "Id Cliente": 41,
+    "Data Pedido": "2023-03-06",
+    "Valor Total": 659.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 568,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-06",
+    "Valor Total": 25.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 569,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-03-06",
+    "Valor Total": 515.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 570,
+    "Id Cliente": 182,
+    "Data Pedido": "2023-03-06",
+    "Valor Total": 820.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 571,
+    "Id Cliente": 348,
+    "Data Pedido": "2023-03-07",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 572,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-07",
+    "Valor Total": 469.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 573,
+    "Id Cliente": 349,
+    "Data Pedido": "2023-03-08",
+    "Valor Total": 1790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 574,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-03-08",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 575,
+    "Id Cliente": 350,
+    "Data Pedido": "2023-03-09",
+    "Valor Total": 1760.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 576,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-03-09",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 577,
+    "Id Cliente": 123,
+    "Data Pedido": "2023-03-10",
+    "Valor Total": 475.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 578,
+    "Id Cliente": 351,
+    "Data Pedido": "2023-03-10",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 579,
+    "Id Cliente": 92,
+    "Data Pedido": "2023-03-11",
+    "Valor Total": 1442.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 580,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-14",
+    "Valor Total": 134.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 581,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-14",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 582,
+    "Id Cliente": 352,
+    "Data Pedido": "2023-03-16",
+    "Valor Total": 370.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 583,
+    "Id Cliente": 92,
+    "Data Pedido": "2023-03-16",
+    "Valor Total": 535.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 584,
+    "Id Cliente": 353,
+    "Data Pedido": "2023-03-16",
+    "Valor Total": 1230.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 585,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-17",
+    "Valor Total": 140.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 586,
+    "Id Cliente": 354,
+    "Data Pedido": "2023-03-17",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 587,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-03-18",
+    "Valor Total": 128.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 588,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-18",
+    "Valor Total": 395.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 589,
+    "Id Cliente": 355,
+    "Data Pedido": "2023-03-21",
+    "Valor Total": 690.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 590,
+    "Id Cliente": 356,
+    "Data Pedido": "2023-03-21",
+    "Valor Total": 620.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 591,
+    "Id Cliente": 357,
+    "Data Pedido": "2023-03-22",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 592,
+    "Id Cliente": 320,
+    "Data Pedido": "2023-03-22",
+    "Valor Total": 150.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 593,
+    "Id Cliente": 357,
+    "Data Pedido": "2023-03-24",
+    "Valor Total": 529.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 594,
+    "Id Cliente": 356,
+    "Data Pedido": "2023-03-24",
+    "Valor Total": 629.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 595,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-03-24",
+    "Valor Total": 150.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 596,
+    "Id Cliente": 358,
+    "Data Pedido": "2023-03-25",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 597,
+    "Id Cliente": 359,
+    "Data Pedido": "2023-03-26",
+    "Valor Total": 3300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 598,
+    "Id Cliente": 360,
+    "Data Pedido": "2023-03-27",
+    "Valor Total": 1800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 599,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-28",
+    "Valor Total": 220.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 600,
+    "Id Cliente": 66,
+    "Data Pedido": "2023-03-29",
+    "Valor Total": 77.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 601,
+    "Id Cliente": 361,
+    "Data Pedido": "2023-03-29",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 602,
+    "Id Cliente": 362,
+    "Data Pedido": "2023-03-29",
+    "Valor Total": 1884.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 603,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-30",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 604,
+    "Id Cliente": 363,
+    "Data Pedido": "2023-03-30",
+    "Valor Total": 1140.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 605,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-03-31",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 606,
+    "Id Cliente": 364,
+    "Data Pedido": "2023-03-31",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 607,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-01",
+    "Valor Total": 115.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 608,
+    "Id Cliente": 365,
+    "Data Pedido": "2023-04-04",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 609,
+    "Id Cliente": 366,
+    "Data Pedido": "2023-04-06",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 610,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-04-06",
+    "Valor Total": 971.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 611,
+    "Id Cliente": 149,
+    "Data Pedido": "2023-04-11",
+    "Valor Total": 590.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 612,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-13",
+    "Valor Total": 420.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 613,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-04-13",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 614,
+    "Id Cliente": 367,
+    "Data Pedido": "2023-04-13",
+    "Valor Total": 2290.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 615,
+    "Id Cliente": 250,
+    "Data Pedido": "2023-04-14",
+    "Valor Total": 174.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 616,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-04-15",
+    "Valor Total": 269.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 617,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-15",
+    "Valor Total": 172.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 618,
+    "Id Cliente": 329,
+    "Data Pedido": "2023-04-17",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 619,
+    "Id Cliente": 368,
+    "Data Pedido": "2023-04-19",
+    "Valor Total": 2950.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 620,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-22",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 621,
+    "Id Cliente": 369,
+    "Data Pedido": "2023-04-22",
+    "Valor Total": 9000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 622,
+    "Id Cliente": 370,
+    "Data Pedido": "2023-04-22",
+    "Valor Total": 1380.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 623,
+    "Id Cliente": 371,
+    "Data Pedido": "2023-04-24",
+    "Valor Total": 560.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 624,
+    "Id Cliente": 372,
+    "Data Pedido": "2023-04-25",
+    "Valor Total": 1750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 625,
+    "Id Cliente": 373,
+    "Data Pedido": "2023-04-26",
+    "Valor Total": 1520.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 626,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-26",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 627,
+    "Id Cliente": 374,
+    "Data Pedido": "2023-04-27",
+    "Valor Total": 2100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 628,
+    "Id Cliente": 375,
+    "Data Pedido": "2023-04-27",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 629,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-04-28",
+    "Valor Total": 37.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 630,
+    "Id Cliente": 376,
+    "Data Pedido": "2023-04-28",
+    "Valor Total": 2798.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 631,
+    "Id Cliente": 377,
+    "Data Pedido": "2023-04-29",
+    "Valor Total": 2785.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 632,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-04-30",
+    "Valor Total": 295.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 633,
+    "Id Cliente": 378,
+    "Data Pedido": "2023-05-02",
+    "Valor Total": 1010.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 634,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-05-03",
+    "Valor Total": 330.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 635,
+    "Id Cliente": 379,
+    "Data Pedido": "2023-05-03",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 636,
+    "Id Cliente": 92,
+    "Data Pedido": "2023-05-04",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 637,
+    "Id Cliente": 92,
+    "Data Pedido": "2023-05-04",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 638,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-05",
+    "Valor Total": 1324.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 639,
+    "Id Cliente": 380,
+    "Data Pedido": "2023-05-08",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 640,
+    "Id Cliente": 381,
+    "Data Pedido": "2023-05-08",
+    "Valor Total": 33998.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 641,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-09",
+    "Valor Total": 172.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 642,
+    "Id Cliente": 382,
+    "Data Pedido": "2023-05-12",
+    "Valor Total": 326.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 643,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-05-18",
+    "Valor Total": 540.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 644,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-19",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 645,
+    "Id Cliente": 65,
+    "Data Pedido": "2023-05-19",
+    "Valor Total": 890.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 646,
+    "Id Cliente": 383,
+    "Data Pedido": "2023-05-19",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 647,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-20",
+    "Valor Total": 70.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 648,
+    "Id Cliente": 384,
+    "Data Pedido": "2023-05-26",
+    "Valor Total": 60.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 649,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-29",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "PIX",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 650,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-05-29",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 651,
+    "Id Cliente": 385,
+    "Data Pedido": "2023-05-30",
+    "Valor Total": 2390.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 652,
+    "Id Cliente": 386,
+    "Data Pedido": "2023-05-31",
+    "Valor Total": 900.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 653,
+    "Id Cliente": 387,
+    "Data Pedido": "2023-06-01",
+    "Valor Total": 3029.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 654,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-01",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 655,
+    "Id Cliente": 388,
+    "Data Pedido": "2023-06-02",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 656,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-02",
+    "Valor Total": 105.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 657,
+    "Id Cliente": 389,
+    "Data Pedido": "2023-06-02",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 658,
+    "Id Cliente": 384,
+    "Data Pedido": "2023-06-02",
+    "Valor Total": 206.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 659,
+    "Id Cliente": 390,
+    "Data Pedido": "2023-06-05",
+    "Valor Total": 6500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 660,
+    "Id Cliente": 391,
+    "Data Pedido": "2023-06-06",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 661,
+    "Id Cliente": 392,
+    "Data Pedido": "2023-06-06",
+    "Valor Total": 550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 662,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-07",
+    "Valor Total": 240.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 663,
+    "Id Cliente": 393,
+    "Data Pedido": "2023-06-07",
+    "Valor Total": 6734.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 664,
+    "Id Cliente": 332,
+    "Data Pedido": "2023-06-12",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 665,
+    "Id Cliente": 394,
+    "Data Pedido": "2023-06-12",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 666,
+    "Id Cliente": 395,
+    "Data Pedido": "2023-06-12",
+    "Valor Total": 1970.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 667,
+    "Id Cliente": 396,
+    "Data Pedido": "2023-06-12",
+    "Valor Total": 4669.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 668,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-13",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 669,
+    "Id Cliente": 7,
+    "Data Pedido": "2023-06-13",
+    "Valor Total": 1490.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 670,
+    "Id Cliente": 397,
+    "Data Pedido": "2023-06-14",
+    "Valor Total": 2780.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 671,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-15",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 672,
+    "Id Cliente": 9,
+    "Data Pedido": "2023-06-15",
+    "Valor Total": 34.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 673,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-16",
+    "Valor Total": 175.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 674,
+    "Id Cliente": 215,
+    "Data Pedido": "2023-06-16",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 675,
+    "Id Cliente": 398,
+    "Data Pedido": "2023-06-17",
+    "Valor Total": 350.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 676,
+    "Id Cliente": 399,
+    "Data Pedido": "2023-06-19",
+    "Valor Total": 910.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 677,
+    "Id Cliente": 38,
+    "Data Pedido": "2023-06-19",
+    "Valor Total": 4590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 678,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-06-21",
+    "Valor Total": 3874.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 679,
+    "Id Cliente": 314,
+    "Data Pedido": "2023-06-22",
+    "Valor Total": 1700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 680,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-22",
+    "Valor Total": 480.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 681,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-24",
+    "Valor Total": 4295.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 682,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-24",
+    "Valor Total": 52.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 683,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-06-27",
+    "Valor Total": 165.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 684,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-06-28",
+    "Valor Total": 1531.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 685,
+    "Id Cliente": 400,
+    "Data Pedido": "2023-06-29",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 686,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-06-29",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 687,
+    "Id Cliente": 401,
+    "Data Pedido": "2023-06-30",
+    "Valor Total": 5100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 688,
+    "Id Cliente": 146,
+    "Data Pedido": "2023-07-03",
+    "Valor Total": 60.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 689,
+    "Id Cliente": 149,
+    "Data Pedido": "2023-07-03",
+    "Valor Total": 350.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 690,
+    "Id Cliente": 178,
+    "Data Pedido": "2023-07-03",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 691,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-03",
+    "Valor Total": 909.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 692,
+    "Id Cliente": 159,
+    "Data Pedido": "2023-07-04",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 693,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-05",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 694,
+    "Id Cliente": 402,
+    "Data Pedido": "2023-07-05",
+    "Valor Total": 3899.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 695,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-06",
+    "Valor Total": 221.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 696,
+    "Id Cliente": 403,
+    "Data Pedido": "2023-07-11",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 697,
+    "Id Cliente": 94,
+    "Data Pedido": "2023-07-13",
+    "Valor Total": 1172.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 698,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-07-14",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 699,
+    "Id Cliente": 320,
+    "Data Pedido": "2023-07-14",
+    "Valor Total": 214.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 700,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-07-14",
+    "Valor Total": 3779.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 701,
+    "Id Cliente": 289,
+    "Data Pedido": "2023-07-14",
+    "Valor Total": 625.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 702,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-17",
+    "Valor Total": 399.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 703,
+    "Id Cliente": 379,
+    "Data Pedido": "2023-07-17",
+    "Valor Total": 2230.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 704,
+    "Id Cliente": 404,
+    "Data Pedido": "2023-07-17",
+    "Valor Total": 4650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 705,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-07-17",
+    "Valor Total": 990.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 706,
+    "Id Cliente": 405,
+    "Data Pedido": "2023-07-19",
+    "Valor Total": 390.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 707,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-20",
+    "Valor Total": 41.0,
+    "Forma de Pagamento": "Pix ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 708,
+    "Id Cliente": 383,
+    "Data Pedido": "2023-07-20",
+    "Valor Total": 978.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 709,
+    "Id Cliente": 201,
+    "Data Pedido": "2023-07-21",
+    "Valor Total": 558.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 710,
+    "Id Cliente": 406,
+    "Data Pedido": "2023-07-21",
+    "Valor Total": 4364.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 711,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-22",
+    "Valor Total": 430.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 712,
+    "Id Cliente": 407,
+    "Data Pedido": "2023-07-22",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 713,
+    "Id Cliente": 321,
+    "Data Pedido": "2023-07-24",
+    "Valor Total": 1276.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 714,
+    "Id Cliente": 408,
+    "Data Pedido": "2023-07-27",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 715,
+    "Id Cliente": 409,
+    "Data Pedido": "2023-07-28",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 716,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-07-29",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 717,
+    "Id Cliente": 410,
+    "Data Pedido": "2023-07-31",
+    "Valor Total": 475.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 718,
+    "Id Cliente": 118,
+    "Data Pedido": "2023-08-01",
+    "Valor Total": 584.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 719,
+    "Id Cliente": 411,
+    "Data Pedido": "2023-08-03",
+    "Valor Total": 490.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 720,
+    "Id Cliente": 412,
+    "Data Pedido": "2023-08-04",
+    "Valor Total": 2400.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 721,
+    "Id Cliente": 401,
+    "Data Pedido": "2023-08-07",
+    "Valor Total": 89.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 722,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-07",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 723,
+    "Id Cliente": 413,
+    "Data Pedido": "2023-08-07",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 724,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-08",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 725,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-08-09",
+    "Valor Total": 197.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 726,
+    "Id Cliente": 119,
+    "Data Pedido": "2023-08-09",
+    "Valor Total": 920.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 727,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-09",
+    "Valor Total": 226.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 728,
+    "Id Cliente": 414,
+    "Data Pedido": "2023-08-11",
+    "Valor Total": 6589.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 729,
+    "Id Cliente": 178,
+    "Data Pedido": "2023-08-11",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 730,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-08-14",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 731,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-14",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 732,
+    "Id Cliente": 415,
+    "Data Pedido": "2023-08-15",
+    "Valor Total": 190.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 733,
+    "Id Cliente": 384,
+    "Data Pedido": "2023-08-16",
+    "Valor Total": 3838.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 734,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-08-18",
+    "Valor Total": 2690.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 735,
+    "Id Cliente": 377,
+    "Data Pedido": "2023-08-18",
+    "Valor Total": 2040.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 736,
+    "Id Cliente": 416,
+    "Data Pedido": "2023-08-18",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 737,
+    "Id Cliente": 417,
+    "Data Pedido": "2023-08-23",
+    "Valor Total": 3200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 738,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-23",
+    "Valor Total": 260.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 739,
+    "Id Cliente": 418,
+    "Data Pedido": "2023-08-28",
+    "Valor Total": 9800.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 740,
+    "Id Cliente": 419,
+    "Data Pedido": "2023-08-29",
+    "Valor Total": 1600.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 741,
+    "Id Cliente": 418,
+    "Data Pedido": "2023-08-29",
+    "Valor Total": 1600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 742,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-08-30",
+    "Valor Total": 25.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 743,
+    "Id Cliente": 420,
+    "Data Pedido": "2023-08-30",
+    "Valor Total": 3398.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 744,
+    "Id Cliente": 421,
+    "Data Pedido": "2023-08-31",
+    "Valor Total": 3600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 745,
+    "Id Cliente": 422,
+    "Data Pedido": "2023-08-31",
+    "Valor Total": 1332.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 746,
+    "Id Cliente": 423,
+    "Data Pedido": "2023-09-01",
+    "Valor Total": 136.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 747,
+    "Id Cliente": 386,
+    "Data Pedido": "2023-09-01",
+    "Valor Total": 579.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 748,
+    "Id Cliente": 424,
+    "Data Pedido": "2023-09-01",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 749,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-04",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 750,
+    "Id Cliente": 425,
+    "Data Pedido": "2023-09-04",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 751,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-06",
+    "Valor Total": 104.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 752,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-06",
+    "Valor Total": 25.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 753,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-09-07",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 754,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-09-08",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 755,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-09-10",
+    "Valor Total": 646.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 756,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-11",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 757,
+    "Id Cliente": 426,
+    "Data Pedido": "2023-09-11",
+    "Valor Total": 1300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 758,
+    "Id Cliente": 427,
+    "Data Pedido": "2023-09-12",
+    "Valor Total": 532.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 759,
+    "Id Cliente": 428,
+    "Data Pedido": "2023-09-13",
+    "Valor Total": 1340.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 760,
+    "Id Cliente": 167,
+    "Data Pedido": "2023-09-13",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 761,
+    "Id Cliente": 429,
+    "Data Pedido": "2023-09-13",
+    "Valor Total": 31998.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 762,
+    "Id Cliente": 430,
+    "Data Pedido": "2023-09-14",
+    "Valor Total": 4399.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 763,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-09-14",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 764,
+    "Id Cliente": 431,
+    "Data Pedido": "2023-09-14",
+    "Valor Total": 2400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 765,
+    "Id Cliente": 432,
+    "Data Pedido": "2023-09-14",
+    "Valor Total": 890.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 766,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-15",
+    "Valor Total": 140.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 767,
+    "Id Cliente": 384,
+    "Data Pedido": "2023-09-15",
+    "Valor Total": 510.0,
+    "Forma de Pagamento": "Cartão de Crédito ",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 768,
+    "Id Cliente": 433,
+    "Data Pedido": "2023-09-15",
+    "Valor Total": 2400.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 769,
+    "Id Cliente": 434,
+    "Data Pedido": "2023-09-16",
+    "Valor Total": 1915.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 770,
+    "Id Cliente": 435,
+    "Data Pedido": "2023-09-18",
+    "Valor Total": 2460.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 771,
+    "Id Cliente": 436,
+    "Data Pedido": "2023-09-20",
+    "Valor Total": 3580.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 772,
+    "Id Cliente": 437,
+    "Data Pedido": "2023-09-20",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 773,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-21",
+    "Valor Total": 525.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 774,
+    "Id Cliente": 438,
+    "Data Pedido": "2023-09-21",
+    "Valor Total": 430.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 775,
+    "Id Cliente": 435,
+    "Data Pedido": "2023-09-22",
+    "Valor Total": 2400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 776,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-23",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 777,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-09-25",
+    "Valor Total": 264.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 778,
+    "Id Cliente": 439,
+    "Data Pedido": "2023-09-25",
+    "Valor Total": 690.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 779,
+    "Id Cliente": 440,
+    "Data Pedido": "2023-09-25",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 780,
+    "Id Cliente": 441,
+    "Data Pedido": "2023-09-25",
+    "Valor Total": 4120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 781,
+    "Id Cliente": 442,
+    "Data Pedido": "2023-09-26",
+    "Valor Total": 4450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 782,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-28",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 783,
+    "Id Cliente": 94,
+    "Data Pedido": "2023-09-29",
+    "Valor Total": 1752.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 784,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-09-29",
+    "Valor Total": 105.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 785,
+    "Id Cliente": 355,
+    "Data Pedido": "2023-10-02",
+    "Valor Total": 209.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 786,
+    "Id Cliente": 429,
+    "Data Pedido": "2023-10-02",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 787,
+    "Id Cliente": 443,
+    "Data Pedido": "2023-10-03",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 788,
+    "Id Cliente": 444,
+    "Data Pedido": "2023-10-05",
+    "Valor Total": 1750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 789,
+    "Id Cliente": 385,
+    "Data Pedido": "2023-10-05",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 790,
+    "Id Cliente": 269,
+    "Data Pedido": "2023-10-06",
+    "Valor Total": 238.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 791,
+    "Id Cliente": 397,
+    "Data Pedido": "2023-10-06",
+    "Valor Total": 420.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 792,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-07",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 793,
+    "Id Cliente": 445,
+    "Data Pedido": "2023-10-07",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 794,
+    "Id Cliente": 446,
+    "Data Pedido": "2023-10-09",
+    "Valor Total": 5000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 795,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-10",
+    "Valor Total": 150.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 796,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-11",
+    "Valor Total": 60.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 797,
+    "Id Cliente": 447,
+    "Data Pedido": "2023-10-12",
+    "Valor Total": 2600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 798,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-10-13",
+    "Valor Total": 3250.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 799,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-14",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 800,
+    "Id Cliente": 228,
+    "Data Pedido": "2023-10-16",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 801,
+    "Id Cliente": 448,
+    "Data Pedido": "2023-10-16",
+    "Valor Total": 1250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 802,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-10-18",
+    "Valor Total": 1180.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 803,
+    "Id Cliente": 449,
+    "Data Pedido": "2023-10-18",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 804,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-19",
+    "Valor Total": 150.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 805,
+    "Id Cliente": 423,
+    "Data Pedido": "2023-10-19",
+    "Valor Total": 200.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 806,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-20",
+    "Valor Total": 176.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 807,
+    "Id Cliente": 313,
+    "Data Pedido": "2023-10-25",
+    "Valor Total": 320.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 808,
+    "Id Cliente": 450,
+    "Data Pedido": "2023-10-25",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 809,
+    "Id Cliente": 451,
+    "Data Pedido": "2023-10-25",
+    "Valor Total": 4348.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 810,
+    "Id Cliente": 142,
+    "Data Pedido": "2023-10-26",
+    "Valor Total": 1287.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 811,
+    "Id Cliente": 24,
+    "Data Pedido": "2023-10-26",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 812,
+    "Id Cliente": 398,
+    "Data Pedido": "2023-10-26",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 813,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-26",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 814,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-27",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 815,
+    "Id Cliente": 443,
+    "Data Pedido": "2023-10-28",
+    "Valor Total": 3050.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 816,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-10-30",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 817,
+    "Id Cliente": 298,
+    "Data Pedido": "2023-10-30",
+    "Valor Total": 242.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 818,
+    "Id Cliente": 452,
+    "Data Pedido": "2023-10-30",
+    "Valor Total": 590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 819,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-10-31",
+    "Valor Total": 273.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 820,
+    "Id Cliente": 453,
+    "Data Pedido": "2023-10-31",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 821,
+    "Id Cliente": 454,
+    "Data Pedido": "2023-10-31",
+    "Valor Total": 500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 822,
+    "Id Cliente": 455,
+    "Data Pedido": "2023-11-01",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 823,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-03",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 824,
+    "Id Cliente": 456,
+    "Data Pedido": "2023-11-03",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 825,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-04",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 826,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-06",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 827,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-07",
+    "Valor Total": 118.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 828,
+    "Id Cliente": 457,
+    "Data Pedido": "2023-11-07",
+    "Valor Total": 5969.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 829,
+    "Id Cliente": 458,
+    "Data Pedido": "2023-11-07",
+    "Valor Total": 350.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 830,
+    "Id Cliente": 459,
+    "Data Pedido": "2023-11-07",
+    "Valor Total": 2300.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 831,
+    "Id Cliente": 460,
+    "Data Pedido": "2023-11-09",
+    "Valor Total": 3698.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 832,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-11-09",
+    "Valor Total": 1498.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 833,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-10",
+    "Valor Total": 420.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 834,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-11",
+    "Valor Total": 70.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 835,
+    "Id Cliente": 423,
+    "Data Pedido": "2023-11-14",
+    "Valor Total": 374.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 836,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-14",
+    "Valor Total": 750.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 837,
+    "Id Cliente": 461,
+    "Data Pedido": "2023-11-18",
+    "Valor Total": 1550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 838,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-22",
+    "Valor Total": 300.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 839,
+    "Id Cliente": 462,
+    "Data Pedido": "2023-11-23",
+    "Valor Total": 4250.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 840,
+    "Id Cliente": 463,
+    "Data Pedido": "2023-11-23",
+    "Valor Total": 1550.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 841,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-23",
+    "Valor Total": 95.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 842,
+    "Id Cliente": 464,
+    "Data Pedido": "2023-11-27",
+    "Valor Total": 7988.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 843,
+    "Id Cliente": 465,
+    "Data Pedido": "2023-11-27",
+    "Valor Total": 4699.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 844,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-11-28",
+    "Valor Total": 111.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 845,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-28",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 846,
+    "Id Cliente": 240,
+    "Data Pedido": "2023-11-28",
+    "Valor Total": 650.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 847,
+    "Id Cliente": 466,
+    "Data Pedido": "2023-11-28",
+    "Valor Total": 1350.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 848,
+    "Id Cliente": 467,
+    "Data Pedido": "2023-11-29",
+    "Valor Total": 3140.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 849,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-11-30",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 850,
+    "Id Cliente": 66,
+    "Data Pedido": "2023-11-30",
+    "Valor Total": 250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 851,
+    "Id Cliente": 468,
+    "Data Pedido": "2023-11-30",
+    "Valor Total": 450.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 852,
+    "Id Cliente": 469,
+    "Data Pedido": "2023-11-30",
+    "Valor Total": 5000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 853,
+    "Id Cliente": 470,
+    "Data Pedido": "2023-12-01",
+    "Valor Total": 250.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 854,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-12-04",
+    "Valor Total": 382.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 855,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-05",
+    "Valor Total": 170.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 856,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-12-06",
+    "Valor Total": 340.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 857,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-07",
+    "Valor Total": 124.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 858,
+    "Id Cliente": 471,
+    "Data Pedido": "2023-12-07",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 859,
+    "Id Cliente": 472,
+    "Data Pedido": "2023-12-07",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 860,
+    "Id Cliente": 473,
+    "Data Pedido": "2023-12-08",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 861,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-11",
+    "Valor Total": 171.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 862,
+    "Id Cliente": 11,
+    "Data Pedido": "2023-12-11",
+    "Valor Total": 113.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 863,
+    "Id Cliente": 26,
+    "Data Pedido": "2023-12-11",
+    "Valor Total": 1200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 864,
+    "Id Cliente": 474,
+    "Data Pedido": "2023-12-13",
+    "Valor Total": 1304.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 865,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-14",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 866,
+    "Id Cliente": 214,
+    "Data Pedido": "2023-12-14",
+    "Valor Total": 184.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 867,
+    "Id Cliente": 475,
+    "Data Pedido": "2023-12-14",
+    "Valor Total": 3798.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 868,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-15",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 869,
+    "Id Cliente": 10,
+    "Data Pedido": "2023-12-19",
+    "Valor Total": 75.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 870,
+    "Id Cliente": 43,
+    "Data Pedido": "2023-12-19",
+    "Valor Total": 226.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 871,
+    "Id Cliente": 112,
+    "Data Pedido": "2023-12-19",
+    "Valor Total": 780.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 872,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-20",
+    "Valor Total": 90.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 873,
+    "Id Cliente": 1,
+    "Data Pedido": "2023-12-20",
+    "Valor Total": 346.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 874,
+    "Id Cliente": 423,
+    "Data Pedido": "2023-12-20",
+    "Valor Total": 248.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 875,
+    "Id Cliente": 12,
+    "Data Pedido": "2023-12-20",
+    "Valor Total": 175.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 876,
+    "Id Cliente": 295,
+    "Data Pedido": "2023-12-22",
+    "Valor Total": 74.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 877,
+    "Id Cliente": 1,
+    "Data Pedido": "2024-01-02",
+    "Valor Total": 232.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 878,
+    "Id Cliente": 476,
+    "Data Pedido": "2024-01-02",
+    "Valor Total": 379.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 879,
+    "Id Cliente": 477,
+    "Data Pedido": "2024-01-03",
+    "Valor Total": 1800.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 880,
+    "Id Cliente": 478,
+    "Data Pedido": "2024-01-03",
+    "Valor Total": 594.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 881,
+    "Id Cliente": 479,
+    "Data Pedido": "2024-01-04",
+    "Valor Total": 840.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 882,
+    "Id Cliente": 480,
+    "Data Pedido": "2024-01-04",
+    "Valor Total": 1019.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 883,
+    "Id Cliente": 481,
+    "Data Pedido": "2024-01-05",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 884,
+    "Id Cliente": 482,
+    "Data Pedido": "2024-01-05",
+    "Valor Total": 5200.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 885,
+    "Id Cliente": 483,
+    "Data Pedido": "2024-01-08",
+    "Valor Total": 1890.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 886,
+    "Id Cliente": 484,
+    "Data Pedido": "2024-01-08",
+    "Valor Total": 3600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 887,
+    "Id Cliente": 485,
+    "Data Pedido": "2024-01-08",
+    "Valor Total": 737.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 888,
+    "Id Cliente": 486,
+    "Data Pedido": "2024-01-09",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 889,
+    "Id Cliente": 487,
+    "Data Pedido": "2024-01-10",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 890,
+    "Id Cliente": 488,
+    "Data Pedido": "2024-01-10",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 891,
+    "Id Cliente": 489,
+    "Data Pedido": "2024-01-11",
+    "Valor Total": 980.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 892,
+    "Id Cliente": 490,
+    "Data Pedido": "2024-01-11",
+    "Valor Total": 599.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 893,
+    "Id Cliente": 491,
+    "Data Pedido": "2024-01-11",
+    "Valor Total": 5500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 894,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-01-13",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 895,
+    "Id Cliente": 492,
+    "Data Pedido": "2024-01-15",
+    "Valor Total": 2075.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 896,
+    "Id Cliente": 405,
+    "Data Pedido": "2024-01-16",
+    "Valor Total": 973.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 897,
+    "Id Cliente": 493,
+    "Data Pedido": "2024-01-16",
+    "Valor Total": 6000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 898,
+    "Id Cliente": 494,
+    "Data Pedido": "2024-01-16",
+    "Valor Total": 5000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 899,
+    "Id Cliente": 495,
+    "Data Pedido": "2024-01-16",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 900,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-17",
+    "Valor Total": 50.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 901,
+    "Id Cliente": 383,
+    "Data Pedido": "2024-01-17",
+    "Valor Total": 5390.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 902,
+    "Id Cliente": 496,
+    "Data Pedido": "2024-01-17",
+    "Valor Total": 3000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 903,
+    "Id Cliente": 497,
+    "Data Pedido": "2024-01-17",
+    "Valor Total": 7560.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 904,
+    "Id Cliente": 498,
+    "Data Pedido": "2024-01-17",
+    "Valor Total": 3689.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 905,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-19",
+    "Valor Total": 105.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 906,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-22",
+    "Valor Total": 179.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 907,
+    "Id Cliente": 331,
+    "Data Pedido": "2024-01-23",
+    "Valor Total": 75.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 908,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-01-23",
+    "Valor Total": 1100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 909,
+    "Id Cliente": 499,
+    "Data Pedido": "2024-01-23",
+    "Valor Total": 4380.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 910,
+    "Id Cliente": 500,
+    "Data Pedido": "2024-01-23",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 911,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-24",
+    "Valor Total": 140.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 912,
+    "Id Cliente": 501,
+    "Data Pedido": "2024-01-24",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 913,
+    "Id Cliente": 502,
+    "Data Pedido": "2024-01-26",
+    "Valor Total": 7000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 914,
+    "Id Cliente": 503,
+    "Data Pedido": "2024-01-26",
+    "Valor Total": 3000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 915,
+    "Id Cliente": 94,
+    "Data Pedido": "2024-01-26",
+    "Valor Total": 1804.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 916,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-26",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 917,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-29",
+    "Valor Total": 59.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 918,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-01-29",
+    "Valor Total": 225.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 919,
+    "Id Cliente": 31,
+    "Data Pedido": "2024-01-30",
+    "Valor Total": 1325.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 920,
+    "Id Cliente": 504,
+    "Data Pedido": "2024-01-30",
+    "Valor Total": 10999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 921,
+    "Id Cliente": 505,
+    "Data Pedido": "2024-01-30",
+    "Valor Total": 179999.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 922,
+    "Id Cliente": 506,
+    "Data Pedido": "2024-01-30",
+    "Valor Total": 4790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 923,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-01",
+    "Valor Total": 1350.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 924,
+    "Id Cliente": 179,
+    "Data Pedido": "2024-02-02",
+    "Valor Total": 100.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 925,
+    "Id Cliente": 507,
+    "Data Pedido": "2024-02-02",
+    "Valor Total": 3600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 926,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-03",
+    "Valor Total": 68.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 927,
+    "Id Cliente": 508,
+    "Data Pedido": "2024-02-05",
+    "Valor Total": 4150.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 928,
+    "Id Cliente": 509,
+    "Data Pedido": "2024-02-06",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 929,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-02-06",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 930,
+    "Id Cliente": 511,
+    "Data Pedido": "2024-02-06",
+    "Valor Total": 2700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 931,
+    "Id Cliente": 512,
+    "Data Pedido": "2024-02-06",
+    "Valor Total": 2000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 932,
+    "Id Cliente": 511,
+    "Data Pedido": "2024-02-07",
+    "Valor Total": 790.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 933,
+    "Id Cliente": 423,
+    "Data Pedido": "2024-02-07",
+    "Valor Total": 140.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 934,
+    "Id Cliente": 1,
+    "Data Pedido": "2025-02-08",
+    "Valor Total": 224.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 935,
+    "Id Cliente": 348,
+    "Data Pedido": "2025-02-09",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 936,
+    "Id Cliente": 347,
+    "Data Pedido": "2025-02-10",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 937,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-17",
+    "Valor Total": 65.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 938,
+    "Id Cliente": 513,
+    "Data Pedido": "2024-02-19",
+    "Valor Total": 2200.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 939,
+    "Id Cliente": 6,
+    "Data Pedido": "2024-02-20",
+    "Valor Total": 142.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 940,
+    "Id Cliente": 26,
+    "Data Pedido": "2024-02-22",
+    "Valor Total": 798.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 941,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-22",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 942,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-23",
+    "Valor Total": 40.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 943,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-23",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 944,
+    "Id Cliente": 11,
+    "Data Pedido": "2024-02-24",
+    "Valor Total": 178.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 945,
+    "Id Cliente": 514,
+    "Data Pedido": "2024-02-24",
+    "Valor Total": 855.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 946,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-02-26",
+    "Valor Total": 735.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 947,
+    "Id Cliente": 514,
+    "Data Pedido": "2024-02-27",
+    "Valor Total": 2590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 948,
+    "Id Cliente": 515,
+    "Data Pedido": "2024-02-27",
+    "Valor Total": 2900.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 949,
+    "Id Cliente": 1,
+    "Data Pedido": "2024-02-29",
+    "Valor Total": 150.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 950,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-01",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 951,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-01",
+    "Valor Total": 299.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 952,
+    "Id Cliente": 419,
+    "Data Pedido": "2024-03-01",
+    "Valor Total": 65.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 953,
+    "Id Cliente": 516,
+    "Data Pedido": "2024-03-02",
+    "Valor Total": 800.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 954,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-04",
+    "Valor Total": 30.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 955,
+    "Id Cliente": 517,
+    "Data Pedido": "2024-03-04",
+    "Valor Total": 1590.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 956,
+    "Id Cliente": 518,
+    "Data Pedido": "2024-03-04",
+    "Valor Total": 3690.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 957,
+    "Id Cliente": 519,
+    "Data Pedido": "2024-03-04",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 958,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-05",
+    "Valor Total": 120.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 959,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-08",
+    "Valor Total": 135.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 960,
+    "Id Cliente": 520,
+    "Data Pedido": "2024-03-08",
+    "Valor Total": 290.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 961,
+    "Id Cliente": 521,
+    "Data Pedido": "2024-03-08",
+    "Valor Total": 2500.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 962,
+    "Id Cliente": 283,
+    "Data Pedido": "2024-03-11",
+    "Valor Total": 65.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 963,
+    "Id Cliente": 43,
+    "Data Pedido": "2024-03-11",
+    "Valor Total": 149.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 964,
+    "Id Cliente": 522,
+    "Data Pedido": "2024-03-11",
+    "Valor Total": 5089.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 965,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-03-13",
+    "Valor Total": 160.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 966,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-03-14",
+    "Valor Total": 10.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 967,
+    "Id Cliente": 214,
+    "Data Pedido": "2024-03-15",
+    "Valor Total": 80.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 968,
+    "Id Cliente": 321,
+    "Data Pedido": "2024-03-15",
+    "Valor Total": 44825.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 969,
+    "Id Cliente": 523,
+    "Data Pedido": "2024-03-15",
+    "Valor Total": 10698.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 970,
+    "Id Cliente": 524,
+    "Data Pedido": "2024-03-15",
+    "Valor Total": 10948.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 971,
+    "Id Cliente": 1,
+    "Data Pedido": "2024-03-19",
+    "Valor Total": 122.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 972,
+    "Id Cliente": 525,
+    "Data Pedido": "2024-03-19",
+    "Valor Total": 1590.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 973,
+    "Id Cliente": 66,
+    "Data Pedido": "2024-03-21",
+    "Valor Total": 159.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 974,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-03-26",
+    "Valor Total": 2300.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 975,
+    "Id Cliente": 526,
+    "Data Pedido": "2024-03-28",
+    "Valor Total": 4000.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 976,
+    "Id Cliente": 527,
+    "Data Pedido": "2024-03-28",
+    "Valor Total": 6700.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 977,
+    "Id Cliente": 528,
+    "Data Pedido": "2024-03-29",
+    "Valor Total": 17500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 978,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-04-01",
+    "Valor Total": 180.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 979,
+    "Id Cliente": 1,
+    "Data Pedido": "2024-04-02",
+    "Valor Total": 128.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 980,
+    "Id Cliente": 189,
+    "Data Pedido": "2024-04-03",
+    "Valor Total": 700.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 981,
+    "Id Cliente": 529,
+    "Data Pedido": "2024-04-03",
+    "Valor Total": 5600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 982,
+    "Id Cliente": 530,
+    "Data Pedido": "2024-04-04",
+    "Valor Total": 1500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 983,
+    "Id Cliente": 162,
+    "Data Pedido": "2024-04-04",
+    "Valor Total": 400.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 984,
+    "Id Cliente": 24,
+    "Data Pedido": "2024-04-04",
+    "Valor Total": 1150.0,
+    "Forma de Pagamento": "Dinheiro",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 985,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-04-05",
+    "Valor Total": 78.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 986,
+    "Id Cliente": 531,
+    "Data Pedido": "2024-04-05",
+    "Valor Total": 2380.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 987,
+    "Id Cliente": 532,
+    "Data Pedido": "2024-04-05",
+    "Valor Total": 1000.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 988,
+    "Id Cliente": 533,
+    "Data Pedido": "2024-04-08",
+    "Valor Total": 600.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 989,
+    "Id Cliente": 534,
+    "Data Pedido": "2024-04-08",
+    "Valor Total": 385.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 990,
+    "Id Cliente": 39,
+    "Data Pedido": "2024-04-08",
+    "Valor Total": 1650.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 991,
+    "Id Cliente": 535,
+    "Data Pedido": "2024-04-08",
+    "Valor Total": 5500.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 992,
+    "Id Cliente": 517,
+    "Data Pedido": "2024-04-08",
+    "Valor Total": 3388.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 993,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-04-09",
+    "Valor Total": 89.0,
+    "Forma de Pagamento": "Cartão de Débito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 994,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-04-09",
+    "Valor Total": 770.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 995,
+    "Id Cliente": 7,
+    "Data Pedido": "2024-04-10",
+    "Valor Total": 130.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 996,
+    "Id Cliente": 58,
+    "Data Pedido": "2024-04-10",
+    "Valor Total": 595.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 997,
+    "Id Cliente": 12,
+    "Data Pedido": "2024-04-11",
+    "Valor Total": 267.0,
+    "Forma de Pagamento": "Pix",
+    "Canal de Venda": "Loja Física"
+  },
+  {
+    "Id Pedido": 998,
+    "Id Cliente": 536,
+    "Data Pedido": "2024-04-11",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 999,
+    "Id Cliente": 537,
+    "Data Pedido": "2024-04-11",
+    "Valor Total": 3900.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Instagram"
+  },
+  {
+    "Id Pedido": 1000,
+    "Id Cliente": 538,
+    "Data Pedido": "2024-04-12",
+    "Valor Total": 266.0,
+    "Forma de Pagamento": "Cartão de Crédito",
+    "Canal de Venda": "Loja Física"
+  }
+]

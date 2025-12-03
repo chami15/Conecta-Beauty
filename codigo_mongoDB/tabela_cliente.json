@@ -1,0 +1,5382 @@
+[
+    {
+        "Id Cliente":1,
+        "Nome":"Maria Helena",
+        "Sexo":"F",
+        "Endereço":"Rua Genaro Olavide Nº 290 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 96693-3958"
+    },
+    {
+        "Id Cliente":2,
+        "Nome":"Maykon Romero",
+        "Sexo":"M",
+        "Endereço":"Rua Campo Florido Nº 507 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 95959-4002"
+    },
+    {
+        "Id Cliente":3,
+        "Nome":"Anderson Felipe",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 947144469"
+    },
+    {
+        "Id Cliente":4,
+        "Nome":"Ricardo Melo Oliveira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98519-8141"
+    },
+    {
+        "Id Cliente":5,
+        "Nome":"Lúcia Cristina",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":6,
+        "Nome":"Cida Aparecida",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":7,
+        "Nome":"Ivan (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":8,
+        "Nome":"Barbara Reis",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":9,
+        "Nome":"Katia ",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"-",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":10,
+        "Nome":"Erica Rodrigues dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Forte do Triunfo Nº361 Ap 32 Torre 2",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95167-6462"
+    },
+    {
+        "Id Cliente":11,
+        "Nome":"Marilene Neves Dos Santos",
+        "Sexo":"F",
+        "Endereço":"Avenida Sapopemba Nº 468",
+        "Estado":"SP ",
+        "Cidade":null,
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93563-8018"
+    },
+    {
+        "Id Cliente":12,
+        "Nome":"Cliente Loja (Sem identificação)",
+        "Sexo":"-",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":13,
+        "Nome":"Fernando Ribeiro",
+        "Sexo":"M",
+        "Endereço":"Rua Andre Fernandes Nº 138 Vila Florida",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 99513-7213"
+    },
+    {
+        "Id Cliente":14,
+        "Nome":"Mônica Cristina Da Cruz",
+        "Sexo":"F",
+        "Endereço":"Rua Cachoreira das 7 quedas Nº 22 Barro Branco",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98560-1790"
+    },
+    {
+        "Id Cliente":15,
+        "Nome":"Vilma Neves Monteiro",
+        "Sexo":"F",
+        "Endereço":"Rua Serra de Itabajara Nº 816",
+        "Estado":"SP ",
+        "Cidade":"Santa Madalena",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96017-8366"
+    },
+    {
+        "Id Cliente":16,
+        "Nome":"Maria de Fatima",
+        "Sexo":"F",
+        "Endereço":"Avenida Sapopemba Nº 15774",
+        "Estado":"SP ",
+        "Cidade":"Jd. Adutora",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 98260-4336"
+    },
+    {
+        "Id Cliente":17,
+        "Nome":"Antonio L.",
+        "Sexo":"M",
+        "Endereço":"Avenida Mateo Bei 3369",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":18,
+        "Nome":"Joice Batista de Brito",
+        "Sexo":"F",
+        "Endereço":"Avenida Mateo Bei 2635",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93801-6917"
+    },
+    {
+        "Id Cliente":19,
+        "Nome":"Cliente Loja (Sem identificação)",
+        "Sexo":"-",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":20,
+        "Nome":"Ana Carolina Elias Cardoso",
+        "Sexo":"F",
+        "Endereço":"Rua Aleides Lopes Peres Nº162  Agua Branca",
+        "Estado":"SP ",
+        "Cidade":"Centro",
+        "Estado2":"Avaré",
+        "Telefone":"(14)99654-6910"
+    },
+    {
+        "Id Cliente":21,
+        "Nome":"Luzi A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":22,
+        "Nome":"Raquel Dos Santos",
+        "Sexo":"F",
+        "Endereço":"Avenida Mateo bei 1575 Sala 03",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":23,
+        "Nome":"Cliente Loja (Sem identificação)",
+        "Sexo":"-",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":24,
+        "Nome":"Dantas (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99933-0442"
+    },
+    {
+        "Id Cliente":25,
+        "Nome":"Dibi R.",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel Quirino de Mattos Nº2197",
+        "Estado":"SP ",
+        "Cidade":"Jd. Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":26,
+        "Nome":"Diego(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São José do Rio Preto",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":25,
+        "Nome":"Mariana G.",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96909-6757"
+    },
+    {
+        "Id Cliente":26,
+        "Nome":"Rose Machado",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Paulo Queiroz Nº1794 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95811-2159"
+    },
+    {
+        "Id Cliente":27,
+        "Nome":"Raquel Lima",
+        "Sexo":"F",
+        "Endereço":"Avenida Mateo Bei 5786",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)987650376"
+    },
+    {
+        "Id Cliente":28,
+        "Nome":"Roseli Emilia",
+        "Sexo":"F",
+        "Endereço":"Rua Ilha de Capri Nº225",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99155-6818"
+    },
+    {
+        "Id Cliente":29,
+        "Nome":"Ivonete Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Conego Antonio Dias Pequeno nº51",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98726-6055"
+    },
+    {
+        "Id Cliente":30,
+        "Nome":"Antônia",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":31,
+        "Nome":"Thabata Camargo",
+        "Sexo":"F",
+        "Endereço":"Avenida João Batista Media Nº 302",
+        "Estado":"SP ",
+        "Cidade":"Embu das Artes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97303-2714"
+    },
+    {
+        "Id Cliente":32,
+        "Nome":"Cliente Loja (Sem identificação)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tucuruvi",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":33,
+        "Nome":"Amanda Cintia",
+        "Sexo":"F",
+        "Endereço":"Travessa Paz na Terra Nº77 Jd da Conquista",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95219-8895"
+    },
+    {
+        "Id Cliente":34,
+        "Nome":"Fabiane T.",
+        "Sexo":"F",
+        "Endereço":"Rua Esquivel Navarro Nº118",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99742-1120"
+    },
+    {
+        "Id Cliente":35,
+        "Nome":"Valeria Rocha",
+        "Sexo":"F",
+        "Endereço":"Rua Carlos Cossi Nº13",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98285-5735"
+    },
+    {
+        "Id Cliente":36,
+        "Nome":"Geyja L.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":37,
+        "Nome":"Hellen Cristina ",
+        "Sexo":"F",
+        "Endereço":"Rua Francicos dos Santos Coimbra Nº128",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)9977-5750"
+    },
+    {
+        "Id Cliente":38,
+        "Nome":"Gabriel Barbearia XV Novembro",
+        "Sexo":"M",
+        "Endereço":"Rua XV de Novembro 265",
+        "Estado":"SP ",
+        "Cidade":"Centro",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 94526266"
+    },
+    {
+        "Id Cliente":39,
+        "Nome":"Daniel (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São José do Rio Preto",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":40,
+        "Nome":"Antônio Correia",
+        "Sexo":"M",
+        "Endereço":"Rua João Gomes Pereira Nº953 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94915-1442"
+    },
+    {
+        "Id Cliente":41,
+        "Nome":"Rosangela A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":42,
+        "Nome":"Simone Gama da Silva",
+        "Sexo":"F",
+        "Endereço":"Travessa Henrique Guerrer Nº49 Fazenda da Juta",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99374-7123"
+    },
+    {
+        "Id Cliente":43,
+        "Nome":"Fátima F.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":45,
+        "Nome":"Elisangela R.",
+        "Sexo":"F",
+        "Endereço":"Avenida Ragueb Chofi",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":46,
+        "Nome":"Hellen Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Afranio Peixoto Nº224 Jd. Utigna",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94977-5750"
+    },
+    {
+        "Id Cliente":47,
+        "Nome":"Claudiana M.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":48,
+        "Nome":"Celeste Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Conego Antonio Dias Pequeno nº483",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":49,
+        "Nome":"Penha Jardim Marilu",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94731-9812"
+    },
+    {
+        "Id Cliente":50,
+        "Nome":"Raquel L.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":51,
+        "Nome":"Natally da Silva",
+        "Sexo":"F",
+        "Endereço":"Travessa Salassie Nª92 Jd da Conquista",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95222-8204"
+    },
+    {
+        "Id Cliente":52,
+        "Nome":"Luanne Fernandes Leite",
+        "Sexo":"F",
+        "Endereço":"Rua Domingos Ribeiro Nº 12 Jardim Ester",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 96072-5414"
+    },
+    {
+        "Id Cliente":53,
+        "Nome":"Deja Pereira ",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Miguel Bombarda Nº251",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98739-7509"
+    },
+    {
+        "Id Cliente":54,
+        "Nome":"Lorraine Pinheiro",
+        "Sexo":"F",
+        "Endereço":"Jd Sapopemba",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":55,
+        "Nome":"Deca (Representante)",
+        "Sexo":"M ",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":56,
+        "Nome":"Eliane Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Geronimo Coelho Nº225 ",
+        "Estado":"SP ",
+        "Cidade":"Vila Formosa",
+        "Estado2":"São Paulo",
+        "Telefone":"(11) 99122-2886"
+    },
+    {
+        "Id Cliente":57,
+        "Nome":"Fabrício A.",
+        "Sexo":"M ",
+        "Endereço":"Jd. Santo André",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":58,
+        "Nome":"Katia N.",
+        "Sexo":"F",
+        "Endereço":"Jd. São Roberto",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":59,
+        "Nome":"Cristiane Aciolli",
+        "Sexo":"F",
+        "Endereço":"Avenida Rio das Pedras Nº3522",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)9810-54759"
+    },
+    {
+        "Id Cliente":60,
+        "Nome":"Vera Lucia Alexandre",
+        "Sexo":"F",
+        "Endereço":"Rua Delmiro Gouveia Nº265",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98844-4272"
+    },
+    {
+        "Id Cliente":61,
+        "Nome":"Ane Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Madagascar Nº12 Sala 04",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99387-8464"
+    },
+    {
+        "Id Cliente":62,
+        "Nome":"Fernando",
+        "Sexo":"M ",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":63,
+        "Nome":"Rosangela Marques",
+        "Sexo":"F",
+        "Endereço":"Rua João Gomes Pereira Nº95",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98253-2165"
+    },
+    {
+        "Id Cliente":64,
+        "Nome":"Graciene Lopes",
+        "Sexo":"F",
+        "Endereço":"Rua Itamarati Nº44 Heliopolis",
+        "Estado":"SP ",
+        "Cidade":"Ipiranga",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98729-0348"
+    },
+    {
+        "Id Cliente":65,
+        "Nome":"Gabriela N.",
+        "Sexo":"F",
+        "Endereço":"Avenida Maria Cursi",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":66,
+        "Nome":"Ana Paula ",
+        "Sexo":"F",
+        "Endereço":"Grimaldi",
+        "Estado":"SP ",
+        "Cidade":"Grimaldi",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":67,
+        "Nome":"Ana Paula Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Santo Ouvidio Nº208",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99571-8383"
+    },
+    {
+        "Id Cliente":68,
+        "Nome":"Samires Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Maestro Isaías Savio Nª317 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":69,
+        "Nome":"Charleide Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Evangelista de Souza Nº1609",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":70,
+        "Nome":"Leandro (Barbearia Five Stars)",
+        "Sexo":"M",
+        "Endereço":"Av. Doutor Guilherme de Abreu Sodre Nº51",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":71,
+        "Nome":"Jô Novaes",
+        "Sexo":"F",
+        "Endereço":"Rua Bento Pires Ribeiro Nº4  Jd Santo Andre",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":72,
+        "Nome":"Cleusa A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Jd. Limoeiro",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":73,
+        "Nome":"Nalva ",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santa Adélia",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":74,
+        "Nome":"Francisco Rocha",
+        "Sexo":"M",
+        "Endereço":"Rua Jacarandá Mimoso Nº19",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95637-9826"
+    },
+    {
+        "Id Cliente":75,
+        "Nome":"Solage Rodrigues",
+        "Sexo":"F",
+        "Endereço":"Avenida Riacho dos Machados Nº417",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95045-1206"
+    },
+    {
+        "Id Cliente":76,
+        "Nome":"Vileuda Ribeiro",
+        "Sexo":"F",
+        "Endereço":"Rua Ana Popovice Nº130",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99390-6584"
+    },
+    {
+        "Id Cliente":77,
+        "Nome":"Eliete Acltastel",
+        "Sexo":"F",
+        "Endereço":"Rua Luiz Botta Nº304",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99937-8612"
+    },
+    {
+        "Id Cliente":78,
+        "Nome":"Katheleen F.",
+        "Sexo":"F",
+        "Endereço":"Rua Astarté Nº103",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98548-9107"
+    },
+    {
+        "Id Cliente":79,
+        "Nome":"Pele Ferreira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":80,
+        "Nome":"Bruna Rodrigues",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":81,
+        "Nome":"Vitor Lucio",
+        "Sexo":"M",
+        "Endereço":"Av. Osvaldo Vale Cordeiro",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94015-7727"
+    },
+    {
+        "Id Cliente":82,
+        "Nome":"Suelen V.",
+        "Sexo":"F",
+        "Endereço":"Rua Suecia Nº16 Parque das Nações",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":83,
+        "Nome":"Lilian Regina Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Duque de Caxias Nº47 ",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99306-8809"
+    },
+    {
+        "Id Cliente":84,
+        "Nome":"Paulo C.",
+        "Sexo":"M",
+        "Endereço":"Av. Brigadeira Faria Lima",
+        "Estado":"SP ",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)995137213"
+    },
+    {
+        "Id Cliente":85,
+        "Nome":"Maria Aparecida N.",
+        "Sexo":"F",
+        "Endereço":"Rua Francisco Miguinone 905",
+        "Estado":"SP ",
+        "Cidade":"Teotonio Vilela",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95798-7196"
+    },
+    {
+        "Id Cliente":86,
+        "Nome":"Micheli Souza",
+        "Sexo":"F",
+        "Endereço":"Rua São Francisco Nº17",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98892-6760"
+    },
+    {
+        "Id Cliente":87,
+        "Nome":"Priscila Soares Dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Solidonio Leite Nº2410 Sala 4",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99016-1352"
+    },
+    {
+        "Id Cliente":88,
+        "Nome":"Bianka Bianchi",
+        "Sexo":"F",
+        "Endereço":"Rua Cachoeira de Minas Nº355A",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98436-9366"
+    },
+    {
+        "Id Cliente":89,
+        "Nome":"Francisco Rocha",
+        "Sexo":"M",
+        "Endereço":"Jd. Arantes",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":90,
+        "Nome":"Michele Castro",
+        "Sexo":"F",
+        "Endereço":"Rua Dias Lemes Nº18",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98892-6760"
+    },
+    {
+        "Id Cliente":91,
+        "Nome":"Bruna Ferreira ",
+        "Sexo":"F ",
+        "Endereço":"St. Adélia",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":92,
+        "Nome":"Marcos (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Bernardo",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":93,
+        "Nome":"Silmara A.",
+        "Sexo":"F",
+        "Endereço":"Avenida Alto Alegre",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":94,
+        "Nome":"Flávio Souza",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":95,
+        "Nome":"Riso Josefa Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Jacob Santos Nº18A",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96659-1084"
+    },
+    {
+        "Id Cliente":96,
+        "Nome":"Cristiane Vieira Nunes",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel da Luz Drummond Nº360",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94822-8431"
+    },
+    {
+        "Id Cliente":97,
+        "Nome":"Israel Mendes da Silva",
+        "Sexo":"F",
+        "Endereço":"Av. Arquiteto Vila Nova Nº229",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94885-1447"
+    },
+    {
+        "Id Cliente":98,
+        "Nome":"Kayque Fernando ",
+        "Sexo":"M",
+        "Endereço":"Avenida Via de Pedeste Silecia ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96437-0863"
+    },
+    {
+        "Id Cliente":99,
+        "Nome":"Jéssica Pereira",
+        "Sexo":"F",
+        "Endereço":"Rua Francisco de Melo Palheta Nº706",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96348-1525"
+    },
+    {
+        "Id Cliente":100,
+        "Nome":"Eduardo Cerrades",
+        "Sexo":"M",
+        "Endereço":"Avenida Nagib Farah Maluf Nº407",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94489-2080"
+    },
+    {
+        "Id Cliente":101,
+        "Nome":"Jinelson A.",
+        "Sexo":"M",
+        "Endereço":"Vila Primavera",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":102,
+        "Nome":"Gustavo Mainairt",
+        "Sexo":"M",
+        "Endereço":"Rua Francisco Lourenço Nº1",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":103,
+        "Nome":"Jawila De Paula",
+        "Sexo":"F",
+        "Endereço":"Rua Antonio Caetinho Nº192",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95843-7443"
+    },
+    {
+        "Id Cliente":104,
+        "Nome":"Tiago Gonçalves Dias",
+        "Sexo":"M",
+        "Endereço":"Rua James Naris Nº296",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98367-1954"
+    },
+    {
+        "Id Cliente":105,
+        "Nome":"Carlos Allan",
+        "Sexo":"M",
+        "Endereço":"Rua Maria Luiza Val Penteado Nº616",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98544-565"
+    },
+    {
+        "Id Cliente":106,
+        "Nome":"Edinho(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":107,
+        "Nome":"Roberto",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":108,
+        "Nome":"Cintia Stoko",
+        "Sexo":"F",
+        "Endereço":"Rua Abilio Campos Peixe Nº111",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98706-1295"
+    },
+    {
+        "Id Cliente":109,
+        "Nome":"Crislane Dos Santos Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Mão Rainha Nº62",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95244-9477"
+    },
+    {
+        "Id Cliente":110,
+        "Nome":"Rosilda(Representante)",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Indaiatuba",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":111,
+        "Nome":"Ivaneide Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Ingair Nº32",
+        "Estado":"SP ",
+        "Cidade":"Vila Prudente",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96458-4006"
+    },
+    {
+        "Id Cliente":112,
+        "Nome":"Antônio F. Pereira",
+        "Sexo":"M",
+        "Endereço":"Rua Noite de Maio Nº315",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94914-3787"
+    },
+    {
+        "Id Cliente":113,
+        "Nome":"Neusa Esteves Samuel",
+        "Sexo":"F",
+        "Endereço":"Rua Gregório Petondi S\/N",
+        "Estado":"SP ",
+        "Cidade":"São Rafael",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94923-7120"
+    },
+    {
+        "Id Cliente":114,
+        "Nome":"Sandra Moura",
+        "Sexo":"F",
+        "Endereço":"Rua Rui Deaveiro Nº48",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97600-5769"
+    },
+    {
+        "Id Cliente":115,
+        "Nome":"Andreia Cristina de Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Soldado Candido da Luz Paiva Nº223",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99549-4115"
+    },
+    {
+        "Id Cliente":116,
+        "Nome":"Hilario T.",
+        "Sexo":"M",
+        "Endereço":"Av. Dr Frederico Martins da Costa Carvalo Nº653",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95297-2274"
+    },
+    {
+        "Id Cliente":117,
+        "Nome":"Edson Barbosa",
+        "Sexo":"M",
+        "Endereço":"Rua Andre de Almeida Nº897",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95305-1914"
+    },
+    {
+        "Id Cliente":118,
+        "Nome":"Tânia Teixeira Brito",
+        "Sexo":"F",
+        "Endereço":"Av. Ragueb Chofi Nº5097",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95439-7295"
+    },
+    {
+        "Id Cliente":119,
+        "Nome":"Suzi Daiane",
+        "Sexo":"F",
+        "Endereço":"Rua 15 de Novembro ",
+        "Estado":"SP ",
+        "Cidade":"Ferraz de Vasconcelos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96017-5836"
+    },
+    {
+        "Id Cliente":120,
+        "Nome":"Caroline S.",
+        "Sexo":"F",
+        "Endereço":"Sapopemba",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":121,
+        "Nome":"Edson Freire",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":122,
+        "Nome":"Mazin R.",
+        "Sexo":"M",
+        "Endereço":"Rua Giacinto Tognato Nº755",
+        "Estado":"SP ",
+        "Cidade":"São Bernardo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94821-4152"
+    },
+    {
+        "Id Cliente":123,
+        "Nome":"Pamela Riveles",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Itaim Paulista",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96307-2605"
+    },
+    {
+        "Id Cliente":124,
+        "Nome":"Ana Caroline",
+        "Sexo":"F",
+        "Endereço":"Rua Serra Borborena Nº20 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93941-7742"
+    },
+    {
+        "Id Cliente":125,
+        "Nome":"Luzia Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Tostói de Carvalho",
+        "Estado":"SP ",
+        "Cidade":"Vila Tostói",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98869-0143"
+    },
+    {
+        "Id Cliente":126,
+        "Nome":"Tião Menezes",
+        "Sexo":"M",
+        "Endereço":"Rua Sebastião Mendonça Nº55",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97651-3541"
+    },
+    {
+        "Id Cliente":127,
+        "Nome":"Rogério Torres",
+        "Sexo":"M",
+        "Endereço":"Rua Tuiuti Nº2724",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98352-7519"
+    },
+    {
+        "Id Cliente":128,
+        "Nome":"Wesley F.",
+        "Sexo":"M",
+        "Endereço":"Rua Manoel Quirino de Mattos Nº1769",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95854-3714"
+    },
+    {
+        "Id Cliente":129,
+        "Nome":"Angelina N.",
+        "Sexo":"F",
+        "Endereço":"Rua Jerônimo Gonçalves Nº162",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":130,
+        "Nome":"Adelma Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Ilha Trindade Nº578",
+        "Estado":"SP ",
+        "Cidade":"São Miguel",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94893-7253"
+    },
+    {
+        "Id Cliente":131,
+        "Nome":"Celma Souza",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":134,
+        "Nome":"Cida Fernandes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96613-2939"
+    },
+    {
+        "Id Cliente":135,
+        "Nome":"Soraia A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":136,
+        "Nome":"Edgard L.",
+        "Sexo":"M",
+        "Endereço":"Rua Orquidea Nº50",
+        "Estado":"SP ",
+        "Cidade":"Atiabaia",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":137,
+        "Nome":"Cinval Antunes",
+        "Sexo":"M",
+        "Endereço":"Avenida Oratório Nº5075",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95489-1324"
+    },
+    {
+        "Id Cliente":138,
+        "Nome":"Paulo Cesar de Oliveira",
+        "Sexo":"M",
+        "Endereço":"Rua Miguel Lobo Nº100 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95783-1791"
+    },
+    {
+        "Id Cliente":139,
+        "Nome":"Higor Santana Dos Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Erechin Nº12 Itamarati",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97645-9871"
+    },
+    {
+        "Id Cliente":140,
+        "Nome":"Maycon A,",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":141,
+        "Nome":"Lanya Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Eliisio Ferreira Nº438",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":142,
+        "Nome":"Gilvam (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Carapicuíba",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":143,
+        "Nome":"Adban Vietoc Chaves",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94977-1842"
+    },
+    {
+        "Id Cliente":144,
+        "Nome":"Helena Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Cachoeira de Minas Nº56B",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94599-9124"
+    },
+    {
+        "Id Cliente":145,
+        "Nome":"Nilsa Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":146,
+        "Nome":"Rodrigo Bezerra Joaquim",
+        "Sexo":"M",
+        "Endereço":"Rua Luiz Bota Nº1249",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96798-9242"
+    },
+    {
+        "Id Cliente":147,
+        "Nome":"Clayton Silva",
+        "Sexo":"M",
+        "Endereço":"Rua Aldeia Santo Inácio Nº816",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97969-5863"
+    },
+    {
+        "Id Cliente":148,
+        "Nome":"Edneide Oliveira",
+        "Sexo":"F",
+        "Endereço":"Rua Alberto Popovice Nº170",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95990-9213"
+    },
+    {
+        "Id Cliente":149,
+        "Nome":"Rogério (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":150,
+        "Nome":"Venaldo (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"AL",
+        "Cidade":"Maceió",
+        "Estado2":"Alagoas",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":151,
+        "Nome":"Will Melo",
+        "Sexo":"M",
+        "Endereço":"Rua Vice Presidente Francisco Alvaro Bueno Nº218",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93077-8711"
+    },
+    {
+        "Id Cliente":152,
+        "Nome":"Josefa Da Silva",
+        "Sexo":"F",
+        "Endereço":"Avenida dos Latinos Nº1554",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98195-9346"
+    },
+    {
+        "Id Cliente":153,
+        "Nome":"Claudio Nunes",
+        "Sexo":"M",
+        "Endereço":"Rua Orfanato Nº1071",
+        "Estado":"SP ",
+        "Cidade":"Vila Prudente",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98833-8399"
+    },
+    {
+        "Id Cliente":154,
+        "Nome":"Andreia Cerrantes",
+        "Sexo":"F",
+        "Endereço":"Rua Santa Flávia Donatella Nº85",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94230-3068"
+    },
+    {
+        "Id Cliente":155,
+        "Nome":"Irene Conceição",
+        "Sexo":"F",
+        "Endereço":"Avenida Custódio de Sá Nº630",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95396-2637"
+    },
+    {
+        "Id Cliente":156,
+        "Nome":"Gilma Vieira",
+        "Sexo":"F",
+        "Endereço":"Rua do Gino Nº10 ",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95025-6549"
+    },
+    {
+        "Id Cliente":157,
+        "Nome":"Joelma Dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Dentista Barreto Nº572",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":158,
+        "Nome":"Ana Caroline Machado",
+        "Sexo":"F",
+        "Endereço":"Travessa Sabor de Mim Nº532",
+        "Estado":"SP ",
+        "Cidade":" São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96367-0812"
+    },
+    {
+        "Id Cliente":159,
+        "Nome":"Alan Souza",
+        "Sexo":"M",
+        "Endereço":"Rua Imirim Nº832",
+        "Estado":"SP ",
+        "Cidade":"Jandira",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94013-8985"
+    },
+    {
+        "Id Cliente":160,
+        "Nome":"Elaine da Silva Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Miguel Ferreira de Melo Nº01",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98995-7815"
+    },
+    {
+        "Id Cliente":161,
+        "Nome":"Steven Ferreira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":162,
+        "Nome":"Maria Ivone Campos",
+        "Sexo":"F",
+        "Endereço":"Rua Baltazar Vidal Nº206",
+        "Estado":"SP ",
+        "Cidade":"Pq. Do Carmo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95420-6919"
+    },
+    {
+        "Id Cliente":163,
+        "Nome":"Rosângela Souza",
+        "Sexo":"F",
+        "Endereço":"Rua João Gomes Pereira Nº953 ",
+        "Estado":"SP ",
+        "Cidade":"Jd. Tietê",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":164,
+        "Nome":"Eduardo Teixeira",
+        "Sexo":"M",
+        "Endereço":"Avenida Israel Fonseca Nº162",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)981262983"
+    },
+    {
+        "Id Cliente":165,
+        "Nome":"João Antônio Freire",
+        "Sexo":"M",
+        "Endereço":"Rua Marcos Antônio Marques Nº36A",
+        "Estado":"SP ",
+        "Cidade":"Barueri",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":166,
+        "Nome":"Antônia Sanches",
+        "Sexo":"F",
+        "Endereço":"Rua Baltazar Vidal Nº220",
+        "Estado":"SP ",
+        "Cidade":"Pq. Do Carmo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11095900-2374"
+    },
+    {
+        "Id Cliente":167,
+        "Nome":"Neves Silva",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Caetano",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":168,
+        "Nome":"Amanda Nogueira",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mogi das Cruzes",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":169,
+        "Nome":"Alex Silva",
+        "Sexo":"M",
+        "Endereço":"Avenida Francisco de Santa Maria Nº1219",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98302-9588"
+    },
+    {
+        "Id Cliente":170,
+        "Nome":"Francisco Rocha Brito",
+        "Sexo":"M",
+        "Endereço":"Rua Jacundá Mimoso Nº19",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95637-9826"
+    },
+    {
+        "Id Cliente":171,
+        "Nome":"Maria Alice Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Moema",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":172,
+        "Nome":"Regina Cristina Almeida",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santa Figênia",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":173,
+        "Nome":"Daniela Basílio Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Fernando Dias Paes Nº645",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95148-7210"
+    },
+    {
+        "Id Cliente":174,
+        "Nome":"Danilo Pereira da Silva",
+        "Sexo":"M",
+        "Endereço":"Rua Forro das Pedras Nº901",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)9334-29291"
+    },
+    {
+        "Id Cliente":175,
+        "Nome":"Francisco Souza",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":176,
+        "Nome":"Maria Ines Jala",
+        "Sexo":"F",
+        "Endereço":"Av. Roberto Pires Maciel",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98426-7746"
+    },
+    {
+        "Id Cliente":177,
+        "Nome":"Bábara Kellen",
+        "Sexo":"F",
+        "Endereço":"Rua Santa Rosa Nº212",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95289-1037"
+    },
+    {
+        "Id Cliente":178,
+        "Nome":"Joyce Brambillo",
+        "Sexo":"F",
+        "Endereço":"Av. Sapopemba Nº28509",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99733-6905"
+    },
+    {
+        "Id Cliente":179,
+        "Nome":"Nathalia Porto",
+        "Sexo":"F",
+        "Endereço":"Rua Felipe Marinete Nª366 ",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96933-4109"
+    },
+    {
+        "Id Cliente":180,
+        "Nome":"Felicia Manoela Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Franco da Roxha",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":181,
+        "Nome":"Adson F.(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":182,
+        "Nome":"Laiane Fernandes",
+        "Sexo":"F",
+        "Endereço":"Avenida Dos Sertanista 1175B",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93372-6148"
+    },
+    {
+        "Id Cliente":183,
+        "Nome":"Beatriz Godoy",
+        "Sexo":"F",
+        "Endereço":"Rua Teresina Dos Santos Nº464",
+        "Estado":"SP ",
+        "Cidade":"Palmital",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":184,
+        "Nome":"Dinho Gomes ",
+        "Sexo":"M",
+        "Endereço":"Rua Confideração dos Tomôes Nº397",
+        "Estado":"SP ",
+        "Cidade":"Iguatemi",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96236-7890"
+    },
+    {
+        "Id Cliente":185,
+        "Nome":"Mariele Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Embaixador Ioldefonso Falcão Nº132",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93012-5060"
+    },
+    {
+        "Id Cliente":186,
+        "Nome":"Fernando Soares",
+        "Sexo":"M",
+        "Endereço":"Av. Vila Ema Nº5621",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94710-3027"
+    },
+    {
+        "Id Cliente":187,
+        "Nome":"Alex Nery dos Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Marcos Freire Nº1",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95822-4990"
+    },
+    {
+        "Id Cliente":188,
+        "Nome":"Mayra Barros",
+        "Sexo":"F",
+        "Endereço":"Av. Dom Pedro I Nº392 ",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94011-7350"
+    },
+    {
+        "Id Cliente":189,
+        "Nome":"Helio Souza",
+        "Sexo":"M",
+        "Endereço":"Av Mateo Bei Nº7746",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":190,
+        "Nome":"Evellyn Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Torres Florencio E. Rieli Nº89",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98655-8394"
+    },
+    {
+        "Id Cliente":191,
+        "Nome":"Beatriz Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Batista Francisco Nº791 ",
+        "Estado":"SP ",
+        "Cidade":"Vila Formosa",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94016-8892"
+    },
+    {
+        "Id Cliente":192,
+        "Nome":"Geane Aparecida Garcia",
+        "Sexo":"F",
+        "Endereço":"Av. José Rodrigues Santarem Nº1135",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99580-4858"
+    },
+    {
+        "Id Cliente":193,
+        "Nome":"Erica Lozano",
+        "Sexo":"F",
+        "Endereço":"Rua Major Paladino Nº510",
+        "Estado":"SP ",
+        "Cidade":"Lapa ",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99995-3040"
+    },
+    {
+        "Id Cliente":194,
+        "Nome":"Danizete Leite ",
+        "Sexo":"F",
+        "Endereço":"Rua Chantal Nº22 ",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95259-9467"
+    },
+    {
+        "Id Cliente":195,
+        "Nome":"Fernando Antero ",
+        "Sexo":"M",
+        "Endereço":"Rua Benedito Leite Nº29",
+        "Estado":"SP ",
+        "Cidade":"Suzano",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99805-3899"
+    },
+    {
+        "Id Cliente":196,
+        "Nome":"Irene Silva",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":197,
+        "Nome":"Larrisa de Paula",
+        "Sexo":"F",
+        "Endereço":"Rua Flores da Primavera Nº31",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98139-7772"
+    },
+    {
+        "Id Cliente":198,
+        "Nome":"Julia Pedrosa",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97479-3520"
+    },
+    {
+        "Id Cliente":199,
+        "Nome":"Liliane De Jesus",
+        "Sexo":"F",
+        "Endereço":"Rua Nova Brasília 69A ",
+        "Estado":"SP ",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95299-4018"
+    },
+    {
+        "Id Cliente":200,
+        "Nome":"Antônio Bezerra",
+        "Sexo":"F",
+        "Endereço":"Rua Estrada da Adutora Rio Claro Nº3",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97738-7054"
+    },
+    {
+        "Id Cliente":201,
+        "Nome":"Claudinei Gomes de Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Confederação Dos Tamoios Nº397",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":202,
+        "Nome":"Denise Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Pedro de Castro Velho Nº478",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99171-2238"
+    },
+    {
+        "Id Cliente":201,
+        "Nome":"Janaina Moreira Ferreira",
+        "Sexo":"F",
+        "Endereço":"Avenida Sapopemba 14B",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97984-6343"
+    },
+    {
+        "Id Cliente":202,
+        "Nome":"Jhony Moraes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":203,
+        "Nome":"Etevaldo Alexandre",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":204,
+        "Nome":"Cristiane Correa",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":205,
+        "Nome":"Kleber De Souza Oliveira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96070-4177"
+    },
+    {
+        "Id Cliente":206,
+        "Nome":"Suelen Vasconcelos",
+        "Sexo":"F",
+        "Endereço":"Rua Triste Berante Nº45",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97444-4035"
+    },
+    {
+        "Id Cliente":207,
+        "Nome":"Letícia Oliveira",
+        "Sexo":"F",
+        "Endereço":"Travessa Tantos Caminhos Nº212",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94903-7922"
+    },
+    {
+        "Id Cliente":208,
+        "Nome":"Jocelino Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Passagem Eduardo Ledevim Nº56",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98850-0758"
+    },
+    {
+        "Id Cliente":209,
+        "Nome":"Fábio José Silva",
+        "Sexo":"M",
+        "Endereço":"Rua Miguel Ferreira de Melo Nº73",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98974-0112"
+    },
+    {
+        "Id Cliente":210,
+        "Nome":"Priscila Ferras",
+        "Sexo":"F",
+        "Endereço":"Rua Tolstói de Carvalho Nº35",
+        "Estado":"SP ",
+        "Cidade":"Vila Tostói",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99178-8675"
+    },
+    {
+        "Id Cliente":211,
+        "Nome":"Claudio Martinho",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":212,
+        "Nome":"Dionete Ferraz ",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":null
+    },
+    {
+        "Id Cliente":213,
+        "Nome":"Agenor Alves de Freitas",
+        "Sexo":"M",
+        "Endereço":"Estrada do Carneiro Nº2923",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99690-6210"
+    },
+    {
+        "Id Cliente":214,
+        "Nome":"Shirley Cristina",
+        "Sexo":"F",
+        "Endereço":"Rua Everton Ressa Nº211 ",
+        "Estado":"SP ",
+        "Cidade":"Jd. Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97146-0908"
+    },
+    {
+        "Id Cliente":215,
+        "Nome":"Marcelo Araujo",
+        "Sexo":"M",
+        "Endereço":"Rua da Mooca Nº2505",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93302-1150"
+    },
+    {
+        "Id Cliente":216,
+        "Nome":"Rafael Silva ",
+        "Sexo":"M",
+        "Endereço":"Avenida Rio das Pedras Nº4021",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98638-4853"
+    },
+    {
+        "Id Cliente":217,
+        "Nome":"Edilene Da Silva Severiano",
+        "Sexo":"F",
+        "Endereço":"Rua Antônio de Mendonça Nº15",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97173-7715"
+    },
+    {
+        "Id Cliente":218,
+        "Nome":"Viviane Oliveira Pereira",
+        "Sexo":"F",
+        "Endereço":"Rua Raimundo de Oliveira Nº240",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98620-5941"
+    },
+    {
+        "Id Cliente":219,
+        "Nome":"Fabrício Ferreira",
+        "Sexo":"M",
+        "Endereço":"Rua Vitório Azadia Nº547",
+        "Estado":"SP ",
+        "Cidade":"São Mateis",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97711-1512"
+    },
+    {
+        "Id Cliente":220,
+        "Nome":"Evandro Oliveira",
+        "Sexo":"M",
+        "Endereço":"Rua Nova Aliança Nº3",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99485-0832"
+    },
+    {
+        "Id Cliente":221,
+        "Nome":"Ingrid Lacerda Santos ",
+        "Sexo":"F",
+        "Endereço":"Rua Roberto Park Nº55",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98382-7258"
+    },
+    {
+        "Id Cliente":222,
+        "Nome":"Simone dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Pedro Corte Real Nº132",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99689-0401"
+    },
+    {
+        "Id Cliente":223,
+        "Nome":"André Luiz Farias",
+        "Sexo":"M",
+        "Endereço":"Rua Flores da Primavera Nº38",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94565-0052"
+    },
+    {
+        "Id Cliente":224,
+        "Nome":"Samey Da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Erva Imperial Nº595",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96984-6704"
+    },
+    {
+        "Id Cliente":225,
+        "Nome":"Hugo Tiago Teixeira ",
+        "Sexo":"F",
+        "Endereço":"Av. Sapopemba Nº23011",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97391-1705"
+    },
+    {
+        "Id Cliente":226,
+        "Nome":"Demirio André",
+        "Sexo":"M",
+        "Endereço":"Rua Flora da Primavera",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":227,
+        "Nome":"Joelma Lima",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Dan Nº111",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98606-1552"
+    },
+    {
+        "Id Cliente":228,
+        "Nome":"Patrícia Rodrigues",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Campinas",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":229,
+        "Nome":"Cleusa Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Miguel Fernandes Nº74",
+        "Estado":"SP ",
+        "Cidade":"Tucuruvi",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)944759097"
+    },
+    {
+        "Id Cliente":230,
+        "Nome":"Fabiana Reis ",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Monte Verde",
+        "Estado2":"Minas Gerais",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":231,
+        "Nome":"Nilda Nunes",
+        "Sexo":"F",
+        "Endereço":"Rua Paulo Sergio Nº14",
+        "Estado":"SP ",
+        "Cidade":"Vila Formosa",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95164-5394"
+    },
+    {
+        "Id Cliente":232,
+        "Nome":"Nadia Brito",
+        "Sexo":"F",
+        "Endereço":"Rua Confederação Dos Tamoios Nº342",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(69)99279-3343"
+    },
+    {
+        "Id Cliente":234,
+        "Nome":"Caio Gustavo",
+        "Sexo":"M",
+        "Endereço":"Rua Céu Azul Nº21 ",
+        "Estado":"SP ",
+        "Cidade":"Mauá ",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98334-5304"
+    },
+    {
+        "Id Cliente":235,
+        "Nome":"Monaliza A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":236,
+        "Nome":"Cristiane Sampaio Aciolli",
+        "Sexo":"F",
+        "Endereço":"Av. Rio das Pedras Nº3524",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98105-4759"
+    },
+    {
+        "Id Cliente":237,
+        "Nome":"Elaine Cristina de Angela",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Jaú",
+        "Estado2":"São Paulo",
+        "Telefone":"(14)99769-2502"
+    },
+    {
+        "Id Cliente":238,
+        "Nome":"Jeane Rodrigues",
+        "Sexo":"F",
+        "Endereço":"Rua Carlos Cossi Nº145",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96611-4040"
+    },
+    {
+        "Id Cliente":239,
+        "Nome":"Higor Rocha",
+        "Sexo":"M",
+        "Endereço":"Rua Damoão Fernandes Nº105",
+        "Estado":"SP ",
+        "Cidade":"Barueri",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95485-8815"
+    },
+    {
+        "Id Cliente":240,
+        "Nome":"Caio Almeida Freire",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96870-1103"
+    },
+    {
+        "Id Cliente":241,
+        "Nome":"Liss Ferreira",
+        "Sexo":"F",
+        "Endereço":"Travessa Terras do Sul Nº168",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":242,
+        "Nome":"Claudio de Jesus",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95109-7576"
+    },
+    {
+        "Id Cliente":243,
+        "Nome":"Juliano Flores Almeida",
+        "Sexo":"M",
+        "Endereço":"Rua Paulino CursI Nº577",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96974-4874"
+    },
+    {
+        "Id Cliente":244,
+        "Nome":"Marcia Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Paca Nº665A",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95142-3615"
+    },
+    {
+        "Id Cliente":245,
+        "Nome":"Orlando Silva Souza",
+        "Sexo":"M",
+        "Endereço":"Avenida Luiz Pires de Minas Nº31",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94940-0878"
+    },
+    {
+        "Id Cliente":246,
+        "Nome":"Ronaldo Dias",
+        "Sexo":"M",
+        "Endereço":"Avenida Sapopemba Nº9044",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94467-3637"
+    },
+    {
+        "Id Cliente":247,
+        "Nome":"Bianca Gomes",
+        "Sexo":"F",
+        "Endereço":"Rua Morro das Pedras Nº310",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95434-8184"
+    },
+    {
+        "Id Cliente":248,
+        "Nome":"Daniela Santos Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Frank Domingos Bochia Nº46",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96016-8618"
+    },
+    {
+        "Id Cliente":249,
+        "Nome":"Crislene Vieira Nunes",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel da Luz Drummond Nº630",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93146-3425"
+    },
+    {
+        "Id Cliente":250,
+        "Nome":"Damabiah Lana Moraes",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor José Higino Nº729",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99964-7112"
+    },
+    {
+        "Id Cliente":251,
+        "Nome":"Viviane Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Jequitiba Branco Nº10",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93295-2325"
+    },
+    {
+        "Id Cliente":252,
+        "Nome":"Bruna Fagundes",
+        "Sexo":"F",
+        "Endereço":"Rua Boa Família Nº678",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98897-3181"
+    },
+    {
+        "Id Cliente":253,
+        "Nome":"Luciana Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Sargento Osvaldo Conceição Nº78",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94886-9713"
+    },
+    {
+        "Id Cliente":254,
+        "Nome":"Marianilda de Andrade",
+        "Sexo":"F",
+        "Endereço":"Rua Vargas Nova Nº31",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95447-4435"
+    },
+    {
+        "Id Cliente":255,
+        "Nome":"Arinne Cavalcante da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Armada Cabralina Nº61",
+        "Estado":"SP ",
+        "Cidade":"Guaianases",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95015-3046"
+    },
+    {
+        "Id Cliente":256,
+        "Nome":"Lucas Alexandre ",
+        "Sexo":"M",
+        "Endereço":"Rua Anny Nº1262",
+        "Estado":"SP ",
+        "Cidade":"Sacomã",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)4059-4446"
+    },
+    {
+        "Id Cliente":257,
+        "Nome":"Fernando Martins",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Barueri",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":258,
+        "Nome":"Nice Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua João Batista Conti Nº498",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95912-0468"
+    },
+    {
+        "Id Cliente":259,
+        "Nome":"Luziane da Silva",
+        "Sexo":"F",
+        "Endereço":"Avenida Jasmine Nº29",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99420-4505"
+    },
+    {
+        "Id Cliente":260,
+        "Nome":"Caio Gonçalves",
+        "Sexo":"M",
+        "Endereço":"Travessa Sabor de Mim Nº19A",
+        "Estado":"SP ",
+        "Cidade":"São Mateus ",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95216-5369"
+    },
+    {
+        "Id Cliente":261,
+        "Nome":"Ana Paula Santos ",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Ipiranga",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":262,
+        "Nome":"João Pedro Silva",
+        "Sexo":"F",
+        "Endereço":"Avenida Dos Sertanista 1176B",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98748-6593"
+    },
+    {
+        "Id Cliente":263,
+        "Nome":"Juliana Monteiro",
+        "Sexo":"F",
+        "Endereço":"Rua Touro Nº170",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99105-8309"
+    },
+    {
+        "Id Cliente":264,
+        "Nome":"Danubia Silva Araujo",
+        "Sexo":"F",
+        "Endereço":"Rua 06 Quadra17 Lote07",
+        "Estado":"GO",
+        "Cidade":"Portelânida",
+        "Estado2":"Góias",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":265,
+        "Nome":"Adriana Marreiros Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Coronel Raul Costa Nº335",
+        "Estado":"RJ",
+        "Cidade":"Itaperuna",
+        "Estado2":"Ro de Janeiro",
+        "Telefone":"(21)98839-8685"
+    },
+    {
+        "Id Cliente":266,
+        "Nome":"Eduardo Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Francisco Matias Nº117A",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94886-5039"
+    },
+    {
+        "Id Cliente":267,
+        "Nome":"José Maria Dos Santos",
+        "Sexo":"M",
+        "Endereço":"Rua do Campo Nº71",
+        "Estado":"PB",
+        "Cidade":"Pitimbu",
+        "Estado2":"Paraíba",
+        "Telefone":"(85)98944-4484"
+    },
+    {
+        "Id Cliente":268,
+        "Nome":"Eliete Fernandes",
+        "Sexo":"F",
+        "Endereço":"Rua Agostinho de Magalhães Nº280",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)2015-8891"
+    },
+    {
+        "Id Cliente":269,
+        "Nome":"Betoldo Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"-",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":270,
+        "Nome":"Luana Almeida",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":271,
+        "Nome":"Sergio Ferreira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Vila Prudente",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":272,
+        "Nome":"Mônica Janaina dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Calixto Fernandes das Neves Nº648",
+        "Estado":"RJ",
+        "Cidade":"Barra de Macaé",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"(21)99847-9514"
+    },
+    {
+        "Id Cliente":273,
+        "Nome":"Fabiana Gomes Leal ",
+        "Sexo":"F",
+        "Endereço":"Rua Iamante Júnior Nº513",
+        "Estado":"MA",
+        "Cidade":"Açailândia",
+        "Estado2":"Maranhão",
+        "Telefone":"(99)99180-5473"
+    },
+    {
+        "Id Cliente":274,
+        "Nome":"Davi Souza",
+        "Sexo":"M",
+        "Endereço":"Rua Elísio Ferreira Nº88",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93380-7526"
+    },
+    {
+        "Id Cliente":275,
+        "Nome":"Orlando(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"-",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":276,
+        "Nome":"Cícera Romano",
+        "Sexo":"F",
+        "Endereço":"Rua Pedro Ramazani Nº2000",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94542-9006"
+    },
+    {
+        "Id Cliente":277,
+        "Nome":"Reinaldo Fernandes",
+        "Sexo":"M",
+        "Endereço":"Avenida Doutor Guilherme de Abreu Sodre Nº1492",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)91357-5173"
+    },
+    {
+        "Id Cliente":278,
+        "Nome":"Cristina Beltrano",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":279,
+        "Nome":"Janilson F.",
+        "Sexo":"M",
+        "Endereço":"Rua Alcelmo Almeida Monteiro",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95984-3444"
+    },
+    {
+        "Id Cliente":280,
+        "Nome":"Rodrigo Ferreira da Silva",
+        "Sexo":"M",
+        "Endereço":"Rua Rodolfo Corsi Nº234",
+        "Estado":"SP ",
+        "Cidade":"Rancharia",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":281,
+        "Nome":"Renan Souza",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":282,
+        "Nome":"Sheila Cristina dos Santos da Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Passagem de São Pedro Nº326",
+        "Estado":"PA",
+        "Cidade":"Belém",
+        "Estado2":"Pará",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":283,
+        "Nome":"Juliana Cristina da Silva",
+        "Sexo":"F",
+        "Endereço":"Avenida José Velho Barreto Nº142",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94008-0631"
+    },
+    {
+        "Id Cliente":284,
+        "Nome":"Jane Malveira Bianco",
+        "Sexo":"F",
+        "Endereço":"Rua Ettore Ximenes Nº350 Sl 04",
+        "Estado":"SP ",
+        "Cidade":"Vila Prudente",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97309-3112"
+    },
+    {
+        "Id Cliente":285,
+        "Nome":"Vanusa Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Aldeia Maria Nº193",
+        "Estado":"SP ",
+        "Cidade":"Guaianases",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96398-4192"
+    },
+    {
+        "Id Cliente":286,
+        "Nome":"Geisa Cristina",
+        "Sexo":"F",
+        "Endereço":"Travessa Edith Evans Nº45",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95811-6617"
+    },
+    {
+        "Id Cliente":287,
+        "Nome":"Mônica Ferreira Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Radical Norte Qd24 Lote15",
+        "Estado":"MA",
+        "Cidade":"Açailândia",
+        "Estado2":"Maranhão",
+        "Telefone":"(99)99118-2997"
+    },
+    {
+        "Id Cliente":288,
+        "Nome":"Celi Patrício Lins",
+        "Sexo":"F",
+        "Endereço":"Av. Carioca Nº813",
+        "Estado":"SP ",
+        "Cidade":"Ipiranga",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98107-1980"
+    },
+    {
+        "Id Cliente":289,
+        "Nome":"Eduardo Nunes",
+        "Sexo":"M",
+        "Endereço":"Av. Nagib Farah Maluf Nº408",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94489-2080"
+    },
+    {
+        "Id Cliente":290,
+        "Nome":"Joyce Santos",
+        "Sexo":"F",
+        "Endereço":"Av. Mateo Bei Nº2635",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93801-6917"
+    },
+    {
+        "Id Cliente":291,
+        "Nome":"Lurdes Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Felipe Castrin Nº251",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98637-5994"
+    },
+    {
+        "Id Cliente":292,
+        "Nome":"Juliana Dos Anjos",
+        "Sexo":"F",
+        "Endereço":"Alameda Benfort Nº50",
+        "Estado":"SP ",
+        "Cidade":"Atibaia",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94594-8839"
+    },
+    {
+        "Id Cliente":293,
+        "Nome":"Barbara Aline Diogo da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel Gervásio Nº158",
+        "Estado":"MG",
+        "Cidade":"Pequeri",
+        "Estado2":"Minas Gerais",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":294,
+        "Nome":"Gil Raimundo",
+        "Sexo":"M",
+        "Endereço":"Rua Padre Luiz de Birquina Nº444",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99847-2274"
+    },
+    {
+        "Id Cliente":295,
+        "Nome":"Manoel Souza",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":296,
+        "Nome":"Ornilda de Abreu",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":297,
+        "Nome":"Betânia",
+        "Sexo":"F",
+        "Endereço":"Rua Delta Nº381",
+        "Estado":"SP ",
+        "Cidade":"Santana do Parnaíba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97532-7002"
+    },
+    {
+        "Id Cliente":298,
+        "Nome":"Cássia Pelose",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":299,
+        "Nome":"João Gabriel",
+        "Sexo":"M",
+        "Endereço":"Av. Alberto Lupo Nª2c",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98768-0921"
+    },
+    {
+        "Id Cliente":300,
+        "Nome":"Luzinete Rodrigues",
+        "Sexo":"F",
+        "Endereço":"Travessa São Sebastião Nº11",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99297-4620"
+    },
+    {
+        "Id Cliente":301,
+        "Nome":"Pâmela Lima",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Moema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96307-2605"
+    },
+    {
+        "Id Cliente":302,
+        "Nome":"Anderson de Andrade",
+        "Sexo":"M",
+        "Endereço":"Rua Sírios Nº49",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95901-4184"
+    },
+    {
+        "Id Cliente":303,
+        "Nome":"Edvaldo Moraes",
+        "Sexo":"M",
+        "Endereço":"Rua Estrada dos Fidelis Nº97",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":304,
+        "Nome":"Geisa Paulino de Melo",
+        "Sexo":"F",
+        "Endereço":"Rua Amalia Cordelli Cardenoto Nº31",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98559-4062"
+    },
+    {
+        "Id Cliente":305,
+        "Nome":"Felipe Santos da Silva",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96837-6650"
+    },
+    {
+        "Id Cliente":306,
+        "Nome":"Angélica Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel de Abreu Nº26",
+        "Estado":"SP ",
+        "Cidade":"Ferraz de Vasconcelos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)91025-6560"
+    },
+    {
+        "Id Cliente":307,
+        "Nome":"Geraldo Carlos Prestes",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":308,
+        "Nome":"Wesley Bittencourt",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"-",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99940-0893"
+    },
+    {
+        "Id Cliente":309,
+        "Nome":"Angela Maria de Fátima",
+        "Sexo":"F",
+        "Endereço":"Av. Moraes Costa Nº108 Sala 5",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95757-5421"
+    },
+    {
+        "Id Cliente":310,
+        "Nome":"Cilene Ribeiro Alves",
+        "Sexo":"F",
+        "Endereço":"Av. Vila Ema Nº2349",
+        "Estado":"SP ",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96522-5888"
+    },
+    {
+        "Id Cliente":311,
+        "Nome":"Rafael Moreira",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":312,
+        "Nome":"José Leandro Bueno",
+        "Sexo":"M",
+        "Endereço":"Rua Domisiano Rossi Nº630",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99194-9639"
+    },
+    {
+        "Id Cliente":313,
+        "Nome":"Douglas Campos",
+        "Sexo":"M",
+        "Endereço":"Rua Doutor Felice Buscaglia 397",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":314,
+        "Nome":"Larissa Conceição dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor José Higino Nº890",
+        "Estado":"SP ",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98501-5809"
+    },
+    {
+        "Id Cliente":315,
+        "Nome":"Silvana Simplicio",
+        "Sexo":"F",
+        "Endereço":"Av. Cláudio Augusto Fernandes Nº754",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98440-7406"
+    },
+    {
+        "Id Cliente":316,
+        "Nome":"Maria das Graças dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Tomé da Rocha Nº67",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99517-2348"
+    },
+    {
+        "Id Cliente":317,
+        "Nome":"Alana Cristina",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96197-3030"
+    },
+    {
+        "Id Cliente":318,
+        "Nome":"Mary Barbosa",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel Rebelo Nº126",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95199-9520"
+    },
+    {
+        "Id Cliente":319,
+        "Nome":"Lucas De Oliveira Almeida",
+        "Sexo":"M",
+        "Endereço":"Rua Cacapava Nº07",
+        "Estado":"ES",
+        "Cidade":"Piúma",
+        "Estado2":"Espirito Santo",
+        "Telefone":"(28)99914-7036"
+    },
+    {
+        "Id Cliente":320,
+        "Nome":"Natalia Nazar da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Bnadeira de Aracambi Nº430",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98436-8091"
+    },
+    {
+        "Id Cliente":321,
+        "Nome":"Jurandir Freitas (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":322,
+        "Nome":"Thiago Barbosa",
+        "Sexo":"M",
+        "Endereço":"Rua Felipe Marinete Nª324",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98226-8063"
+    },
+    {
+        "Id Cliente":323,
+        "Nome":"Isabel M.",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":324,
+        "Nome":"Jhonatas Freire",
+        "Sexo":"M",
+        "Endereço":"Rua Maria Luiza Val Penteado Nº495",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":325,
+        "Nome":"Joana Dark",
+        "Sexo":"F",
+        "Endereço":"Av. Sapopemba Nº 7841",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97982-4055"
+    },
+    {
+        "Id Cliente":326,
+        "Nome":"Cida Oliveira",
+        "Sexo":"F",
+        "Endereço":"Rua Alexandre Albriv Nxº121",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96835-5829"
+    },
+    {
+        "Id Cliente":327,
+        "Nome":"Anderson Nunes",
+        "Sexo":"M",
+        "Endereço":"Av. Sapopemba Nº14519",
+        "Estado":"SP ",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96543-4452"
+    },
+    {
+        "Id Cliente":328,
+        "Nome":"Tiago Queiroz",
+        "Sexo":"M",
+        "Endereço":"Av. Celso Garcia Nº3474",
+        "Estado":"SP ",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)985422762"
+    },
+    {
+        "Id Cliente":329,
+        "Nome":"Marcia Ferreira",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Suzano",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":330,
+        "Nome":"Mayara Fernandes",
+        "Sexo":"F",
+        "Endereço":"Avenida Ettore Nº790",
+        "Estado":"SP ",
+        "Cidade":"Ribeirão Pires",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":331,
+        "Nome":"Ana Paula Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua dos Santana Nª35",
+        "Estado":"SP ",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98288-6490"
+    },
+    {
+        "Id Cliente":332,
+        "Nome":"Lais Siqueira",
+        "Sexo":"F",
+        "Endereço":"Travessa Maria Padilha Nº12",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":333,
+        "Nome":"Mikaela F.",
+        "Sexo":"F",
+        "Endereço":"Rua Getulina Nº66",
+        "Estado":"SP ",
+        "Cidade":"Guianases",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95937-2139"
+    },
+    {
+        "Id Cliente":334,
+        "Nome":"Renan Lima",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":335,
+        "Nome":"Aline de Aguiar",
+        "Sexo":"F",
+        "Endereço":"Rua das Figueiras Nº2780",
+        "Estado":"SP ",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98455-7182"
+    },
+    {
+        "Id Cliente":336,
+        "Nome":"Claudia Menezes",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Felice Buscaglia 608",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":337,
+        "Nome":"Raquel Moreira de Alcantra",
+        "Sexo":"F",
+        "Endereço":"Rua Dr. Edmur Whitaker Nº670",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95609-5155"
+    },
+    {
+        "Id Cliente":338,
+        "Nome":"Patrícia Branger",
+        "Sexo":"F",
+        "Endereço":"Rua Eurico Eloi Marcelino Nº225",
+        "Estado":"PR",
+        "Cidade":"Santa Tereza do Oeste",
+        "Estado2":"Paraná",
+        "Telefone":"(45)99906-1728"
+    },
+    {
+        "Id Cliente":339,
+        "Nome":"Kleber de Souza",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96070-4177"
+    },
+    {
+        "Id Cliente":340,
+        "Nome":"Claudia Mota Paixão ",
+        "Sexo":"F",
+        "Endereço":"Rua Joaquim Abreu luz Nª338",
+        "Estado":"SP ",
+        "Cidade":"Pq. São Lucas",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99271-5771"
+    },
+    {
+        "Id Cliente":341,
+        "Nome":"Rogério Carvalho",
+        "Sexo":"M",
+        "Endereço":"Rua Padre Gabriel Malagrida Nº19",
+        "Estado":"SP ",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96548-5605"
+    },
+    {
+        "Id Cliente":342,
+        "Nome":"Adriana Santana",
+        "Sexo":"F",
+        "Endereço":"Rua André Fernandes Nº138",
+        "Estado":"SP ",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94240-1318"
+    },
+    {
+        "Id Cliente":343,
+        "Nome":"Lizandra Souza",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":344,
+        "Nome":"Jessica Rodrigues",
+        "Sexo":"F",
+        "Endereço":"Rua Bartolomeu Correia Bueno Nº134",
+        "Estado":"SP ",
+        "Cidade":"Pq. São Lucas",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":345,
+        "Nome":"Jessica Gonçalves da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Antão Leme da Silva Nº202",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97992-6765"
+    },
+    {
+        "Id Cliente":346,
+        "Nome":"Denilson Manoel de Lima",
+        "Sexo":"M",
+        "Endereço":"Rua Venturosa Nº381 ",
+        "Estado":"PE",
+        "Cidade":"Paulista",
+        "Estado2":"Pernambuco",
+        "Telefone":"(81)98524-4935"
+    },
+    {
+        "Id Cliente":347,
+        "Nome":"Janete ( Representante)",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":348,
+        "Nome":"Andreia L.",
+        "Sexo":"F",
+        "Endereço":"Rua Liberato Barroso Nº162",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97588-6073"
+    },
+    {
+        "Id Cliente":349,
+        "Nome":"Glecia Vieira",
+        "Sexo":"F",
+        "Endereço":"Av. Roney Clube Nª1211",
+        "Estado":"SP ",
+        "Cidade":"São Bernardo do Campo",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":350,
+        "Nome":"João Almeida de Freitas",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP ",
+        "Cidade":"Cotia",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":351,
+        "Nome":"Nilson Vieira",
+        "Sexo":"M",
+        "Endereço":"Rua Itinga Nº48",
+        "Estado":"SP ",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98216-5715"
+    },
+    {
+        "Id Cliente":352,
+        "Nome":"Rosineide Alves",
+        "Sexo":"F",
+        "Endereço":"Rua Guido Frederica Nº10",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"(11)95335-5852"
+    },
+    {
+        "Id Cliente":353,
+        "Nome":"Daniele Ferreira",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"Santo André",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":354,
+        "Nome":"Bruno Almeida de Melo",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":355,
+        "Nome":"Maria Cleciane Queiroz dos Santos",
+        "Sexo":"F",
+        "Endereço":"Av. Dos Sertanistas Nº1967",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"(11)97083-1504"
+    },
+    {
+        "Id Cliente":356,
+        "Nome":"Marcelo Paixão ",
+        "Sexo":"M",
+        "Endereço":"Rua Luiz de Oliveira Bulhões Nº518",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94545-1176"
+    },
+    {
+        "Id Cliente":357,
+        "Nome":"Graziela Cristina",
+        "Sexo":"F",
+        "Endereço":"Rua Ascabuz Nº206",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"-",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":358,
+        "Nome":"Marli A.",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":359,
+        "Nome":"Norma Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Itacoatiara Nº231",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"Santo André",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":360,
+        "Nome":"Roney Ferreira da Proença",
+        "Sexo":"F",
+        "Endereço":"Rua Major Sertório Nº561",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"Faria Lima",
+        "Telefone":"(11)96355-8854"
+    },
+    {
+        "Id Cliente":361,
+        "Nome":"Damiana Lourenço",
+        "Sexo":"F",
+        "Endereço":"Rua Dom Diogo Furtado Nº180",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"(11)95457-2678"
+    },
+    {
+        "Id Cliente":362,
+        "Nome":"Verônica (Representante)",
+        "Sexo":"F",
+        "Endereço":"Av. Maria Cursi Nº985",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"(11)95457-2679"
+    },
+    {
+        "Id Cliente":363,
+        "Nome":"Walne(Representatnet)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":364,
+        "Nome":"Andreia M.",
+        "Sexo":"F",
+        "Endereço":"Rua Oronzo Mastrokosa Nº71",
+        "Estado":"SP",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98374-5138"
+    },
+    {
+        "Id Cliente":365,
+        "Nome":"Alzira Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Mateus",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":366,
+        "Nome":"Lucas Henrique",
+        "Sexo":"M",
+        "Endereço":"Rua Guido Frederica Nº20",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96440-4139"
+    },
+    {
+        "Id Cliente":367,
+        "Nome":"Dário Pereira de Souza Junior",
+        "Sexo":"M",
+        "Endereço":"Rua Sorocaba Nº08 Loja 2",
+        "Estado":"RJ",
+        "Cidade":"Rio de Janeiro",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":368,
+        "Nome":"Cleber Fernandes ",
+        "Sexo":"M",
+        "Endereço":"Rua Beira Rio Nº64",
+        "Estado":"SP",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96070-4177"
+    },
+    {
+        "Id Cliente":369,
+        "Nome":"Alex Santana Carvalho",
+        "Sexo":"M",
+        "Endereço":"Rua Adelar Maria de Andrade Nº231",
+        "Estado":"BA",
+        "Cidade":"Porto Seguro",
+        "Estado2":"Bahia",
+        "Telefone":"(73)99975-4758"
+    },
+    {
+        "Id Cliente":370,
+        "Nome":"Kelly Andradae",
+        "Sexo":"F",
+        "Endereço":"Rua Eldorado Nº473",
+        "Estado":"SP",
+        "Cidade":"São Caetano do Sul",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95798-4585"
+    },
+    {
+        "Id Cliente":371,
+        "Nome":"Inael(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":372,
+        "Nome":"Fábio José de Carvalho",
+        "Sexo":"M",
+        "Endereço":"Rua Raimundo Fernandes da Silva Nº735",
+        "Estado":"PI",
+        "Cidade":"Esperantina",
+        "Estado2":"Piauí",
+        "Telefone":"(86)98117-6382"
+    },
+    {
+        "Id Cliente":373,
+        "Nome":"Neci Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Luiz Guidiei Nº694",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95131-3811"
+    },
+    {
+        "Id Cliente":374,
+        "Nome":"Lorena Prado",
+        "Sexo":"F",
+        "Endereço":"Rua Netuno Nº113",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99703-806"
+    },
+    {
+        "Id Cliente":375,
+        "Nome":"Lucas Gabriel S. Costa",
+        "Sexo":"M",
+        "Endereço":"Rua Domenico Alberti Nº121",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95236-5155"
+    },
+    {
+        "Id Cliente":376,
+        "Nome":"Paulo André Siqueira Mendes",
+        "Sexo":"M",
+        "Endereço":"Estrada Embaixador São Vicente Nº284",
+        "Estado":"RJ",
+        "Cidade":"Rio de Janeiro",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"(22)98801-6001"
+    },
+    {
+        "Id Cliente":377,
+        "Nome":"Marluce Silva",
+        "Sexo":"F",
+        "Endereço":"Avenida Bassamo Del Grappa Nº220",
+        "Estado":"SP",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94119-8948"
+    },
+    {
+        "Id Cliente":378,
+        "Nome":"Talita Paraiso",
+        "Sexo":"F",
+        "Endereço":"Rua Dona Carmela Nº245",
+        "Estado":"SP",
+        "Cidade":"Jd. Grimaldi",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96462-5839"
+    },
+    {
+        "Id Cliente":379,
+        "Nome":"Micaele Santos Maria",
+        "Sexo":"F",
+        "Endereço":"Rua Carlos Coccia Nº106",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95354-8871"
+    },
+    {
+        "Id Cliente":380,
+        "Nome":"Roque Martins",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96712-7112"
+    },
+    {
+        "Id Cliente":381,
+        "Nome":"Leda Maria de Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Pastor Agenor Diniz Nº178",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95869-2375"
+    },
+    {
+        "Id Cliente":382,
+        "Nome":"Rosângela Martins",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":383,
+        "Nome":"Phillipe Ferreira (Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"PA",
+        "Cidade":"Altamira",
+        "Estado2":"Pará",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":384,
+        "Nome":"Roberta Ferreira",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":385,
+        "Nome":"Miqueias Pinheiro",
+        "Sexo":"F",
+        "Endereço":"Rua Ettore Andreazza Nº363",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99563-5264"
+    },
+    {
+        "Id Cliente":386,
+        "Nome":"Noelle Cristini Dourado",
+        "Sexo":"F",
+        "Endereço":"Rua Lirio do Vale Nº385",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98703-3902"
+    },
+    {
+        "Id Cliente":387,
+        "Nome":"Neusa Stevem",
+        "Sexo":"F",
+        "Endereço":"Rua Gedge Beckeby Nº7",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":388,
+        "Nome":"Zulmira Lima",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":389,
+        "Nome":"Ana Cláudia Freitas",
+        "Sexo":"F",
+        "Endereço":"Av. Sapopemba ",
+        "Estado":"SP",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95988-0890"
+    },
+    {
+        "Id Cliente":390,
+        "Nome":"Graziele Da Silva Brandão",
+        "Sexo":"F",
+        "Endereço":"Rua Orlando Teles Nº45",
+        "Estado":"SP",
+        "Cidade":"Itapevi",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99517-1076"
+    },
+    {
+        "Id Cliente":391,
+        "Nome":"Derik F.",
+        "Sexo":"M",
+        "Endereço":"Rua Francisco de Paula Nº42",
+        "Estado":"SP",
+        "Cidade":"Vila Formosa",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93957-5094"
+    },
+    {
+        "Id Cliente":392,
+        "Nome":"Vieto Costa Gomes",
+        "Sexo":"F",
+        "Endereço":"Rua Tavares Nª46",
+        "Estado":"SP",
+        "Cidade":"Lauzane Paulista",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93012-9128"
+    },
+    {
+        "Id Cliente":393,
+        "Nome":"Elisangela Alves Selaris",
+        "Sexo":"F",
+        "Endereço":"Av. Sapopemba Nº5570",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95127-5106"
+    },
+    {
+        "Id Cliente":394,
+        "Nome":"Lucas Nascimento",
+        "Sexo":"M",
+        "Endereço":"Rua Antônio Carllas Dalla Nº435",
+        "Estado":"SP",
+        "Cidade":"São Carlos",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":395,
+        "Nome":"Shirley da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Campo de Piratininga Nº336",
+        "Estado":"SP",
+        "Cidade":"Jd. Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98873-2887"
+    },
+    {
+        "Id Cliente":396,
+        "Nome":"Elen Regina de Oliveira",
+        "Sexo":"F",
+        "Endereço":"Rua Travessa Augusto Baron Nº161",
+        "Estado":"RS",
+        "Cidade":"Rio Claro",
+        "Estado2":"Rio de Grande do Sul",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":397,
+        "Nome":"Larissa Yara Gomes",
+        "Sexo":"F",
+        "Endereço":"Rua Domingos Rubino Nº359",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97634-8424"
+    },
+    {
+        "Id Cliente":398,
+        "Nome":"Rose R.",
+        "Sexo":"F",
+        "Endereço":"Rua Tenente Lauro Sodré Nº1398",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94863-1253"
+    },
+    {
+        "Id Cliente":399,
+        "Nome":"Adenilda N.",
+        "Sexo":"F",
+        "Endereço":"Rua Serra Navio Nº785",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93602-0161"
+    },
+    {
+        "Id Cliente":400,
+        "Nome":"Rose Machado",
+        "Sexo":"F",
+        "Endereço":"Rua José Francisco Dos Santos",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95811-2159"
+    },
+    {
+        "Id Cliente":401,
+        "Nome":"Karen Fernanda Mendes",
+        "Sexo":"F",
+        "Endereço":"Rua José Ricardo Pagionotto Nº215",
+        "Estado":"SP",
+        "Cidade":"Quatá ",
+        "Estado2":"São Paulo",
+        "Telefone":"(19)99802-7401"
+    },
+    {
+        "Id Cliente":402,
+        "Nome":"Ednalva Carneiro",
+        "Sexo":"M",
+        "Endereço":"Estrada Santa Marinha Nº59",
+        "Estado":"RJ",
+        "Cidade":"Rio de Janeiro",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":403,
+        "Nome":"Ulivandia Moreira Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Serra do Mar Nº865",
+        "Estado":"MG",
+        "Cidade":"Ipatinga",
+        "Estado2":"Minas Gerais",
+        "Telefone":"(31)98604-3951"
+    },
+    {
+        "Id Cliente":404,
+        "Nome":"Vera Lúcia Ferras",
+        "Sexo":"F",
+        "Endereço":"Rua Ipiranga Nº80",
+        "Estado":"SP",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97689-0508"
+    },
+    {
+        "Id Cliente":405,
+        "Nome":"Josy De Jesus Nascimento",
+        "Sexo":"F",
+        "Endereço":"Rua Henrique Mazalte Nº530",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94774-4502"
+    },
+    {
+        "Id Cliente":406,
+        "Nome":"Dineia Maria Ribeiro Soares",
+        "Sexo":"F",
+        "Endereço":"Rua Arlindo Neves Nº346",
+        "Estado":"MG",
+        "Cidade":"Muriaé ",
+        "Estado2":"Minas Gerais",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":407,
+        "Nome":"Jorge Nunes",
+        "Sexo":"M",
+        "Endereço":"Travessa Zasueira Nº68",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98527-4827"
+    },
+    {
+        "Id Cliente":408,
+        "Nome":"Suzane Lacerda Dantas",
+        "Sexo":"F",
+        "Endereço":"Rua Sul Nº206",
+        "Estado":"TO",
+        "Cidade":"Araguaiana",
+        "Estado2":"Tocantis",
+        "Telefone":"(63)99209-2012"
+    },
+    {
+        "Id Cliente":409,
+        "Nome":"Ellen Kellen Virginia da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Joaquim de Queiroz Nº233",
+        "Estado":"RJ",
+        "Cidade":"Rio de Janeiro",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"(27)98577-8561"
+    },
+    {
+        "Id Cliente":410,
+        "Nome":"Roberta Nascimento",
+        "Sexo":"F",
+        "Endereço":"Travessa Nogueria Nº68",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94880-8768"
+    },
+    {
+        "Id Cliente":411,
+        "Nome":"Josuel Rodrigues da Silva Junior",
+        "Sexo":"M",
+        "Endereço":"Rua Vitoriano Pereira Nº105",
+        "Estado":"SP",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96429-1976"
+    },
+    {
+        "Id Cliente":412,
+        "Nome":"Bianca Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Soldado Teonilio de Souza Nº110",
+        "Estado":"SP",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95877-9066"
+    },
+    {
+        "Id Cliente":413,
+        "Nome":"Lúcia Araujo do Nascimento",
+        "Sexo":"F",
+        "Endereço":"Rua Prof. Brazílio Barni Nº160",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96717-5501"
+    },
+    {
+        "Id Cliente":414,
+        "Nome":"Jussara de Souza Campos",
+        "Sexo":"F",
+        "Endereço":"Rua das Palmeiras Nº168",
+        "Estado":"PB",
+        "Cidade":"Cabedelo",
+        "Estado2":"Paraíba",
+        "Telefone":"(65)99244-6557"
+    },
+    {
+        "Id Cliente":415,
+        "Nome":"Anides Bispo de Oliveira",
+        "Sexo":"F",
+        "Endereço":"Travessa Sol do Girassol Nº131",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99747-1182"
+    },
+    {
+        "Id Cliente":416,
+        "Nome":"Gildania Leonilda Souza",
+        "Sexo":"F",
+        "Endereço":"Travessa Benedito Costa Gomes Nº42b",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97012-8681"
+    },
+    {
+        "Id Cliente":417,
+        "Nome":"Júlio Cesar Sabioni",
+        "Sexo":"M",
+        "Endereço":"Rua Serra de Botucatu",
+        "Estado":"SP",
+        "Cidade":"Tatuapé",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97616-2189"
+    },
+    {
+        "Id Cliente":418,
+        "Nome":"Mariana Pessoa da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Teodora Oliveira Nº346",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95956-9950"
+    },
+    {
+        "Id Cliente":419,
+        "Nome":"Solange Da Silva Dias",
+        "Sexo":"F",
+        "Endereço":"Rua Abner de Souza e Silva Nº27",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99943-8548"
+    },
+    {
+        "Id Cliente":420,
+        "Nome":"Karolen Kamila Mendes da Rocha",
+        "Sexo":"F",
+        "Endereço":"Av do Açai Nº704",
+        "Estado":"AP",
+        "Cidade":"Morada dos Palmeiras",
+        "Estado2":"Macapá",
+        "Telefone":"(96)99166-6443"
+    },
+    {
+        "Id Cliente":421,
+        "Nome":"Paula Bianca de Souza Resende",
+        "Sexo":"F",
+        "Endereço":"Ria Moreira da Rocha Nº45",
+        "Estado":"MG",
+        "Cidade":"Resende da Costa ",
+        "Estado2":"Minas Gerais",
+        "Telefone":"(32)99939-4024"
+    },
+    {
+        "Id Cliente":422,
+        "Nome":"Cleideana Leão ",
+        "Sexo":"F",
+        "Endereço":"Av. Brigadeiro Faria Lima Nº1257 Loja 4",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98589-9450"
+    },
+    {
+        "Id Cliente":423,
+        "Nome":"Liu Tmashiro",
+        "Sexo":"F",
+        "Endereço":"Rua Cristovão de Oliveira Nº75a",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":424,
+        "Nome":"Carla de Souza",
+        "Sexo":"F",
+        "Endereço":"Rua Pangava Nº43",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99116-7882"
+    },
+    {
+        "Id Cliente":425,
+        "Nome":"Sidney Ferreira",
+        "Sexo":"M",
+        "Endereço":"Rua Amazonas Nº22",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95360-8567"
+    },
+    {
+        "Id Cliente":426,
+        "Nome":"José Carlos Freitas",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95899-0456"
+    },
+    {
+        "Id Cliente":427,
+        "Nome":"Marilia Antunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":428,
+        "Nome":"José Carlos Almeida Henrique",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"AL",
+        "Cidade":"Maceió",
+        "Estado2":"Alagoas",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":429,
+        "Nome":"Fabiana Gomes dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Aristides Milton Nº453",
+        "Estado":"BA",
+        "Cidade":"Itapuã",
+        "Estado2":"Bahia",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":430,
+        "Nome":"Vanessa Ferreira de Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Luiz Barbalho Nº255",
+        "Estado":"BA",
+        "Cidade":"Olinda",
+        "Estado2":"Bahia",
+        "Telefone":"(81)98340-5274"
+    },
+    {
+        "Id Cliente":431,
+        "Nome":"Angelina Da Silva Cordeiro",
+        "Sexo":"F",
+        "Endereço":"Rua Giovanni Da Coegliano Nº426",
+        "Estado":"SP",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":432,
+        "Nome":"Laudete Rocha",
+        "Sexo":"F",
+        "Endereço":"Rua José Joaquim Nº31",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96754-7240"
+    },
+    {
+        "Id Cliente":433,
+        "Nome":"Leonardo (Estação 011)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94034-5592"
+    },
+    {
+        "Id Cliente":434,
+        "Nome":"Tatiana Lourenço",
+        "Sexo":"F",
+        "Endereço":"Rua Nova Bahia Nº69",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96702-6689"
+    },
+    {
+        "Id Cliente":435,
+        "Nome":"Karen Figuereido",
+        "Sexo":"F",
+        "Endereço":"Rua Bandeira do Sul Nº307",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98688-0838"
+    },
+    {
+        "Id Cliente":436,
+        "Nome":"Nicolas Perrini",
+        "Sexo":"M",
+        "Endereço":"Rua Principal Nº26a",
+        "Estado":"SP",
+        "Cidade":"Perus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94002-3079"
+    },
+    {
+        "Id Cliente":437,
+        "Nome":"Neila Cruz de Castro",
+        "Sexo":"F",
+        "Endereço":"Rua Goiás Nº307",
+        "Estado":"BA",
+        "Cidade":"Araci",
+        "Estado2":"Bahia",
+        "Telefone":"(75)99240-3500"
+    },
+    {
+        "Id Cliente":438,
+        "Nome":"Tayna Nunes",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"Diadema",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":439,
+        "Nome":"Evelyn Silva",
+        "Sexo":"F",
+        "Endereço":"Av. Manoel Velho Moreira Nº1178A",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96181-9783"
+    },
+    {
+        "Id Cliente":440,
+        "Nome":"Dinho Nunes",
+        "Sexo":"M",
+        "Endereço":"Rua Corrego Dias Pequeno Nº403",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":441,
+        "Nome":"Ana Carolina de Lima Souza",
+        "Sexo":"F",
+        "Endereço":"Rua dos Geografo Nº80A",
+        "Estado":"SP",
+        "Cidade":"Embu das Artes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98618-1068"
+    },
+    {
+        "Id Cliente":442,
+        "Nome":"Maria do Carmo Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Takaominari N º18",
+        "Estado":"SP",
+        "Cidade":"Jardim Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99712-5377"
+    },
+    {
+        "Id Cliente":443,
+        "Nome":"Natalia de Lima e Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Domingos Rosália Nº289",
+        "Estado":"SP",
+        "Cidade":"São Paulo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96628-3160"
+    },
+    {
+        "Id Cliente":444,
+        "Nome":"Maria Aparecida de Almeida",
+        "Sexo":"F",
+        "Endereço":"Av. Getúlio Vargas Nº801",
+        "Estado":"SP",
+        "Cidade":"São Bernardo do Campo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96275-0613"
+    },
+    {
+        "Id Cliente":445,
+        "Nome":"Nathally Cristiny Silva",
+        "Sexo":"F",
+        "Endereço":"Travessa Selassie Nº92",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98872-9042"
+    },
+    {
+        "Id Cliente":446,
+        "Nome":"Malba Delian Assis Belfort",
+        "Sexo":"F",
+        "Endereço":"Rua Tinoco Valente Nº155",
+        "Estado":"RO",
+        "Cidade":"Boa Vista",
+        "Estado2":"Roraima",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":447,
+        "Nome":"Tanylia Josélia Almeida dos Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Guianazes Nº880 ",
+        "Estado":"SP",
+        "Cidade":"Lençois Paulista",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":448,
+        "Nome":"Cleuza Maria de Almeida Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Tomas Beneviete Nº9A",
+        "Estado":"SP",
+        "Cidade":"Palheireiros",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97362-9567"
+    },
+    {
+        "Id Cliente":449,
+        "Nome":"Luciane Maria Alves Martins",
+        "Sexo":"F",
+        "Endereço":"Rua São Geraldo Nº37",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95456-6966"
+    },
+    {
+        "Id Cliente":450,
+        "Nome":"Juliana Gomes Vieira",
+        "Sexo":"F",
+        "Endereço":"Rua Pedro Ramazani Nº123",
+        "Estado":"SP",
+        "Cidade":"Jardim Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98915-2439"
+    },
+    {
+        "Id Cliente":451,
+        "Nome":"Maria Eulina Almeida Vieira",
+        "Sexo":"F ",
+        "Endereço":"Rua Diomedes Lobo Nº732",
+        "Estado":"PB",
+        "Cidade":"Catolé da Rocha",
+        "Estado2":"Paraíba",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":452,
+        "Nome":"Janete Fidelis da Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Siqueira Bueno Nº2271",
+        "Estado":"SP",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98906-8285"
+    },
+    {
+        "Id Cliente":453,
+        "Nome":"Lucas Veraneio",
+        "Sexo":"M",
+        "Endereço":"Rua Campos do Jordão Nº15",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96414-7361"
+    },
+    {
+        "Id Cliente":454,
+        "Nome":"Narjara de Andrade",
+        "Sexo":"F",
+        "Endereço":"Rua Helio Farias de Mendonça ",
+        "Estado":"RS",
+        "Cidade":"Rio Bonito",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":455,
+        "Nome":"Jéssica Santos",
+        "Sexo":"F",
+        "Endereço":"Rua Salvia Nº21",
+        "Estado":"SP",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)93435-1331"
+    },
+    {
+        "Id Cliente":456,
+        "Nome":"Valdemir de Souza Rufino",
+        "Sexo":"M",
+        "Endereço":"Rua Babilônia Nº10",
+        "Estado":"SP",
+        "Cidade":"Ribeirão Pires",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97582-1427"
+    },
+    {
+        "Id Cliente":457,
+        "Nome":"Pelé Almeida Martins",
+        "Sexo":"M",
+        "Endereço":"Rua Padre João Nº41",
+        "Estado":"SP",
+        "Cidade":"Penha",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":458,
+        "Nome":"Juliete Pereira Ribeiro",
+        "Sexo":"F",
+        "Endereço":"Rua Principal Nº28a",
+        "Estado":"SP",
+        "Cidade":"Perus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":459,
+        "Nome":"Gisele Ferreira Samavilla",
+        "Sexo":"F",
+        "Endereço":"Rua Flavio Boanowski Nº487",
+        "Estado":"RS",
+        "Cidade":"Capão da Canoa",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(55)98457-9504"
+    },
+    {
+        "Id Cliente":460,
+        "Nome":"Aline Candido da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Gonçalo Nunes dos Santos ",
+        "Estado":"MS",
+        "Cidade":"Bela Vista Pontes e Lacerda",
+        "Estado2":"Mato Grosso do Sul",
+        "Telefone":"(55)99349-1001"
+    },
+    {
+        "Id Cliente":461,
+        "Nome":"Adriana Rose Pereira",
+        "Sexo":"F",
+        "Endereço":"Rua Angelo de Candia Nº1127",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96036-2281"
+    },
+    {
+        "Id Cliente":462,
+        "Nome":"Mayza Monteiro",
+        "Sexo":"F",
+        "Endereço":"Rua Takaominari N º61",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)90145-4073"
+    },
+    {
+        "Id Cliente":463,
+        "Nome":"Maycon Cicero Amaral",
+        "Sexo":"M",
+        "Endereço":"Rua Tânia Nº61",
+        "Estado":"SP",
+        "Cidade":"Jardim Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98253-4333"
+    },
+    {
+        "Id Cliente":464,
+        "Nome":"Nadya Albuquerque",
+        "Sexo":"F",
+        "Endereço":"Rua Abner Ribeiro Borges Nº211",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95464-0604"
+    },
+    {
+        "Id Cliente":465,
+        "Nome":"Fabiana Aparecida Maria de Oliveira",
+        "Sexo":"F",
+        "Endereço":"Rua Manoel Ferreira Festas Nº188",
+        "Estado":"SP",
+        "Cidade":"São Vicente",
+        "Estado2":"São Paulo",
+        "Telefone":"(13)99161-9530"
+    },
+    {
+        "Id Cliente":466,
+        "Nome":"Milca Vieira da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Simão Nunes",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97743-2422"
+    },
+    {
+        "Id Cliente":467,
+        "Nome":"Márcia Andrea da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua General Synzeno Sarmento Nº1214",
+        "Estado":"SP",
+        "Cidade":"Osasco",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98647-9906"
+    },
+    {
+        "Id Cliente":468,
+        "Nome":"Leandro Nunes",
+        "Sexo":"M",
+        "Endereço":"Av. das Nações nº641",
+        "Estado":"SP",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99649-4873"
+    },
+    {
+        "Id Cliente":469,
+        "Nome":"Luzia Patrícia Silva Nogueira",
+        "Sexo":"F",
+        "Endereço":"Rua Barão do Rio Branco Nº1307",
+        "Estado":"PA",
+        "Cidade":"Xinguará",
+        "Estado2":"Pará",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":470,
+        "Nome":"Suziana Mendes",
+        "Sexo":"F",
+        "Endereço":"Av. Marginal do Oratório Nº18",
+        "Estado":"SP",
+        "Cidade":"Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94921-4890"
+    },
+    {
+        "Id Cliente":471,
+        "Nome":"Rosineide Machado Mariano",
+        "Sexo":"F",
+        "Endereço":"Rua Jim Baku Nº1",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97962-3600"
+    },
+    {
+        "Id Cliente":472,
+        "Nome":"Jéssica de Mendonça Lima",
+        "Sexo":"F",
+        "Endereço":"Rua João de Barros Nº5",
+        "Estado":"RJ",
+        "Cidade":"Rio de Janeiro",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"(21)99115-8008"
+    },
+    {
+        "Id Cliente":473,
+        "Nome":"Dayane Cristine de Souza",
+        "Sexo":"F",
+        "Endereço":"Av. Caititu Nº1320",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94590-5413"
+    },
+    {
+        "Id Cliente":474,
+        "Nome":"Ramon Alves",
+        "Sexo":"M",
+        "Endereço":"Rua Felipe Angeli Nº44",
+        "Estado":"SP",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97115-7607"
+    },
+    {
+        "Id Cliente":475,
+        "Nome":"Matheus Lucas Nunes da Silva",
+        "Sexo":"M",
+        "Endereço":"Rua Benício Oliveira Lima",
+        "Estado":"PB",
+        "Cidade":"João Pessoa",
+        "Estado2":"Paraíba",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":476,
+        "Nome":"Andreia L.",
+        "Sexo":"F",
+        "Endereço":"Rua Cláudio Augusto Fernandes",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":477,
+        "Nome":"Salatiel Figueireido",
+        "Sexo":"M",
+        "Endereço":"Rua João Antunes Maciel Nº227",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99162-5712"
+    },
+    {
+        "Id Cliente":478,
+        "Nome":"Genilda Teixeira",
+        "Sexo":"F",
+        "Endereço":"Rua Redução de Guaranbaré N182",
+        "Estado":"SP",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98575-2281"
+    },
+    {
+        "Id Cliente":479,
+        "Nome":"Tatiane Aparecida de Lima",
+        "Sexo":"F",
+        "Endereço":"Rua Leopoldo Felix Nº437",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98120-4240"
+    },
+    {
+        "Id Cliente":480,
+        "Nome":"Ediane Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Violeta Nº103",
+        "Estado":"SP",
+        "Cidade":"Jardim Santo André",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":481,
+        "Nome":"Jade de Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Lagoa da Prata Nº242",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97734-4534"
+    },
+    {
+        "Id Cliente":482,
+        "Nome":"Douglas Richard de Jesus Pereira",
+        "Sexo":"M",
+        "Endereço":"Rua Ofelina Chaves de Meireles Nº562",
+        "Estado":"SP",
+        "Cidade":"São Vicente",
+        "Estado2":"São Paulo",
+        "Telefone":"(13)97409-5940"
+    },
+    {
+        "Id Cliente":483,
+        "Nome":"Adalgisa Pereira",
+        "Sexo":"F",
+        "Endereço":"Rua Itapark Nº1590",
+        "Estado":"SP",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97672-4120"
+    },
+    {
+        "Id Cliente":484,
+        "Nome":"Rodolfo Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Bandeira de Aracabina Nº323",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98230-9037"
+    },
+    {
+        "Id Cliente":485,
+        "Nome":"Yvan Sanon",
+        "Sexo":"M",
+        "Endereço":"Rua Flore da Primavera Nº253",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)9806-8167"
+    },
+    {
+        "Id Cliente":486,
+        "Nome":"Ramon Hiat Magalhães",
+        "Sexo":"M",
+        "Endereço":"Rua Rafael Cazzotino Nº116",
+        "Estado":"RJ",
+        "Cidade":"Magé",
+        "Estado2":"Rio de Janeiro",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":487,
+        "Nome":"Maria Helena Godoy Machado",
+        "Sexo":"F",
+        "Endereço":"Rua Boa Vista Nº3056",
+        "Estado":"MS",
+        "Cidade":"Aparecida do Taboado",
+        "Estado2":"Mato Grosso do Sul",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":488,
+        "Nome":"Laís Marília de Almeida",
+        "Sexo":"F",
+        "Endereço":"Rua Ursula Paulino Nº1804",
+        "Estado":"MG",
+        "Cidade":"Belo Horizonte",
+        "Estado2":"Minas Gerais",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":489,
+        "Nome":"Maria Ivonete",
+        "Sexo":"F",
+        "Endereço":"Rua Redução de Guaranbaré N395",
+        "Estado":"SP",
+        "Cidade":"Mauá",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99403-6556"
+    },
+    {
+        "Id Cliente":490,
+        "Nome":"Eduardo dos Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Francisco Matias Nº117A",
+        "Estado":"SP",
+        "Cidade":"Sapopemba",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94886-5039"
+    },
+    {
+        "Id Cliente":491,
+        "Nome":"Andreia Caroline de Mattos Silva",
+        "Sexo":"F",
+        "Endereço":"Rua José Alencar Nº84",
+        "Estado":"SP",
+        "Cidade":"Marília ",
+        "Estado2":"São Paulo",
+        "Telefone":"(14)99690-5039"
+    },
+    {
+        "Id Cliente":492,
+        "Nome":"Lucas Alexandre ",
+        "Sexo":"M",
+        "Endereço":"Rua Anny Nº1262",
+        "Estado":"SP",
+        "Cidade":"Sacomã",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94059-4456"
+    },
+    {
+        "Id Cliente":493,
+        "Nome":"Lúcia Maria de Teodoro de Jesus",
+        "Sexo":"F",
+        "Endereço":"Rua Mundo Novo Nº34B",
+        "Estado":"BA",
+        "Cidade":"Camaçari",
+        "Estado2":"Bahia",
+        "Telefone":"(71)98879-3279"
+    },
+    {
+        "Id Cliente":494,
+        "Nome":"Brenda Cardoso",
+        "Sexo":"F",
+        "Endereço":"Rua Adiles Peixoto Nº283",
+        "Estado":"RS",
+        "Cidade":"Tapés",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":495,
+        "Nome":"Beatriz Ribeiro",
+        "Sexo":"F",
+        "Endereço":"Rua dos Bibliotecários Nº257",
+        "Estado":"SP",
+        "Cidade":"Itaim Paulista",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":496,
+        "Nome":"Izildinha de Souza Crivano Sales",
+        "Sexo":"F",
+        "Endereço":"Rua Benidito Nº527b",
+        "Estado":"SP",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)9255-9189"
+    },
+    {
+        "Id Cliente":497,
+        "Nome":"Jéssica da Silva Rodrigues de Fraga",
+        "Sexo":"F",
+        "Endereço":"Avenida Placido Mattin Nº2301",
+        "Estado":"RS",
+        "Cidade":"Viamão",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(51)9789-3559"
+    },
+    {
+        "Id Cliente":498,
+        "Nome":"Andreia Silva Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Alagoas Nova Nº1321",
+        "Estado":"MA",
+        "Cidade":"Imperatiz",
+        "Estado2":"Maranhão",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":499,
+        "Nome":"Alessandra Bourguignon Costa",
+        "Sexo":"F",
+        "Endereço":"Rua Simão Bassuil Nº222",
+        "Estado":"ES",
+        "Cidade":"Piúna",
+        "Estado2":"Espirito Santo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":500,
+        "Nome":"Lucicleide Oliveira",
+        "Sexo":"F",
+        "Endereço":"Rua Candecia Nº97",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95494-0188"
+    },
+    {
+        "Id Cliente":501,
+        "Nome":"Thiago Monteiro",
+        "Sexo":"M",
+        "Endereço":"Rua James Naves Nº351",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98367-1959"
+    },
+    {
+        "Id Cliente":502,
+        "Nome":"Daniela Silveira Guimarães",
+        "Sexo":"F",
+        "Endereço":"Rua Sival Hoff Pereira Nº330",
+        "Estado":"RS",
+        "Cidade":"Barra do Ribeiro",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(51)99215-0093"
+    },
+    {
+        "Id Cliente":503,
+        "Nome":"Anderson Arias de Souza",
+        "Sexo":"M",
+        "Endereço":"Rua Leonardo Cerveira",
+        "Estado":"SP",
+        "Cidade":"Morumbi",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99497-5825"
+    },
+    {
+        "Id Cliente":504,
+        "Nome":"Cristina Minelavina",
+        "Sexo":"F",
+        "Endereço":"Rua José Vidal Nº110",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98728-0736"
+    },
+    {
+        "Id Cliente":505,
+        "Nome":"Iasmim Milena Martins da Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Juscelino Kubitschek Nº50",
+        "Estado":"PE",
+        "Cidade":"Vitória de Santo Antão",
+        "Estado2":"Pernambuco",
+        "Telefone":"(81)98667-6066"
+    },
+    {
+        "Id Cliente":506,
+        "Nome":"Ronise de Lima",
+        "Sexo":"F",
+        "Endereço":"Rua 20 de Setembro Nº2010",
+        "Estado":"RS",
+        "Cidade":"Soledade",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(55)99672-7963"
+    },
+    {
+        "Id Cliente":507,
+        "Nome":"Gabriela Carvalho da Conceição",
+        "Sexo":"F",
+        "Endereço":"Rua dos Trabalhadores Nº643",
+        "Estado":"MA",
+        "Cidade":"Imperatiz",
+        "Estado2":"Maranhão",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":508,
+        "Nome":"Camila de Macedo",
+        "Sexo":"F",
+        "Endereço":"Rua Morumbiaba Nº1016",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95531-5358"
+    },
+    {
+        "Id Cliente":509,
+        "Nome":"Marcelo(Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":510,
+        "Nome":"Lady Daiane ",
+        "Sexo":"F",
+        "Endereço":"Rua José Francisco Dos Santos Nº771",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94821-7266"
+    },
+    {
+        "Id Cliente":511,
+        "Nome":"Margarete Fidelis",
+        "Sexo":"F",
+        "Endereço":"Rua Fernando Falcão Nº872",
+        "Estado":"SP",
+        "Cidade":"Mooca",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94815-1555"
+    },
+    {
+        "Id Cliente":512,
+        "Nome":"Talita Melo",
+        "Sexo":"F",
+        "Endereço":"Rua Joaquim Meira Siqueira Nº807",
+        "Estado":"SP",
+        "Cidade":"Itaquera",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98641-0955"
+    },
+    {
+        "Id Cliente":513,
+        "Nome":"Raimundo Freitas",
+        "Sexo":"F",
+        "Endereço":"Rua Barros Peteado Nº361",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)99178-9031"
+    },
+    {
+        "Id Cliente":514,
+        "Nome":"Israel Martins",
+        "Sexo":"M",
+        "Endereço":"Rua Joaquim Pinheiro Nº14",
+        "Estado":"SP",
+        "Cidade":"Vila Ema",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)91031-8977"
+    },
+    {
+        "Id Cliente":515,
+        "Nome":"Hélio Freitas( Representante)",
+        "Sexo":"M",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":516,
+        "Nome":"Maria Lucia Martina",
+        "Sexo":"F",
+        "Endereço":"Rua Curumartins Nº76",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95278-8021"
+    },
+    {
+        "Id Cliente":517,
+        "Nome":"Diessica Jocasta Toebe",
+        "Sexo":"F",
+        "Endereço":"Rua Dom Guilherme Muller Nº1153",
+        "Estado":"RS",
+        "Cidade":"Arroio do Tigre",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(11)99752-4747"
+    },
+    {
+        "Id Cliente":518,
+        "Nome":"Bianka Bianche",
+        "Sexo":"F",
+        "Endereço":"Rua Alberto de Macedo Nº240",
+        "Estado":"SP",
+        "Cidade":"Aricanduva",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98436-9366"
+    },
+    {
+        "Id Cliente":519,
+        "Nome":"Jennifer Coelho Carmago",
+        "Sexo":"F",
+        "Endereço":"Rua Iguarapé das Missões Nº29",
+        "Estado":"SP",
+        "Cidade":"Tiradentes",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98076-9933"
+    },
+    {
+        "Id Cliente":520,
+        "Nome":"Rita Maria ",
+        "Sexo":"M",
+        "Endereço":"Rua Alexandre Crapolli Nº125",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)96323-8815"
+    },
+    {
+        "Id Cliente":521,
+        "Nome":"Silmara Lopes",
+        "Sexo":"F",
+        "Endereço":"Rua Doutor Felice Buscaglia Nº467",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)97068-4460"
+    },
+    {
+        "Id Cliente":522,
+        "Nome":"Juliana Aparecida dos Reis Rufino",
+        "Sexo":"F",
+        "Endereço":"Rua Natalino Pena Nº347",
+        "Estado":"SP",
+        "Cidade":"Araçatuba",
+        "Estado2":"São Paulo",
+        "Telefone":"(18)99121-4936"
+    },
+    {
+        "Id Cliente":523,
+        "Nome":"Jucilene C. Da Silva",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":524,
+        "Nome":"Feliciana Rute Silva de Mascena",
+        "Sexo":"F",
+        "Endereço":"Rua Frei Miguel Nº24",
+        "Estado":"BA",
+        "Cidade":"São Francisco do Conde",
+        "Estado2":"Bahia",
+        "Telefone":"(71)98240-9966"
+    },
+    {
+        "Id Cliente":525,
+        "Nome":"Naiara Gonçalves Carmargo",
+        "Sexo":"F",
+        "Endereço":"Rua São Nicolau Nº776",
+        "Estado":"RS",
+        "Cidade":"Novo Hamburgo",
+        "Estado2":"Rio Grande do Sul",
+        "Telefone":"(48)99834-7316"
+    },
+    {
+        "Id Cliente":526,
+        "Nome":"Tatiana Cimas Mendes",
+        "Sexo":"F",
+        "Endereço":"Rua Lavineiro de Arruda Falcão Nº1071",
+        "Estado":"SP",
+        "Cidade":"Araraquara",
+        "Estado2":"São Paulo",
+        "Telefone":"(16)99707-4042"
+    },
+    {
+        "Id Cliente":527,
+        "Nome":"Katia Janaina Marques Mota",
+        "Sexo":"F",
+        "Endereço":"Av. Doutor Carlos Gueiros Leite Nº4328",
+        "Estado":"PE",
+        "Cidade":"Paulista",
+        "Estado2":"Pernambuco",
+        "Telefone":"(81)98606-3120"
+    },
+    {
+        "Id Cliente":528,
+        "Nome":"Luana Santos Fernandes",
+        "Sexo":"F",
+        "Endereço":"Av. Julio Bueno Nº1588",
+        "Estado":"SP",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95208-2780"
+    },
+    {
+        "Id Cliente":529,
+        "Nome":"Ana Caroline Alves de Carvalho",
+        "Sexo":"F",
+        "Endereço":"Rua Inhamã Nº5585",
+        "Estado":"PI",
+        "Cidade":"Teresina",
+        "Estado2":"Piauí",
+        "Telefone":"(86)99573-5755"
+    },
+    {
+        "Id Cliente":530,
+        "Nome":"Jéssica Pinto Silva",
+        "Sexo":"F",
+        "Endereço":"Rua Edgar Pinto César Nº23",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98577-6452"
+    },
+    {
+        "Id Cliente":531,
+        "Nome":"Williane Pinto",
+        "Sexo":"F",
+        "Endereço":"-",
+        "Estado":"SP",
+        "Cidade":"Grajaú",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":532,
+        "Nome":"Lucas Vinicíuis de Morais",
+        "Sexo":"M",
+        "Endereço":"Av. Rio Tocantis Nº52",
+        "Estado":"MG",
+        "Cidade":"São Gotardo",
+        "Estado2":"Minas Gerais",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":533,
+        "Nome":"Erik Flávio Santos",
+        "Sexo":"M",
+        "Endereço":"Rua Dores de Campos Nº456",
+        "Estado":"SP",
+        "Cidade":"Guarulhos",
+        "Estado2":"São Paulo",
+        "Telefone":"-"
+    },
+    {
+        "Id Cliente":534,
+        "Nome":"Igor Orneles",
+        "Sexo":"M",
+        "Endereço":"Rua Coleta Saaf Nª86",
+        "Estado":"SP",
+        "Cidade":"Cotia",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)94392-5992"
+    },
+    {
+        "Id Cliente":535,
+        "Nome":"Beatriz Eduarda Ribeiro",
+        "Sexo":"F",
+        "Endereço":"Rua Resedes Nº60",
+        "Estado":"SP",
+        "Cidade":"Socrro",
+        "Estado2":"São Paulo",
+        "Telefone":"(19)99394-5301"
+    },
+    {
+        "Id Cliente":536,
+        "Nome":"Juliana Pereira Gonçalves",
+        "Sexo":"F",
+        "Endereço":"Av. Estrada dos Alvarengas Nº7862",
+        "Estado":"SP",
+        "Cidade":"São Bernardo do Campo",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)95924-9364"
+    },
+    {
+        "Id Cliente":537,
+        "Nome":"Gessica Caroline Dos Santos Leite",
+        "Sexo":"F",
+        "Endereço":"Rua Duzentos e Vinte e dois Nº166",
+        "Estado":"SE",
+        "Cidade":"Nossa Senhora do Socorro",
+        "Estado2":"Sergipe",
+        "Telefone":"(79)99921-3442"
+    },
+    {
+        "Id Cliente":538,
+        "Nome":"Meire Ferreira",
+        "Sexo":"F",
+        "Endereço":"Rua Roberto Park Nº705",
+        "Estado":"SP",
+        "Cidade":"São Mateus",
+        "Estado2":"São Paulo",
+        "Telefone":"(11)98171-8328"
+    }
+]
