@@ -29,7 +29,7 @@ class PostgreConn:
                 password=password
             )
             self.cur = self.conn.cursor()
-            print('conectado')
+            
 
         except Exception as e:
             print(f"Erro ao se conectar com o banco: {e}")
@@ -81,6 +81,7 @@ class PostgreConn:
     
     def get_conn(self):
         return self.conn
-       
-iniciar = PostgreConn()
-iniciar.get_conn()
+    
+    def validar_conexaro(self):
+        if self.conn:
+            return 'conectado'

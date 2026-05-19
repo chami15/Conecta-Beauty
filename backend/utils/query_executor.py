@@ -1,5 +1,5 @@
-from db import Database
-from sql_manager import sql_manager
+from utils.db import Database
+from utils.sql_manager import sql_manager
 
 def executar_query(query_name: str, commit: bool = False, connection: str = "", **param):
     with Database(sufix=connection) as conn:

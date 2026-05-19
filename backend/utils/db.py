@@ -1,4 +1,4 @@
-from connection import PostgreConn
+from utils.connection import PostgreConn
 
 class Database:
     def __init__(self, sufix=""):
