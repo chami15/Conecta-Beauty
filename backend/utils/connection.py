@@ -82,6 +82,3 @@ class PostgreConn:
     def get_conn(self):
         return self.conn
     
-    def validar_conexaro(self):
-        if self.conn:
-            return 'conectado'
