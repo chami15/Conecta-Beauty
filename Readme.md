@@ -10,3 +10,6 @@
 
 ## Para acessar o data warehouse
 A criação das tabelas e das views materializadas estão no caminho backend/sql/banco
+
+## Para visualizar o banco em diagrama
+Pegue o arquivo que esta em docs, chamado conecta_beauty e suba para o drawio
