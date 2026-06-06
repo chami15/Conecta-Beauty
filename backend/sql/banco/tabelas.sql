@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS geral.dim_localizacao(
     regiao VARCHAR(20) NOT NULL,
     valor_frete NUMERIC(10, 2)
 
-    CONSTRAINT ck_regiao CHECK ( regiao IN ('Norte', 'Nordeste', 'Centro-Oeste', 'Sudestre', 'Sul')),
+    CONSTRAINT ck_regiao CHECK ( regiao IN ('Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul')),
     CONSTRAINT cidade_estado UNIQUE (cidade, estado)
 );
 
