@@ -14,33 +14,33 @@ router = APIRouter(prefix="/api/financeiro", tags=["Financeiro"])
 
 class TipoTransacao(str, Enum):
     credito = "Credito"
-    debito  = "Debito"
+    debito = "Debito"
 
 
 class StatusTransacao(str, Enum):
-    prevista   = "Prevista"
+    prevista = "Prevista"
     confirmada = "Confirmada"
-    paga       = "Paga"
-    cancelada  = "Cancelada"
+    paga = "Paga"
+    cancelada = "Cancelada"
 
 
 class FormaPagamentoEnum(str, Enum):
-    debito        = "Débito"
-    credito       = "Crédito"
-    pix           = "PIX"
-    boleto        = "Boleto"
-    dinheiro      = "Dinheiro"
+    debito = "Débito"
+    credito = "Crédito"
+    pix = "PIX"
+    boleto = "Boleto"
+    dinheiro = "Dinheiro"
     transferencia = "Transferência"
 
 
 class TransacaoBody(BaseModel):
-    numero_transacao:      int
-    data_pagamento:        Optional[date] = None
-    fk_forma_pagamento:    Optional[int] = None
-    tipo_transacao:        TipoTransacao
+    numero_transacao: int
+    data_pagamento: Optional[date] = None
+    fk_forma_pagamento: Optional[int] = None
+    tipo_transacao: TipoTransacao
     valor_total_transacao: float
-    status_transacao:      StatusTransacao = StatusTransacao.prevista
-    historico:             Optional[str] = None
+    status_transacao: StatusTransacao = StatusTransacao.prevista
+    historico: Optional[str] = None
 
 
 class FormaPagamentoBody(BaseModel):

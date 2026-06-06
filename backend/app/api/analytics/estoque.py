@@ -7,16 +7,16 @@ from utils.query_executor import executar_query
 # ─────────────────────────────────────────────
 
 def get_kpis() -> dict:
-    kpi  = executar_query("estoque:kpis")
+    kpi = executar_query("estoque:kpis")
     giro = executar_query("estoque:giro_medio")
 
     r = kpi[0] if kpi else {}
     return {
-        "total_skus":      int(r.get("total_skus", 0)),
+        "total_skus": int(r.get("total_skus", 0)),
         "itens_em_estoque": int(r.get("itens_em_estoque", 0)),
         "valor_em_estoque": round(float(r.get("valor_em_estoque", 0)), 2),
-        "skus_em_alerta":  int(r.get("skus_em_alerta", 0)),
-        "giro_medio":      float(giro[0]["giro_medio"]) if giro and giro[0]["giro_medio"] else 0.0,
+        "skus_em_alerta": int(r.get("skus_em_alerta", 0)),
+        "giro_medio": float(giro[0]["giro_medio"]) if giro and giro[0]["giro_medio"] else 0.0,
     }
 
 
@@ -24,9 +24,9 @@ def get_movimentacoes_por_dia() -> list:
     rows = executar_query("estoque:movimentacoes_por_dia")
     return [
         {
-            "data":    str(r["data"]),
+            "data": str(r["data"]),
             "entradas": int(r["entradas"]),
-            "saidas":   int(r["saidas"]),
+            "saidas": int(r["saidas"]),
         }
         for r in rows
     ]
@@ -36,9 +36,9 @@ def get_performance_transportadoras() -> list:
     rows = executar_query("estoque:performance_transportadoras")
     return [
         {
-            "transportadora":   r["nome_transportadora"],
-            "qtd_fretes":       int(r["qtd_fretes"]),
-            "frete_medio":      float(r["frete_medio"]) if r["frete_medio"] else 0.0,
+            "transportadora": r["nome_transportadora"],
+            "qtd_fretes": int(r["qtd_fretes"]),
+            "frete_medio": float(r["frete_medio"]) if r["frete_medio"] else 0.0,
             "prazo_medio_dias": float(r["prazo_medio_dias"]) if r["prazo_medio_dias"] else 0.0,
             "taxa_no_prazo_pct": float(r["taxa_no_prazo_pct"]) if r["taxa_no_prazo_pct"] else 0.0,
         }
@@ -50,11 +50,11 @@ def get_skus_ponto_critico() -> list:
     rows = executar_query("estoque:skus_ponto_critico")
     return [
         {
-            "id_produto":  r["id_produto"],
+            "id_produto": r["id_produto"],
             "nome_produto": r["nome_produto"],
-            "estoque_min":  r["estoque_min"],
-            "saldo_atual":  int(r["saldo_atual"]),
-            "diferenca":    int(r["diferenca"]),
+            "estoque_min": r["estoque_min"],
+            "saldo_atual": int(r["saldo_atual"]),
+            "diferenca": int(r["diferenca"]),
         }
         for r in rows
     ]
@@ -64,10 +64,10 @@ def get_calor_movimentacao() -> list:
     rows = executar_query("estoque:calor_movimentacao")
     return [
         {
-            "produto":         r["nome_produto"],
-            "ano":             r["ano"],
-            "mes":             r["mes"],
-            "nome_mes":        r["nome_mes"],
+            "produto": r["nome_produto"],
+            "ano": r["ano"],
+            "mes": r["mes"],
+            "nome_mes": r["nome_mes"],
             "qtd_movimentada": int(r["qtd_movimentada"]),
         }
         for r in rows
@@ -80,23 +80,23 @@ def get_calor_movimentacao() -> list:
 
 def listar_saldos(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("estoque:listar_saldos", params=(page_size, offset))
-    total  = executar_query("estoque:total_saldos")
+    rows = executar_query("estoque:listar_saldos", params=(page_size, offset))
+    total = executar_query("estoque:total_saldos")
     return {
         "data": [
             {
-                "id_produto":  r["id_produto"],
+                "id_produto": r["id_produto"],
                 "nome_produto": r["nome_produto"],
-                "categoria":   r["categoria"],
+                "categoria": r["categoria"],
                 "estoque_min": r["estoque_min"],
                 "estoque_max": r["estoque_max"],
                 "saldo_atual": int(r["saldo_atual"]),
-                "situacao":    r["situacao"],
+                "situacao": r["situacao"],
             }
             for r in rows
         ],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -105,31 +105,31 @@ def listar_saldos(page: int = 1, page_size: int = 20) -> dict:
 # CRUD — Movimentações
 # ─────────────────────────────────────────────
 
-def _fmt_movimentacao(r: dict) -> dict:
+def fmt_movimentacao(r: dict) -> dict:
     return {
-        "id":               r["id_movimentacao"],
-        "produto":          r["nome_produto"],
-        "fk_produto":       r["fk_produto"],
+        "id": r["id_movimentacao"],
+        "produto": r["nome_produto"],
+        "fk_produto": r["fk_produto"],
         "tipo_movimentacao": r["tipo_movimentacao"],
-        "natureza":         r["natureza"],
-        "quantidade":       r["quantidade"],
-        "valor_unitario":   float(r["valor_unitario"]),
-        "valor_total":      float(r["valor_total"]),
-        "saldo_anterior":   r["saldo_anterior"],
-        "saldo_atual":      r["saldo_atual"],
+        "natureza": r["natureza"],
+        "quantidade": r["quantidade"],
+        "valor_unitario": float(r["valor_unitario"]),
+        "valor_total": float(r["valor_total"]),
+        "saldo_anterior": r["saldo_anterior"],
+        "saldo_atual": r["saldo_atual"],
         "data_movimentacao": str(r["data_movimentacao"]),
-        "fornecedor":       r["nome_fornecedor"],
+        "fornecedor": r["nome_fornecedor"],
     }
 
 
 def listar_movimentacoes(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("estoque:listar_movimentacoes", params=(page_size, offset))
-    total  = executar_query("estoque:total_movimentacoes")
+    rows = executar_query("estoque:listar_movimentacoes", params=(page_size, offset))
+    total = executar_query("estoque:total_movimentacoes")
     return {
-        "data":      [_fmt_movimentacao(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_movimentacao(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -138,7 +138,7 @@ def buscar_movimentacao(id: int) -> dict:
     rows = executar_query("estoque:buscar_movimentacao", params=(id,))
     if not rows:
         raise HTTPException(404, "Movimentação não encontrada")
-    return _fmt_movimentacao(rows[0])
+    return fmt_movimentacao(rows[0])
 
 
 def get_tipos_movimentacao() -> list:
@@ -204,32 +204,32 @@ def deletar_movimentacao(id: int) -> dict:
 # CRUD — Fretes
 # ─────────────────────────────────────────────
 
-def _fmt_frete(r: dict) -> dict:
+def fmt_frete(r: dict) -> dict:
     return {
-        "id":                 r["id_frete"],
-        "numero_pedido":      r["numero_pedido"],
-        "transportadora":     r["nome_transportadora"],
-        "origem":             f"{r['cidade_origem']}/{r['estado_origem']}",
-        "destino":            f"{r['cidade_destino']}/{r['estado_destino']}",
-        "peso_total_kg":      float(r["peso_total_kg"]) if r["peso_total_kg"] else None,
-        "valor_frete":        float(r["valor_frete"]),
+        "id": r["id_frete"],
+        "numero_pedido": r["numero_pedido"],
+        "transportadora": r["nome_transportadora"],
+        "origem": f"{r['cidade_origem']}/{r['estado_origem']}",
+        "destino": f"{r['cidade_destino']}/{r['estado_destino']}",
+        "peso_total_kg": float(r["peso_total_kg"]) if r["peso_total_kg"] else None,
+        "valor_frete": float(r["valor_frete"]),
         "prazo_entrega_dias": r["prazo_entrega_dias"],
-        "status_frete":       r["status_frete"],
-        "dias_atraso":        r["dias_atraso"],
-        "houve_avaria":       r["houve_avaria"],
-        "data_envio":         str(r["data_envio"]) if r["data_envio"] else None,
-        "data_entrega":       str(r["data_entrega"]) if r["data_entrega"] else None,
+        "status_frete": r["status_frete"],
+        "dias_atraso": r["dias_atraso"],
+        "houve_avaria": r["houve_avaria"],
+        "data_envio": str(r["data_envio"]) if r["data_envio"] else None,
+        "data_entrega": str(r["data_entrega"]) if r["data_entrega"] else None,
     }
 
 
 def listar_fretes(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("estoque:listar_fretes", params=(page_size, offset))
-    total  = executar_query("estoque:total_fretes")
+    rows = executar_query("estoque:listar_fretes", params=(page_size, offset))
+    total = executar_query("estoque:total_fretes")
     return {
-        "data":      [_fmt_frete(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_frete(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -238,7 +238,7 @@ def buscar_frete(id: int) -> dict:
     rows = executar_query("estoque:buscar_frete", params=(id,))
     if not rows:
         raise HTTPException(404, "Frete não encontrado")
-    return _fmt_frete(rows[0])
+    return fmt_frete(rows[0])
 
 
 def criar_frete(data) -> dict:
@@ -301,29 +301,29 @@ def deletar_frete(id: int) -> dict:
 # CRUD — Transportadoras
 # ─────────────────────────────────────────────
 
-def _fmt_transportadora(r: dict) -> dict:
+def fmt_transportadora(r: dict) -> dict:
     return {
-        "id":                  r["id_transportadora"],
+        "id": r["id_transportadora"],
         "nome_transportadora": r["nome_transportadora"],
-        "cnpj":                r["cnpj"],
-        "telefone":            r["telefone"],
-        "media_entrega":       r["media_entrega"],
-        "frete_kg_base":       float(r["frete_kg_base"]) if r["frete_kg_base"] else None,
-        "adicional_volume":    float(r["adicional_volume"]) if r["adicional_volume"] else None,
-        "ativo":               r["ativo"],
+        "cnpj": r["cnpj"],
+        "telefone": r["telefone"],
+        "media_entrega": r["media_entrega"],
+        "frete_kg_base": float(r["frete_kg_base"]) if r["frete_kg_base"] else None,
+        "adicional_volume": float(r["adicional_volume"]) if r["adicional_volume"] else None,
+        "ativo": r["ativo"],
     }
 
 
 def listar_transportadoras() -> list:
     rows = executar_query("estoque:listar_transportadoras")
-    return [_fmt_transportadora(r) for r in rows]
+    return [fmt_transportadora(r) for r in rows]
 
 
 def buscar_transportadora(id: int) -> dict:
     rows = executar_query("estoque:buscar_transportadora", params=(id,))
     if not rows:
         raise HTTPException(404, "Transportadora não encontrada")
-    return _fmt_transportadora(rows[0])
+    return fmt_transportadora(rows[0])
 
 
 def criar_transportadora(data) -> dict:

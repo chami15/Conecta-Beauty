@@ -8,14 +8,14 @@ from utils.query_executor import executar_query
 # Helpers
 # ─────────────────────────────────────────────
 
-def _to_float(v):
+def to_float(v):
     try:
         return float(v)
     except (TypeError, ValueError):
         return None
 
 
-def _safe(v):
+def safe(v):
     """Converte tipos numpy para Python nativo (serialização JSON)."""
     if isinstance(v, (np.integer,)):
         return int(v)
@@ -37,7 +37,7 @@ def get_tendencia():
         return {"erro": "Dados insuficientes para regressão (mínimo 3 meses)"}
 
     df = pd.DataFrame(rows)
-    df["faturamento"] = df["faturamento"].apply(_to_float)
+    df["faturamento"] = df["faturamento"].apply(to_float)
     df = df.dropna(subset=["faturamento"])
     df = df.sort_values(["ano", "mes"]).reset_index(drop=True)
     df["t"] = np.arange(1, len(df) + 1)
@@ -63,10 +63,10 @@ def get_tendencia():
             "ano": int(row["ano"]),
             "mes": int(row["mes"]),
             "nome_mes": row.get("nome_mes", ""),
-            "faturamento_real": _safe(row["faturamento"]),
-            "faturamento_tendencia": _safe(round(yi_hat, 2)),
-            "ic_lower": _safe(round(yi_hat - t_crit * se_pred, 2)),
-            "ic_upper": _safe(round(yi_hat + t_crit * se_pred, 2)),
+            "faturamento_real": safe(row["faturamento"]),
+            "faturamento_tendencia": safe(round(yi_hat, 2)),
+            "ic_lower": safe(round(yi_hat - t_crit * se_pred, 2)),
+            "ic_upper": safe(round(yi_hat + t_crit * se_pred, 2)),
         })
 
     projecoes = []
@@ -88,17 +88,17 @@ def get_tendencia():
             "ano": ano_proj,
             "mes": mes_proj,
             "nome_mes": meses_nomes[mes_proj - 1],
-            "faturamento_projetado": _safe(round(yi_hat, 2)),
-            "ic_lower": _safe(round(yi_hat - t_crit * se_pred, 2)),
-            "ic_upper": _safe(round(yi_hat + t_crit * se_pred, 2)),
+            "faturamento_projetado": safe(round(yi_hat, 2)),
+            "ic_lower": safe(round(yi_hat - t_crit * se_pred, 2)),
+            "ic_upper": safe(round(yi_hat + t_crit * se_pred, 2)),
         })
 
     return {
         "modelo": {
-            "slope": _safe(round(slope, 4)),
-            "intercept": _safe(round(intercept, 2)),
-            "r_squared": _safe(round(r_value ** 2, 4)),
-            "p_value": _safe(round(p_value, 6)),
+            "slope": safe(round(slope, 4)),
+            "intercept": safe(round(intercept, 2)),
+            "r_squared": safe(round(r_value ** 2, 4)),
+            "p_value": safe(round(p_value, 6)),
             "tendencia": "crescente" if slope > 0 else "decrescente",
             "significativo": bool(p_value < 0.05),
         },
@@ -117,7 +117,7 @@ def get_distribuicao_vendas():
     if len(rows) < 4:
         return {"erro": "Dados insuficientes para análise de distribuição"}
 
-    valores = np.array([_to_float(r["valor_total"]) for r in rows], dtype=float)
+    valores = np.array([to_float(r["valor_total"]) for r in rows], dtype=float)
     valores = valores[~np.isnan(valores)]
 
     n_bins = min(20, max(5, int(np.sqrt(len(valores)))))
@@ -126,8 +126,8 @@ def get_distribuicao_vendas():
     histograma = []
     for i in range(len(counts)):
         histograma.append({
-            "bin_inicio": _safe(round(float(bin_edges[i]), 2)),
-            "bin_fim": _safe(round(float(bin_edges[i + 1]), 2)),
+            "bin_inicio": safe(round(float(bin_edges[i]), 2)),
+            "bin_fim": safe(round(float(bin_edges[i + 1]), 2)),
             "frequencia": int(counts[i]),
         })
 
@@ -138,21 +138,21 @@ def get_distribuicao_vendas():
     return {
         "descritivas": {
             "n": int(len(valores)),
-            "media": _safe(round(float(np.mean(valores)), 2)),
-            "mediana": _safe(round(float(np.median(valores)), 2)),
-            "desvio_padrao": _safe(round(float(np.std(valores)), 2)),
-            "variancia": _safe(round(float(np.var(valores)), 2)),
-            "minimo": _safe(round(float(np.min(valores)), 2)),
-            "maximo": _safe(round(float(np.max(valores)), 2)),
-            "q1": _safe(round(float(percentis[0]), 2)),
-            "q3": _safe(round(float(percentis[2]), 2)),
-            "assimetria": _safe(round(float(stats.skew(valores)), 4)),
-            "curtose": _safe(round(float(stats.kurtosis(valores)), 4)),
+            "media": safe(round(float(np.mean(valores)), 2)),
+            "mediana": safe(round(float(np.median(valores)), 2)),
+            "desvio_padrao": safe(round(float(np.std(valores)), 2)),
+            "variancia": safe(round(float(np.var(valores)), 2)),
+            "minimo": safe(round(float(np.min(valores)), 2)),
+            "maximo": safe(round(float(np.max(valores)), 2)),
+            "q1": safe(round(float(percentis[0]), 2)),
+            "q3": safe(round(float(percentis[2]), 2)),
+            "assimetria": safe(round(float(stats.skew(valores)), 4)),
+            "curtose": safe(round(float(stats.kurtosis(valores)), 4)),
         },
         "normalidade": {
             "teste": "Shapiro-Wilk",
-            "estatistica": _safe(round(float(stat_sw), 6)),
-            "p_value": _safe(round(float(p_sw), 6)),
+            "estatistica": safe(round(float(stat_sw), 6)),
+            "p_value": safe(round(float(p_sw), 6)),
             "normal": bool(p_sw >= 0.05),
             "interpretacao": "Distribuição normal (p≥0.05)" if p_sw >= 0.05 else "Distribuição não-normal (p<0.05)",
         },
@@ -171,7 +171,7 @@ def get_anova_trimestres():
         return {"erro": "Sem dados para ANOVA de trimestres"}
 
     df = pd.DataFrame(rows)
-    df["faturamento"] = df["faturamento"].apply(_to_float)
+    df["faturamento"] = df["faturamento"].apply(to_float)
     df = df.dropna(subset=["faturamento"])
 
     grupos = {}
@@ -191,15 +191,15 @@ def get_anova_trimestres():
         resumo_grupos.append({
             "grupo": nome,
             "n": int(len(arr)),
-            "media": _safe(round(float(np.mean(arr)), 2)),
-            "desvio_padrao": _safe(round(float(np.std(arr)), 2)),
+            "media": safe(round(float(np.mean(arr)), 2)),
+            "desvio_padrao": safe(round(float(np.std(arr)), 2)),
         })
     resumo_grupos.sort(key=lambda g: g["grupo"])
 
     return {
         "anova": {
-            "f_estatistica": _safe(round(float(f_stat), 4)),
-            "p_value": _safe(round(float(p_value), 6)),
+            "f_estatistica": safe(round(float(f_stat), 4)),
+            "p_value": safe(round(float(p_value), 6)),
             "significativo": bool(p_value < 0.05),
             "interpretacao": (
                 "Diferença significativa entre trimestres (p<0.05)"
@@ -222,7 +222,7 @@ def get_anova_canais():
         return {"erro": "Sem dados para ANOVA de canais"}
 
     df = pd.DataFrame(rows)
-    df["faturamento"] = df["faturamento"].apply(_to_float)
+    df["faturamento"] = df["faturamento"].apply(to_float)
     df = df.dropna(subset=["faturamento"])
 
     grupos = {}
@@ -242,16 +242,16 @@ def get_anova_canais():
         resumo_grupos.append({
             "canal": nome,
             "n": int(len(arr)),
-            "media": _safe(round(float(np.mean(arr)), 2)),
-            "desvio_padrao": _safe(round(float(np.std(arr)), 2)),
-            "total": _safe(round(float(np.sum(arr)), 2)),
+            "media": safe(round(float(np.mean(arr)), 2)),
+            "desvio_padrao": safe(round(float(np.std(arr)), 2)),
+            "total": safe(round(float(np.sum(arr)), 2)),
         })
     resumo_grupos.sort(key=lambda g: g["total"], reverse=True)
 
     return {
         "anova": {
-            "f_estatistica": _safe(round(float(f_stat), 4)),
-            "p_value": _safe(round(float(p_value), 6)),
+            "f_estatistica": safe(round(float(f_stat), 4)),
+            "p_value": safe(round(float(p_value), 6)),
             "significativo": bool(p_value < 0.05),
             "interpretacao": (
                 "Diferença significativa entre canais (p<0.05)"
@@ -273,7 +273,7 @@ def get_intervalo_confianca():
     if len(rows) < 2:
         return {"erro": "Dados insuficientes para intervalo de confiança"}
 
-    valores = np.array([_to_float(r["faturamento"]) for r in rows], dtype=float)
+    valores = np.array([to_float(r["faturamento"]) for r in rows], dtype=float)
     valores = valores[~np.isnan(valores)]
 
     n = len(valores)
@@ -283,23 +283,23 @@ def get_intervalo_confianca():
 
     meses_formatados = []
     df_tmp = pd.DataFrame(rows)
-    df_tmp["faturamento"] = df_tmp["faturamento"].apply(_to_float)
+    df_tmp["faturamento"] = df_tmp["faturamento"].apply(to_float)
     df_tmp = df_tmp.sort_values(["ano", "mes"])
     for _, r in df_tmp.iterrows():
         meses_formatados.append({
             "ano": int(r["ano"]),
             "mes": int(r["mes"]),
             "nome_mes": r.get("nome_mes", ""),
-            "faturamento": _safe(round(float(r["faturamento"]), 2)),
+            "faturamento": safe(round(float(r["faturamento"]), 2)),
         })
 
     return {
         "intervalo_confianca": {
             "nivel": "95%",
-            "media": _safe(round(media, 2)),
-            "ic_lower": _safe(round(float(ic_low), 2)),
-            "ic_upper": _safe(round(float(ic_high), 2)),
-            "erro_padrao": _safe(round(se, 2)),
+            "media": safe(round(media, 2)),
+            "ic_lower": safe(round(float(ic_low), 2)),
+            "ic_upper": safe(round(float(ic_high), 2)),
+            "erro_padrao": safe(round(se, 2)),
             "n": int(n),
         },
         "serie_mensal": meses_formatados,
@@ -317,8 +317,8 @@ def get_correlacao_estoque_vendas():
         return {"erro": "Dados insuficientes para correlação (mínimo 5 observações)"}
 
     df = pd.DataFrame(rows)
-    df["qtd_vendida"] = df["qtd_vendida"].apply(_to_float)
-    df["estoque_medio"] = df["estoque_medio"].apply(_to_float)
+    df["qtd_vendida"] = df["qtd_vendida"].apply(to_float)
+    df["estoque_medio"] = df["estoque_medio"].apply(to_float)
     df = df.dropna(subset=["qtd_vendida", "estoque_medio"])
 
     r, p_value = stats.pearsonr(df["estoque_medio"].values, df["qtd_vendida"].values)
@@ -337,8 +337,8 @@ def get_correlacao_estoque_vendas():
             "produto": row.get("nome_produto", ""),
             "ano": int(row["ano"]),
             "mes": int(row["mes"]),
-            "estoque_medio": _safe(round(float(row["estoque_medio"]), 2)),
-            "qtd_vendida": _safe(round(float(row["qtd_vendida"]), 2)),
+            "estoque_medio": safe(round(float(row["estoque_medio"]), 2)),
+            "qtd_vendida": safe(round(float(row["qtd_vendida"]), 2)),
         })
 
     por_produto = df.groupby("nome_produto").agg(
@@ -350,16 +350,16 @@ def get_correlacao_estoque_vendas():
     for _, r_prod in por_produto.iterrows():
         resumo_produtos.append({
             "produto": r_prod["nome_produto"],
-            "estoque_medio": _safe(round(float(r_prod["estoque_medio"]), 2)),
-            "media_vendas": _safe(round(float(r_prod["qtd_vendida"]), 2)),
+            "estoque_medio": safe(round(float(r_prod["estoque_medio"]), 2)),
+            "media_vendas": safe(round(float(r_prod["qtd_vendida"]), 2)),
         })
     resumo_produtos.sort(key=lambda p: p["media_vendas"] or 0, reverse=True)
 
     return {
         "correlacao": {
-            "r": _safe(round(float(r), 4)),
-            "r_squared": _safe(round(float(r ** 2), 4)),
-            "p_value": _safe(round(float(p_value), 6)),
+            "r": safe(round(float(r), 4)),
+            "r_squared": safe(round(float(r ** 2), 4)),
+            "p_value": safe(round(float(p_value), 6)),
             "significativo": bool(p_value < 0.05),
             "forca": forca,
             "direcao": direcao,
@@ -381,9 +381,9 @@ def get_descritivas_produtos():
         return {"erro": "Sem dados de vendas por produto"}
 
     df = pd.DataFrame(rows)
-    df["quantidade"] = df["quantidade"].apply(_to_float)
-    df["valor_unitario"] = df["valor_unitario"].apply(_to_float)
-    df["valor_total"] = df["valor_total"].apply(_to_float)
+    df["quantidade"] = df["quantidade"].apply(to_float)
+    df["valor_unitario"] = df["valor_unitario"].apply(to_float)
+    df["valor_total"] = df["valor_total"].apply(to_float)
     df = df.dropna(subset=["quantidade", "valor_total"])
 
     produtos = []
@@ -396,21 +396,21 @@ def get_descritivas_produtos():
             "produto": nome,
             "n_vendas": int(len(grupo)),
             "quantidade": {
-                "total": _safe(round(float(np.sum(qtd)), 0)),
-                "media": _safe(round(float(np.mean(qtd)), 2)),
-                "mediana": _safe(round(float(np.median(qtd)), 2)),
-                "desvio_padrao": _safe(round(float(np.std(qtd)), 2)),
+                "total": safe(round(float(np.sum(qtd)), 0)),
+                "media": safe(round(float(np.mean(qtd)), 2)),
+                "mediana": safe(round(float(np.median(qtd)), 2)),
+                "desvio_padrao": safe(round(float(np.std(qtd)), 2)),
             },
             "valor_total": {
-                "soma": _safe(round(float(np.sum(vt)), 2)),
-                "media": _safe(round(float(np.mean(vt)), 2)),
-                "mediana": _safe(round(float(np.median(vt)), 2)),
-                "desvio_padrao": _safe(round(float(np.std(vt)), 2)),
+                "soma": safe(round(float(np.sum(vt)), 2)),
+                "media": safe(round(float(np.mean(vt)), 2)),
+                "mediana": safe(round(float(np.median(vt)), 2)),
+                "desvio_padrao": safe(round(float(np.std(vt)), 2)),
             },
             "preco_unitario": {
-                "media": _safe(round(float(np.mean(vu)), 2)),
-                "min": _safe(round(float(np.min(vu)), 2)),
-                "max": _safe(round(float(np.max(vu)), 2)),
+                "media": safe(round(float(np.mean(vu)), 2)),
+                "min": safe(round(float(np.min(vu)), 2)),
+                "max": safe(round(float(np.max(vu)), 2)),
             },
         })
 
@@ -421,8 +421,8 @@ def get_descritivas_produtos():
         "resumo_geral": {
             "total_produtos": int(df["nome_produto"].nunique()),
             "total_vendas": int(len(df)),
-            "receita_total": _safe(round(float(np.sum(totais)), 2)),
-            "ticket_medio": _safe(round(float(np.mean(totais)), 2)),
+            "receita_total": safe(round(float(np.sum(totais)), 2)),
+            "ticket_medio": safe(round(float(np.mean(totais)), 2)),
         },
         "por_produto": produtos,
     }

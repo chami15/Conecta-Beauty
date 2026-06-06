@@ -25,7 +25,7 @@ def modelo_disponivel() -> bool:
     return all(os.path.exists(p) for p in [MODEL_PATH, SCALER_X_PATH, SCALER_Y_PATH, META_PATH])
 
 
-def _carregar():
+def carregar():
     global _modelo, _scaler_x, _scaler_y, _meta
     if _modelo is None:
         if not modelo_disponivel():
@@ -39,13 +39,13 @@ def _carregar():
         _meta = joblib.load(META_PATH)
 
 
-def _nome_mes(mes: int) -> str:
+def nome_mes(mes: int) -> str:
     nomes = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun",
              "Jul", "Ago", "Set", "Out", "Nov", "Dez"]
     return nomes[mes - 1]
 
 
-def _proximo_ano_mes(ano: int, mes: int) -> tuple[int, int]:
+def proximo_ano_mes(ano: int, mes: int) -> tuple[int, int]:
     mes += 1
     if mes > 12:
         mes = 1
@@ -54,7 +54,7 @@ def _proximo_ano_mes(ano: int, mes: int) -> tuple[int, int]:
 
 
 def prever(horizonte: int = 3) -> dict:
-    _carregar()
+    carregar()
 
     serie = list(_meta["serie"])
     meses_meta = list(_meta["meses_meta"])
@@ -79,14 +79,14 @@ def prever(horizonte: int = 3) -> dict:
         y_pred = float(_scaler_y.inverse_transform(y_scaled.reshape(-1, 1)).ravel()[0])
         y_pred = max(0.0, y_pred)
 
-        ultimo_ano, ultimo_mes = _proximo_ano_mes(ultimo_ano, ultimo_mes)
+        ultimo_ano, ultimo_mes = proximo_ano_mes(ultimo_ano, ultimo_mes)
 
         margem = _meta["mae_cv"] * 1.5
         previsoes.append({
             "passo": step + 1,
             "ano": ultimo_ano,
             "mes": ultimo_mes,
-            "nome_mes": _nome_mes(ultimo_mes),
+            "nome_mes": nome_mes(ultimo_mes),
             "faturamento_previsto": round(y_pred, 2),
             "ic_lower": round(max(0.0, y_pred - margem), 2),
             "ic_upper": round(y_pred + margem, 2),
@@ -98,7 +98,7 @@ def prever(horizonte: int = 3) -> dict:
         historico.append({
             "ano": ano,
             "mes": mes,
-            "nome_mes": _nome_mes(mes),
+            "nome_mes": nome_mes(mes),
             "faturamento_real": round(fat, 2),
         })
 
@@ -117,4 +117,4 @@ def recarregar():
     """Força recarga dos artefatos do disco (usado após novo treino)."""
     global _modelo, _scaler_x, _scaler_y, _meta
     _modelo = _scaler_x = _scaler_y = _meta = None
-    _carregar()
+    carregar()

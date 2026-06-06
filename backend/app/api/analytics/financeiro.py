@@ -12,19 +12,19 @@ def get_kpis() -> dict:
         return {"receita": 0, "despesas": 0, "resultado_liquido": 0, "inadimplencia_pct": 0, "valor_inadimplente": 0}
 
     r = rows[0]
-    receita           = float(r["receita"])
-    despesas          = float(r["despesas"])
+    receita = float(r["receita"])
+    despesas = float(r["despesas"])
     valor_inadimplente = float(r["valor_inadimplente"])
-    qtd_inadimplente  = int(r["qtd_inadimplente"])
-    total_creditos    = int(r["total_creditos"]) if r["total_creditos"] else 0
+    qtd_inadimplente = int(r["qtd_inadimplente"])
+    total_creditos = int(r["total_creditos"]) if r["total_creditos"] else 0
 
     inadimplencia_pct = round((qtd_inadimplente / total_creditos * 100), 1) if total_creditos > 0 else 0.0
 
     return {
-        "receita":            receita,
-        "despesas":           despesas,
-        "resultado_liquido":  round(receita - despesas, 2),
-        "inadimplencia_pct":  inadimplencia_pct,
+        "receita": receita,
+        "despesas": despesas,
+        "resultado_liquido": round(receita - despesas, 2),
+        "inadimplencia_pct": inadimplencia_pct,
         "valor_inadimplente": valor_inadimplente,
     }
 
@@ -33,10 +33,10 @@ def get_receita_vs_despesa() -> list:
     rows = executar_query("financeiro:receita_vs_despesa_mensal")
     return [
         {
-            "ano":      r["ano"],
-            "mes":      r["mes"],
+            "ano": r["ano"],
+            "mes": r["mes"],
             "nome_mes": r["nome_mes"],
-            "receita":  float(r["receita"]),
+            "receita": float(r["receita"]),
             "despesas": float(r["despesas"]),
             "resultado": round(float(r["receita"]) - float(r["despesas"]), 2),
         }
@@ -50,9 +50,9 @@ def get_mix_pagamento() -> list:
     return [
         {
             "forma_pagamento": r["forma_pagamento"],
-            "qtd_transacoes":  int(r["qtd_transacoes"]),
-            "faturamento":     float(r["faturamento"]),
-            "percentual":      round(float(r["faturamento"]) / total * 100, 1) if total > 0 else 0,
+            "qtd_transacoes": int(r["qtd_transacoes"]),
+            "faturamento": float(r["faturamento"]),
+            "percentual": round(float(r["faturamento"]) / total * 100, 1) if total > 0 else 0,
         }
         for r in rows
     ]
@@ -62,16 +62,16 @@ def get_mix_pagamento() -> list:
 # Helpers
 # ─────────────────────────────────────────────
 
-def _fmt_transacao(r: dict) -> dict:
+def fmt_transacao(r: dict) -> dict:
     return {
-        "id":                   r["id_transacao"],
-        "numero_transacao":     r["numero_transacao"],
-        "tipo_transacao":       r["tipo_transacao"],
-        "valor":                float(r["valor_total_transacao"]),
-        "status":               r["status_transacao"],
-        "historico":            r["historico"],
-        "forma_pagamento":      r["forma_pagamento"],
-        "data_pagamento":       str(r["data_pagamento"]) if r["data_pagamento"] else None,
+        "id": r["id_transacao"],
+        "numero_transacao": r["numero_transacao"],
+        "tipo_transacao": r["tipo_transacao"],
+        "valor": float(r["valor_total_transacao"]),
+        "status": r["status_transacao"],
+        "historico": r["historico"],
+        "forma_pagamento": r["forma_pagamento"],
+        "data_pagamento": str(r["data_pagamento"]) if r["data_pagamento"] else None,
         "data_hora_lancamento": str(r["data_hora_lancamento"]),
     }
 
@@ -82,36 +82,36 @@ def _fmt_transacao(r: dict) -> dict:
 
 def listar_transacoes(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("financeiro:listar_transacoes", params=(page_size, offset))
-    total  = executar_query("financeiro:total_transacoes")
+    rows = executar_query("financeiro:listar_transacoes", params=(page_size, offset))
+    total = executar_query("financeiro:total_transacoes")
     return {
-        "data":      [_fmt_transacao(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_transacao(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
 
 def listar_a_receber(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("financeiro:listar_a_receber", params=(page_size, offset))
-    total  = executar_query("financeiro:total_a_receber")
+    rows = executar_query("financeiro:listar_a_receber", params=(page_size, offset))
+    total = executar_query("financeiro:total_a_receber")
     return {
-        "data":      [_fmt_transacao(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_transacao(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
 
 def listar_a_pagar(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("financeiro:listar_a_pagar", params=(page_size, offset))
-    total  = executar_query("financeiro:total_a_pagar")
+    rows = executar_query("financeiro:listar_a_pagar", params=(page_size, offset))
+    total = executar_query("financeiro:total_a_pagar")
     return {
-        "data":      [_fmt_transacao(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_transacao(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -120,7 +120,7 @@ def buscar_transacao(id: int) -> dict:
     rows = executar_query("financeiro:buscar_transacao", params=(id,))
     if not rows:
         raise HTTPException(404, "Transação não encontrada")
-    return _fmt_transacao(rows[0])
+    return fmt_transacao(rows[0])
 
 
 def criar_transacao(data) -> dict:

@@ -7,10 +7,10 @@ from utils.query_executor import executar_query
 # ─────────────────────────────────────────────
 
 def get_kpis() -> dict:
-    produto    = executar_query("administrativo:kpi_produto_lider")
-    cliente    = executar_query("administrativo:kpi_melhor_cliente")
+    produto = executar_query("administrativo:kpi_produto_lider")
+    cliente = executar_query("administrativo:kpi_melhor_cliente")
     fornecedor = executar_query("administrativo:kpi_top_fornecedor")
-    canal      = executar_query("administrativo:kpi_canal_numero1")
+    canal = executar_query("administrativo:kpi_canal_numero1")
 
     return {
         "produto_lider": {
@@ -37,8 +37,8 @@ def get_canais_por_venda() -> list:
     rows = executar_query("administrativo:canais_por_venda")
     return [
         {
-            "canal":       r["canal_venda"],
-            "tipo":        r["tipo_canal"],
+            "canal": r["canal_venda"],
+            "tipo": r["tipo_canal"],
             "qtd_pedidos": int(r["qtd_pedidos"]),
             "faturamento": float(r["faturamento"]),
         }
@@ -50,8 +50,8 @@ def get_clientes_por_regiao() -> list:
     rows = executar_query("administrativo:clientes_por_regiao")
     return [
         {
-            "regiao":      r["regiao"],
-            "estado":      r["estado"],
+            "regiao": r["regiao"],
+            "estado": r["estado"],
             "qtd_clientes": int(r["qtd_clientes"]),
             "faturamento": float(r["faturamento"]),
         }
@@ -63,28 +63,28 @@ def get_clientes_por_regiao() -> list:
 # CRUD — Clientes
 # ─────────────────────────────────────────────
 
-def _fmt_cliente(r: dict) -> dict:
+def fmt_cliente(r: dict) -> dict:
     return {
-        "id":               r["id_cliente"],
-        "nome":             r["nome"],
-        "sexo":             r["sexo"],
-        "documento":        r["documento"],
-        "telefone":         r["telefone"],
+        "id": r["id_cliente"],
+        "nome": r["nome"],
+        "sexo": r["sexo"],
+        "documento": r["documento"],
+        "telefone": r["telefone"],
         "endereco_completo": r["endereco_completo"],
-        "cidade":           r["cidade"],
-        "estado":           r["estado"],
-        "regiao":           r["regiao"],
+        "cidade": r["cidade"],
+        "estado": r["estado"],
+        "regiao": r["regiao"],
     }
 
 
 def listar_clientes(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("administrativo:listar_clientes", params=(page_size, offset))
-    total  = executar_query("administrativo:total_clientes")
+    rows = executar_query("administrativo:listar_clientes", params=(page_size, offset))
+    total = executar_query("administrativo:total_clientes")
     return {
-        "data":      [_fmt_cliente(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_cliente(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -94,7 +94,7 @@ def buscar_cliente(id: int) -> dict:
     if not rows:
         raise HTTPException(404, "Cliente não encontrado")
     r = rows[0]
-    return {**_fmt_cliente(r), "created_at": str(r["created_at"]), "update_at": str(r["update_at"])}
+    return {**fmt_cliente(r), "created_at": str(r["created_at"]), "update_at": str(r["update_at"])}
 
 
 def criar_cliente(data) -> dict:
@@ -133,30 +133,30 @@ def deletar_cliente(id: int) -> dict:
 # CRUD — Produtos
 # ─────────────────────────────────────────────
 
-def _fmt_produto(r: dict) -> dict:
+def fmt_produto(r: dict) -> dict:
     return {
-        "id":             r["id_produto"],
-        "nome_produto":   r["nome_produto"],
-        "descricao":      r["descricao"],
+        "id": r["id_produto"],
+        "nome_produto": r["nome_produto"],
+        "descricao": r["descricao"],
         "custo_unitario": float(r["custo_unitario"]) if r["custo_unitario"] else None,
-        "peso_kg":        float(r["peso_kg"]) if r["peso_kg"] else None,
-        "estoque_min":    r["estoque_min"],
-        "estoque_max":    r["estoque_max"],
-        "ativo":          r["ativo"],
-        "categoria":      r["categoria"],
-        "subcategoria":   r["subcategoria"],
-        "fornecedor":     r["nome_fornecedor"],
+        "peso_kg": float(r["peso_kg"]) if r["peso_kg"] else None,
+        "estoque_min": r["estoque_min"],
+        "estoque_max": r["estoque_max"],
+        "ativo": r["ativo"],
+        "categoria": r["categoria"],
+        "subcategoria": r["subcategoria"],
+        "fornecedor": r["nome_fornecedor"],
     }
 
 
 def listar_produtos(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("administrativo:listar_produtos", params=(page_size, offset))
-    total  = executar_query("administrativo:total_produtos")
+    rows = executar_query("administrativo:listar_produtos", params=(page_size, offset))
+    total = executar_query("administrativo:total_produtos")
     return {
-        "data":      [_fmt_produto(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_produto(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -167,14 +167,14 @@ def buscar_produto(id: int) -> dict:
         raise HTTPException(404, "Produto não encontrado")
     r = rows[0]
     return {
-        **_fmt_produto(r),
-        "altura_cm":      float(r["altura_cm"])      if r["altura_cm"]      else None,
-        "largura_cm":     float(r["largura_cm"])     if r["largura_cm"]     else None,
+        **fmt_produto(r),
+        "altura_cm": float(r["altura_cm"]) if r["altura_cm"] else None,
+        "largura_cm": float(r["largura_cm"]) if r["largura_cm"] else None,
         "profundidade_cm": float(r["profundidade_cm"]) if r["profundidade_cm"] else None,
-        "id_categoria":   r["id_categoria"],
-        "id_fornecedor":  r["id_fornecedor"],
-        "created_at":     str(r["created_at"]),
-        "update_at":      str(r["update_at"]),
+        "id_categoria": r["id_categoria"],
+        "id_fornecedor": r["id_fornecedor"],
+        "created_at": str(r["created_at"]),
+        "update_at": str(r["update_at"]),
     }
 
 
@@ -222,27 +222,27 @@ def deletar_produto(id: int) -> dict:
 # CRUD — Fornecedores
 # ─────────────────────────────────────────────
 
-def _fmt_fornecedor(r: dict) -> dict:
+def fmt_fornecedor(r: dict) -> dict:
     return {
-        "id":               r["id_fornecedor"],
-        "nome_fornecedor":  r["nome_fornecedor"],
-        "cnpj":             r["cnpj"],
-        "telefone":         r["telefone"],
+        "id": r["id_fornecedor"],
+        "nome_fornecedor": r["nome_fornecedor"],
+        "cnpj": r["cnpj"],
+        "telefone": r["telefone"],
         "endereco_completo": r["endereco_completo"],
-        "cidade":           r["cidade"],
-        "estado":           r["estado"],
-        "regiao":           r["regiao"],
+        "cidade": r["cidade"],
+        "estado": r["estado"],
+        "regiao": r["regiao"],
     }
 
 
 def listar_fornecedores(page: int = 1, page_size: int = 20) -> dict:
     offset = (page - 1) * page_size
-    rows   = executar_query("administrativo:listar_fornecedores", params=(page_size, offset))
-    total  = executar_query("administrativo:total_fornecedores")
+    rows = executar_query("administrativo:listar_fornecedores", params=(page_size, offset))
+    total = executar_query("administrativo:total_fornecedores")
     return {
-        "data":      [_fmt_fornecedor(r) for r in rows],
-        "total":     int(total[0]["total"]) if total else 0,
-        "page":      page,
+        "data": [fmt_fornecedor(r) for r in rows],
+        "total": int(total[0]["total"]) if total else 0,
+        "page": page,
         "page_size": page_size,
     }
 
@@ -252,7 +252,7 @@ def buscar_fornecedor(id: int) -> dict:
     if not rows:
         raise HTTPException(404, "Fornecedor não encontrado")
     r = rows[0]
-    return {**_fmt_fornecedor(r), "created_at": str(r["created_at"]), "update_at": str(r["update_at"])}
+    return {**fmt_fornecedor(r), "created_at": str(r["created_at"]), "update_at": str(r["update_at"])}
 
 
 def criar_fornecedor(data) -> dict:

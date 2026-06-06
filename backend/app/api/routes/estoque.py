@@ -13,58 +13,58 @@ router = APIRouter(prefix="/api/estoque", tags=["Estoque"])
 # ─────────────────────────────────────────────
 
 class StatusFrete(str, Enum):
-    aguardando  = "Aguardando"
-    coletado    = "Coletado"
+    aguardando = "Aguardando"
+    coletado = "Coletado"
     em_transito = "Em Trânsito"
-    entregue    = "Entregue"
-    devolvido   = "Devolvido"
-    extraviado  = "Extraviado"
+    entregue = "Entregue"
+    devolvido = "Devolvido"
+    extraviado = "Extraviado"
 
 
 class MovimentacaoBody(BaseModel):
-    data_movimentacao:    date
-    fk_produto:           int
+    data_movimentacao: date
+    fk_produto: int
     fk_tipo_movimentacao: int
-    fk_fornecedor:        Optional[int] = None
-    quantidade:           int
-    valor_unitario:       float
+    fk_fornecedor: Optional[int] = None
+    quantidade: int
+    valor_unitario: float
 
 
 class FreteBody(BaseModel):
-    numero_pedido:          int
-    data_envio:             Optional[date] = None
-    data_entrega:           Optional[date] = None
-    fk_transportadora:      int
-    fk_localizacao_origem:  int
+    numero_pedido: int
+    data_envio: Optional[date] = None
+    data_entrega: Optional[date] = None
+    fk_transportadora: int
+    fk_localizacao_origem: int
     fk_localizacao_destino: int
-    peso_total_kg:          float
-    volume_total_m3:        Optional[float] = None
-    distancia_km:           Optional[float] = None
-    valor_frete:            float
-    prazo_entrega_dias:     Optional[int] = None
-    status_frete:           StatusFrete = StatusFrete.aguardando
-    dias_atraso:            Optional[int] = None
-    houve_avaria:           bool = False
+    peso_total_kg: float
+    volume_total_m3: Optional[float] = None
+    distancia_km: Optional[float] = None
+    valor_frete: float
+    prazo_entrega_dias: Optional[int] = None
+    status_frete: StatusFrete = StatusFrete.aguardando
+    dias_atraso: Optional[int] = None
+    houve_avaria: bool = False
 
 
 class FreteUpdateBody(BaseModel):
-    status_frete:       StatusFrete
-    dias_atraso:        Optional[int] = None
-    houve_avaria:       bool = False
-    fk_transportadora:  int
-    peso_total_kg:      float
-    valor_frete:        float
+    status_frete: StatusFrete
+    dias_atraso: Optional[int] = None
+    houve_avaria: bool = False
+    fk_transportadora: int
+    peso_total_kg: float
+    valor_frete: float
     prazo_entrega_dias: Optional[int] = None
 
 
 class TransportadoraBody(BaseModel):
     nome_transportadora: str
-    cnpj:               Optional[str] = None
-    telefone:           Optional[str] = None
-    media_entrega:      int = 7
-    frete_kg_base:      Optional[float] = None
-    adicional_volume:   Optional[float] = None
-    ativo:              bool = True
+    cnpj: Optional[str] = None
+    telefone: Optional[str] = None
+    media_entrega: int = 7
+    frete_kg_base: Optional[float] = None
+    adicional_volume: Optional[float] = None
+    ativo: bool = True
 
 
 # ─────────────────────────────────────────────

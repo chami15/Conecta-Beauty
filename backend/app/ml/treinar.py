@@ -26,7 +26,7 @@ META_PATH = os.path.join(MODEL_DIR, "meta.pkl")
 N_LAGS = 3
 
 
-def _construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
+def construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
     """
     Recebe série temporal ordenada de faturamento mensal.
     Retorna (X, y) com features:
@@ -62,7 +62,7 @@ def treinar_modelo() -> dict:
     serie = [float(r["faturamento"]) for r in rows_sorted]
     meses_meta = [(int(r["ano"]), int(r["mes"])) for r in rows_sorted]
 
-    X, y = _construir_features(serie)
+    X, y = construir_features(serie)
 
     scaler_x = StandardScaler()
     scaler_y = StandardScaler()
