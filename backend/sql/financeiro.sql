@@ -3,14 +3,14 @@
 --QUERY: kpis
 SELECT
     COALESCE(SUM(CASE WHEN tipo_transacao = 'Credito'
-                       AND status_transacao IN ('Confirmada', 'Paga')
-                      THEN valor_total_transacao ELSE 0 END), 0) AS receita,
+                AND status_transacao IN ('Confirmada', 'Paga')
+                THEN valor_total_transacao ELSE 0 END), 0) AS receita,
     COALESCE(SUM(CASE WHEN tipo_transacao = 'Debito'
-                       AND status_transacao IN ('Confirmada', 'Paga')
-                      THEN valor_total_transacao ELSE 0 END), 0) AS despesas,
+                AND status_transacao IN ('Confirmada', 'Paga')
+                THEN valor_total_transacao ELSE 0 END), 0) AS despesas,
     COALESCE(SUM(CASE WHEN tipo_transacao = 'Credito'
-                       AND status_transacao = 'Prevista'
-                      THEN valor_total_transacao ELSE 0 END), 0) AS valor_inadimplente,
+                AND status_transacao = 'Prevista'
+                THEN valor_total_transacao ELSE 0 END), 0) AS valor_inadimplente,
     COUNT(CASE WHEN tipo_transacao = 'Credito'
                AND status_transacao = 'Prevista' THEN 1 END)      AS qtd_inadimplente,
     NULLIF(COUNT(CASE WHEN tipo_transacao = 'Credito' THEN 1 END), 0) AS total_creditos
@@ -24,9 +24,9 @@ SELECT
     t.mes,
     t.nome_mes,
     COALESCE(SUM(CASE WHEN tf.tipo_transacao = 'Credito'
-                      THEN tf.valor_total_transacao ELSE 0 END), 0) AS receita,
+                THEN tf.valor_total_transacao ELSE 0 END), 0) AS receita,
     COALESCE(SUM(CASE WHEN tf.tipo_transacao = 'Debito'
-                      THEN tf.valor_total_transacao ELSE 0 END), 0) AS despesas
+                THEN tf.valor_total_transacao ELSE 0 END), 0) AS despesas
 FROM financeiro.fato_transacao_financeira tf
 JOIN geral.dim_tempo t ON tf.fk_data_pagamento = t.id_tempo
 WHERE tf.status_transacao IN ('Confirmada', 'Paga')
@@ -36,8 +36,8 @@ ORDER BY t.ano, t.mes;
 --QUERY: mix_forma_pagamento
 SELECT
     fp.forma_pagamento,
-    COUNT(*)              AS qtd_transacoes,
-    SUM(v.valor_total)    AS faturamento
+    COUNT(*) AS qtd_transacoes,
+    SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN financeiro.dim_forma_pagamento fp ON v.fk_forma_pagamento = fp.id_forma_pagamento
 GROUP BY fp.forma_pagamento
@@ -46,14 +46,18 @@ ORDER BY faturamento DESC;
 -- ===================== CRUD TRANSAÇÕES =====================
 
 --QUERY: listar_transacoes
-SELECT tf.id_transacao, tf.numero_transacao, tf.tipo_transacao,
-       tf.valor_total_transacao, tf.status_transacao, tf.historico,
+SELECT tf.id_transacao, 
+       tf.numero_transacao, 
+       tf.tipo_transacao,
+       tf.valor_total_transacao, 
+       tf.status_transacao, 
+       tf.historico,
        tf.data_hora_lancamento,
        fp.forma_pagamento,
        t.data AS data_pagamento
 FROM financeiro.fato_transacao_financeira tf
 LEFT JOIN financeiro.dim_forma_pagamento fp ON tf.fk_forma_pagamento = fp.id_forma_pagamento
-LEFT JOIN geral.dim_tempo t                 ON tf.fk_data_pagamento  = t.id_tempo
+LEFT JOIN geral.dim_tempo t ON tf.fk_data_pagamento  = t.id_tempo
 ORDER BY tf.data_hora_lancamento DESC
 LIMIT %s OFFSET %s;
 
@@ -61,13 +65,17 @@ LIMIT %s OFFSET %s;
 SELECT COUNT(*) AS total FROM financeiro.fato_transacao_financeira;
 
 --QUERY: listar_a_receber
-SELECT tf.id_transacao, tf.numero_transacao, tf.valor_total_transacao,
-       tf.status_transacao, tf.historico, tf.data_hora_lancamento,
+SELECT tf.id_transacao, 
+       tf.numero_transacao, 
+       tf.valor_total_transacao,
+       tf.status_transacao, 
+       tf.historico, 
+       tf.data_hora_lancamento,
        fp.forma_pagamento,
        t.data AS data_pagamento
 FROM financeiro.fato_transacao_financeira tf
 LEFT JOIN financeiro.dim_forma_pagamento fp ON tf.fk_forma_pagamento = fp.id_forma_pagamento
-LEFT JOIN geral.dim_tempo t                 ON tf.fk_data_pagamento  = t.id_tempo
+LEFT JOIN geral.dim_tempo t ON tf.fk_data_pagamento  = t.id_tempo
 WHERE tf.tipo_transacao = 'Credito'
   AND tf.status_transacao IN ('Prevista', 'Confirmada')
 ORDER BY t.data
@@ -79,8 +87,12 @@ FROM financeiro.fato_transacao_financeira
 WHERE tipo_transacao = 'Credito' AND status_transacao IN ('Prevista', 'Confirmada');
 
 --QUERY: listar_a_pagar
-SELECT tf.id_transacao, tf.numero_transacao, tf.valor_total_transacao,
-       tf.status_transacao, tf.historico, tf.data_hora_lancamento,
+SELECT tf.id_transacao, 
+       tf.numero_transacao, 
+       tf.valor_total_transacao,
+       tf.status_transacao, 
+       tf.historico, 
+       tf.data_hora_lancamento,
        fp.forma_pagamento,
        t.data AS data_pagamento
 FROM financeiro.fato_transacao_financeira tf
@@ -97,9 +109,14 @@ FROM financeiro.fato_transacao_financeira
 WHERE tipo_transacao = 'Debito' AND status_transacao IN ('Prevista', 'Confirmada');
 
 --QUERY: buscar_transacao
-SELECT tf.id_transacao, tf.numero_transacao, tf.tipo_transacao,
-       tf.valor_total_transacao, tf.status_transacao, tf.historico,
-       tf.data_hora_lancamento, tf.fk_forma_pagamento,
+SELECT tf.id_transacao, 
+       tf.numero_transacao, 
+       tf.tipo_transacao,
+       tf.valor_total_transacao, 
+       tf.status_transacao, 
+       tf.historico,
+       tf.data_hora_lancamento, 
+       tf.fk_forma_pagamento,
        fp.forma_pagamento,
        t.data AS data_pagamento
 FROM financeiro.fato_transacao_financeira tf
@@ -120,13 +137,13 @@ RETURNING id_transacao;
 
 --QUERY: atualizar_transacao
 UPDATE financeiro.fato_transacao_financeira
-SET numero_transacao      = %s,
-    fk_data_pagamento     = (SELECT id_tempo FROM geral.dim_tempo WHERE data = %s),
-    fk_forma_pagamento    = %s,
-    tipo_transacao        = %s,
+SET numero_transacao = %s,
+    fk_data_pagamento = (SELECT id_tempo FROM geral.dim_tempo WHERE data = %s),
+    fk_forma_pagamento = %s,
+    tipo_transacao = %s,
     valor_total_transacao = %s,
-    status_transacao      = %s,
-    historico             = %s
+    status_transacao = %s,
+    historico = %s
 WHERE id_transacao = %s
 RETURNING id_transacao;
 
@@ -136,12 +153,14 @@ DELETE FROM financeiro.fato_transacao_financeira WHERE id_transacao = %s RETURNI
 -- ===================== CRUD FORMAS DE PAGAMENTO =====================
 
 --QUERY: listar_formas_pagamento
-SELECT id_forma_pagamento, forma_pagamento
+SELECT id_forma_pagamento, 
+       forma_pagamento
 FROM financeiro.dim_forma_pagamento
 ORDER BY id_forma_pagamento;
 
 --QUERY: buscar_forma_pagamento
-SELECT id_forma_pagamento, forma_pagamento
+SELECT id_forma_pagamento, 
+       forma_pagamento
 FROM financeiro.dim_forma_pagamento
 WHERE id_forma_pagamento = %s;
 

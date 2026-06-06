@@ -38,7 +38,7 @@ ORDER BY quantidade DESC;
 --QUERY: top5_produtos
 SELECT
     p.nome_produto,
-    SUM(v.quantidade)  AS qtd_vendida,
+    SUM(v.quantidade) AS qtd_vendida,
     SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
@@ -49,10 +49,10 @@ LIMIT 5;
 --QUERY: saude_vendas
 SELECT
     COALESCE(SUM(CASE WHEN t.data >= CURRENT_DATE - INTERVAL '30 days'
-                      THEN v.valor_total ELSE 0 END), 0) AS faturamento_atual,
+                 THEN v.valor_total ELSE 0 END), 0) AS faturamento_atual,
     COALESCE(SUM(CASE WHEN t.data BETWEEN CURRENT_DATE - INTERVAL '60 days'
-                                      AND CURRENT_DATE - INTERVAL '31 days'
-                      THEN v.valor_total ELSE 0 END), 0) AS faturamento_anterior
+                AND CURRENT_DATE - INTERVAL '31 days'
+                THEN v.valor_total ELSE 0 END), 0) AS faturamento_anterior
 FROM financeiro.fato_venda v
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo;
 
@@ -65,10 +65,10 @@ WHERE status_transacao IN ('Confirmada', 'Paga');
 
 --QUERY: saude_estoque
 SELECT
-    COUNT(*)                                                         AS total_skus,
+    COUNT(*) AS total_skus,
     COUNT(CASE WHEN p.estoque_min > 0
                 AND COALESCE(m.saldo_atual, 0) <= p.estoque_min
-               THEN 1 END)                                          AS skus_em_alerta
+               THEN 1 END) AS skus_em_alerta
 FROM administrativo.dim_produtos p
 LEFT JOIN (
     SELECT DISTINCT ON (fk_produto)
@@ -82,13 +82,13 @@ WHERE p.ativo = TRUE;
 --QUERY: saude_inadimplencia
 SELECT
     COUNT(CASE WHEN status_transacao = 'Prevista' THEN 1 END) AS previstas,
-    COUNT(*)                                                   AS total
+    COUNT(*) AS total
 FROM financeiro.fato_transacao_financeira
 WHERE tipo_transacao = 'Credito';
 
 --QUERY: saude_logistica
 SELECT
-    COUNT(*)                                                                              AS total_fretes,
+    COUNT(*) AS total_fretes,
     COUNT(CASE WHEN status_frete = 'Entregue'
-                AND (dias_atraso IS NULL OR dias_atraso <= 0) THEN 1 END)                AS no_prazo
+                AND (dias_atraso IS NULL OR dias_atraso <= 0) THEN 1 END) AS no_prazo
 FROM estoque.fato_pedido_frete;

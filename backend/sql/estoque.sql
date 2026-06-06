@@ -2,11 +2,11 @@
 
 --QUERY: kpis
 SELECT
-    COUNT(DISTINCT m.fk_produto)                                         AS total_skus,
-    COALESCE(SUM(m.saldo_atual), 0)                                      AS itens_em_estoque,
-    COALESCE(SUM(m.saldo_atual * p.custo_unitario), 0)                   AS valor_em_estoque,
+    COUNT(DISTINCT m.fk_produto) AS total_skus,
+    COALESCE(SUM(m.saldo_atual), 0) AS itens_em_estoque,
+    COALESCE(SUM(m.saldo_atual * p.custo_unitario), 0) AS valor_em_estoque,
     COUNT(CASE WHEN p.estoque_min > 0
-               AND m.saldo_atual <= p.estoque_min THEN 1 END)            AS skus_em_alerta
+          AND m.saldo_atual <= p.estoque_min THEN 1 END) AS skus_em_alerta
 FROM (
     SELECT DISTINCT ON (fk_produto) fk_produto, saldo_atual
     FROM estoque.fato_movimentacao_estoque
@@ -36,10 +36,10 @@ FROM (
 SELECT
     t.data,
     COALESCE(SUM(CASE WHEN tm.natureza = 'ENTRADA' THEN m.quantidade ELSE 0 END), 0) AS entradas,
-    COALESCE(SUM(CASE WHEN tm.natureza = 'SAÍDA'   THEN m.quantidade ELSE 0 END), 0) AS saidas
+    COALESCE(SUM(CASE WHEN tm.natureza = 'SAÍDA' THEN m.quantidade ELSE 0 END), 0) AS saidas
 FROM estoque.fato_movimentacao_estoque m
-JOIN geral.dim_tempo t                   ON m.fk_tempo            = t.id_tempo
-JOIN estoque.dim_tipo_movimentacao tm    ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
+JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
+JOIN estoque.dim_tipo_movimentacao tm ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
 WHERE t.data >= CURRENT_DATE - INTERVAL '30 days'
 GROUP BY t.data
 ORDER BY t.data;
@@ -47,15 +47,15 @@ ORDER BY t.data;
 --QUERY: performance_transportadoras
 SELECT
     tr.nome_transportadora,
-    COUNT(*)                                                              AS qtd_fretes,
-    ROUND(AVG(fr.valor_frete)::NUMERIC, 2)                              AS frete_medio,
-    ROUND(AVG(fr.prazo_entrega_dias)::NUMERIC, 1)                       AS prazo_medio_dias,
+    COUNT(*)  AS qtd_fretes,
+    ROUND(AVG(fr.valor_frete)::NUMERIC, 2) AS frete_medio,
+    ROUND(AVG(fr.prazo_entrega_dias)::NUMERIC, 1) AS prazo_medio_dias,
     ROUND(
         COUNT(CASE WHEN fr.status_frete = 'Entregue'
-                    AND (fr.dias_atraso IS NULL OR fr.dias_atraso <= 0) THEN 1 END)
+              AND (fr.dias_atraso IS NULL OR fr.dias_atraso <= 0) THEN 1 END)
         * 100.0 / NULLIF(COUNT(CASE WHEN fr.status_frete = 'Entregue' THEN 1 END), 0),
         1
-    )                                                                     AS taxa_no_prazo_pct
+    ) AS taxa_no_prazo_pct
 FROM estoque.fato_pedido_frete fr
 JOIN estoque.dim_transportadora tr ON fr.fk_transportadora = tr.id_transportadora
 GROUP BY tr.nome_transportadora
@@ -87,8 +87,8 @@ SELECT
     t.nome_mes,
     SUM(m.quantidade) AS qtd_movimentada
 FROM estoque.fato_movimentacao_estoque m
-JOIN geral.dim_tempo t              ON m.fk_tempo    = t.id_tempo
-JOIN administrativo.dim_produtos p  ON m.fk_produto  = p.id_produto
+JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
+JOIN administrativo.dim_produtos p ON m.fk_produto  = p.id_produto
 WHERE t.data >= CURRENT_DATE - INTERVAL '12 months'
   AND p.id_produto IN (
       SELECT fk_produto
@@ -133,18 +133,23 @@ SELECT COUNT(*) AS total FROM administrativo.dim_produtos WHERE ativo = TRUE;
 
 --QUERY: listar_movimentacoes
 SELECT m.id_movimentacao,
-       p.nome_produto,     m.fk_produto,
-       tm.tipo_movimentacao, tm.natureza,
-       m.quantidade, m.valor_unitario, m.valor_total,
-       m.saldo_anterior, m.saldo_atual,
+       p.nome_produto,     
+       m.fk_produto,
+       tm.tipo_movimentacao, 
+       tm.natureza,
+       m.quantidade, 
+       m.valor_unitario, 
+       m.valor_total,
+       m.saldo_anterior, 
+       m.saldo_atual,
        t.data AS data_movimentacao,
        m.data_hora_movimentacao,
        f.nome_fornecedor
 FROM estoque.fato_movimentacao_estoque m
-JOIN administrativo.dim_produtos p        ON m.fk_produto            = p.id_produto
-JOIN estoque.dim_tipo_movimentacao tm     ON m.fk_tipo_movimentacao  = tm.id_tipo_movimentacao
-JOIN geral.dim_tempo t                    ON m.fk_tempo               = t.id_tempo
-LEFT JOIN administrativo.dim_fornecedor f ON m.fk_fornecedor         = f.id_fornecedor
+JOIN administrativo.dim_produtos p ON m.fk_produto = p.id_produto
+JOIN estoque.dim_tipo_movimentacao tm ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
+JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
+LEFT JOIN administrativo.dim_fornecedor f ON m.fk_fornecedor = f.id_fornecedor
 ORDER BY m.data_hora_movimentacao DESC
 LIMIT %s OFFSET %s;
 
@@ -153,17 +158,25 @@ SELECT COUNT(*) AS total FROM estoque.fato_movimentacao_estoque;
 
 --QUERY: buscar_movimentacao
 SELECT m.id_movimentacao,
-       p.nome_produto, m.fk_produto,
-       tm.tipo_movimentacao, tm.natureza, m.fk_tipo_movimentacao,
-       m.quantidade, m.valor_unitario, m.valor_total,
-       m.saldo_anterior, m.saldo_atual,
-       t.data AS data_movimentacao, m.data_hora_movimentacao,
-       f.nome_fornecedor, m.fk_fornecedor
+       p.nome_produto, 
+       m.fk_produto,
+       tm.tipo_movimentacao, 
+       tm.natureza, 
+       m.fk_tipo_movimentacao,
+       m.quantidade, 
+       m.valor_unitario, 
+       m.valor_total,
+       m.saldo_anterior, 
+       m.saldo_atual,
+       t.data AS data_movimentacao, 
+       m.data_hora_movimentacao,
+       f.nome_fornecedor, 
+       m.fk_fornecedor
 FROM estoque.fato_movimentacao_estoque m
-JOIN administrativo.dim_produtos p        ON m.fk_produto           = p.id_produto
-JOIN estoque.dim_tipo_movimentacao tm     ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
-JOIN geral.dim_tempo t                    ON m.fk_tempo              = t.id_tempo
-LEFT JOIN administrativo.dim_fornecedor f ON m.fk_fornecedor        = f.id_fornecedor
+JOIN administrativo.dim_produtos p ON m.fk_produto = p.id_produto
+JOIN estoque.dim_tipo_movimentacao tm ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
+JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
+LEFT JOIN administrativo.dim_fornecedor f ON m.fk_fornecedor = f.id_fornecedor
 WHERE m.id_movimentacao = %s;
 
 --QUERY: saldo_atual_produto
@@ -177,7 +190,10 @@ SELECT COALESCE(
 SELECT natureza FROM estoque.dim_tipo_movimentacao WHERE id_tipo_movimentacao = %s;
 
 --QUERY: tipos_movimentacao
-SELECT id_tipo_movimentacao, tipo_movimentacao, natureza, categoria
+SELECT id_tipo_movimentacao, 
+       tipo_movimentacao, 
+       natureza, 
+       categoria
 FROM estoque.dim_tipo_movimentacao
 ORDER BY natureza, tipo_movimentacao;
 
@@ -199,18 +215,23 @@ DELETE FROM estoque.fato_movimentacao_estoque WHERE id_movimentacao = %s RETURNI
 --QUERY: listar_fretes
 SELECT fr.id_frete, fr.numero_pedido,
        tr.nome_transportadora,
-       lo.cidade AS cidade_origem, lo.estado AS estado_origem,
-       ld.cidade AS cidade_destino, ld.estado AS estado_destino,
-       fr.peso_total_kg, fr.valor_frete, fr.prazo_entrega_dias,
-       fr.status_frete, fr.dias_atraso, fr.houve_avaria,
-       te.data  AS data_envio,
+       lo.cidade AS cidade_origem, 
+       lo.estado AS estado_origem,
+       ld.cidade AS cidade_destino, 
+       ld.estado AS estado_destino,
+       fr.peso_total_kg, 
+       fr.valor_frete, 
+       fr.prazo_entrega_dias,
+       fr.status_frete, 
+       fr.dias_atraso, fr.houve_avaria,
+       te.data AS data_envio,
        teg.data AS data_entrega
 FROM estoque.fato_pedido_frete fr
-JOIN estoque.dim_transportadora tr ON fr.fk_transportadora      = tr.id_transportadora
-JOIN geral.dim_localizacao lo      ON fr.fk_localizacao_origem  = lo.id_localizacao
-JOIN geral.dim_localizacao ld      ON fr.fk_localizacao_destino = ld.id_localizacao
-LEFT JOIN geral.dim_tempo te       ON fr.fk_tempo_envio         = te.id_tempo
-LEFT JOIN geral.dim_tempo teg      ON fr.fk_tempo_entrega       = teg.id_tempo
+JOIN estoque.dim_transportadora tr ON fr.fk_transportadora = tr.id_transportadora
+JOIN geral.dim_localizacao lo ON fr.fk_localizacao_origem = lo.id_localizacao
+JOIN geral.dim_localizacao ld ON fr.fk_localizacao_destino = ld.id_localizacao
+LEFT JOIN geral.dim_tempo te ON fr.fk_tempo_envio = te.id_tempo
+LEFT JOIN geral.dim_tempo teg ON fr.fk_tempo_entrega = teg.id_tempo
 ORDER BY fr.id_frete DESC
 LIMIT %s OFFSET %s;
 
@@ -218,20 +239,32 @@ LIMIT %s OFFSET %s;
 SELECT COUNT(*) AS total FROM estoque.fato_pedido_frete;
 
 --QUERY: buscar_frete
-SELECT fr.id_frete, fr.numero_pedido, fr.fk_transportadora,
+SELECT fr.id_frete, 
+       fr.numero_pedido,
+       fr.fk_transportadora,
        tr.nome_transportadora,
-       fr.fk_localizacao_origem, lo.cidade AS cidade_origem, lo.estado AS estado_origem,
-       fr.fk_localizacao_destino, ld.cidade AS cidade_destino, ld.estado AS estado_destino,
-       fr.peso_total_kg, fr.volume_total_m3, fr.distancia_km, fr.valor_frete,
-       fr.prazo_entrega_dias, fr.status_frete, fr.dias_atraso, fr.houve_avaria,
-       te.data  AS data_envio,
+       fr.fk_localizacao_origem, 
+       lo.cidade AS cidade_origem, 
+       lo.estado AS estado_origem,
+       fr.fk_localizacao_destino, 
+       ld.cidade AS cidade_destino, 
+       ld.estado AS estado_destino,
+       fr.peso_total_kg, 
+       fr.volume_total_m3, 
+       fr.distancia_km, 
+       fr.valor_frete,
+       fr.prazo_entrega_dias, 
+       fr.status_frete, 
+       fr.dias_atraso, 
+       fr.houve_avaria,
+       te.data AS data_envio,
        teg.data AS data_entrega
 FROM estoque.fato_pedido_frete fr
-JOIN estoque.dim_transportadora tr ON fr.fk_transportadora      = tr.id_transportadora
-JOIN geral.dim_localizacao lo      ON fr.fk_localizacao_origem  = lo.id_localizacao
-JOIN geral.dim_localizacao ld      ON fr.fk_localizacao_destino = ld.id_localizacao
-LEFT JOIN geral.dim_tempo te       ON fr.fk_tempo_envio         = te.id_tempo
-LEFT JOIN geral.dim_tempo teg      ON fr.fk_tempo_entrega       = teg.id_tempo
+JOIN estoque.dim_transportadora tr ON fr.fk_transportadora = tr.id_transportadora
+JOIN geral.dim_localizacao lo ON fr.fk_localizacao_origem = lo.id_localizacao
+JOIN geral.dim_localizacao ld ON fr.fk_localizacao_destino = ld.id_localizacao
+LEFT JOIN geral.dim_tempo te ON fr.fk_tempo_envio = te.id_tempo
+LEFT JOIN geral.dim_tempo teg ON fr.fk_tempo_entrega = teg.id_tempo
 WHERE fr.id_frete = %s;
 
 --QUERY: inserir_frete
@@ -250,13 +283,13 @@ RETURNING id_frete;
 
 --QUERY: atualizar_frete
 UPDATE estoque.fato_pedido_frete
-SET status_frete        = %s,
-    dias_atraso         = %s,
-    houve_avaria        = %s,
-    fk_transportadora   = %s,
-    peso_total_kg       = %s,
-    valor_frete         = %s,
-    prazo_entrega_dias  = %s
+SET status_frete = %s,
+    dias_atraso = %s,
+    houve_avaria = %s,
+    fk_transportadora = %s,
+    peso_total_kg = %s,
+    valor_frete = %s,
+    prazo_entrega_dias = %s
 WHERE id_frete = %s
 RETURNING id_frete;
 
@@ -266,14 +299,26 @@ DELETE FROM estoque.fato_pedido_frete WHERE id_frete = %s RETURNING id_frete;
 -- ===================== CRUD TRANSPORTADORAS =====================
 
 --QUERY: listar_transportadoras
-SELECT id_transportadora, nome_transportadora, cnpj, telefone,
-       media_entrega, frete_kg_base, adicional_volume, ativo
+SELECT id_transportadora, 
+       nome_transportadora, 
+       cnpj, 
+       telefone,
+       media_entrega, 
+       frete_kg_base, 
+       adicional_volume, 
+       ativo
 FROM estoque.dim_transportadora
 ORDER BY id_transportadora;
 
 --QUERY: buscar_transportadora
-SELECT id_transportadora, nome_transportadora, cnpj, telefone,
-       media_entrega, frete_kg_base, adicional_volume, ativo
+SELECT id_transportadora, 
+       nome_transportadora, 
+       cnpj, 
+       telefone,
+       media_entrega, 
+       frete_kg_base, 
+       adicional_volume, 
+       ativo
 FROM estoque.dim_transportadora
 WHERE id_transportadora = %s;
 
@@ -286,12 +331,12 @@ RETURNING id_transportadora;
 --QUERY: atualizar_transportadora
 UPDATE estoque.dim_transportadora
 SET nome_transportadora = %s,
-    cnpj                = %s,
-    telefone            = %s,
-    media_entrega       = %s,
-    frete_kg_base       = %s,
-    adicional_volume    = %s,
-    ativo               = %s
+    cnpj = %s,
+    telefone = %s,
+    media_entrega = %s,
+    frete_kg_base = %s,
+    adicional_volume = %s,
+    ativo = %s
 WHERE id_transportadora = %s
 RETURNING id_transportadora;
 
