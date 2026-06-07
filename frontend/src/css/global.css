@@ -1,0 +1,83 @@
+/* ── Conecta Beauty ERP · Variables & Reset ── */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* ── Cores: Royal Blue ── */
+  --accent:    #5b8eff;
+  --accent-2:  #7aa5ff;
+  --accent-bg: rgba(91,142,255,0.18);
+
+  --pos:       #22d47a;
+  --pos-bg:    rgba(34,212,122,0.14);
+  --neg:       #ff5470;
+  --neg-bg:    rgba(255,84,112,0.14);
+  --warn:      #ffbe2e;
+  --warn-bg:   rgba(255,190,46,0.14);
+
+  /* ── Texto ── */
+  --fg:   #eef2ff;
+  --fg-2: #c7d4f4;
+  --fg-3: #8090c0;
+  --fg-4: #4e5e90;
+
+  /* ── Backgrounds ── */
+  --bg:   #0c1a56;
+  --bg-1: #142068;
+  --bg-2: #1c2a7a;
+
+  /* ── Bordas ── */
+  --line:   rgba(255,255,255,0.08);
+  --line-2: rgba(255,255,255,0.13);
+  --line-3: rgba(255,255,255,0.05);
+
+  /* ── Topbar / Sidebar ── */
+  --topbar-bg:  #060e2a;
+  --sidebar-bg: #0a1440;
+
+  /* ── Tipografia ── */
+  --sans: "Space Scroll", "Space Grotesk", system-ui, sans-serif;
+  --data: "The Brief", "JetBrains Mono", ui-monospace, monospace;
+  --mono: var(--data);
+
+  /* ── Medidas ── */
+  --r:  6px;
+  --r2: 10px;
+  --topbar-h: 70px;
+  --sidebar-w: 192px;
+  --sidebar-collapsed-w: 52px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--fg);
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a { text-decoration: none; color: inherit; cursor: pointer; }
+
+/* ── Utilitários de texto ── */
+.mono   { font-family: var(--mono); font-weight: 700; }
+.muted  { color: var(--fg-3); }
+.muted-2 { color: var(--fg-4); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--fg-4); }
