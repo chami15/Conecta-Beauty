@@ -2,15 +2,20 @@ from fastapi import HTTPException
 from utils.query_executor import executar_query
 
 
+def _time_params(ano=None, mes=None):
+    return (ano, ano, mes, mes)
+
+
 # ─────────────────────────────────────────────
 # Analytics
 # ─────────────────────────────────────────────
 
-def get_kpis() -> dict:
-    produto = executar_query("administrativo:kpi_produto_lider")
-    cliente = executar_query("administrativo:kpi_melhor_cliente")
-    fornecedor = executar_query("administrativo:kpi_top_fornecedor")
-    canal = executar_query("administrativo:kpi_canal_numero1")
+def get_kpis(ano=None, mes=None) -> dict:
+    params = _time_params(ano, mes)
+    produto = executar_query("administrativo:kpi_produto_lider", params=params)
+    cliente = executar_query("administrativo:kpi_melhor_cliente", params=params)
+    fornecedor = executar_query("administrativo:kpi_top_fornecedor", params=params)
+    canal = executar_query("administrativo:kpi_canal_numero1", params=params)
 
     return {
         "produto_lider": {
@@ -33,8 +38,8 @@ def get_kpis() -> dict:
     }
 
 
-def get_canais_por_venda() -> list:
-    rows = executar_query("administrativo:canais_por_venda")
+def get_canais_por_venda(ano=None, mes=None) -> list:
+    rows = executar_query("administrativo:canais_por_venda", params=_time_params(ano, mes))
     return [
         {
             "canal": r["canal_venda"],
@@ -46,8 +51,8 @@ def get_canais_por_venda() -> list:
     ]
 
 
-def get_clientes_por_regiao() -> list:
-    rows = executar_query("administrativo:clientes_por_regiao")
+def get_clientes_por_regiao(ano=None, mes=None) -> list:
+    rows = executar_query("administrativo:clientes_por_regiao", params=_time_params(ano, mes))
     return [
         {
             "regiao": r["regiao"],

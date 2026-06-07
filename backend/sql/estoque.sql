@@ -40,7 +40,8 @@ SELECT
 FROM estoque.fato_movimentacao_estoque m
 JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
 JOIN estoque.dim_tipo_movimentacao tm ON m.fk_tipo_movimentacao = tm.id_tipo_movimentacao
-WHERE t.data >= CURRENT_DATE - INTERVAL '30 days'
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY t.data
 ORDER BY t.data;
 
@@ -58,6 +59,9 @@ SELECT
     ) AS taxa_no_prazo_pct
 FROM estoque.fato_pedido_frete fr
 JOIN estoque.dim_transportadora tr ON fr.fk_transportadora = tr.id_transportadora
+LEFT JOIN geral.dim_tempo t ON fr.fk_tempo_envio = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY tr.nome_transportadora
 ORDER BY qtd_fretes DESC;
 
@@ -89,7 +93,8 @@ SELECT
 FROM estoque.fato_movimentacao_estoque m
 JOIN geral.dim_tempo t ON m.fk_tempo = t.id_tempo
 JOIN administrativo.dim_produtos p ON m.fk_produto  = p.id_produto
-WHERE t.data >= CURRENT_DATE - INTERVAL '12 months'
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
   AND p.id_produto IN (
       SELECT fk_produto
       FROM estoque.fato_movimentacao_estoque
@@ -308,7 +313,7 @@ SELECT id_transportadora,
        adicional_volume, 
        ativo
 FROM estoque.dim_transportadora
-ORDER BY id_transportadora;
+ORDER BY id_transportadora DESC;
 
 --QUERY: buscar_transportadora
 SELECT id_transportadora, 

@@ -54,25 +54,91 @@ class CanalVendaBody(BaseModel):
 # ─────────────────────────────────────────────
 
 @router.get("/kpis")
-def kpis():
+def kpis(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_kpis()
+        return analytics.get_kpis(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @router.get("/canais-por-venda")
-def canais_por_venda():
+def canais_por_venda(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_canais_por_venda()
+        return analytics.get_canais_por_venda(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @router.get("/clientes-por-regiao")
-def clientes_por_regiao():
+def clientes_por_regiao(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_clientes_por_regiao()
+        return analytics.get_clientes_por_regiao(ano=ano, mes=mes)
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+
+@router.get("/localizacoes")
+def listar_localizacoes(search: str | None = Query(None), limit: int = Query(50, ge=1, le=200)):
+    try:
+        with Database() as conn:
+            term = f"%{search.strip()}%" if search else None
+            conn.execute(
+                """
+                SELECT id_localizacao, cidade, estado, regiao
+                FROM geral.dim_localizacao
+                WHERE (
+                    %s IS NULL
+                    OR cidade ILIKE %s
+                    OR estado ILIKE %s
+                    OR regiao ILIKE %s
+                )
+                ORDER BY cidade, estado, id_localizacao
+                LIMIT %s
+                """,
+                (term, term, term, term, limit),
+            )
+            rows = conn.fetchall() or []
+        return [
+            {
+                "id": row[0],
+                "cidade": row[1],
+                "estado": row[2],
+                "regiao": row[3],
+            }
+            for row in rows
+        ]
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+
+@router.get("/categorias")
+def listar_categorias(search: str | None = Query(None), limit: int = Query(50, ge=1, le=200)):
+    try:
+        with Database() as conn:
+            term = f"%{search.strip()}%" if search else None
+            conn.execute(
+                """
+                SELECT id_categoria, categoria, subcategoria
+                FROM administrativo.dim_categoria_produto
+                WHERE (
+                    %s IS NULL
+                    OR categoria ILIKE %s
+                    OR subcategoria ILIKE %s
+                )
+                ORDER BY categoria, subcategoria, id_categoria
+                LIMIT %s
+                """,
+                (term, term, term, limit),
+            )
+            rows = conn.fetchall() or []
+        return [
+            {
+                "id": row[0],
+                "categoria": row[1],
+                "subcategoria": row[2],
+            }
+            for row in rows
+        ]
     except Exception as e:
         raise HTTPException(500, str(e))
 

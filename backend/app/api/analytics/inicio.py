@@ -1,11 +1,16 @@
 from utils.query_executor import executar_query
 
 
-def get_kpis() -> dict:
-    faturamento = executar_query("inicio:total_faturamento")
-    pedidos = executar_query("inicio:total_pedidos")
-    ticket = executar_query("inicio:ticket_medio")
-    clientes = executar_query("inicio:clientes_ativos")
+def _time_params(ano=None, mes=None):
+    return (ano, ano, mes, mes)
+
+
+def get_kpis(ano=None, mes=None) -> dict:
+    params = _time_params(ano, mes)
+    faturamento = executar_query("inicio:total_faturamento", params=params)
+    pedidos = executar_query("inicio:total_pedidos", params=params)
+    ticket = executar_query("inicio:ticket_medio", params=params)
+    clientes = executar_query("inicio:clientes_ativos", params=params)
 
     return {
         "faturamento_total": float(faturamento[0]["total_faturamento"]) if faturamento else 0.0,
@@ -15,24 +20,24 @@ def get_kpis() -> dict:
     }
 
 
-def get_faturamento_diario() -> list:
-    rows = executar_query("inicio:faturamento_diario")
+def get_faturamento_diario(ano=None, mes=None) -> list:
+    rows = executar_query("inicio:faturamento_diario", params=_time_params(ano, mes))
     return [
         {"data": str(r["data"]), "faturamento": float(r["faturamento"])}
         for r in rows
     ]
 
 
-def get_pedidos_por_status() -> list:
-    rows = executar_query("inicio:pedidos_por_status")
+def get_pedidos_por_status(ano=None, mes=None) -> list:
+    rows = executar_query("inicio:pedidos_por_status", params=_time_params(ano, mes))
     return [
         {"status": r["status_pedido"], "quantidade": int(r["quantidade"])}
         for r in rows
     ]
 
 
-def get_top5_produtos() -> list:
-    rows = executar_query("inicio:top5_produtos")
+def get_top5_produtos(ano=None, mes=None) -> list:
+    rows = executar_query("inicio:top5_produtos", params=_time_params(ano, mes))
     return [
         {
             "produto": r["nome_produto"],

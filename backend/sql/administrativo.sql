@@ -5,6 +5,9 @@ SELECT p.nome_produto,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY p.nome_produto
 ORDER BY faturamento DESC
 LIMIT 1;
@@ -14,6 +17,9 @@ SELECT c.nome,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_clientes c ON v.fk_cliente = c.id_cliente
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY c.nome
 ORDER BY faturamento DESC
 LIMIT 1;
@@ -24,6 +30,9 @@ SELECT f.nome_fornecedor,
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
 JOIN administrativo.dim_fornecedor f ON p.id_fornecedor = f.id_fornecedor
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY f.nome_fornecedor
 ORDER BY faturamento DESC
 LIMIT 1;
@@ -34,6 +43,9 @@ SELECT cv.canal_venda,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_canal_venda cv ON v.fk_canal_venda = cv.id_canal_venda
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY cv.canal_venda
 ORDER BY faturamento DESC
 LIMIT 1;
@@ -47,6 +59,9 @@ SELECT cv.canal_venda,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_canal_venda cv ON v.fk_canal_venda = cv.id_canal_venda
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY cv.canal_venda, cv.tipo_canal
 ORDER BY faturamento DESC;
 
@@ -58,6 +73,9 @@ SELECT loc.regiao,
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_clientes c ON v.fk_cliente = c.id_cliente
 JOIN geral.dim_localizacao loc ON c.fk_localizacao = loc.id_localizacao
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY loc.regiao, loc.estado
 ORDER BY loc.regiao, faturamento DESC;
 
@@ -77,7 +95,7 @@ SELECT c.id_cliente,
        c.update_at
 FROM administrativo.dim_clientes c
 LEFT JOIN geral.dim_localizacao l ON c.fk_localizacao = l.id_localizacao
-ORDER BY c.id_cliente
+ORDER BY c.id_cliente DESC
 LIMIT %s OFFSET %s;
 
 --QUERY: total_clientes
@@ -139,7 +157,7 @@ SELECT p.id_produto,
 FROM administrativo.dim_produtos p
 LEFT JOIN administrativo.dim_categoria_produto cat ON p.id_categoria = cat.id_categoria
 LEFT JOIN administrativo.dim_fornecedor f ON p.id_fornecedor = f.id_fornecedor
-ORDER BY p.id_produto
+ORDER BY p.id_produto DESC
 LIMIT %s OFFSET %s;
 
 --QUERY: total_produtos
@@ -148,6 +166,8 @@ SELECT COUNT(*) AS total FROM administrativo.dim_produtos;
 --QUERY: buscar_produto
 SELECT p.id_produto, 
        p.nome_produto, 
+       p.descricao,
+       p.custo_unitario,
        p.peso_kg, 
        p.altura_cm, 
        p.largura_cm, 
@@ -209,7 +229,7 @@ SELECT f.id_fornecedor,
        f.update_at
 FROM administrativo.dim_fornecedor f
 LEFT JOIN geral.dim_localizacao l ON f.id_localizacao = l.id_localizacao
-ORDER BY f.id_fornecedor
+ORDER BY f.id_fornecedor DESC
 LIMIT %s OFFSET %s;
 
 --QUERY: total_fornecedores
@@ -258,7 +278,7 @@ SELECT id_canal_venda,
        tipo_canal, 
        ativo
 FROM administrativo.dim_canal_venda
-ORDER BY id_canal_venda;
+ORDER BY id_canal_venda DESC;
 
 --QUERY: buscar_canal
 SELECT id_canal_venda, 

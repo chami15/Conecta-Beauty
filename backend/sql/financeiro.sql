@@ -14,7 +14,10 @@ SELECT
     COUNT(CASE WHEN tipo_transacao = 'Credito'
                AND status_transacao = 'Prevista' THEN 1 END)      AS qtd_inadimplente,
     NULLIF(COUNT(CASE WHEN tipo_transacao = 'Credito' THEN 1 END), 0) AS total_creditos
-FROM financeiro.fato_transacao_financeira;
+FROM financeiro.fato_transacao_financeira tf
+LEFT JOIN geral.dim_tempo t ON tf.fk_data_pagamento = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s);
 
 -- ===================== GRÁFICOS =====================
 
@@ -30,6 +33,8 @@ SELECT
 FROM financeiro.fato_transacao_financeira tf
 JOIN geral.dim_tempo t ON tf.fk_data_pagamento = t.id_tempo
 WHERE tf.status_transacao IN ('Confirmada', 'Paga')
+  AND (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY t.ano, t.mes, t.nome_mes
 ORDER BY t.ano, t.mes;
 
@@ -40,6 +45,9 @@ SELECT
     SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN financeiro.dim_forma_pagamento fp ON v.fk_forma_pagamento = fp.id_forma_pagamento
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY fp.forma_pagamento
 ORDER BY faturamento DESC;
 
@@ -78,7 +86,7 @@ LEFT JOIN financeiro.dim_forma_pagamento fp ON tf.fk_forma_pagamento = fp.id_for
 LEFT JOIN geral.dim_tempo t ON tf.fk_data_pagamento  = t.id_tempo
 WHERE tf.tipo_transacao = 'Credito'
   AND tf.status_transacao IN ('Prevista', 'Confirmada')
-ORDER BY t.data
+ORDER BY t.data DESC, tf.id_transacao DESC
 LIMIT %s OFFSET %s;
 
 --QUERY: total_a_receber
@@ -100,7 +108,7 @@ LEFT JOIN financeiro.dim_forma_pagamento fp ON tf.fk_forma_pagamento = fp.id_for
 LEFT JOIN geral.dim_tempo t                 ON tf.fk_data_pagamento  = t.id_tempo
 WHERE tf.tipo_transacao = 'Debito'
   AND tf.status_transacao IN ('Prevista', 'Confirmada')
-ORDER BY t.data
+ORDER BY t.data DESC, tf.id_transacao DESC
 LIMIT %s OFFSET %s;
 
 --QUERY: total_a_pagar
@@ -156,7 +164,7 @@ DELETE FROM financeiro.fato_transacao_financeira WHERE id_transacao = %s RETURNI
 SELECT id_forma_pagamento, 
        forma_pagamento
 FROM financeiro.dim_forma_pagamento
-ORDER BY id_forma_pagamento;
+ORDER BY id_forma_pagamento DESC;
 
 --QUERY: buscar_forma_pagamento
 SELECT id_forma_pagamento, 

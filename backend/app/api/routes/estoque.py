@@ -80,17 +80,17 @@ def kpis():
 
 
 @router.get("/movimentacoes-por-dia")
-def movimentacoes_por_dia():
+def movimentacoes_por_dia(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_movimentacoes_por_dia()
+        return analytics.get_movimentacoes_por_dia(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @router.get("/performance-transportadoras")
-def performance_transportadoras():
+def performance_transportadoras(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_performance_transportadoras()
+        return analytics.get_performance_transportadoras(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
@@ -104,9 +104,9 @@ def skus_ponto_critico():
 
 
 @router.get("/calor-movimentacao")
-def calor_movimentacao():
+def calor_movimentacao(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_calor_movimentacao()
+        return analytics.get_calor_movimentacao(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
