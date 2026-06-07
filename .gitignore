@@ -24,3 +24,12 @@ ENV/
 # Temporary files
 tmp/
 *.log
+
+# frontend
+node_modules/
+dist/
+*.local
+
+#vite local cahce
+.vite/
+
