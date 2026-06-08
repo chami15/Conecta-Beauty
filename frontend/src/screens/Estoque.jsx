@@ -417,7 +417,7 @@ function EstoqueCrud({ entity, page, onPage, selected, toggle, setSelected, onAd
 
 
   const queryPage = search ? 1 : page;
-  const querySize = search ? 500 : 20;
+  const querySize = search ? 100 : 20;
 
   const fetcher = useMemo(() => {
     if (entity === "produtos")        return () => api.estoque.saldos(queryPage, querySize);

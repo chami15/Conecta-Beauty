@@ -400,7 +400,7 @@ function FinanceiroCrud({ entity, page, onPage, selected, toggle, setSelected, o
   }, [entity]);
 
   const queryPage = search ? 1 : page;
-  const querySize = search ? 500 : 20;
+  const querySize = search ? 100 : 20;
 
   const fetcher = useMemo(() => {
     if (entity === "transacoes") return () => api.financeiro.transacoes.list(queryPage, querySize);

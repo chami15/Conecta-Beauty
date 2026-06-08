@@ -348,7 +348,7 @@ function AdminCrud({ entity, page, onPage, reload, selected, toggle, setSelected
   }, [entity]);
 
   const queryPage = search ? 1 : page;
-  const querySize = search ? 500 : 20;
+  const querySize = search ? 100 : 20;
 
   const { data, loading, error } = useApi(
     () => entity === "canais" ? api.admin.canais.list() : api.admin[entity]?.list(queryPage, querySize),
