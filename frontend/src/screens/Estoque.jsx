@@ -136,14 +136,14 @@ export default function Estoque({ dateFrom, dateTo }) {
   const sideItems = [
     { id: "dashboard", label: "Dashboard", icon: <I.chart size={15} /> },
     { section: "Gerenciar" },
-    { id: "produtos", label: "Saldo SKUs", icon: <I.box size={15} /> },
+    { id: "produtos", label: "Produtos em Estoque", icon: <I.box size={15} /> },
     { id: "movimentacoes", label: "Movimentações", icon: <I.layers size={15} /> },
     { id: "fretes", label: "Fretes", icon: <I.package size={15} /> },
     { id: "transportadoras", label: "Transportadoras", icon: <I.truck size={15} /> },
   ];
 
   const titleMap = {
-    dashboard: "Visão de estoque", produtos: "Saldo de SKUs",
+    dashboard: "Visão de estoque", produtos: "Produtos em Estoque",
     movimentacoes: "Movimentações", fretes: "Fretes", transportadoras: "Transportadoras",
   };
 
@@ -541,9 +541,15 @@ function EstoqueCrud({ entity, page, onPage, selected, toggle, setSelected, onAd
         if (filters.ativo === "ativas" && !ativo) return false;
         if (filters.ativo === "inativas" && ativo) return false;
       }
+      if (entity === "movimentacoes" && (dateFilter.from || dateFilter.to)) {
+        const dateStr = r.data_movimentacao ? String(r.data_movimentacao).slice(0, 10) : null;
+        if (!dateStr) return false;
+        if (dateFilter.from && dateStr < dateFilter.from) return false;
+        if (dateFilter.to && dateStr > dateFilter.to) return false;
+      }
       return true;
     }).sort((a, b) => Number(b.id ?? 0) - Number(a.id ?? 0));
-  }, [rawRows, search, filters, entity]);
+  }, [rawRows, search, filters, entity, dateFilter]);
 
   const total = search ? rows.length : (data?.total ?? rawRows.length);
   const hasActiveFilters = Object.values(filters).some(Boolean);
@@ -637,21 +643,15 @@ function EstoqueCrud({ entity, page, onPage, selected, toggle, setSelected, onAd
           filterContent={filterContent}
           filterActive={hasActiveFilters}
           onClearFilters={() => setFilters({})}
-          extraFilters={
+          extraFilters={entity === "movimentacoes" && (
             <>
-              {entity === "movimentacoes" && (
-                <>
-                  <input type="date" value={dateFilter.from} onChange={(e) => setDateFilter((f) => ({ ...f, from: e.target.value }))}
-                    style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
-                  <span style={{ color: "var(--fg-4)", fontSize: 12 }}>→</span>
-                  <input type="date" value={dateFilter.to} onChange={(e) => setDateFilter((f) => ({ ...f, to: e.target.value }))}
-                    style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
-                </>
-              )}
-              <button className="btn"><I.filter size={13} /> Filtros</button>
-              <button className="btn"><I.download size={13} /> Exportar</button>
+              <input type="date" value={dateFilter.from} onChange={(e) => setDateFilter((f) => ({ ...f, from: e.target.value }))}
+                style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
+              <span style={{ color: "var(--fg-4)", fontSize: 12 }}>→</span>
+              <input type="date" value={dateFilter.to} onChange={(e) => setDateFilter((f) => ({ ...f, to: e.target.value }))}
+                style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
             </>
-          }
+          )}
         />
         {actionError && <ErrorState msg={actionError} />}
         {loading ? <LoadingState /> : error ? <ErrorState msg={error} /> : (

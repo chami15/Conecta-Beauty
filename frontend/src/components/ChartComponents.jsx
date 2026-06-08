@@ -169,42 +169,89 @@ export const RevenueVsExpenseChart = ({ labels, revenue, expense, height = 260 }
       ...base.tooltip,
       y: { formatter: (v) => "R$ " + (v || 0).toLocaleString("pt-BR", { minimumFractionDigits: 0 }) },
     },
-    legend: { show: true, labels: { colors: "#8090c0" }, fontFamily: FONT, fontSize: "11px" },
+    legend: { show: false },
   };
   if (!(revenue || []).length) return <div style={{ height }} />;
   return <ReactApexChart options={options} series={series} type="area" height={height} />;
 };
 
 /* ── FaturamentoDiarioChart ── */
-export const FaturamentoDiarioChart = ({ labels, atual, anterior, height = 260 }) => {
-  const series = [
-    { name: "Atual", data: atual || [] },
-    ...(anterior && anterior.length ? [{ name: "Anterior", data: anterior }] : []),
+export const FaturamentoDiarioChart = ({ labels, atual, anterior, previsao, ajustado, height = 260 }) => {
+  const hasAnterior = anterior && anterior.length > 0;
+  const hasPrevisao = previsao && previsao.labels && previsao.labels.length > 0;
+  const hasAjustado = ajustado && ajustado.some(v => v != null);
+  const hasML       = hasAjustado || hasPrevisao;
+
+  const allLabels = hasPrevisao ? [...(labels || []), ...previsao.labels] : (labels || []);
+  const n = (atual || []).length;
+  const nForecast = hasPrevisao ? previsao.labels.length : 0;
+
+  const atualPadded = hasPrevisao
+    ? [...(atual || []), ...Array(nForecast).fill(null)]
+    : (atual || []);
+
+  const anteriorPadded = hasAnterior && hasPrevisao
+    ? [...anterior, ...Array(nForecast).fill(null)]
+    : (anterior || []);
+
+  // Combined ML line: fitted historical (aligned with atual) + future forecast
+  let mlLineData = [];
+  if (hasAjustado && hasPrevisao) {
+    mlLineData = [...ajustado, ...previsao.values];
+  } else if (hasAjustado) {
+    mlLineData = [...ajustado];
+  } else if (hasPrevisao) {
+    const lastHistorical = n > 0 ? ((atual || [])[n - 1] ?? null) : null;
+    mlLineData = [...Array(Math.max(0, n - 1)).fill(null), lastHistorical, ...previsao.values];
+  }
+
+  const colors = [
+    "#22d47a",
+    ...(hasAnterior ? ["#94a3b8"] : []),
+    ...(hasML ? ["#fbbf24"] : []),
   ];
+
+  const strokeWidth   = [2.5, ...(hasAnterior ? [1.5] : []), ...(hasML ? [4]     : [])];
+  const dashArray     = [0,   ...(hasAnterior ? [4]   : []), ...(hasML ? [6]     : [])];
+  const strokeColors  = ["#22d47a", ...(hasAnterior ? ["#94a3b8"] : []), ...(hasML ? ["#fbbf24"] : [])];
+
+  const series = [
+    { name: "Atual",        data: atualPadded,    type: "area" },
+    ...(hasAnterior ? [{ name: "Anterior",    data: anteriorPadded, type: "area" }] : []),
+    ...(hasML       ? [{ name: "Previsão IA", data: mlLineData,     type: "line" }] : []),
+  ];
+
   const options = {
     ...base,
     chart: { ...base.chart, type: "area" },
-    colors: ["#22d47a", "#94a3b8"],
+    colors,
     fill: {
-      type: "gradient",
+      type: hasAnterior ? ["gradient", "gradient"] : "gradient",
+      opacity: hasAnterior ? [1, 0.25] : 1,
       gradient: { shadeIntensity: 1, opacityFrom: 0.4, opacityTo: 0.02, stops: [0, 85, 100] },
     },
-    stroke: { curve: "smooth", width: [2.5, 1.5], dashArray: [0, 4] },
-    markers: { size: 0, hover: { size: 5 } },
-    xaxis: { ...base.xaxis, categories: labels || [] },
+    stroke: { curve: "smooth", width: strokeWidth, dashArray, colors: strokeColors },
+    markers: {
+      size: hasML ? [...Array(1 + (hasAnterior ? 1 : 0)).fill(0), 4] : [0],
+      strokeWidth: 0,
+      fillOpacity: 1,
+      hover: { size: 5 },
+    },
+    xaxis: { ...base.xaxis, categories: allLabels },
     yaxis: {
       ...base.yaxis,
       labels: {
         ...base.yaxis.labels,
-        formatter: (v) => "R$" + (Math.abs(v) >= 1000 ? Math.round(v / 1000) + "k" : v),
+        formatter: (v) => v == null ? "" : "R$" + (Math.abs(v) >= 1000 ? Math.round(v / 1000) + "k" : Math.round(v)),
       },
     },
     tooltip: {
       ...base.tooltip,
-      y: { formatter: (v) => "R$ " + (v || 0).toLocaleString("pt-BR", { minimumFractionDigits: 0 }) },
+      y: { formatter: (v) => v == null ? "—" : "R$ " + (v || 0).toLocaleString("pt-BR", { minimumFractionDigits: 0 }) },
     },
-    legend: { show: (anterior || []).length > 0, labels: { colors: "#8090c0" }, fontFamily: FONT, fontSize: "11px" },
+    legend: { show: false },
   };
+
   if (!(atual || []).length) return <div style={{ height }} />;
   return <ReactApexChart options={options} series={series} type="area" height={height} />;
 };
@@ -231,7 +278,7 @@ export const MovimentacoesChart = ({ labels, entradas, saidas, height = 260 }) =
       labels: { ...base.yaxis.labels, formatter: (v) => v + " un" },
     },
     tooltip: { ...base.tooltip, y: { formatter: (v) => v + " unidades" } },
-    legend: { show: true, labels: { colors: "#8090c0" }, fontFamily: FONT, fontSize: "11px" },
+    legend: { show: false },
   };
   if (!(entradas || []).length) return <div style={{ height }} />;
   return <ReactApexChart options={options} series={series} type="area" height={height} />;

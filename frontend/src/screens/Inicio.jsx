@@ -126,6 +126,38 @@ export default function Inicio() {
   const prevVals = (prev.previsoes || []).map((item) => item.faturamento_previsto ?? 0);
   const prevLbls = (prev.previsoes || []).map((item) => `${item.nome_mes}/${item.ano}`);
 
+  // Fitted (in-sample) values aligned positionally with fatAtual for year/all scope
+  let ajustadoAligned = null;
+  if (
+    !mlPrev.loading && (prev.historico || []).some(h => h.faturamento_ajustado != null) &&
+    (filter.scope === "year" || filter.scope === "all") &&
+    Array.isArray(fatRaw)
+  ) {
+    const fittedMap = new Map(
+      (prev.historico || [])
+        .filter(h => h.faturamento_ajustado != null)
+        .map(h => [`${h.ano}-${h.mes}`, h.faturamento_ajustado])
+    );
+    const seenKeys = new Set();
+    const monthKeys = [];
+    fatRaw.forEach(row => {
+      if (!row?.data) return;
+      const parts = String(row.data).split("-");
+      const key = `${Number(parts[0])}-${Number(parts[1])}`;
+      if (!seenKeys.has(key)) { seenKeys.add(key); monthKeys.push(key); }
+    });
+    monthKeys.sort((a, b) => {
+      const [ay, am] = a.split("-").map(Number);
+      const [by, bm] = b.split("-").map(Number);
+      return ay !== by ? ay - by : am - bm;
+    });
+    const mapped = monthKeys.map(key => fittedMap.get(key) ?? null);
+    if (mapped.some(v => v != null)) ajustadoAligned = mapped;
+  }
+
+  const showML = !mlPrev.loading && prevVals.length > 0 &&
+    (filter.scope === "year" || filter.scope === "all");
+
   const statusFor = (v) => v >= 75 ? "pos" : v >= 55 ? "warn" : "neg";
 
   return (
@@ -167,16 +199,18 @@ export default function Inicio() {
       {/* FATURAMENTO + SAÚDE */}
       <div className="grid grid-12" style={{ marginBottom: 16 }}>
         <div className="col-8">
-          <Card title="Faturamento diário"
-            sub="PERÍODO ATUAL VS ANTERIOR"
+          <Card title="Faturamento mensal"
+            sub="PERÍODO SELECIONADO"
             action={
               <>
                 <span className="chip pos">
                   <span style={{ width: 8, height: 2, background: "var(--pos)", display: "inline-block" }} /> Atual
                 </span>
-                <span className="chip">
-                  <span style={{ width: 8, height: 2, borderTop: "1px dashed var(--fg-3)", display: "inline-block" }} /> Anterior
-                </span>
+                {showML && (
+                  <span className="chip" style={{ color: "#fbbf24" }}>
+                    <span style={{ width: 10, borderTop: "2px dashed #fbbf24", display: "inline-block", verticalAlign: "middle" }} /> Previsão IA
+                  </span>
+                )}
               </>
             }
           >
@@ -186,6 +220,8 @@ export default function Inicio() {
                   labels={fatLabels}
                   atual={fatAtual}
                   anterior={fatAnterior}
+                  ajustado={ajustadoAligned}
+                  previsao={showML ? { labels: prevLbls, values: prevVals } : null}
                   height={260}
                 />
                 {fatAtual.length > 0 && (
@@ -197,20 +233,6 @@ export default function Inicio() {
                   </div>
                 )}
 
-                {/* ─── ML Forecast strip (inline, subtle) ─── */}
-                {!mlPrev.loading && prevVals.length > 0 && (
-                  <div className="ml-forecast-row" style={{ marginTop: 14 }}>
-                    <div className="ml-forecast-label">
-                      <I.cpu size={12} /> Previsão IA
-                    </div>
-                    {prevVals.slice(0, 3).map((v, i) => (
-                      <div key={i} className="ml-forecast-item">
-                        <span className="ml-forecast-month">{prevLbls[i] ?? `+${i + 1}m`}</span>
-                        <span className="ml-forecast-val">{fmt.brl(v)}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
               </>
             )}
           </Card>
@@ -231,10 +253,7 @@ export default function Inicio() {
                           value={Math.round(c.score ?? c.valor ?? 0)}
                           status={statusFor(c.score ?? c.valor ?? 0)} />
                       ))
-                    : [
-                        ["Vendas", 88, "pos"], ["Margem", 71, "warn"],
-                        ["Estoque", 64, "warn"], ["Inadimplência", 92, "pos"], ["Logística", 75, "pos"],
-                      ].map(([l, v, s]) => <HealthLine key={l} label={l} value={v} status={s} />)
+                    : <p style={{ color: "var(--fg-4)", fontSize: 13, padding: "20px 0", textAlign: "center" }}>Sem dados disponíveis para o período selecionado.</p>
                   }
                 </div>
               </>

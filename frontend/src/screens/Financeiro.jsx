@@ -67,18 +67,6 @@ export default function Financeiro({ dateFrom, dateTo }) {
         body.fk_forma_pagamento = body.fk_forma_pagamento ? parseInt(body.fk_forma_pagamento) : null;
         if (!body.tipo_transacao) body.tipo_transacao = "Credito";
         if (!body.status_transacao) body.status_transacao = "Prevista";
-      } else if (route === "receber") {
-        body.numero_transacao = parseInt(body.numero_transacao) || Math.floor(Date.now() / 1000);
-        body.valor_total_transacao = parseFloat(body.valor_total_transacao) || 0;
-        body.tipo_transacao = "Credito";
-        body.status_transacao = body.status_transacao || "Prevista";
-        body.fk_forma_pagamento = body.fk_forma_pagamento ? parseInt(body.fk_forma_pagamento) : null;
-      } else if (route === "pagar") {
-        body.numero_transacao = parseInt(body.numero_transacao) || Math.floor(Date.now() / 1000);
-        body.valor_total_transacao = parseFloat(body.valor_total_transacao) || 0;
-        body.tipo_transacao = "Debito";
-        body.status_transacao = body.status_transacao || "Prevista";
-        body.fk_forma_pagamento = body.fk_forma_pagamento ? parseInt(body.fk_forma_pagamento) : null;
       }
 
       if (drawerMode === "create") {
@@ -119,20 +107,16 @@ export default function Financeiro({ dateFrom, dateTo }) {
     { id: "dashboard", label: "Dashboard", icon: <I.chart size={15} /> },
     { section: "Gerenciar" },
     { id: "transacoes", label: "Transações", icon: <I.receipt size={15} /> },
-    { id: "receber", label: "A receber", icon: <I.arrowDown size={15} /> },
-    { id: "pagar", label: "A pagar", icon: <I.arrowUp size={15} /> },
     { id: "formas", label: "Formas de pagto.", icon: <I.coins size={15} /> },
   ];
 
   const titleMap = {
     dashboard: "Visão financeira", transacoes: "Transações",
-    receber: "Contas a receber", pagar: "Contas a pagar", formas: "Formas de pagamento",
+    formas: "Formas de pagamento",
   };
 
   const drawerTitle = {
     transacoes: drawerMode === "edit" ? "Editar transação" : "Nova transação",
-    receber: drawerMode === "edit" ? "Editar conta" : "Nova conta a receber",
-    pagar: drawerMode === "edit" ? "Editar conta" : "Nova conta a pagar",
     formas: drawerMode === "edit" ? "Editar forma" : "Nova forma de pagamento",
   }[route] || "Novo registro";
 
@@ -201,6 +185,7 @@ function FinanceiroDashboard({ filter }) {
   const despesas = k.despesas_total ?? k.despesas ?? 0;
   const resultado = receita - despesas;
   const inadimplencia = k.inadimplencia_pct ?? k.inadimplencia ?? 0;
+  const inadimplente = k.valor_inadimplente ?? 0;
 
   const rvdArr = Array.isArray(rvd.data) ? rvd.data : [];
   const rvdLabels = rvdArr.map((r) => r.nome_mes || String(r.mes));
@@ -297,50 +282,49 @@ function FinanceiroDashboard({ filter }) {
         </div>
 
         <div className="col-4">
-          <Card title="DRE simplificado" sub="ACUMULADO">
+          <Card title="DRE simplificado" sub="TRANSAÇÕES REAIS DO PERÍODO">
             <div style={{ gap: 0 }}>
 
-              {/* Receita Bruta section */}
+              {/* Receita section */}
               <button onClick={() => toggle("receita")} style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 width: "100%", padding: "9px 0",
                 cursor: "pointer", background: "transparent",
                 border: "none", borderBottom: "1px solid var(--line)",
               }}>
-                <span style={{ fontSize: 12, fontWeight: 700, color: "var(--fg)" }}>Receita bruta</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "var(--fg)" }}>Receita (créditos)</span>
                 <div className="row" style={{ gap: 8 }}>
-                  <span className="mono" style={{ fontSize: 12, fontWeight: 700, color: "var(--fg)" }}>{fmt.brl(receita)}</span>
+                  <span className="mono" style={{ fontSize: 12, fontWeight: 700, color: "var(--pos)" }}>{fmt.brl(receita)}</span>
                   <I.arrowDown size={11} style={{ color: "var(--fg-4)", transform: dreOpen.receita ? "rotate(180deg)" : "none", transition: "transform 0.15s" }} />
                 </div>
               </button>
               {dreOpen.receita && (
                 <>
-                  <DreLine label="(−) Impostos" value={-(receita * 0.1)} indent />
-                  <DreLine label="(−) Devoluções" value={-(receita * 0.02)} indent />
+                  <DreLine label="Confirmadas e pagas" value={receita} indent pos />
+                  {inadimplente > 0 && (
+                    <DreLine label="A receber (previstas)" value={inadimplente} indent />
+                  )}
                 </>
               )}
 
-              {/* Receita Líquida / Lucro Bruto section */}
+              {/* Despesas section */}
               <button onClick={() => toggle("lucro")} style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 width: "100%", padding: "9px 0",
                 cursor: "pointer", background: "transparent",
                 border: "none", borderBottom: "1px solid var(--line)",
               }}>
-                <span style={{ fontSize: 12, fontWeight: 700, color: "var(--fg)" }}>Receita líquida → Lucro bruto</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "var(--fg)" }}>(−) Despesas (débitos)</span>
                 <div className="row" style={{ gap: 8 }}>
-                  <span className="mono" style={{ fontSize: 12, fontWeight: 700, color: "var(--pos)" }}>{fmt.brl(receita * 0.5)}</span>
+                  <span className="mono" style={{ fontSize: 12, fontWeight: 700, color: "var(--neg)" }}>{fmt.brl(despesas)}</span>
                   <I.arrowDown size={11} style={{ color: "var(--fg-4)", transform: dreOpen.lucro ? "rotate(180deg)" : "none", transition: "transform 0.15s" }} />
                 </div>
               </button>
               {dreOpen.lucro && (
-                <>
-                  <DreLine label="Receita líquida" value={receita * 0.88} bold />
-                  <DreLine label="(−) CMV" value={-(receita * 0.38)} indent />
-                </>
+                <DreLine label="Total débitos confirmados e pagos" value={-despesas} indent />
               )}
 
-              {/* Resultado Líquido section */}
+              {/* Resultado section */}
               <button onClick={() => toggle("resultado")} style={{
                 display: "flex", alignItems: "center", justifyContent: "space-between",
                 width: "100%", padding: "9px 0",
@@ -355,9 +339,9 @@ function FinanceiroDashboard({ filter }) {
               </button>
               {dreOpen.resultado && (
                 <>
-                  <DreLine label="Lucro bruto" value={receita * 0.5} bold pos />
-                  <DreLine label="(−) Despesas op." value={-despesas * 0.4} indent />
-                  <DreLine label="(−) Logística" value={-despesas * 0.15} indent />
+                  <DreLine label="Receita" value={receita} bold pos />
+                  <DreLine label="(−) Despesas" value={-despesas} indent />
+                  <DreLine label="= Resultado" value={resultado} bold highlight />
                 </>
               )}
             </div>
@@ -420,8 +404,6 @@ function FinanceiroCrud({ entity, page, onPage, selected, toggle, setSelected, o
 
   const fetcher = useMemo(() => {
     if (entity === "transacoes") return () => api.financeiro.transacoes.list(queryPage, querySize);
-    if (entity === "receber")   return () => api.financeiro.aReceber(queryPage, querySize);
-    if (entity === "pagar")     return () => api.financeiro.aPagar(queryPage, querySize);
     return () => api.financeiro.formasPagamento.list();
   }, [entity, queryPage, querySize]);
 
@@ -444,9 +426,16 @@ function FinanceiroCrud({ entity, page, onPage, selected, toggle, setSelected, o
         const sourceDate = r.data_pagamento ?? r.data_hora_lancamento;
         if (!sourceDate || String(new Date(sourceDate).getMonth() + 1).padStart(2, "0") !== String(filters.month).padStart(2, "0")) return false;
       }
+      if (dateFilter.from || dateFilter.to) {
+        const sourceDate = r.data_pagamento ?? r.data_hora_lancamento;
+        const dateStr = sourceDate ? String(sourceDate).slice(0, 10) : null;
+        if (!dateStr) return false;
+        if (dateFilter.from && dateStr < dateFilter.from) return false;
+        if (dateFilter.to && dateStr > dateFilter.to) return false;
+      }
       return true;
     }).sort((a, b) => Number(b.id ?? 0) - Number(a.id ?? 0));
-  }, [rawRows, search, filters, entity]);
+  }, [rawRows, search, filters, entity, dateFilter]);
 
   const total = search ? rows.length : (data?.total ?? rawRows.length);
   const hasActiveFilters = Object.values(filters).some(Boolean);
@@ -474,22 +463,6 @@ function FinanceiroCrud({ entity, page, onPage, selected, toggle, setSelected, o
       { key: "data_pagamento", label: "Periodo", width: 120, render: (r) => <span className="mono" style={{ color: "var(--fg-3)" }}>{fmt.monthYear(r.data_pagamento)}</span> },
       { key: "status_transacao", label: "Status", width: 120, render: (r) => (
         <span className={"chip " + (r.status_transacao === "Paga" ? "pos" : r.status_transacao === "Prevista" ? "warn" : r.status_transacao === "Cancelada" ? "neg" : "")}>{r.status_transacao ?? "—"}</span>
-      )},
-    ];
-    if (entity === "receber") return [
-      { key: "cliente", label: "Cliente", render: (r) => <span style={{ color: "var(--fg)" }}>{r.nome ?? r.cliente ?? r.historico ?? "—"}</span> },
-      { key: "valor_total_transacao", label: "Valor", num: true, width: 140, render: (r) => fmt.brl(r.valor_total_transacao ?? r.valor ?? 0) },
-      { key: "data_pagamento", label: "Periodo", width: 130, render: (r) => <span className="mono">{fmt.monthYear(r.data_pagamento)}</span> },
-      { key: "status_transacao", label: "Status", width: 130, render: (r) => (
-        <span className={"chip " + (r.status_transacao === "Paga" ? "pos" : r.status_transacao === "Prevista" ? "warn" : "neg")}>{r.status_transacao ?? "—"}</span>
-      )},
-    ];
-    if (entity === "pagar") return [
-      { key: "historico", label: "Fornecedor / Descrição", render: (r) => <span style={{ color: "var(--fg)" }}>{r.historico ?? r.descricao ?? "—"}</span> },
-      { key: "valor_total_transacao", label: "Valor", num: true, width: 140, render: (r) => fmt.brl(r.valor_total_transacao ?? r.valor ?? 0) },
-      { key: "data_pagamento", label: "Periodo", width: 130, render: (r) => <span className="mono">{fmt.monthYear(r.data_pagamento)}</span> },
-      { key: "status_transacao", label: "Status", width: 130, render: (r) => (
-        <span className={"chip " + (r.status_transacao === "Paga" ? "pos" : r.status_transacao === "Prevista" ? "warn" : "neg")}>{r.status_transacao ?? "—"}</span>
       )},
     ];
     return [
@@ -562,20 +535,15 @@ function FinanceiroCrud({ entity, page, onPage, selected, toggle, setSelected, o
           filterContent={filterContent}
           filterActive={hasActiveFilters}
           onClearFilters={() => setFilters({})}
-          extraFilters={
+          extraFilters={entity === "transacoes" && (
             <>
-              {(entity === "transacoes" || entity === "receber" || entity === "pagar") && (
-                <>
-                  <input type="date" value={dateFilter.from} onChange={(e) => setDateFilter((f) => ({ ...f, from: e.target.value }))}
-                    style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
-                  <span style={{ color: "var(--fg-4)", fontSize: 12 }}>→</span>
-                  <input type="date" value={dateFilter.to} onChange={(e) => setDateFilter((f) => ({ ...f, to: e.target.value }))}
-                    style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
-                </>
-              )}
-              <button className="btn"><I.download size={13} /> Exportar</button>
+              <input type="date" value={dateFilter.from} onChange={(e) => setDateFilter((f) => ({ ...f, from: e.target.value }))}
+                style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
+              <span style={{ color: "var(--fg-4)", fontSize: 12 }}>→</span>
+              <input type="date" value={dateFilter.to} onChange={(e) => setDateFilter((f) => ({ ...f, to: e.target.value }))}
+                style={{ padding: "7px 10px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 12, color: "var(--fg)" }} />
             </>
-          }
+          )}
         />
         {actionError && <ErrorState msg={actionError} />}
         {loading ? <LoadingState /> : error ? <ErrorState msg={error} /> : (
@@ -645,29 +613,6 @@ function FinanceiroForm({ entity, data = {}, onChange }) {
           </select>
         </Field>
       </div>
-    </>
-  );
-  if (entity === "receber" || entity === "pagar") return (
-    <>
-      <Field label={entity === "receber" ? "Cliente / Descrição" : "Fornecedor / Descrição"}>
-        <input value={data.historico ?? ""} onChange={set("historico")} />
-      </Field>
-      <div className="grid grid-2" style={{ gap: 12 }}>
-        <Field label="Valor">
-          <input value={data.valor_total_transacao ?? ""} onChange={set("valor_total_transacao")} placeholder="R$ 0,00" />
-        </Field>
-        <Field label="Vencimento">
-          <input type="date" value={data.data_pagamento ?? ""} onChange={set("data_pagamento")} />
-        </Field>
-      </div>
-      <Field label="Status">
-        <select value={data.status_transacao ?? "Prevista"} onChange={set("status_transacao")}>
-          <option value="Prevista">Prevista</option>
-          <option value="Confirmada">Confirmada</option>
-          <option value="Paga">Paga</option>
-          <option value="Cancelada">Cancelada</option>
-        </select>
-      </Field>
     </>
   );
   return (
