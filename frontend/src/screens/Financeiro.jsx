@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { I } from "../components/icons";
 import {
   Card, KPI, ManageDropdown, AnalysisFilter, CrudToolbar, DataTable,
-  Drawer, Field, Insight, Sparkline, MiniBars, SearchSelect,
+  Drawer, Field, Insight, SearchSelect,
   useApi, LoadingState, ErrorState, Pagination, DreLine, fmt,
 } from "../components/ui";
 import { RevenueVsExpenseChart, DoughnutChart } from "../components/ChartComponents";
@@ -216,22 +216,19 @@ function FinanceiroDashboard({ filter }) {
     <>
       {kpis.loading ? <LoadingState /> : kpis.error ? <ErrorState msg={kpis.error} /> : (
         <div className="grid grid-4" style={{ marginBottom: 16 }}>
-          <Card>
+          <Card compact>
             <KPI label="Receita" currency="R$" value={fmt.brlC(receita)}
-              delta={k.variacao_receita ?? null} deltaLabel="vs período anterior"
-              sparkline={<Sparkline data={rvdReceita.length ? rvdReceita.slice(-12) : [receita]} color="var(--pos)" />} />
+              delta={k.variacao_receita ?? null} />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Despesas" currency="R$" value={fmt.brlC(despesas)}
-              delta={k.variacao_despesas ?? null} deltaLabel="vs período anterior"
-              sparkline={<Sparkline data={rvdDespesa.length ? rvdDespesa.slice(-12) : [despesas]} color="var(--neg)" />} />
+              delta={k.variacao_despesas ?? null} />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Resultado líquido" currency="R$" value={fmt.brlC(resultado)}
-              delta={k.variacao_resultado ?? null} deltaLabel={resultado >= 0 ? "lucro do período" : "prejuízo do período"}
-              sparkline={<Sparkline data={rvdReceita.length ? rvdReceita.slice(-6).map((r, i) => Math.max(0, r - (rvdDespesa[rvdDespesa.length - 6 + i] ?? 0))) : [0]} color={resultado >= 0 ? "var(--pos)" : "var(--neg)"} />} />
+              delta={k.variacao_resultado ?? null} />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Inadimplência" value={inadimplencia.toFixed ? inadimplencia.toFixed(1) : inadimplencia} unit="%"
               delta={k.variacao_inadimplencia ?? null} deltaLabel="em atraso" />
           </Card>

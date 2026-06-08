@@ -16,6 +16,7 @@ ENV/
 # Database files
 *.db
 *.sqlite3
+*.pkl
 
 # IDE
 .vscode/

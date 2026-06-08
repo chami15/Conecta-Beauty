@@ -53,11 +53,22 @@
 
 body {
   font-family: var(--sans);
-  background: var(--bg);
+  background:
+    radial-gradient(
+      720px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(91, 142, 255, 0.055) 0%,
+      transparent 68%
+    ),
+    var(--bg);
   color: var(--fg);
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
   line-height: 1.5;
+}
+
+::selection {
+  background: rgba(91, 142, 255, 0.28);
+  color: var(--fg);
 }
 
 button, input, select, textarea {

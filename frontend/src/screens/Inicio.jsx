@@ -2,7 +2,7 @@ import { useState } from "react";
 import { I } from "../components/icons";
 import {
   Card, KPI, Gauge, Donut, BarList, Insight, AnalysisFilter,
-  Sparkline, MiniBars, HealthLine, DonutLegend, Stat,
+  HealthLine, DonutLegend, Stat,
   useApi, LoadingState, ErrorState, fmt,
 } from "../components/ui";
 import { FaturamentoDiarioChart } from "../components/ChartComponents";
@@ -142,28 +142,23 @@ export default function Inicio() {
       {/* KPIs */}
       {kpis.loading ? <LoadingState /> : kpis.error ? <ErrorState msg={kpis.error} /> : (
         <div className="grid grid-4" style={{ marginBottom: 16 }}>
-          <Card>
+          <Card compact>
             <KPI label="Faturamento" currency="R$"
               value={fmt.brlC(faturamento)}
               delta={deltaFat}
-              deltaLabel="vs período anterior"
-              sparkline={<Sparkline data={fatAtual.length ? fatAtual : [0]} color="var(--pos)" />}
             />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Pedidos" value={fmt.int(totalPedidos)}
               delta={deltaPedidos}
-              deltaLabel="vs período anterior"
-              sparkline={<MiniBars data={fatAtual.length > 8 ? fatAtual.slice(-12) : [1, 1, 1]} color="var(--pos)" />}
             />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Ticket médio" currency="R$"
               value={fmt.brlC(ticketMedio)}
-              sparkline={<Sparkline data={[ticketMedio * 0.9, ticketMedio * 0.95, ticketMedio]} color="var(--accent)" />}
             />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Clientes ativos" value={fmt.int(clientesAtivos)} />
           </Card>
         </div>

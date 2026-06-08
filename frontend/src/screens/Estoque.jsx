@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { I } from "../components/icons";
 import {
   Card, KPI, ManageDropdown, AnalysisFilter, CrudToolbar, DataTable,
-  Drawer, Field, Insight, Heatmap, Sparkline, MiniBars, SearchSelect,
+  Drawer, Field, Insight, Heatmap, SearchSelect,
   useApi, LoadingState, ErrorState, Pagination, StarRating, StockLevel, fmt,
 } from "../components/ui";
 import { MovimentacoesChart } from "../components/ChartComponents";
@@ -265,25 +265,20 @@ function EstoqueDashboard({ filter }) {
     <>
       {kpis.loading ? <LoadingState /> : kpis.error ? <ErrorState msg={kpis.error} /> : (
         <div className="grid grid-4" style={{ marginBottom: 16 }}>
-          <Card>
-            <KPI label="Itens em estoque" value={fmt.int(k.itens_em_estoque ?? k.total_itens ?? 0)} unit="un"
-              deltaLabel="saídas vs entradas"
-              sparkline={<Sparkline data={[1410, 1390, 1380, 1340, 1320, 1300, k.itens_em_estoque ?? 1284]} color="var(--neg)" fill={false} />} />
+          <Card compact>
+            <KPI label="Itens em estoque" value={fmt.int(k.itens_em_estoque ?? k.total_itens ?? 0)} unit="un" />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Valor em estoque" currency="R$" value={fmt.brlC(k.valor_em_estoque ?? k.valor_estoque ?? 0)}
-              deltaLabel="capital imobilizado"
-              sparkline={<Sparkline data={[298000, 296000, 290000, 288000, k.valor_em_estoque ?? 284000]} color="var(--neg)" fill={false} />} />
+              deltaLabel="capital imobilizado" />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="Giro médio" value={(k.giro_medio ?? 0).toFixed(1)} unit="x"
-              deltaLabel={`total SKUs: ${k.total_skus ?? "?"}`}
-              sparkline={<Sparkline data={[1.8, 1.9, 2.0, 2.1, 2.2, 2.3, k.giro_medio ?? 2.4]} color="var(--pos)" />} />
+              deltaLabel={`total SKUs: ${k.total_skus ?? "?"}`} />
           </Card>
-          <Card>
+          <Card compact>
             <KPI label="SKUs em alerta" value={fmt.int(k.skus_em_alerta ?? k.skus_alerta ?? 0)}
-              deltaLabel="abaixo do mínimo"
-              sparkline={<MiniBars data={[1, 2, 2, 3, 4, 4, 5, k.skus_em_alerta ?? 6]} color="var(--neg)" />} />
+              deltaLabel="abaixo do mínimo" />
           </Card>
         </div>
       )}

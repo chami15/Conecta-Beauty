@@ -2,7 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { I } from "../components/icons";
 import {
   Card, KPI, ManageDropdown, AnalysisFilter, CrudToolbar, DataTable,
-  Drawer, Field, Insight, BarList, Heatmap, Sparkline, MiniBars, SearchSelect,
+  Drawer, Field, Insight, BarList, Heatmap, SearchSelect,
   useApi, LoadingState, ErrorState, Pagination, DonutLegend,
   Donut, fmt,
 } from "../components/ui";
@@ -230,25 +230,21 @@ function AdminDashboard({ filter, onOpenCanais }) {
     <>
       {kpis.loading ? <LoadingState /> : kpis.error ? <ErrorState msg={kpis.error} /> : (
         <div className="grid grid-4" style={{ marginBottom: 16 }}>
-          <Card>
-            <KPI label="Produto líder" value={prodLider?.nome ?? "—"}
-              deltaLabel={prodLider ? fmt.brl(prodLider.faturamento) : ""}
-              sparkline={<Sparkline data={[8, 9, 11, 10, 13, 15, 14, 17, 19, 21]} color="var(--pos)" />} />
+          <Card compact>
+            <KPI text label="Produto líder" value={prodLider?.nome ?? "—"}
+              deltaLabel={prodLider ? fmt.brl(prodLider.faturamento) : ""} />
           </Card>
-          <Card>
-            <KPI label="Melhor cliente (LTV)" value={meCliente?.nome ?? "—"}
-              deltaLabel={meCliente ? fmt.brl(meCliente.faturamento) : ""}
-              sparkline={<MiniBars data={[2, 3, 5, 4, 6, 7, 5, 8, 9, 11]} color="var(--pos)" />} />
+          <Card compact>
+            <KPI text label="Melhor cliente (LTV)" value={meCliente?.nome ?? "—"}
+              deltaLabel={meCliente ? fmt.brl(meCliente.faturamento) : ""} />
           </Card>
-          <Card>
-            <KPI label="Top fornecedor" value={topForn?.nome ?? "—"}
-              deltaLabel={topForn ? fmt.brl(topForn.faturamento) : ""}
-              sparkline={<Sparkline data={[14, 13, 15, 14, 12, 13, 12, 11, 12, 12]} color="var(--warn)" fill={false} />} />
+          <Card compact>
+            <KPI text label="Top fornecedor" value={topForn?.nome ?? "—"}
+              deltaLabel={topForn ? fmt.brl(topForn.faturamento) : ""} />
           </Card>
-          <Card>
-            <KPI label="Canal nº 1" value={canal1?.nome ?? "—"}
-              deltaLabel={canal1 ? `${canal1.qtd_pedidos} pedidos` : ""}
-              sparkline={<Sparkline data={[12, 14, 13, 16, 18, 17, 21, 25, 28, 32, 38, 42]} color="var(--pos)" />} />
+          <Card compact>
+            <KPI text label="Canal nº 1" value={canal1?.nome ?? "—"}
+              deltaLabel={canal1 ? `${canal1.qtd_pedidos} pedidos` : ""} />
           </Card>
         </div>
       )}

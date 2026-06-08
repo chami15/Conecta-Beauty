@@ -121,8 +121,8 @@ export function useApi(fn, deps = []) {
 }
 
 /* ── Card ── */
-export const Card = ({ title, sub, action, children, flush = false, style, className = "" }) => (
-  <div className={"card " + (flush ? "flush " : "") + className} style={style}>
+export const Card = ({ title, sub, action, children, flush = false, compact = false, style, className = "" }) => (
+  <div className={"card " + (flush ? "flush " : "") + className} style={compact ? { padding: "10px 20px 14px", display: "flex", flexDirection: "column", justifyContent: "center", minHeight: 92, borderTop: "3px solid var(--accent)", overflow: "hidden", ...style } : style}>
     {(title || action) && (
       <div className="card-header" style={flush ? { padding: "20px 20px 0", marginBottom: 16 } : null}>
         <div>
@@ -137,27 +137,29 @@ export const Card = ({ title, sub, action, children, flush = false, style, class
 );
 
 /* ── KPI ── */
-export const KPI = ({ label, value, currency, unit, delta, deltaLabel, sparkline, footnote }) => {
+export const KPI = ({ label, value, currency, unit, delta, deltaLabel, footnote, text = false }) => {
   const isPos = (delta ?? 0) >= 0;
+  const hasFoot = delta != null || deltaLabel || footnote;
   return (
     <div className="kpi">
       <div className="kpi-label">{label}</div>
-      <div className="kpi-value">
-        {currency && <span className="currency">{currency}</span>}
+      <div className={text ? "kpi-value kpi-value--text" : "kpi-value"}>
+        {!text && currency && <span className="currency">{currency}</span>}
         <span>{value}</span>
-        {unit && <span className="unit">{unit}</span>}
+        {!text && unit && <span className="unit">{unit}</span>}
       </div>
-      <div className="kpi-foot">
-        {delta != null && (
-          <span className={"delta " + (isPos ? "pos" : "neg")}>
-            {isPos ? <I.arrowUp size={10} stroke={2.4} /> : <I.arrowDown size={10} stroke={2.4} />}
-            {fmt.pct(delta).replace(/^[+-]/, (m) => m)}
-          </span>
-        )}
-        {deltaLabel && <span>{deltaLabel}</span>}
-        {footnote && !deltaLabel && <span>{footnote}</span>}
-      </div>
-      {sparkline && <div style={{ marginTop: 4 }}>{sparkline}</div>}
+      {hasFoot && (
+        <div className="kpi-foot">
+          {delta != null && (
+            <span className={"delta " + (isPos ? "pos" : "neg")}>
+              {isPos ? <I.arrowUp size={10} stroke={2.4} /> : <I.arrowDown size={10} stroke={2.4} />}
+              {fmt.pct(delta).replace(/^[+-]/, (m) => m)}
+            </span>
+          )}
+          {deltaLabel && <span>{deltaLabel}</span>}
+          {footnote && !deltaLabel && <span>{footnote}</span>}
+        </div>
+      )}
     </div>
   );
 };
@@ -175,63 +177,126 @@ function smoothPath(points) {
   return d;
 }
 
-export const Sparkline = ({ data, width = 120, height = 32, color = "var(--accent)", showDot = true, fill = true }) => {
+const TIP_STYLE = {
+  position: "fixed",
+  background: "var(--bg-1, #1a2240)",
+  border: "1px solid rgba(255,255,255,0.12)",
+  borderRadius: 4,
+  padding: "3px 8px",
+  fontSize: 10,
+  fontFamily: "var(--mono, monospace)",
+  color: "var(--fg, #eef2ff)",
+  pointerEvents: "none",
+  zIndex: 9999,
+  whiteSpace: "nowrap",
+  boxShadow: "0 2px 10px rgba(0,0,0,0.5)",
+  transform: "translateX(-50%)",
+};
+
+export const Sparkline = ({ data, width = 120, height = 32, color = "var(--accent)", showDot = true, fill = true, format }) => {
   const id = useMemo(() => "spk-" + Math.random().toString(36).slice(2, 7), []);
+  const [tip, setTip] = useState(null);
+  const svgRef = useRef(null);
+
   if (!data || !data.length) return null;
   const min = Math.min(...data), max = Math.max(...data), range = max - min || 1;
   const pad = 2;
   const pts = data.map((v, i) => [
-    pad + (i / (data.length - 1)) * (width - pad * 2),
+    pad + (i / (data.length - 1 || 1)) * (width - pad * 2),
     height - pad - ((v - min) / range) * (height - pad * 2),
   ]);
+
+  const fmtVal = format || ((v) => "R$ " + (v || 0).toLocaleString("pt-BR", { maximumFractionDigits: 0 }));
+
+  const handleMove = (e) => {
+    if (!svgRef.current) return;
+    const rect = svgRef.current.getBoundingClientRect();
+    const xRatio = (e.clientX - rect.left) / rect.width;
+    const idx = Math.min(data.length - 1, Math.max(0, Math.round(xRatio * (data.length - 1))));
+    setTip({ idx, val: data[idx], x: e.clientX, y: e.clientY });
+  };
+
   return (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none"
-      style={{ display: "block", width: "100%", maxWidth: width, height: "auto" }}>
-      <defs>
-        <linearGradient id={id} x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stopColor={color} stopOpacity="0.35" />
-          <stop offset="100%" stopColor={color} stopOpacity="0" />
-        </linearGradient>
-      </defs>
-      {fill && <path d={smoothPath(pts) + ` L${pts[pts.length - 1][0]},${height} L${pts[0][0]},${height} Z`} fill={`url(#${id})`} />}
-      <path d={smoothPath(pts)} stroke={color} strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      {showDot && <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]} r="2.5" fill={color} />}
-    </svg>
+    <div style={{ position: "relative" }}>
+      <svg ref={svgRef} width={width} height={height} viewBox={`0 0 ${width} ${height}`}
+        preserveAspectRatio="none"
+        style={{ display: "block", width: "100%", maxWidth: width, height: "auto", cursor: "crosshair" }}
+        onMouseMove={handleMove}
+        onMouseLeave={() => setTip(null)}>
+        <defs>
+          <linearGradient id={id} x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor={color} stopOpacity="0.35" />
+            <stop offset="100%" stopColor={color} stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        {fill && <path d={smoothPath(pts) + ` L${pts[pts.length - 1][0]},${height} L${pts[0][0]},${height} Z`} fill={`url(#${id})`} />}
+        <path d={smoothPath(pts)} stroke={color} strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        {showDot && !tip && <circle cx={pts[pts.length - 1][0]} cy={pts[pts.length - 1][1]} r="2.5" fill={color} />}
+        {tip && (
+          <>
+            <line x1={pts[tip.idx][0]} y1={0} x2={pts[tip.idx][0]} y2={height}
+              stroke={color} strokeWidth="0.6" strokeDasharray="2,2" opacity="0.5" />
+            <circle cx={pts[tip.idx][0]} cy={pts[tip.idx][1]} r="3" fill={color} />
+          </>
+        )}
+      </svg>
+      {tip && (
+        <div style={{ ...TIP_STYLE, left: tip.x, top: tip.y - 32 }}>
+          {fmtVal(tip.val)}
+        </div>
+      )}
+    </div>
   );
 };
 
 /* ── Mini bars ── */
-export const MiniBars = ({ data, width = 200, height = 56, color = "var(--accent)", highlightLast = true }) => {
+export const MiniBars = ({ data, width = 200, height = 56, color = "var(--accent)", highlightLast = true, format }) => {
+  const [tip, setTip] = useState(null);
   const max = Math.max(...data);
   const gap = 3;
   const bw = (width - gap * (data.length - 1)) / data.length;
+  const fmtVal = format || ((v) => "R$ " + (v || 0).toLocaleString("pt-BR", { maximumFractionDigits: 0 }));
+
   return (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none"
-      style={{ display: "block", width: "100%", maxWidth: width, height: "auto" }}>
-      {data.map((v, i) => {
-        const h = (v / max) * (height - 4);
-        const isLast = highlightLast && i === data.length - 1;
-        return (
-          <rect key={i} x={i * (bw + gap)} y={height - h} width={bw} height={h}
-            rx={Math.min(2, bw / 3)}
-            fill={isLast ? color : "var(--line-3)"} opacity={isLast ? 1 : 0.7} />
-        );
-      })}
-    </svg>
+    <div style={{ position: "relative" }}>
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none"
+        style={{ display: "block", width: "100%", maxWidth: width, height: "auto", cursor: "default" }}
+        onMouseLeave={() => setTip(null)}>
+        {data.map((v, i) => {
+          const h = (v / max) * (height - 4);
+          const isLast = highlightLast && i === data.length - 1;
+          const isHov = tip?.idx === i;
+          return (
+            <rect key={i} x={i * (bw + gap)} y={height - h} width={bw} height={h}
+              rx={Math.min(2, bw / 3)}
+              fill={isHov || isLast ? color : "var(--line-3)"}
+              opacity={isHov ? 1 : isLast ? 1 : 0.7}
+              onMouseEnter={(e) => setTip({ idx: i, val: v, x: e.clientX, y: e.clientY })}
+              onMouseMove={(e) => setTip((t) => t?.idx === i ? { ...t, x: e.clientX, y: e.clientY } : t)}
+            />
+          );
+        })}
+      </svg>
+      {tip && (
+        <div style={{ ...TIP_STYLE, left: tip.x, top: tip.y - 32 }}>
+          {fmtVal(tip.val)}
+        </div>
+      )}
+    </div>
   );
 };
 
 /* ── Gauge ── */
 export const Gauge = ({ value, max = 100, label, size = 180, status }) => {
-  const r = 70, cx = size / 2, cy = size * 0.66;
+  const r = 70, cx = size / 2, cy = size * 0.62;
   const start = Math.PI, end = 0;
   const pct = Math.max(0, Math.min(1, value / max));
   const angle = start + (end - start) * pct;
-  const x1 = cx + r * Math.cos(start), y1 = cy + r * Math.sin(start);
-  const x2 = cx + r * Math.cos(end),   y2 = cy + r * Math.sin(end);
-  const xv = cx + r * Math.cos(angle), yv = cy + r * Math.sin(angle);
+  const x1 = cx + r * Math.cos(start), y1 = cy - r * Math.sin(start);
+  const x2 = cx + r * Math.cos(end),   y2 = cy - r * Math.sin(end);
+  const xv = cx + r * Math.cos(angle), yv = cy - r * Math.sin(angle);
   const color = status === "neg" ? "var(--neg)" : status === "warn" ? "var(--warn)" : "var(--pos)";
-  const svgH = cy + 10;
+  const svgH = cy + 16;
   return (
     <div style={{ width: size, display: "grid" }}>
       <svg width={size} height={svgH} style={{ display: "block", gridArea: "1/1" }}>
@@ -239,7 +304,7 @@ export const Gauge = ({ value, max = 100, label, size = 180, status }) => {
         <path d={`M ${x1} ${y1} A ${r} ${r} 0 0 1 ${xv} ${yv}`} stroke={color} strokeWidth="14" fill="none" strokeLinecap="round" />
         <circle cx={xv} cy={yv} r="6" fill="var(--bg)" stroke={color} strokeWidth="2.5" />
       </svg>
-      <div style={{ gridArea: "1/1", alignSelf: "end", textAlign: "center", paddingBottom: 10 }}>
+      <div style={{ gridArea: "1/1", alignSelf: "end", textAlign: "center", paddingBottom: 6 }}>
         <div className="mono" style={{ fontSize: 32, color: "var(--fg)", letterSpacing: "-0.02em", lineHeight: 1 }}>
           {value}<span style={{ color: "var(--fg-3)", fontSize: 14 }}>/{max}</span>
         </div>

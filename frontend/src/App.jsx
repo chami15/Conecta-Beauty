@@ -62,6 +62,15 @@ export default function App() {
     window.location.hash = screen;
   }, [screen]);
 
+  useEffect(() => {
+    const onMove = (e) => {
+      document.documentElement.style.setProperty("--mx", `${e.clientX}px`);
+      document.documentElement.style.setProperty("--my", `${e.clientY}px`);
+    };
+    window.addEventListener("mousemove", onMove);
+    return () => window.removeEventListener("mousemove", onMove);
+  }, []);
+
   return (
     <div className="shell">
       <div className="topbar">
