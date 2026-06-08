@@ -93,13 +93,28 @@ def prever(horizonte: int = 3) -> dict:
         })
         serie_extendida.append(y_pred)
 
+    # In-sample fitted values so the frontend can show model accuracy on historical data
+    fitted: list = [None] * N_LAGS
+    for i in range(N_LAGS, n_total):
+        lags = [serie[i - j - 1] for j in range(N_LAGS)]
+        mes_num = meses_meta[i][1]
+        mes_sin = np.sin(2 * np.pi * mes_num / 12)
+        mes_cos = np.cos(2 * np.pi * mes_num / 12)
+        t_norm = i / n_total
+        x_input = np.array([lags + [mes_sin, mes_cos, t_norm]], dtype=float)
+        x_scaled = _scaler_x.transform(x_input)
+        y_scaled = _modelo.predict(x_scaled)
+        y_pred = float(_scaler_y.inverse_transform(y_scaled.reshape(-1, 1)).ravel()[0])
+        fitted.append(max(0.0, round(y_pred, 2)))
+
     historico = []
-    for (ano, mes), fat in zip(meses_meta, serie):
+    for i, ((ano, mes), fat) in enumerate(zip(meses_meta, serie)):
         historico.append({
             "ano": ano,
             "mes": mes,
             "nome_mes": nome_mes(mes),
             "faturamento_real": round(fat, 2),
+            "faturamento_ajustado": fitted[i],
         })
 
     return {
