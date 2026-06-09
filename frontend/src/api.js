@@ -11,9 +11,18 @@ function withQuery(path, query = {}) {
   return qs ? `${path}?${qs}` : path;
 }
 
+async function handleError(res) {
+  let detail = `${res.status} ${res.statusText}`;
+  try {
+    const body = await res.json();
+    if (body?.detail) detail = body.detail;
+  } catch (_) {}
+  throw new Error(detail);
+}
+
 async function get(path) {
   const res = await fetch(BASE + path);
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  if (!res.ok) await handleError(res);
   return res.json();
 }
 
@@ -23,7 +32,7 @@ async function post(path, body) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  if (!res.ok) await handleError(res);
   return res.json();
 }
 
@@ -33,13 +42,13 @@ async function put(path, body) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  if (!res.ok) await handleError(res);
   return res.json();
 }
 
 async function del(path) {
   const res = await fetch(BASE + path, { method: "DELETE" });
-  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  if (!res.ok) await handleError(res);
   return res.json();
 }
 
