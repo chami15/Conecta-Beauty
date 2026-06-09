@@ -61,7 +61,7 @@ class PostgreConn:
     def execute_values(self, insert_query, values_list):
         try:
             if self.cur:
-                self.execute_values(insert_query, values_list)
+                execute_values(self.cur, insert_query, values_list)
         except Exception as e:
             print(f'Erro ao executar inserção: {e}')
             self.rollback()
