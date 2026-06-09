@@ -112,7 +112,11 @@ export default function Estoque({ dateFrom, dateTo }) {
       setPage(1);
       setCrudReload((r) => r + 1);
     } catch (e) {
-      setSaveError(e.message);
+      if (route === "movimentacoes" && e.message.toLowerCase().includes("saldo")) {
+        setSaveError("Saldo insuficiente para executar esta operação.");
+      } else {
+        setSaveError(e.message);
+      }
     }
   };
 
