@@ -7,6 +7,8 @@ SELECT t.ano,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY t.ano, t.mes, t.nome_mes
 ORDER BY t.ano, t.mes;
 
@@ -15,6 +17,9 @@ ORDER BY t.ano, t.mes;
 --QUERY: valores_vendas_individuais
 SELECT v.valor_total
 FROM financeiro.fato_venda v
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 ORDER BY v.valor_total;
 
 -- ===================== FINANCEIRO — ANOVA Trimestres =====================
@@ -26,6 +31,8 @@ SELECT t.ano,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY t.ano, t.trimestre, t.mes
 ORDER BY t.ano, t.trimestre, t.mes;
 
@@ -42,6 +49,8 @@ SELECT cv.canal_venda,
 FROM financeiro.fato_venda v
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
 JOIN administrativo.dim_canal_venda cv ON v.fk_canal_venda = cv.id_canal_venda
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY cv.canal_venda, t.ano, t.mes
 ORDER BY cv.canal_venda, t.ano, t.mes;
 
@@ -76,6 +85,8 @@ JOIN administrativo.dim_produtos p ON vm.fk_produto = p.id_produto
 LEFT JOIN estoque_mes em ON vm.fk_produto = em.fk_produto
                         AND vm.ano = em.ano
                         AND vm.mes = em.mes
+WHERE (%s IS NULL OR vm.ano = %s)
+  AND (%s IS NULL OR vm.mes = %s)
 ORDER BY p.nome_produto, vm.ano, vm.mes;
 
 -- ===================== ESTOQUE — Descritivas por Produto =====================
@@ -87,4 +98,7 @@ SELECT p.nome_produto,
        v.valor_total
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 ORDER BY p.nome_produto;

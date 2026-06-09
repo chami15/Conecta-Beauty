@@ -2,6 +2,10 @@ from fastapi import HTTPException
 from utils.query_executor import executar_query
 
 
+def _time_params(ano=None, mes=None):
+    return (ano, ano, mes, mes)
+
+
 # ─────────────────────────────────────────────
 # Analytics
 # ─────────────────────────────────────────────
@@ -20,8 +24,8 @@ def get_kpis() -> dict:
     }
 
 
-def get_movimentacoes_por_dia() -> list:
-    rows = executar_query("estoque:movimentacoes_por_dia")
+def get_movimentacoes_por_dia(ano=None, mes=None) -> list:
+    rows = executar_query("estoque:movimentacoes_por_dia", params=_time_params(ano, mes))
     return [
         {
             "data": str(r["data"]),
@@ -32,8 +36,8 @@ def get_movimentacoes_por_dia() -> list:
     ]
 
 
-def get_performance_transportadoras() -> list:
-    rows = executar_query("estoque:performance_transportadoras")
+def get_performance_transportadoras(ano=None, mes=None) -> list:
+    rows = executar_query("estoque:performance_transportadoras", params=_time_params(ano, mes))
     return [
         {
             "transportadora": r["nome_transportadora"],
@@ -60,8 +64,8 @@ def get_skus_ponto_critico() -> list:
     ]
 
 
-def get_calor_movimentacao() -> list:
-    rows = executar_query("estoque:calor_movimentacao")
+def get_calor_movimentacao(ano=None, mes=None) -> list:
+    rows = executar_query("estoque:calor_movimentacao", params=_time_params(ano, mes))
     return [
         {
             "produto": r["nome_produto"],

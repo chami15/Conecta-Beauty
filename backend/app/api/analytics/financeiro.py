@@ -2,12 +2,16 @@ from fastapi import HTTPException
 from utils.query_executor import executar_query
 
 
+def _time_params(ano=None, mes=None):
+    return (ano, ano, mes, mes)
+
+
 # ─────────────────────────────────────────────
 # Analytics
 # ─────────────────────────────────────────────
 
-def get_kpis() -> dict:
-    rows = executar_query("financeiro:kpis")
+def get_kpis(ano=None, mes=None) -> dict:
+    rows = executar_query("financeiro:kpis", params=_time_params(ano, mes))
     if not rows:
         return {"receita": 0, "despesas": 0, "resultado_liquido": 0, "inadimplencia_pct": 0, "valor_inadimplente": 0}
 
@@ -29,8 +33,8 @@ def get_kpis() -> dict:
     }
 
 
-def get_receita_vs_despesa() -> list:
-    rows = executar_query("financeiro:receita_vs_despesa_mensal")
+def get_receita_vs_despesa(ano=None, mes=None) -> list:
+    rows = executar_query("financeiro:receita_vs_despesa_mensal", params=_time_params(ano, mes))
     return [
         {
             "ano": r["ano"],
@@ -44,8 +48,8 @@ def get_receita_vs_despesa() -> list:
     ]
 
 
-def get_mix_pagamento() -> list:
-    rows = executar_query("financeiro:mix_forma_pagamento")
+def get_mix_pagamento(ano=None, mes=None) -> list:
+    rows = executar_query("financeiro:mix_forma_pagamento", params=_time_params(ano, mes))
     total = sum(float(r["faturamento"]) for r in rows)
     return [
         {
@@ -67,8 +71,8 @@ def fmt_transacao(r: dict) -> dict:
         "id": r["id_transacao"],
         "numero_transacao": r["numero_transacao"],
         "tipo_transacao": r["tipo_transacao"],
-        "valor": float(r["valor_total_transacao"]),
-        "status": r["status_transacao"],
+        "valor_total_transacao": float(r["valor_total_transacao"]),
+        "status_transacao": r["status_transacao"],
         "historico": r["historico"],
         "forma_pagamento": r["forma_pagamento"],
         "data_pagamento": str(r["data_pagamento"]) if r["data_pagamento"] else None,

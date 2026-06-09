@@ -52,25 +52,25 @@ class FormaPagamentoBody(BaseModel):
 # ─────────────────────────────────────────────
 
 @router.get("/kpis")
-def kpis():
+def kpis(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_kpis()
+        return analytics.get_kpis(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @router.get("/receita-vs-despesa")
-def receita_vs_despesa():
+def receita_vs_despesa(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_receita_vs_despesa()
+        return analytics.get_receita_vs_despesa(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 
 
 @router.get("/mix-pagamento")
-def mix_pagamento():
+def mix_pagamento(ano: int | None = Query(None), mes: int | None = Query(None, ge=1, le=12)):
     try:
-        return analytics.get_mix_pagamento()
+        return analytics.get_mix_pagamento(ano=ano, mes=mes)
     except Exception as e:
         raise HTTPException(500, str(e))
 

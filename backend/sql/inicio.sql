@@ -1,21 +1,33 @@
 --QUERY: total_faturamento
 SELECT COALESCE(SUM(valor_total), 0) AS total_faturamento
-FROM financeiro.fato_venda;
+FROM financeiro.fato_venda v
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s);
 
 --QUERY: total_pedidos
-SELECT COUNT(DISTINCT numero_pedido) AS total_pedidos
-FROM financeiro.fato_venda;
+SELECT COUNT(DISTINCT p.numero_pedido) AS total_pedidos
+FROM financeiro.fato_pedido p
+JOIN geral.dim_tempo t ON p.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s);
 
 --QUERY: ticket_medio
 SELECT COALESCE(
-    SUM(valor_total) / NULLIF(COUNT(DISTINCT numero_pedido), 0),
+    SUM(v.valor_total) / NULLIF(COUNT(DISTINCT v.numero_pedido), 0),
     0
 ) AS ticket_medio
-FROM financeiro.fato_venda;
+FROM financeiro.fato_venda v
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s);
 
 --QUERY: clientes_ativos
 SELECT COUNT(DISTINCT fk_cliente) AS clientes_ativos
-FROM financeiro.fato_venda;
+FROM financeiro.fato_venda v
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s);
 
 --QUERY: faturamento_diario
 SELECT
@@ -23,7 +35,8 @@ SELECT
     COALESCE(SUM(v.valor_total), 0) AS faturamento
 FROM geral.dim_tempo t
 JOIN financeiro.fato_venda v ON v.fk_tempo = t.id_tempo
-WHERE t.data >= CURRENT_DATE - INTERVAL '30 days'
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY t.data
 ORDER BY t.data;
 
@@ -32,6 +45,9 @@ SELECT
     status_pedido,
     COUNT(*) AS quantidade
 FROM financeiro.fato_pedido
+JOIN geral.dim_tempo t ON financeiro.fato_pedido.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY status_pedido
 ORDER BY quantidade DESC;
 
@@ -42,6 +58,9 @@ SELECT
     SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+WHERE (%s IS NULL OR t.ano = %s)
+  AND (%s IS NULL OR t.mes = %s)
 GROUP BY p.nome_produto
 ORDER BY faturamento DESC
 LIMIT 5;

@@ -8,6 +8,12 @@ Ou importado como função:
     from app.ml.treinar import treinar_modelo
 """
 
+from pathlib import Path
+import sys
+raiz = str(Path(__file__).resolve().parent.parent.parent)
+print(raiz)
+sys.path.append(raiz)
+
 import os
 import numpy as np
 import joblib
@@ -50,7 +56,7 @@ def construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
 
 
 def treinar_modelo() -> dict:
-    rows = executar_query("analytics:faturamento_mensal")
+    rows = executar_query("analytics:faturamento_mensal", params=(None, None, None, None))
     rows_sorted = sorted(rows, key=lambda r: (int(r["ano"]), int(r["mes"])))
 
     if len(rows_sorted) < N_LAGS + 4:

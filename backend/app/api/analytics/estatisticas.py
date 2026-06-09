@@ -4,6 +4,10 @@ from scipy import stats
 from utils.query_executor import executar_query
 
 
+def _time_params(ano=None, mes=None):
+    return (ano, ano, mes, mes)
+
+
 # ─────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────
@@ -30,8 +34,8 @@ def safe(v):
 # 1. Tendência — Regressão Linear + Projeção
 # ─────────────────────────────────────────────
 
-def get_tendencia():
-    rows = executar_query("analytics:faturamento_mensal")
+def get_tendencia(ano=None, mes=None):
+    rows = executar_query("analytics:faturamento_mensal", params=_time_params(ano, mes))
 
     if len(rows) < 3:
         return {"erro": "Dados insuficientes para regressão (mínimo 3 meses)"}
@@ -111,8 +115,8 @@ def get_tendencia():
 # 2. Distribuição de Vendas + Teste Shapiro-Wilk
 # ─────────────────────────────────────────────
 
-def get_distribuicao_vendas():
-    rows = executar_query("analytics:valores_vendas_individuais")
+def get_distribuicao_vendas(ano=None, mes=None):
+    rows = executar_query("analytics:valores_vendas_individuais", params=_time_params(ano, mes))
 
     if len(rows) < 4:
         return {"erro": "Dados insuficientes para análise de distribuição"}
@@ -164,8 +168,8 @@ def get_distribuicao_vendas():
 # 3. ANOVA — Faturamento por Trimestre
 # ─────────────────────────────────────────────
 
-def get_anova_trimestres():
-    rows = executar_query("analytics:faturamento_mensal_por_trimestre")
+def get_anova_trimestres(ano=None, mes=None):
+    rows = executar_query("analytics:faturamento_mensal_por_trimestre", params=_time_params(ano, mes))
 
     if not rows:
         return {"erro": "Sem dados para ANOVA de trimestres"}
@@ -215,8 +219,8 @@ def get_anova_trimestres():
 # 4. ANOVA — Faturamento por Canal de Venda
 # ─────────────────────────────────────────────
 
-def get_anova_canais():
-    rows = executar_query("analytics:faturamento_mensal_por_canal")
+def get_anova_canais(ano=None, mes=None):
+    rows = executar_query("analytics:faturamento_mensal_por_canal", params=_time_params(ano, mes))
 
     if not rows:
         return {"erro": "Sem dados para ANOVA de canais"}
@@ -267,8 +271,8 @@ def get_anova_canais():
 # 5. Intervalo de Confiança — Receita Mensal (95%)
 # ─────────────────────────────────────────────
 
-def get_intervalo_confianca():
-    rows = executar_query("analytics:faturamento_mensal")
+def get_intervalo_confianca(ano=None, mes=None):
+    rows = executar_query("analytics:faturamento_mensal", params=_time_params(ano, mes))
 
     if len(rows) < 2:
         return {"erro": "Dados insuficientes para intervalo de confiança"}
@@ -310,8 +314,8 @@ def get_intervalo_confianca():
 # 6. Correlação de Pearson — Estoque vs Vendas
 # ─────────────────────────────────────────────
 
-def get_correlacao_estoque_vendas():
-    rows = executar_query("analytics:estoque_vs_vendas_mensal")
+def get_correlacao_estoque_vendas(ano=None, mes=None):
+    rows = executar_query("analytics:estoque_vs_vendas_mensal", params=_time_params(ano, mes))
 
     if len(rows) < 5:
         return {"erro": "Dados insuficientes para correlação (mínimo 5 observações)"}
@@ -374,8 +378,8 @@ def get_correlacao_estoque_vendas():
 # 7. Estatísticas Descritivas por Produto
 # ─────────────────────────────────────────────
 
-def get_descritivas_produtos():
-    rows = executar_query("analytics:vendas_por_produto_detalhe")
+def get_descritivas_produtos(ano=None, mes=None):
+    rows = executar_query("analytics:vendas_por_produto_detalhe", params=_time_params(ano, mes))
 
     if not rows:
         return {"erro": "Sem dados de vendas por produto"}
