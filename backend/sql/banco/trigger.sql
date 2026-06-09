@@ -51,10 +51,12 @@ DECLARE
     v_saldo_atual INT;
     v_natureza    VARCHAR(20);
 BEGIN
-    -- Saldo atual do produto antes desta movimentação
-    SELECT COALESCE(MAX(saldo_atual), 0) INTO v_saldo_atual
+    -- Saldo atual do produto antes desta movimentação (última movimentação por ID)
+    SELECT COALESCE(saldo_atual, 0) INTO v_saldo_atual
     FROM estoque.fato_movimentacao_estoque
-    WHERE fk_produto = NEW.fk_produto;
+    WHERE fk_produto = NEW.fk_produto
+    ORDER BY id_movimentacao DESC
+    LIMIT 1;
 
     -- Natureza do tipo de movimentação (ENTRADA ou SAÍDA)
     SELECT natureza INTO v_natureza
