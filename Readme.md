@@ -1,7 +1,10 @@
 # PI - Conecta Beauty
 ## Integrantes
 
-| Bernardo Cunha Tassini | 2041382511011 |
+---
+| Nome | RA | 
+| ---- | -- | 
+| `Bernardo Cunha Tassini` | `2041382511011` |
 | Nathan Ferreira Alexandre Lima | 2041382511027 |
 | Samuel Passoni da Silva | 2041382511034 |
 | Vitor Augusto Alexandre Vieira | 2041382511029 |
