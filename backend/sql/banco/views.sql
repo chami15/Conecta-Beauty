@@ -66,7 +66,7 @@ CREATE INDEX idx_cubo_vendas_regiao ON financeiro.cubo_vendas(regiao_cliente);
 CREATE INDEX idx_cubo_vendas_canal ON financeiro.cubo_vendas(canal_venda);
 CREATE INDEX idx_cubo_vendas_fornecedor ON financeiro.cubo_vendas(nome_fornecedor);
 
- Cubo 2: Estoque e Movimentações
+-- Cubo 2: Estoque e Movimentações
 
 CREATE MATERIALIZED VIEW estoque.cubo_estoque AS
 SELECT
