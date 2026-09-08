@@ -1,12 +1,17 @@
 import asyncio
+import json
 import time
+import traceback
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 
 from app.api.routes import inicio, administrativo, financeiro, estoque, estatisticas, ml
 from utils import mongo_logger
+
+TRACEBACK_MAX_CHARS = 4000
 
 
 @asynccontextmanager
@@ -37,6 +42,7 @@ async def log_tecnico_middleware(request: Request, call_next):
         response = await call_next(request)
     except Exception as exc:
         duracao_ms = (time.perf_counter() - inicio_ts) * 1000
+        tb = traceback.format_exc()[-TRACEBACK_MAX_CHARS:]
         await asyncio.to_thread(
             mongo_logger.registrar_erro,
             request.method,
@@ -44,12 +50,26 @@ async def log_tecnico_middleware(request: Request, call_next):
             500,
             duracao_ms,
             type(exc).__name__,
-            str(exc),
+            tb,
         )
         raise
 
     duracao_ms = (time.perf_counter() - inicio_ts) * 1000
+
     if response.status_code >= 400:
+        detail = f"HTTP {response.status_code}"
+        body_bytes = b"".join([chunk async for chunk in response.body_iterator])
+        # reconstroi a resposta porque o corpo so pode ser lido uma vez
+        response = Response(
+            content=body_bytes,
+            status_code=response.status_code,
+            headers=dict(response.headers),
+            media_type=response.media_type,
+        )
+        try:
+            detail = json.loads(body_bytes).get("detail", detail)
+        except (json.JSONDecodeError, AttributeError):
+            pass
         await asyncio.to_thread(
             mongo_logger.registrar_erro,
             request.method,
@@ -57,7 +77,7 @@ async def log_tecnico_middleware(request: Request, call_next):
             response.status_code,
             duracao_ms,
             "HTTPError",
-            f"Resposta com status {response.status_code}",
+            detail,
         )
     else:
         await asyncio.to_thread(

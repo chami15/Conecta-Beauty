@@ -72,7 +72,10 @@ def registrar_requisicao(metodo: str, caminho: str, status_code: int, duracao_ms
 
 
 def registrar_erro(metodo: str, caminho: str, status_code: int, duracao_ms: float, tipo_excecao: str, mensagem_erro: str):
-    resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms - {tipo_excecao}: {mensagem_erro}"
+    # mensagem_erro carrega o traceback completo quando é um bug não tratado,
+    # ou o "detail" da HTTPException quando é um erro esperado (404, 400...).
+    resumo = mensagem_erro.strip().splitlines()[-1] if mensagem_erro.strip() else mensagem_erro
+    resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms - {tipo_excecao}: {resumo}"
     _inserir({
         "tipo_evento": "erro",
         "metodo": metodo,
