@@ -28,6 +28,9 @@ tmp/
 
 # frontend
 node_modules/
+
+# dados sinteticos gerados (nao sao codigo - o arquivo gerado vai pro Data Lake, nao pro git)
+scripts/seed/output/
 dist/
 *.local
 
