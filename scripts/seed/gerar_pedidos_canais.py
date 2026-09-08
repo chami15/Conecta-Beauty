@@ -7,9 +7,11 @@ Os produtos usados nos pedidos vem do catalogo real do Postgres (dim_produtos),
 via a query administrativo `seed:produtos_ativos`. Cliente, cidade e telefone sao
 gerados aleatoriamente com Faker.
 
-Saida: um arquivo .jsonl (1 documento JSON por linha) em scripts/seed/output/,
-que depois e carregado no Cosmos DB pelo carregar_pedidos_cosmos.py. Esse arquivo
-representa a camada bronze do Data Lake - o dado exatamente como "chegou".
+Saida: um arquivo .jsonl (1 documento JSON por linha) em scripts/seed/output/.
+Esse arquivo representa a camada bronze do Data Lake - o dado exatamente como
+"chegou". A extracao, limpeza/tratamento e carga desse arquivo no Cosmos DB
+(colecao pedidos_canais_externos) e feita no notebook da issue #12
+(Programação em Banco de Dados II).
 
 Uso:
     cd backend && python ../scripts/seed/gerar_pedidos_canais.py --total 10000
