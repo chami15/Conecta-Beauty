@@ -43,6 +43,7 @@ def desconectar():
     if _client is not None:
         _client.close()
         _client = None
+        print("[INFO] Conexão com o Cosmos DB encerrada.")
 
 
 def _formatar_mensagem(tipo_evento: str, resto: str) -> str:
@@ -60,35 +61,44 @@ def _inserir(documento: dict):
 
 
 def registrar_requisicao(metodo: str, caminho: str, status_code: int, duracao_ms: float):
-    resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms"
-    _inserir({
-        "tipo_evento": "requisicao",
-        "metodo": metodo,
-        "caminho": caminho,
-        "status_code": status_code,
-        "duracao_ms": round(duracao_ms, 1),
-        "timestamp": datetime.now().isoformat(),
-        "mensagem": _formatar_mensagem("requisicao", resto),
-    })
+    # Envolve a função inteira, não só a escrita no Mongo: qualquer bug aqui
+    # dentro (mesmo um que a gente ainda não previu) tem que só avisar no
+    # terminal, nunca derrubar a aplicação.
+    try:
+        resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms"
+        _inserir({
+            "tipo_evento": "requisicao",
+            "metodo": metodo,
+            "caminho": caminho,
+            "status_code": status_code,
+            "duracao_ms": round(duracao_ms, 1),
+            "timestamp": datetime.now().isoformat(),
+            "mensagem": _formatar_mensagem("requisicao", resto),
+        })
+    except Exception as e:
+        print(f"[AVISO] Falha ao registrar log tecnico (requisicao): {e}")
 
 
 def registrar_erro(metodo: str, caminho: str, status_code: int, duracao_ms: float, tipo_excecao: str, mensagem_erro):
     # mensagem_erro carrega o traceback completo quando é um bug não tratado,
     # ou o "detail" da HTTPException quando é um erro esperado (404, 400...).
-    # Defesa extra: se por algum motivo vier algo que não é string (ex.: lista
-    # de erros de validação do FastAPI), converte em vez de quebrar o log.
-    if not isinstance(mensagem_erro, str):
-        mensagem_erro = json.dumps(mensagem_erro, ensure_ascii=False, default=str)
-    resumo = mensagem_erro.strip().splitlines()[-1] if mensagem_erro.strip() else mensagem_erro
-    resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms - {tipo_excecao}: {resumo}"
-    _inserir({
-        "tipo_evento": "erro",
-        "metodo": metodo,
-        "caminho": caminho,
-        "status_code": status_code,
-        "duracao_ms": round(duracao_ms, 1),
-        "tipo_excecao": tipo_excecao,
-        "mensagem_erro": mensagem_erro,
-        "timestamp": datetime.now().isoformat(),
-        "mensagem": _formatar_mensagem("erro", resto),
-    })
+    try:
+        # Defesa extra: se por algum motivo vier algo que não é string (ex.:
+        # lista de erros de validação do FastAPI), converte em vez de quebrar.
+        if not isinstance(mensagem_erro, str):
+            mensagem_erro = json.dumps(mensagem_erro, ensure_ascii=False, default=str)
+        resumo = mensagem_erro.strip().splitlines()[-1] if mensagem_erro.strip() else mensagem_erro
+        resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms - {tipo_excecao}: {resumo}"
+        _inserir({
+            "tipo_evento": "erro",
+            "metodo": metodo,
+            "caminho": caminho,
+            "status_code": status_code,
+            "duracao_ms": round(duracao_ms, 1),
+            "tipo_excecao": tipo_excecao,
+            "mensagem_erro": mensagem_erro,
+            "timestamp": datetime.now().isoformat(),
+            "mensagem": _formatar_mensagem("erro", resto),
+        })
+    except Exception as e:
+        print(f"[AVISO] Falha ao registrar log tecnico (erro): {e}")
