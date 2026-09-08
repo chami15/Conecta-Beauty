@@ -10,6 +10,7 @@ Se o Cosmos DB estiver fora do ar ou a gravacao falhar por qualquer motivo,
 o erro so aparece no terminal - nunca derruba a aplicacao nem tenta de novo
 imediatamente (evita avalancha de tentativas em cima de um servico fora do ar).
 """
+import json
 import os
 from datetime import datetime
 
@@ -71,9 +72,13 @@ def registrar_requisicao(metodo: str, caminho: str, status_code: int, duracao_ms
     })
 
 
-def registrar_erro(metodo: str, caminho: str, status_code: int, duracao_ms: float, tipo_excecao: str, mensagem_erro: str):
+def registrar_erro(metodo: str, caminho: str, status_code: int, duracao_ms: float, tipo_excecao: str, mensagem_erro):
     # mensagem_erro carrega o traceback completo quando é um bug não tratado,
     # ou o "detail" da HTTPException quando é um erro esperado (404, 400...).
+    # Defesa extra: se por algum motivo vier algo que não é string (ex.: lista
+    # de erros de validação do FastAPI), converte em vez de quebrar o log.
+    if not isinstance(mensagem_erro, str):
+        mensagem_erro = json.dumps(mensagem_erro, ensure_ascii=False, default=str)
     resumo = mensagem_erro.strip().splitlines()[-1] if mensagem_erro.strip() else mensagem_erro
     resto = f"{metodo} {caminho} {status_code} {duracao_ms:.1f}ms - {tipo_excecao}: {resumo}"
     _inserir({

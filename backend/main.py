@@ -67,7 +67,9 @@ async def log_tecnico_middleware(request: Request, call_next):
             media_type=response.media_type,
         )
         try:
-            detail = json.loads(body_bytes).get("detail", detail)
+            detail_bruto = json.loads(body_bytes).get("detail", detail)
+            # detail pode vir como lista/dict (ex.: erro de validacao 422 do FastAPI)
+            detail = detail_bruto if isinstance(detail_bruto, str) else json.dumps(detail_bruto, ensure_ascii=False)
         except (json.JSONDecodeError, AttributeError):
             pass
         await asyncio.to_thread(
