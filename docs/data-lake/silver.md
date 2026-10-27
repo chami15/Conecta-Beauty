@@ -28,3 +28,22 @@ Arquivos já tratados, com um passo de transformação real por trás:
 - Jobs e pipelines de ETL/transformação.
 - Notebooks que fazem a limpeza e padronização.
 - Qualquer processo cuja função seja pegar o que está na Bronze e devolver limpo e estruturado.
+
+## Datasets atuais
+
+### Pedidos dos canais externos
+
+Pedidos que chegam de canais de venda diferentes (Instagram, Facebook, Marketplace, Mercado Livre), cada um com um formato próprio no Bronze, já unificados num schema só. Fica em duas pastas, uma linha por pedido e uma linha por item:
+
+- **pedidos**: `id_pedido_canal`, `canal`, `hash_origem`, `cliente`, `telefone`, `cidade`, `estado`, `documento`, `tipo_documento`, `documento_valido`, `qtd_itens`, `valor_total`, `frete`, `forma_pagamento`, `data_pedido`, `alertas`, `arquivo_origem`, `linha_origem`, `processado_em`
+- **itens**: `id_pedido_canal`, `canal`, `numero_item`, `produto`, `quantidade`, `preco_unitario`, `valor_item`
+
+O que já foi tratado nesse dataset:
+
+1. **Pedido repetido** (mesmo canal e mesmo id) vira um só.
+2. **Texto** normalizado (espaços e acentuação) e **documento/telefone** só com dígitos.
+3. **CPF/CNPJ validado** pelos dígitos verificadores. Se o canal não informa documento, o campo fica vazio: ausência é característica do canal, não erro.
+4. **Problemas de qualidade viram alerta** (coluna `alertas`), não são "consertados" por conta própria.
+5. **Rastreabilidade**: `arquivo_origem` e `linha_origem` apontam pro Bronze, `hash_origem` identifica o pedido bruto.
+
+Cada execução gera um par de arquivos novo com timestamp, sem sobrescrever os anteriores.
