@@ -43,6 +43,18 @@ python ../scripts/datalake/carregar_dw.py --desfazer --executar
 
 Remove os pedidos, os itens e os clientes criados pela carga (cliente que tem outras vendas fica). Canais, formas de pagamento e datas criados nas dimensões ficam, são inofensivos. A tabela de auditoria de vendas guarda o histórico de entrada e saída, como qualquer outra venda.
 
+## Camada Gold
+
+Com a carga feita, um script gera os resumos de vendas da Gold direto das tabelas de fato (não dos cubos), em Parquet, pronto pra ferramenta de BI ler do Data Lake:
+
+```bash
+cd backend
+python ../scripts/datalake/gerar_gold.py                 # grava no container gold
+python ../scripts/datalake/gerar_gold.py --gold-local pasta   # sem rede
+```
+
+O Power BI tem conector nativo de Data Lake Gen2 e de Postgres, então dá pra ligar direto na Gold sem precisar de Synapse.
+
 ## Pontos de atenção
 
 - **Os cubos OLAP só enxergam clientes com localização**: o `cubo_vendas` junta com `dim_localizacao` por INNER JOIN, então pedido de cliente sem localização não aparece nele. As consultas do app que leem `fato_venda` direto (faturamento por canal, por exemplo) enxergam tudo.

@@ -27,3 +27,13 @@ Essa é a camada final, onde o dado já está pronto pra ser consumido por quem 
 - Jobs agendados de resumo/consolidação.
 - Exports de views, cubos ou relatórios já calculados em outros sistemas.
 - Qualquer pipeline cuja função seja transformar o dado da Silver em algo pronto pra análise.
+
+## Datasets atuais
+
+Resumos de vendas calculados a partir do Data Warehouse, cada um respondendo a uma pergunta de negócio. Cada execução gera um arquivo novo com timestamp, sem sobrescrever os anteriores.
+
+- **Faturamento mensal por canal**: quanto vendemos por canal em cada mês (pedidos, itens, faturamento e ticket médio).
+- **Vendas de produto por mês**: quais produtos e categorias mais vendem (quantidade e faturamento).
+- **Vendas por região por mês**: de onde vem a venda. Venda de cliente sem localização aparece como "Nao informada" em vez de sumir.
+
+Os três somam o mesmo total do Data Warehouse, então dá pra conferir um contra o outro.
