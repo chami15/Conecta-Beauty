@@ -68,7 +68,8 @@ def prever(horizonte: int = 3) -> dict:
     for step in range(horizonte):
         lags = [serie_extendida[-(j + 1)] for j in range(N_LAGS)]
         idx = n_total + step
-        mes_num = (idx % 12) + 1
+        ultimo_ano, ultimo_mes = proximo_ano_mes(ultimo_ano, ultimo_mes)
+        mes_num = ultimo_mes
         mes_sin = np.sin(2 * np.pi * mes_num / 12)
         mes_cos = np.cos(2 * np.pi * mes_num / 12)
         t_norm = idx / n_total
@@ -78,8 +79,6 @@ def prever(horizonte: int = 3) -> dict:
         y_scaled = _modelo.predict(x_scaled)
         y_pred = float(_scaler_y.inverse_transform(y_scaled.reshape(-1, 1)).ravel()[0])
         y_pred = max(0.0, y_pred)
-
-        ultimo_ano, ultimo_mes = proximo_ano_mes(ultimo_ano, ultimo_mes)
 
         margem = _meta["mae_cv"] * 1.5
         previsoes.append({

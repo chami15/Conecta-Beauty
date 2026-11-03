@@ -3,6 +3,7 @@ import Inicio from "./screens/Inicio";
 import Administrativo from "./screens/Administrativo";
 import Financeiro from "./screens/Financeiro";
 import Estoque from "./screens/Estoque";
+import MachineLearning from "./screens/MachineLearning";
 
 class ErrorBoundary extends React.Component {
   constructor(props) { super(props); this.state = { error: null }; }
@@ -48,6 +49,7 @@ const NAV_ITEMS = [
   { id: "administrativo", label: "Administrativo" },
   { id: "financeiro",     label: "Financeiro" },
   { id: "estoque",        label: "Estoque" },
+  { id: "ml",             label: "Machine Learning" },
 ];
 
 export default function App() {
@@ -121,6 +123,7 @@ export default function App() {
           {screen === "administrativo" && <Administrativo />}
           {screen === "financeiro"     && <Financeiro />}
           {screen === "estoque"        && <Estoque />}
+          {screen === "ml"             && <MachineLearning />}
         </ErrorBoundary>
       </div>
     </div>

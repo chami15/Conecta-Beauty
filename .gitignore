@@ -37,3 +37,6 @@ dist/
 #vite local cahce
 .vite/
 
+
+# artefatos dos modelos de ML (gerados no treino)
+backend/app/ml/artifacts/

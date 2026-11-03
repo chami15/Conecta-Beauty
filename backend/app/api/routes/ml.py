@@ -53,19 +53,34 @@ def status_kmeans():
 
 @router.post("/kmeans/treinar")
 def treinar_kmeans(
-    n_clusters: int = Query(4, ge=2, le=10, description="Quantidade de grupos"),
+    n_clusters: int = Query(kmeans.N_CLUSTERS_PADRAO, ge=2, le=10, description="Quantidade de grupos"),
 ):
-    """Treina K-Means com os pedidos disponíveis na tabela ml.pedidos_padronizados."""
+    """Treina K-Means com os pedidos da view ml.pedidos_padronizados e grava ml.segmento_pedido."""
     try:
-        resultado = kmeans.treinar_kmeans_banco(n_clusters=n_clusters)
-        # A resposta do treino inclui a classificação de todos os pedidos.
-        return resultado
+        # A classificação completa fica em ml.segmento_pedido; a resposta traz uma amostra.
+        return kmeans.treinar_kmeans_banco(n_clusters=n_clusters)
     except (ValueError, TypeError) as e:
         raise HTTPException(422, str(e))
     except ConnectionError as e:
         raise HTTPException(503, str(e))
     except Exception as e:
         raise HTTPException(500, f"Erro ao treinar K-Means: {e}")
+
+
+@router.get("/kmeans/avaliar")
+def avaliar_kmeans(
+    k_min: int = Query(2, ge=2, le=10),
+    k_max: int = Query(8, ge=2, le=10),
+):
+    """Silhouette e inércia para cada quantidade de grupos (escolha do k)."""
+    try:
+        return kmeans.avaliar_k_banco(k_min=k_min, k_max=k_max)
+    except (ValueError, TypeError) as e:
+        raise HTTPException(422, str(e))
+    except ConnectionError as e:
+        raise HTTPException(503, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Erro ao avaliar K-Means: {e}")
 
 
 @router.get("/kmeans/resultados")

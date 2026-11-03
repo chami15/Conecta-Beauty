@@ -85,6 +85,7 @@ backend/sql/banco/tabelas.sql
 backend/sql/banco/views.sql
 backend/sql/banco/trigger.sql
 backend/sql/banco/procedure.sql
+backend/sql/banco/ml.sql
 ```
 
 ### Variáveis de ambiente

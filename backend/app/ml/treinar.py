@@ -14,6 +14,7 @@ raiz = str(Path(__file__).resolve().parent.parent.parent)
 print(raiz)
 sys.path.append(raiz)
 
+import calendar
 import os
 import numpy as np
 import joblib
@@ -32,9 +33,9 @@ META_PATH = os.path.join(MODEL_DIR, "meta.pkl")
 N_LAGS = 3
 
 
-def construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
+def construir_features(serie: list[float], meses: list[int]) -> tuple[np.ndarray, np.ndarray]:
     """
-    Recebe série temporal ordenada de faturamento mensal.
+    Recebe série temporal ordenada de faturamento mensal e o mês (1-12) de cada ponto.
     Retorna (X, y) com features:
       - lag_1, lag_2, lag_3  (valores anteriores)
       - mes_sin, mes_cos     (codificação cíclica do mês)
@@ -45,7 +46,7 @@ def construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
 
     for i in range(N_LAGS, n):
         lags = [serie[i - j] for j in range(1, N_LAGS + 1)]
-        mes = (i % 12) + 1
+        mes = meses[i]
         mes_sin = np.sin(2 * np.pi * mes / 12)
         mes_cos = np.cos(2 * np.pi * mes / 12)
         t_norm = i / n
@@ -55,9 +56,25 @@ def construir_features(serie: list[float]) -> tuple[np.ndarray, np.ndarray]:
     return np.array(X_rows, dtype=float), np.array(y_rows, dtype=float)
 
 
+def meses_completos(rows: list[dict]) -> list[dict]:
+    """Descarta o primeiro e o último mês quando a série começa/termina no meio do mês.
+
+    Um mês com poucos dias de venda (ex.: dados até 11/09) aparece como uma queda
+    brusca de faturamento, que o modelo aprenderia como tendência.
+    """
+    rows = list(rows)
+    if rows and rows[0]["primeiro_dia"].day > 1:
+        rows = rows[1:]
+    if rows:
+        ultimo = rows[-1]["ultimo_dia"]
+        if ultimo.day < calendar.monthrange(ultimo.year, ultimo.month)[1]:
+            rows = rows[:-1]
+    return rows
+
+
 def treinar_modelo() -> dict:
-    rows = executar_query("analytics:faturamento_mensal", params=(None, None, None, None))
-    rows_sorted = sorted(rows, key=lambda r: (int(r["ano"]), int(r["mes"])))
+    rows = executar_query("analytics:faturamento_mensal_ml")
+    rows_sorted = meses_completos(sorted(rows, key=lambda r: (int(r["ano"]), int(r["mes"]))))
 
     if len(rows_sorted) < N_LAGS + 4:
         raise ValueError(
@@ -68,7 +85,7 @@ def treinar_modelo() -> dict:
     serie = [float(r["faturamento"]) for r in rows_sorted]
     meses_meta = [(int(r["ano"]), int(r["mes"])) for r in rows_sorted]
 
-    X, y = construir_features(serie)
+    X, y = construir_features(serie, [m for _, m in meses_meta])
 
     scaler_x = StandardScaler()
     scaler_y = StandardScaler()
