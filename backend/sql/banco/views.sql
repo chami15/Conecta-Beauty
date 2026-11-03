@@ -9,17 +9,17 @@ SELECT
     t.nome_mes,
     t.dia_semana,
 
-    -- Dimensões de produto
-    cat.categoria,
-    cat.subcategoria,
-    cat.linha_produto,
+    -- Dimensões de produto (produto sem categoria no catálogo entra como 'Sem categoria')
+    COALESCE(cat.categoria, 'Sem categoria') AS categoria,
+    COALESCE(cat.subcategoria, 'Sem categoria') AS subcategoria,
+    COALESCE(cat.linha_produto, 'Sem categoria') AS linha_produto,
     p.nome_produto,
     f.nome_fornecedor,
 
-    -- Dimensões de cliente/localização
-    loc.regiao AS regiao_cliente,
-    loc.estado AS estado_cliente,
-    loc.cidade AS cidade_cliente,
+    -- Dimensões de cliente/localização (cliente sem localização, como os de Instagram e Facebook, entra como 'Não informada')
+    COALESCE(loc.regiao, 'Não informada') AS regiao_cliente,
+    COALESCE(loc.estado, 'Não informada') AS estado_cliente,
+    COALESCE(loc.cidade, 'Não informada') AS cidade_cliente,
 
     -- Dimensões comerciais
     cv.canal_venda,
@@ -42,19 +42,19 @@ SELECT
 FROM financeiro.fato_venda v
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
 JOIN administrativo.dim_produtos p ON v.fk_produto = p.id_produto
-JOIN administrativo.dim_categoria_produto cat ON p.id_categoria = cat.id_categoria
+LEFT JOIN administrativo.dim_categoria_produto cat ON p.id_categoria = cat.id_categoria
 JOIN administrativo.dim_fornecedor f ON p.id_fornecedor = f.id_fornecedor
 JOIN administrativo.dim_clientes c ON v.fk_cliente = c.id_cliente
-JOIN geral.dim_localizacao loc ON c.fk_localizacao = loc.id_localizacao
+LEFT JOIN geral.dim_localizacao loc ON c.fk_localizacao = loc.id_localizacao
 JOIN administrativo.dim_canal_venda cv ON v.fk_canal_venda = cv.id_canal_venda
 JOIN financeiro.dim_forma_pagamento fp ON v.fk_forma_pagamento = fp.id_forma_pagamento
 
 GROUP BY ROLLUP (
     t.ano, t.trimestre, t.mes, t.nome_mes, t.dia_semana,
-    cat.categoria, cat.subcategoria, cat.linha_produto,
+    COALESCE(cat.categoria, 'Sem categoria'), COALESCE(cat.subcategoria, 'Sem categoria'), COALESCE(cat.linha_produto, 'Sem categoria'),
     p.nome_produto,
     f.nome_fornecedor,
-    loc.regiao, loc.estado, loc.cidade,
+    COALESCE(loc.regiao, 'Não informada'), COALESCE(loc.estado, 'Não informada'), COALESCE(loc.cidade, 'Não informada'),
     cv.canal_venda, cv.tipo_canal,
     fp.forma_pagamento
 );

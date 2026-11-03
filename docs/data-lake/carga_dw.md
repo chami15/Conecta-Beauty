@@ -57,6 +57,6 @@ O Power BI tem conector nativo de Data Lake Gen2 e de Postgres, então dá pra l
 
 ## Pontos de atenção
 
-- **Os cubos OLAP só enxergam clientes com localização**: o `cubo_vendas` junta com `dim_localizacao` por INNER JOIN, então pedido de cliente sem localização não aparece nele. As consultas do app que leem `fato_venda` direto (faturamento por canal, por exemplo) enxergam tudo.
+- **Cliente sem localização e produto sem categoria entram no cubo**: o `cubo_vendas` usa LEFT JOIN com `dim_localizacao` e `dim_categoria_produto`, e esses casos aparecem como `Não informada` (região, estado, cidade) e `Sem categoria`. Assim o faturamento total do cubo bate com o da `fato_venda`.
 - **A procedure `atualizar_cubos_olap()` não funciona hoje**: ela usa `REFRESH ... CONCURRENTLY`, que exige índice único em cada view. Por isso `--atualizar-cubos` faz um `REFRESH` simples.
 - A carga muda os números do dashboard e do DRE: são pedidos novos de verdade na base. Pra testar antes, use `--limite` e depois `--desfazer`.
