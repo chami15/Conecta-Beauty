@@ -36,7 +36,8 @@ from lago import abrir
 from tratamento import sem_acento_minusculo
 from utils.connection import PostgreConn
 
-load_dotenv()
+# O .env fica em backend/ (o load_dotenv() sem caminho procura a partir de scripts/datalake e nao o acha)
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", "backend", ".env"))
 
 PASTA_SILVER = "pedidos_canais_externos"
 

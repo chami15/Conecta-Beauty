@@ -33,7 +33,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "backend"
 from lago import abrir
 from utils.connection import PostgreConn
 
-load_dotenv()
+# O .env fica em backend/ (o load_dotenv() sem caminho procura a partir de scripts/datalake e nao o acha)
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", "backend", ".env"))
 
 PASTA_GOLD = "vendas"
 
