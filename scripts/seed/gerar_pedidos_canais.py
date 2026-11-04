@@ -7,6 +7,13 @@ Os produtos usados nos pedidos vem do catalogo real do Postgres (dim_produtos),
 via a query administrativo `seed:produtos_ativos`. Cliente, cidade e telefone sao
 gerados aleatoriamente com Faker.
 
+Para os pedidos serem coerentes com o historico do ERP (2021 a 2026), o gerador segue
+as mesmas proporcoes medidas nas vendas ja existentes no banco:
+- datas: distribuidas mes a mes na proporcao do volume de pedidos do ERP no periodo
+  (mesmo crescimento e sazonalidade); sem vendas no periodo, distribuicao uniforme;
+- itens por pedido, unidades por item e margem sobre o custo: as distribuicoes do ERP
+  (media de 2,1 itens por pedido, 1 a 3 unidades em 94% dos itens, preco = custo x 2,2).
+
 Saida: um arquivo .jsonl (1 documento JSON por linha) em scripts/seed/output/.
 Esse arquivo representa a camada bronze do Data Lake - o dado exatamente como
 "chegou". A extracao, limpeza/tratamento e carga desse arquivo no Cosmos DB
@@ -14,7 +21,8 @@ Esse arquivo representa a camada bronze do Data Lake - o dado exatamente como
 (Programação em Banco de Dados II).
 
 Uso:
-    cd backend && python ../scripts/seed/gerar_pedidos_canais.py --total 10000
+    cd backend && python ../scripts/seed/gerar_pedidos_canais.py
+    python ../scripts/seed/gerar_pedidos_canais.py --total 3000 --inicio 2024-01-01 --fim 2026-06-09
 """
 import argparse
 import json
@@ -22,7 +30,8 @@ import os
 import random
 import sys
 import uuid
-from datetime import datetime, timedelta
+from calendar import monthrange
+from datetime import date, datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "backend"))
 
@@ -32,6 +41,15 @@ from utils.query_executor import executar_query
 fake = Faker("pt_BR")
 
 FORMAS_PAGAMENTO = ["Pix", "Cartao de credito", "Boleto", "Cartao de debito"]
+
+# Distribuicoes medidas nas vendas do ERP (fato_venda, 2021 a 2026).
+ITENS_POR_PEDIDO = {1: 40, 2: 29, 3: 19, 4: 8, 5: 4}                  # % dos pedidos
+UNIDADES_POR_ITEM = {1: 31, 2: 31, 3: 32, 4: 1, 5: 1.5, 6: 1.5, 7: 1.5, 8: 1.5}  # % dos itens
+MARGEM_MIN, MARGEM_MAX = 1.84, 2.56   # preco de venda / custo (P10 e P90 do ERP; media 2,2)
+
+INICIO_PADRAO = "2021-01-01"
+FIM_PADRAO = "2026-06-09"             # ultimo dia com venda no ERP
+TOTAL_PADRAO = 2000                   # ~31 pedidos/mes, perto de 40% do volume do ERP
 
 
 def carregar_produtos() -> list[dict]:
@@ -44,12 +62,16 @@ def carregar_produtos() -> list[dict]:
     return produtos
 
 
-def _itens_aleatorios(produtos: list[dict], min_itens=1, max_itens=4) -> list[dict]:
-    escolhidos = random.sample(produtos, k=min(random.randint(min_itens, max_itens), len(produtos)))
+def _sortear(distribuicao: dict) -> int:
+    return random.choices(list(distribuicao), weights=list(distribuicao.values()))[0]
+
+
+def _itens_aleatorios(produtos: list[dict]) -> list[dict]:
+    escolhidos = random.sample(produtos, k=min(_sortear(ITENS_POR_PEDIDO), len(produtos)))
     itens = []
     for p in escolhidos:
-        qtd = random.randint(1, 5)
-        preco_venda = round(float(p["custo_unitario"]) * random.uniform(1.3, 2.2), 2)
+        qtd = _sortear(UNIDADES_POR_ITEM)
+        preco_venda = round(float(p["custo_unitario"]) * random.uniform(MARGEM_MIN, MARGEM_MAX), 2)
         itens.append({
             "produto": p["nome_produto"],
             "quantidade": qtd,
@@ -58,9 +80,38 @@ def _itens_aleatorios(produtos: list[dict], min_itens=1, max_itens=4) -> list[di
     return itens
 
 
+class SorteioDatas:
+    """Sorteia a data de cada pedido entre inicio e fim, mes a mes na proporcao do ERP."""
+
+    def __init__(self, inicio: date, fim: date):
+        self.inicio, self.fim = inicio, fim
+        linhas = executar_query("seed:pedidos_por_mes", params=(inicio, fim + timedelta(days=1)))
+        self.meses = [(int(r["ano"]), int(r["mes"])) for r in linhas]
+        self.pesos = [int(r["pedidos"]) for r in linhas]
+        if not self.meses:  # banco sem vendas no periodo: todos os meses com o mesmo peso
+            ano, mes = inicio.year, inicio.month
+            while (ano, mes) <= (fim.year, fim.month):
+                self.meses.append((ano, mes))
+                ano, mes = (ano + 1, 1) if mes == 12 else (ano, mes + 1)
+            self.pesos = [1] * len(self.meses)
+
+    def descrever(self) -> str:
+        origem = "volume mensal do ERP" if len(set(self.pesos)) > 1 else "uniforme"
+        return f"{self.inicio:%d/%m/%Y} a {self.fim:%d/%m/%Y}, {len(self.meses)} meses, distribuicao {origem}"
+
+    def sortear(self) -> datetime:
+        ano, mes = random.choices(self.meses, weights=self.pesos)[0]
+        primeiro = max(date(ano, mes, 1), self.inicio)
+        ultimo = min(date(ano, mes, monthrange(ano, mes)[1]), self.fim)
+        dia = primeiro + timedelta(days=random.randint(0, (ultimo - primeiro).days))
+        return datetime(dia.year, dia.month, dia.day, random.randint(8, 21), random.randint(0, 59), random.randint(0, 59))
+
+
+_datas: SorteioDatas | None = None
+
+
 def _data_pedido_aleatoria() -> datetime:
-    dias_atras = random.randint(0, 365)
-    return datetime.now() - timedelta(days=dias_atras, hours=random.randint(0, 23))
+    return _datas.sortear()
 
 
 # ---------------------------------------------------------------------------
@@ -166,8 +217,11 @@ GERADORES = [
 ]
 
 
-def gerar_pedidos(total: int) -> list[dict]:
+def gerar_pedidos(total: int, inicio: date, fim: date) -> list[dict]:
+    global _datas
     produtos = carregar_produtos()
+    _datas = SorteioDatas(inicio, fim)
+    print(f"Periodo: {_datas.descrever()}")
     pedidos = []
     for _ in range(total):
         gerar = random.choice(GERADORES)
@@ -177,18 +231,24 @@ def gerar_pedidos(total: int) -> list[dict]:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--total", type=int, default=10000, help="Quantidade de pedidos a gerar")
+    parser.add_argument("--total", type=int, default=TOTAL_PADRAO, help="Quantidade de pedidos a gerar")
+    parser.add_argument("--inicio", type=date.fromisoformat, default=date.fromisoformat(INICIO_PADRAO),
+                        help=f"primeira data dos pedidos, AAAA-MM-DD (padrao: {INICIO_PADRAO})")
+    parser.add_argument("--fim", type=date.fromisoformat, default=date.fromisoformat(FIM_PADRAO),
+                        help=f"ultima data dos pedidos, AAAA-MM-DD (padrao: {FIM_PADRAO})")
     parser.add_argument(
         "--saida",
         default=os.path.join(os.path.dirname(__file__), "output", "pedidos_canais_externos.jsonl"),
         help="Caminho do arquivo .jsonl de saida",
     )
     args = parser.parse_args()
+    if args.inicio > args.fim:
+        parser.error("--inicio deve ser anterior a --fim")
 
     os.makedirs(os.path.dirname(args.saida), exist_ok=True)
 
     print(f"Gerando {args.total} pedidos sinteticos (4 canais)...")
-    pedidos = gerar_pedidos(args.total)
+    pedidos = gerar_pedidos(args.total, args.inicio, args.fim)
 
     with open(args.saida, "w", encoding="utf-8") as f:
         for pedido in pedidos:
