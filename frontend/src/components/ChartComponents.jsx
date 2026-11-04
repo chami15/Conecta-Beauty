@@ -211,12 +211,12 @@ export const FaturamentoDiarioChart = ({ labels, atual, anterior, previsao, ajus
     ...(hasML ? ["#fbbf24"] : []),
   ];
 
-  const strokeWidth   = [2.5, ...(hasAnterior ? [1.5] : []), ...(hasML ? [4]     : [])];
-  const dashArray     = [0,   ...(hasAnterior ? [4]   : []), ...(hasML ? [6]     : [])];
+  const strokeWidth   = [2.5, ...(hasAnterior ? [1.5] : []), ...(hasML ? [2]     : [])];
+  const dashArray     = [0,   ...(hasAnterior ? [4]   : []), ...(hasML ? [5]     : [])];
   const strokeColors  = ["#22d47a", ...(hasAnterior ? ["#94a3b8"] : []), ...(hasML ? ["#fbbf24"] : [])];
 
   const series = [
-    { name: "Atual",        data: atualPadded,    type: "area" },
+    { name: "Faturamento real", data: atualPadded, type: "area" },
     ...(hasAnterior ? [{ name: "Anterior",    data: anteriorPadded, type: "area" }] : []),
     ...(hasML       ? [{ name: "Previsão IA", data: mlLineData,     type: "line" }] : []),
   ];
@@ -232,12 +232,14 @@ export const FaturamentoDiarioChart = ({ labels, atual, anterior, previsao, ajus
     },
     stroke: { curve: "smooth", width: strokeWidth, dashArray, colors: strokeColors },
     markers: {
-      size: hasML ? [...Array(1 + (hasAnterior ? 1 : 0)).fill(0), 4] : [0],
+      size: hasML ? [...Array(1 + (hasAnterior ? 1 : 0)).fill(0), 5] : [0],
       strokeWidth: 0,
       fillOpacity: 1,
       hover: { size: 5 },
     },
-    xaxis: { ...base.xaxis, categories: allLabels },
+    // Com muitos pontos (visão "Tudo"), mostra só parte dos rótulos para não sobrepor.
+    xaxis: { ...base.xaxis, categories: allLabels, tickAmount: allLabels.length > 24 ? 12 : undefined,
+             labels: { ...base.xaxis.labels, rotate: -45, hideOverlappingLabels: true } },
     yaxis: {
       ...base.yaxis,
       labels: {

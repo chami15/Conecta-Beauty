@@ -7,23 +7,73 @@ import {
 } from "../components/ui";
 import { FaturamentoDiarioChart } from "../components/ChartComponents";
 import { api } from "../api";
-import { YEAR_OPTIONS, createAnalysisFilter, formatAnalysisWindow, toApiTimeParams } from "../utils/time";
+import { MONTH_OPTIONS, YEAR_OPTIONS, createAnalysisFilter, formatAnalysisWindow, toApiTimeParams } from "../utils/time";
 import "../css/Inicio.css";
+
+/* Rótulos padronizados: "Jan/2026" nos meses e "09/06" nos dias. */
+const rotuloMes = (ano, mes) => `${MONTH_OPTIONS[mes - 1].label}/${ano}`;
+const rotuloDia = (data) => (data ? `${String(data).slice(8, 10)}/${String(data).slice(5, 7)}` : "");
+const ordemMes = (ano, mes) => ano * 12 + mes;
 
 function aggregateByMonth(rows = []) {
   const grouped = new Map();
   rows.forEach((row) => {
     if (!row?.data) return;
-    const date = new Date(`${row.data}T00:00:00`);
-    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
-    const current = grouped.get(key) ?? 0;
-    grouped.set(key, current + Number(row.faturamento ?? 0));
+    const [ano, mes, dia] = String(row.data).split("-").map(Number);
+    const atual = grouped.get(ordemMes(ano, mes)) ?? { ano, mes, real: 0, ultimoDia: 0 };
+    atual.real += Number(row.faturamento ?? 0);
+    atual.ultimoDia = Math.max(atual.ultimoDia, dia);
+    grouped.set(ordemMes(ano, mes), atual);
   });
 
-  return [...grouped.entries()].map(([key, value]) => ({
-    label: new Date(`${key}-01T00:00:00`).toLocaleDateString("pt-BR", { month: "short" }),
-    value,
-  }));
+  return [...grouped.entries()]
+    .sort(([a], [b]) => a - b)
+    .map(([ordem, item]) => ({ ...item, ordem, label: rotuloMes(item.ano, item.mes), ml: null }));
+}
+
+/* O último mês dos dados costuma estar em andamento (vendas só até o dia X): fica marcado
+   com "*" e fora de melhor/pior/média, para não parecer uma queda de faturamento.
+   O modelo de ML só treina com meses completos, então um mês depois do último mês do modelo
+   está incompleto; sem o modelo, vale o último dia com venda. */
+function marcarMesParcial(serie, ml) {
+  const ultimo = serie[serie.length - 1];
+  if (!ultimo) return serie;
+  const historico = ml?.historico || [];
+  const fimModelo = historico.length ? historico[historico.length - 1] : null;
+  const parcial = fimModelo
+    ? ultimo.ordem > ordemMes(fimModelo.ano, fimModelo.mes)
+    : ultimo.ultimoDia < new Date(ultimo.ano, ultimo.mes, 0).getDate();
+  if (parcial) {
+    ultimo.parcial = true;
+    ultimo.label += "*";
+  }
+  return serie;
+}
+
+/* Junta à série mensal o valor do ML de cada mês:
+   - meses do histórico: o que o modelo previu a partir dos 3 meses anteriores reais;
+   - meses seguintes: a previsão, só quando o período exibido chega ao último mês do modelo
+     (filtrando 2023, por exemplo, não faz sentido emendar a previsão de 2026). */
+function juntarPrevisaoML(serie, ml) {
+  const historico = ml?.historico || [];
+  if (!serie.length || !historico.length) return serie;
+
+  const porMes = new Map(serie.map((p) => [p.ordem, p]));
+  historico.forEach((h) => {
+    const ponto = porMes.get(ordemMes(h.ano, h.mes));
+    if (ponto && h.faturamento_ajustado != null) ponto.ml = h.faturamento_ajustado;
+  });
+
+  const ultimoModelo = historico[historico.length - 1];
+  if (serie[serie.length - 1].ordem < ordemMes(ultimoModelo.ano, ultimoModelo.mes)) return serie;
+
+  (ml.previsoes || []).forEach((f) => {
+    const ordem = ordemMes(f.ano, f.mes);
+    const ponto = porMes.get(ordem);
+    if (ponto) ponto.ml = f.faturamento_previsto;  // mês em andamento: real até agora x previsto
+    else serie.push({ ano: f.ano, mes: f.mes, ordem, label: rotuloMes(f.ano, f.mes), real: null, ml: f.faturamento_previsto });
+  });
+  return serie;
 }
 
 export default function Inicio() {
@@ -52,22 +102,25 @@ export default function Inicio() {
      Chart espera:    {dias, atual, anterior}
   */
   const fatRaw = fat.data;
-  let fatLabels = [], fatAtual = [], fatAnterior = [];
+  const mensal = filter.scope === "year" || filter.scope === "all";
+  let serie = [], fatAnterior = [];
   if (Array.isArray(fatRaw)) {
-    if (filter.scope === "year" || filter.scope === "all") {
-      const monthly = aggregateByMonth(fatRaw);
-      fatLabels = monthly.map((item) => item.label);
-      fatAtual = monthly.map((item) => item.value);
-    } else {
-      fatLabels  = fatRaw.map((r) => r.data ? String(r.data).slice(5) : "");
-      fatAtual   = fatRaw.map((r) => r.faturamento ?? 0);
-    }
-    fatAnterior = [];
+    serie = mensal
+      ? juntarPrevisaoML(marcarMesParcial(aggregateByMonth(fatRaw), mlPrev.data), mlPrev.loading ? null : mlPrev.data)
+      : fatRaw.map((r) => ({ label: rotuloDia(r.data), real: r.faturamento ?? 0, ml: null }));
   } else if (fatRaw) {
-    fatLabels  = (fatRaw.dias || []).map(String);
-    fatAtual   = fatRaw.atual || [];
+    serie = (fatRaw.dias || []).map((d, i) => ({ label: String(d), real: fatRaw.atual?.[i] ?? 0, ml: null }));
     fatAnterior = fatRaw.anterior || [];
   }
+  const fatLabels = serie.map((p) => p.label);
+  const fatAtual  = serie.map((p) => p.real);
+  const fatML     = serie.map((p) => p.ml);
+  const showML    = fatML.some((v) => v != null);
+  const reais     = fatAtual.filter((v) => v != null);
+  const parcial   = serie.find((p) => p.parcial);
+  const completos = serie.filter((p) => p.real != null && !p.parcial).map((p) => p.real);
+  const unidade   = mensal ? { melhor: "Melhor mês", pior: "Pior mês", media: "Média mensal" }
+                           : { melhor: "Melhor dia", pior: "Pior dia", media: "Média diária" };
 
   /* ─── Pedidos por status ───
      Backend retorna: [{status, quantidade}]  (lista plana)
@@ -121,43 +174,6 @@ export default function Inicio() {
         }))
       : [];
 
-  /* ─── ML previsão ─── */
-  const prev     = mlPrev.data || {};
-  const prevVals = (prev.previsoes || []).map((item) => item.faturamento_previsto ?? 0);
-  const prevLbls = (prev.previsoes || []).map((item) => `${item.nome_mes}/${item.ano}`);
-
-  // Fitted (in-sample) values aligned positionally with fatAtual for year/all scope
-  let ajustadoAligned = null;
-  if (
-    !mlPrev.loading && (prev.historico || []).some(h => h.faturamento_ajustado != null) &&
-    (filter.scope === "year" || filter.scope === "all") &&
-    Array.isArray(fatRaw)
-  ) {
-    const fittedMap = new Map(
-      (prev.historico || [])
-        .filter(h => h.faturamento_ajustado != null)
-        .map(h => [`${h.ano}-${h.mes}`, h.faturamento_ajustado])
-    );
-    const seenKeys = new Set();
-    const monthKeys = [];
-    fatRaw.forEach(row => {
-      if (!row?.data) return;
-      const parts = String(row.data).split("-");
-      const key = `${Number(parts[0])}-${Number(parts[1])}`;
-      if (!seenKeys.has(key)) { seenKeys.add(key); monthKeys.push(key); }
-    });
-    monthKeys.sort((a, b) => {
-      const [ay, am] = a.split("-").map(Number);
-      const [by, bm] = b.split("-").map(Number);
-      return ay !== by ? ay - by : am - bm;
-    });
-    const mapped = monthKeys.map(key => fittedMap.get(key) ?? null);
-    if (mapped.some(v => v != null)) ajustadoAligned = mapped;
-  }
-
-  const showML = !mlPrev.loading && prevVals.length > 0 &&
-    (filter.scope === "year" || filter.scope === "all");
-
   const statusFor = (v) => v >= 75 ? "pos" : v >= 55 ? "warn" : "neg";
 
   return (
@@ -199,12 +215,12 @@ export default function Inicio() {
       {/* FATURAMENTO + SAÚDE */}
       <div className="grid grid-12" style={{ marginBottom: 16 }}>
         <div className="col-8">
-          <Card title="Faturamento mensal"
-            sub="PERÍODO SELECIONADO"
+          <Card title={mensal ? "Faturamento mensal" : "Faturamento diário"}
+            sub={showML ? "REAL X PREVISÃO DO MODELO (MLP)" : "PERÍODO SELECIONADO"}
             action={
               <>
                 <span className="chip pos">
-                  <span style={{ width: 8, height: 2, background: "var(--pos)", display: "inline-block" }} /> Atual
+                  <span style={{ width: 8, height: 2, background: "var(--pos)", display: "inline-block" }} /> Real
                 </span>
                 {showML && (
                   <span className="chip" style={{ color: "#fbbf24" }}>
@@ -220,16 +236,20 @@ export default function Inicio() {
                   labels={fatLabels}
                   atual={fatAtual}
                   anterior={fatAnterior}
-                  ajustado={ajustadoAligned}
-                  previsao={showML ? { labels: prevLbls, values: prevVals } : null}
+                  ajustado={showML ? fatML : null}
                   height={260}
                 />
-                {fatAtual.length > 0 && (
+                {completos.length > 0 && (
                   <div className="row" style={{ gap: 16, marginTop: 16, paddingTop: 16, borderTop: "1px solid var(--line)" }}>
-                    <Stat label="Melhor dia"   value={"R$" + fmt.brlC(Math.max(...fatAtual))} pos />
-                    <Stat label="Pior dia"     value={"R$" + fmt.brlC(Math.min(...fatAtual))} />
-                    <Stat label="Média diária" value={"R$" + fmt.brlC(fatAtual.reduce((a, b) => a + b, 0) / fatAtual.length)} />
-                    <Stat label="Total"        value={"R$" + fmt.brlC(fatAtual.reduce((a, b) => a + b, 0))} pos />
+                    <Stat label={unidade.melhor} value={"R$" + fmt.brlC(Math.max(...completos))} pos />
+                    <Stat label={unidade.pior}   value={"R$" + fmt.brlC(Math.min(...completos))} />
+                    <Stat label={unidade.media}  value={"R$" + fmt.brlC(completos.reduce((a, b) => a + b, 0) / completos.length)} />
+                    <Stat label="Total"          value={"R$" + fmt.brlC(reais.reduce((a, b) => a + b, 0))} pos />
+                  </div>
+                )}
+                {parcial && (
+                  <div style={{ marginTop: 8, fontSize: 11, color: "var(--fg-3)" }}>
+                    * {parcial.label.slice(0, -1)} com vendas até o dia {parcial.ultimoDia}: fora de melhor, pior e média.
                   </div>
                 )}
 
