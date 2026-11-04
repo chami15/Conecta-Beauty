@@ -12,8 +12,14 @@ de compra. Ele aparece só no resumo, como média dos pedidos que informam.
 """
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Any
+
+# O joblib (usado pelo scikit-learn) conta os núcleos do processador com o comando wmic,
+# que não existe no Windows 11, e solta um aviso longo no terminal. Informar a contagem
+# evita a consulta; precisa vir antes do import do joblib/sklearn.
+os.environ.setdefault("LOKY_MAX_CPU_COUNT", str(os.cpu_count() or 1))
 
 import joblib
 import numpy as np
