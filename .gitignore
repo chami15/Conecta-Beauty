@@ -40,3 +40,7 @@ dist/
 
 # artefatos dos modelos de ML (gerados no treino)
 backend/app/ml/artifacts/
+
+# Azure Functions (configuracao local e pacotes da publicacao)
+local.settings.json
+.python_packages/

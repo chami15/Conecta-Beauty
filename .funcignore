@@ -1,0 +1,15 @@
+# O que NAO sobe para a Azure Function (so o pipeline e o que ele importa sobem)
+.git
+.github
+.vscode
+.venv
+venv
+frontend
+docs
+notebooks
+backend/tests
+backend/.env
+scripts/seed/output
+__pycache__
+*.pyc
+local.settings.json

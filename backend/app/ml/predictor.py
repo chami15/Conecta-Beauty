@@ -7,7 +7,8 @@ import os
 import numpy as np
 import joblib
 
-MODEL_DIR = os.path.dirname(__file__)
+# ML_ARTIFACTS_DIR troca a pasta (ex.: /tmp na Azure Function, onde o código é somente leitura).
+MODEL_DIR = os.getenv("ML_ARTIFACTS_DIR") or os.path.dirname(__file__)
 MODEL_PATH = os.path.join(MODEL_DIR, "modelo.pkl")
 SCALER_X_PATH = os.path.join(MODEL_DIR, "scaler_x.pkl")
 SCALER_Y_PATH = os.path.join(MODEL_DIR, "scaler_y.pkl")

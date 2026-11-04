@@ -23,7 +23,8 @@ from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from utils.query_executor import executar_query
 
-MODEL_DIR = os.path.join(os.path.dirname(__file__))
+# ML_ARTIFACTS_DIR troca a pasta (ex.: /tmp na Azure Function, onde o código é somente leitura).
+MODEL_DIR = os.getenv("ML_ARTIFACTS_DIR") or os.path.dirname(__file__)
 MODEL_PATH = os.path.join(MODEL_DIR, "modelo.pkl")
 SCALER_X_PATH = os.path.join(MODEL_DIR, "scaler_x.pkl")
 SCALER_Y_PATH = os.path.join(MODEL_DIR, "scaler_y.pkl")
@@ -126,6 +127,7 @@ def treinar_modelo() -> dict:
     modelo.fit(X_scaled, y_scaled)
 
     # Persiste artefatos
+    os.makedirs(MODEL_DIR, exist_ok=True)
     joblib.dump(modelo, MODEL_PATH)
     joblib.dump(scaler_x, SCALER_X_PATH)
     joblib.dump(scaler_y, SCALER_Y_PATH)

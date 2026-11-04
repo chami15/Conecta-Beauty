@@ -36,7 +36,8 @@ FEATURES = [
 ]
 ID_COLUMN = "pedido_id"
 INFO_COLUMNS = ["valor_frete"]  # só para o resumo, não entra no modelo
-ARTIFACT_DIR = Path(__file__).resolve().parent / "artifacts"
+# ML_ARTIFACTS_DIR troca a pasta (ex.: /tmp na Azure Function, onde o código é somente leitura).
+ARTIFACT_DIR = Path(os.getenv("ML_ARTIFACTS_DIR") or Path(__file__).resolve().parent / "artifacts")
 MODEL_PATH = ARTIFACT_DIR / "kmeans_pedidos.joblib"
 SCALER_PATH = ARTIFACT_DIR / "kmeans_scaler.joblib"
 METADATA_PATH = ARTIFACT_DIR / "kmeans_metadata.joblib"
