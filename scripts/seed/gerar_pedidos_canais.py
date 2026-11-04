@@ -20,8 +20,12 @@ Esse arquivo representa a camada bronze do Data Lake - o dado exatamente como
 (colecao pedidos_canais_externos) e feita no notebook da issue #12
 (Programação em Banco de Dados II).
 
+Com --enviar-bronze o arquivo tambem sobe para bronze/gerados_por_script no Data Lake,
+sempre com o mesmo nome: o envio substitui o arquivo anterior (a silver le todos os
+.jsonl da pasta, entao dois arquivos duplicariam os pedidos).
+
 Uso:
-    cd backend && python ../scripts/seed/gerar_pedidos_canais.py
+    cd backend && python ../scripts/seed/gerar_pedidos_canais.py --enviar-bronze
     python ../scripts/seed/gerar_pedidos_canais.py --total 3000 --inicio 2024-01-01 --fim 2026-06-09
 """
 import argparse
@@ -34,6 +38,7 @@ from calendar import monthrange
 from datetime import date, datetime, timedelta
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "backend"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "datalake"))
 
 from faker import Faker
 from utils.query_executor import executar_query
@@ -46,6 +51,9 @@ FORMAS_PAGAMENTO = ["Pix", "Cartao de credito", "Boleto", "Cartao de debito"]
 ITENS_POR_PEDIDO = {1: 40, 2: 29, 3: 19, 4: 8, 5: 4}                  # % dos pedidos
 UNIDADES_POR_ITEM = {1: 31, 2: 31, 3: 32, 4: 1, 5: 1.5, 6: 1.5, 7: 1.5, 8: 1.5}  # % dos itens
 MARGEM_MIN, MARGEM_MAX = 1.84, 2.56   # preco de venda / custo (P10 e P90 do ERP; media 2,2)
+
+PASTA_BRONZE = "gerados_por_script"  # mesma pasta lida pelo tratar_silver.py e pelo notebook
+NOME_ARQUIVO = "pedidos_canais_externos.jsonl"
 
 INICIO_PADRAO = "2021-01-01"
 FIM_PADRAO = "2026-06-09"             # ultimo dia com venda no ERP
@@ -238,9 +246,12 @@ def main():
                         help=f"ultima data dos pedidos, AAAA-MM-DD (padrao: {FIM_PADRAO})")
     parser.add_argument(
         "--saida",
-        default=os.path.join(os.path.dirname(__file__), "output", "pedidos_canais_externos.jsonl"),
+        default=os.path.join(os.path.dirname(__file__), "output", NOME_ARQUIVO),
         help="Caminho do arquivo .jsonl de saida",
     )
+    parser.add_argument("--enviar-bronze", action="store_true",
+                        help=f"sobe o arquivo para bronze/{PASTA_BRONZE} no Data Lake (substitui o anterior)")
+    parser.add_argument("--bronze-local", help="com --enviar-bronze, grava numa pasta local em vez do Data Lake (teste)")
     args = parser.parse_args()
     if args.inicio > args.fim:
         parser.error("--inicio deve ser anterior a --fim")
@@ -255,6 +266,14 @@ def main():
             f.write(json.dumps(pedido, ensure_ascii=False) + "\n")
 
     print(f"OK: {len(pedidos)} pedidos gravados em {args.saida}")
+
+    if args.enviar_bronze:
+        from lago import abrir
+
+        caminho = f"{PASTA_BRONZE}/{NOME_ARQUIVO}"
+        with open(args.saida, "rb") as f:
+            abrir("bronze", args.bronze_local).gravar(caminho, f.read())
+        print(f"Enviado: bronze/{caminho} (substitui o arquivo anterior)")
 
 
 if __name__ == "__main__":
