@@ -11,7 +11,6 @@ Ou importado como função:
 from pathlib import Path
 import sys
 raiz = str(Path(__file__).resolve().parent.parent.parent)
-print(raiz)
 sys.path.append(raiz)
 
 import calendar

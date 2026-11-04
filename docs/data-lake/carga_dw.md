@@ -8,9 +8,23 @@ Em `scripts/datalake/`:
 
 - `tratar_silver.py`: lê os `.jsonl` do Bronze, trata e grava a Silver em Parquet.
 - `carregar_dw.py`: lê a Silver mais recente e carrega no Postgres.
+- `gerar_gold.py`: lê o DW e grava os resumos da Gold em Parquet.
+- `pipeline.py`: roda as etapas acima em sequência.
 - `tratamento.py` e `lago.py`: regras de tratamento e acesso ao Data Lake, usados pelos dois.
 
-## Como rodar
+## Tudo de uma vez: `pipeline.py`
+
+O `pipeline.py` roda a cadeia inteira na ordem (Bronze → Silver → DW → Gold e, se pedido, o treino do ML) e para na primeira etapa que falhar. Cada etapa é o próprio script abaixo, sem mudança nenhuma; é o mesmo comando que um agendador (ex.: Azure Function) vai chamar.
+
+```bash
+python scripts/datalake/pipeline.py                              # simulação: grava a Silver, só simula o DW
+python scripts/datalake/pipeline.py --executar                   # carrega o DW, atualiza os cubos e gera a Gold
+python scripts/datalake/pipeline.py --executar --treinar-ml      # + retreina o K-Means e o MLP
+```
+
+Pode ser chamado de qualquer pasta (o `.env` é lido de `backend/`). Rodar de novo não duplica nada: a carga só grava pedidos que ainda não estão no DW. Aceita também `--bronze-local`, `--silver-local` e `--gold-local`.
+
+## Como rodar etapa por etapa
 
 Sempre a partir da pasta `backend`, de onde o `.env` é carregado. O `.env` precisa ter as variáveis do Postgres e a `DATALAKE_CONNECTION_STRING` (chave da conta: precisa de permissão de escrita no `silver`).
 
