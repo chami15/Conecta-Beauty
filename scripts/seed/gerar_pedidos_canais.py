@@ -10,7 +10,8 @@ gerados aleatoriamente com Faker.
 Para os pedidos serem coerentes com o historico do ERP (2021 a 2026), o gerador segue
 as mesmas proporcoes medidas nas vendas ja existentes no banco:
 - datas: distribuidas mes a mes na proporcao do volume de pedidos do ERP no periodo
-  (mesmo crescimento e sazonalidade); sem vendas no periodo, distribuicao uniforme;
+  (mesmo crescimento e sazonalidade); meses depois do fim das vendas do ERP usam a media
+  dos 12 meses anteriores; sem vendas no periodo, distribuicao uniforme;
 - itens por pedido, unidades por item e margem sobre o custo: as distribuicoes do ERP
   (media de 2,1 itens por pedido, 1 a 3 unidades em 94% dos itens, preco = custo x 2,2).
 
@@ -56,8 +57,8 @@ PASTA_BRONZE = "gerados_por_script"  # mesma pasta lida pelo tratar_silver.py e 
 NOME_ARQUIVO = "pedidos_canais_externos.jsonl"
 
 INICIO_PADRAO = "2021-01-01"
-FIM_PADRAO = "2026-06-09"             # ultimo dia com venda no ERP
-TOTAL_PADRAO = 2000                   # ~31 pedidos/mes, perto de 40% do volume do ERP
+FIM_PADRAO = "2026-11-30"
+TOTAL_PADRAO = 2000                   # ~28 pedidos/mes, perto de 35% do volume do ERP
 
 
 def carregar_produtos() -> list[dict]:
@@ -94,18 +95,36 @@ class SorteioDatas:
     def __init__(self, inicio: date, fim: date):
         self.inicio, self.fim = inicio, fim
         linhas = executar_query("seed:pedidos_por_mes", params=(inicio, fim + timedelta(days=1)))
-        self.meses = [(int(r["ano"]), int(r["mes"])) for r in linhas]
-        self.pesos = [int(r["pedidos"]) for r in linhas]
-        if not self.meses:  # banco sem vendas no periodo: todos os meses com o mesmo peso
-            ano, mes = inicio.year, inicio.month
-            while (ano, mes) <= (fim.year, fim.month):
-                self.meses.append((ano, mes))
-                ano, mes = (ano + 1, 1) if mes == 12 else (ano, mes + 1)
+        erp = {(int(r["ano"]), int(r["mes"])): int(r["pedidos"]) for r in linhas}
+
+        self.meses = []
+        ano, mes = inicio.year, inicio.month
+        while (ano, mes) <= (fim.year, fim.month):
+            self.meses.append((ano, mes))
+            ano, mes = (ano + 1, 1) if mes == 12 else (ano, mes + 1)
+
+        # Meses depois do fim das vendas do ERP (e o ultimo mes do ERP, que costuma estar
+        # incompleto) recebem a media dos 12 meses anteriores, mantendo o ritmo recente.
+        self.meses_estimados = 0
+        if erp:
+            ultimo_erp = max(erp)
+            anteriores = [erp[m] for m in sorted(erp) if m < ultimo_erp][-12:] or [erp[ultimo_erp]]
+            media = sum(anteriores) / len(anteriores)
+            fim_alem_do_erp = (fim.year, fim.month) > ultimo_erp
+            self.pesos = []
+            for m in self.meses:
+                if m > ultimo_erp or (m == ultimo_erp and fim_alem_do_erp):
+                    self.pesos.append(media)
+                    self.meses_estimados += 1
+                else:
+                    self.pesos.append(erp.get(m, 0))
+        else:  # banco sem vendas no periodo: todos os meses com o mesmo peso
             self.pesos = [1] * len(self.meses)
 
     def descrever(self) -> str:
         origem = "volume mensal do ERP" if len(set(self.pesos)) > 1 else "uniforme"
-        return f"{self.inicio:%d/%m/%Y} a {self.fim:%d/%m/%Y}, {len(self.meses)} meses, distribuicao {origem}"
+        extra = f" ({self.meses_estimados} meses sem vendas no ERP: media dos 12 anteriores)" if self.meses_estimados else ""
+        return f"{self.inicio:%d/%m/%Y} a {self.fim:%d/%m/%Y}, {len(self.meses)} meses, distribuicao {origem}{extra}"
 
     def sortear(self) -> datetime:
         ano, mes = random.choices(self.meses, weights=self.pesos)[0]
