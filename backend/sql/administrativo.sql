@@ -66,18 +66,20 @@ GROUP BY cv.canal_venda, cv.tipo_canal
 ORDER BY faturamento DESC;
 
 --QUERY: clientes_por_regiao
-SELECT loc.regiao,
-       loc.estado,
+-- Cliente sem localizacao (Instagram e Facebook nao informam o estado) entra como
+-- 'Nao informada', em vez de sumir do grafico.
+SELECT COALESCE(loc.regiao, 'Não informada') AS regiao,
+       COALESCE(loc.estado, 'NI') AS estado,
        COUNT(DISTINCT v.fk_cliente) AS qtd_clientes,
        SUM(v.valor_total) AS faturamento
 FROM financeiro.fato_venda v
 JOIN administrativo.dim_clientes c ON v.fk_cliente = c.id_cliente
-JOIN geral.dim_localizacao loc ON c.fk_localizacao = loc.id_localizacao
+LEFT JOIN geral.dim_localizacao loc ON c.fk_localizacao = loc.id_localizacao
 JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
 WHERE (%s IS NULL OR t.ano = %s)
   AND (%s IS NULL OR t.mes = %s)
-GROUP BY loc.regiao, loc.estado
-ORDER BY loc.regiao, faturamento DESC;
+GROUP BY 1, 2
+ORDER BY 1, faturamento DESC;
 
 -- ===================== CRUD CLIENTES =====================
 

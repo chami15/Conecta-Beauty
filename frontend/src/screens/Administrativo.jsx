@@ -222,6 +222,14 @@ function AdminDashboard({ filter, onOpenCanais }) {
       })
     ), [regList, heatRows, heatCols]);
 
+  // Texto do destaque calculado dos dados: estado com maior faturamento entre os que informam
+  // localização e a fatia dos clientes sem localização (canais que não informam o estado).
+  const totalRegioes = regList.reduce((acc, r) => acc + r.faturamento, 0);
+  const regInformadas = regList.filter((r) => r.estado !== "NI");
+  const regLider = regInformadas.reduce((max, r) => (!max || r.faturamento > max.faturamento ? r : max), null);
+  const pctRegiao = (valor) => (totalRegioes > 0 ? (valor / totalRegioes) * 100 : 0);
+  const pctSemLocal = pctRegiao(regList.filter((r) => r.estado === "NI").reduce((acc, r) => acc + r.faturamento, 0));
+
   const heatRowsFinal = heatRows.length ? heatRows : ["Sudeste", "Sul", "Nordeste", "Centro-O.", "Norte"];
   const heatColsFinal = heatCols.length ? heatCols : ["SP", "RJ", "MG", "RS", "PR", "BA"];
   const heatValsFinal = heatVals.length ? heatVals : [[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]];
@@ -314,7 +322,7 @@ function AdminDashboard({ filter, onOpenCanais }) {
         </div>
 
         <div className="col-5">
-          <Card title="Clientes por região" sub="LTV ACUMULADO">
+          <Card title="Clientes por região" sub="FATURAMENTO NO PERÍODO">
             {regioes.loading ? <LoadingState /> : regioes.error ? <ErrorState msg={regioes.error} /> : (
               <>
                 <Heatmap
@@ -325,9 +333,13 @@ function AdminDashboard({ filter, onOpenCanais }) {
                   values={heatValsFinal}
                 />
                 <div className="divider" />
-                <Insight tone="pos" icon={<I.pin size={14} />} title="Maior concentração no Sudeste">
-                  SP lidera o LTV acumulado dos clientes.
-                </Insight>
+                {regLider && (
+                  <Insight tone="pos" icon={<I.pin size={14} />}
+                    title={`Maior faturamento: ${regLider.estado} (${regLider.regiao})`}>
+                    {fmt.pctRaw(pctRegiao(regLider.faturamento))} do faturamento do período.
+                    {pctSemLocal > 0 && ` ${fmt.pctRaw(pctSemLocal)} vem de clientes sem localização (canais que não informam o estado).`}
+                  </Insight>
+                )}
               </>
             )}
           </Card>
