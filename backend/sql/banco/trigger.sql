@@ -52,11 +52,17 @@ DECLARE
     v_natureza    VARCHAR(20);
 BEGIN
     -- Saldo atual do produto antes desta movimentação (última movimentação por ID)
-    SELECT COALESCE(saldo_atual, 0) INTO v_saldo_atual
+    -- Se for a primeira movimentação do produto, a busca não retorna linha
+    -- nenhuma e o SELECT INTO deixa v_saldo_atual NULL (o COALESCE de dentro
+    -- do SELECT não protege esse caso, só protege um saldo_atual NULL numa
+    -- linha existente) - por isso o COALESCE de fora, aplicado depois.
+    SELECT saldo_atual INTO v_saldo_atual
     FROM estoque.fato_movimentacao_estoque
     WHERE fk_produto = NEW.fk_produto
     ORDER BY id_movimentacao DESC
     LIMIT 1;
+
+    v_saldo_atual := COALESCE(v_saldo_atual, 0);
 
     -- Natureza do tipo de movimentação (ENTRADA ou SAÍDA)
     SELECT natureza INTO v_natureza

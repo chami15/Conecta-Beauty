@@ -15,7 +15,11 @@ async function handleError(res) {
   let detail = `${res.status} ${res.statusText}`;
   try {
     const body = await res.json();
-    if (body?.detail) detail = body.detail;
+    if (typeof body?.detail === "string") {
+      detail = body.detail;
+    } else if (Array.isArray(body?.detail)) {
+      detail = body.detail.map((d) => d.msg ?? String(d)).join("; ");
+    }
   } catch (_) {}
   throw new Error(detail);
 }
@@ -181,5 +185,11 @@ export const api = {
     status: () => get("/api/ml/status"),
     treinar: () => post("/api/ml/treinar"),
     previsao: (horizonte = 3) => get(`/api/ml/previsao?horizonte=${horizonte}`),
+    kmeans: {
+      status: () => get("/api/ml/kmeans/status"),
+      treinar: (nClusters = 3) => post(`/api/ml/kmeans/treinar?n_clusters=${nClusters}`),
+      avaliar: () => get("/api/ml/kmeans/avaliar"),
+      resultados: (offset = 0, limite = 50) => get(`/api/ml/kmeans/resultados?offset=${offset}&limite=${limite}`),
+    },
   },
 };

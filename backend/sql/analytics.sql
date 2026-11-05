@@ -12,6 +12,19 @@ WHERE (%s IS NULL OR t.ano = %s)
 GROUP BY t.ano, t.mes, t.nome_mes
 ORDER BY t.ano, t.mes;
 
+--QUERY: faturamento_mensal_ml
+-- Igual a faturamento_mensal, com o primeiro e o último dia com venda de cada mês:
+-- o treino do MLP descarta o primeiro/último mês da série quando estão incompletos.
+SELECT t.ano,
+       t.mes,
+       SUM(v.valor_total) AS faturamento,
+       MIN(t.data) AS primeiro_dia,
+       MAX(t.data) AS ultimo_dia
+FROM financeiro.fato_venda v
+JOIN geral.dim_tempo t ON v.fk_tempo = t.id_tempo
+GROUP BY t.ano, t.mes
+ORDER BY t.ano, t.mes;
+
 -- ===================== INÍCIO — Distribuição de vendas =====================
 
 --QUERY: valores_vendas_individuais

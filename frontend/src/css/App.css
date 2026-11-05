@@ -195,6 +195,7 @@
 .grid-4  { grid-template-columns: repeat(4, 1fr); }
 .grid-12 { grid-template-columns: repeat(12, 1fr); }
 
+.col-3  { grid-column: span 3; }
 .col-4  { grid-column: span 4; }
 .col-5  { grid-column: span 5; }
 .col-6  { grid-column: span 6; }
@@ -204,6 +205,7 @@
 
 @media (max-width: 1200px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-12 .col-3 { grid-column: span 6; }
   .grid-12 .col-8, .grid-12 .col-7, .grid-12 .col-4, .grid-12 .col-5 { grid-column: span 12; }
 }
 

@@ -49,7 +49,7 @@ export default function ScreenML() {
         </div>
         <div className="row" style={{ gap: 8 }}>
           <select value={horizonte} onChange={(e) => setHorizonte(Number(e.target.value))}
-            style={{ padding: "7px 12px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 13, color: "var(--fg)", background: "#fff" }}>
+            style={{ padding: "7px 12px", border: "1px solid var(--line)", borderRadius: "var(--r)", fontSize: 13, color: "var(--fg)", background: "var(--bg-1)" }}>
             {[1, 2, 3, 6, 12].map((h) => <option key={h} value={h}>{h} {h === 1 ? "mês" : "meses"}</option>)}
           </select>
           <button className="btn primary" onClick={treinar} disabled={treinando} style={{ minWidth: 140 }}>

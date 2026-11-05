@@ -28,9 +28,19 @@ tmp/
 
 # frontend
 node_modules/
+
+# dados sinteticos gerados (nao sao codigo - o arquivo gerado vai pro Data Lake, nao pro git)
+scripts/seed/output/
 dist/
 *.local
 
 #vite local cahce
 .vite/
 
+
+# artefatos dos modelos de ML (gerados no treino)
+backend/app/ml/artifacts/
+
+# Azure Functions (configuracao local e pacotes da publicacao)
+local.settings.json
+.python_packages/
